@@ -1,13 +1,29 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription } from '@/components/ui/alert';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { FastenerActions } from './fastener-actions';
 import fasteners from '@/data/fasteners.json';
+import type { Metadata } from 'next';
 
 interface PageProps {
   params: Promise<{ id: string }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { id } = await params;
+  const fastener = fasteners.find(f => f.id === id);
+  
+  if (!fastener) {
+    return {
+      title: 'Fastener Not Found - Fastener MCP',
+    };
+  }
+
+  return {
+    title: `${fastener.designation} - Fastener MCP`,
+  };
 }
 
 export default async function FastenerDetailPage({ params }: PageProps) {
@@ -146,21 +162,7 @@ export default async function FastenerDetailPage({ params }: PageProps) {
                 </div>
               )}
 
-              <div className="flex gap-4 pt-4 border-t border-border">
-                <Button 
-                  variant="outline"
-                  onClick={() => {
-                    navigator.clipboard.writeText(JSON.stringify(fastener, null, 2));
-                  }}
-                >
-                  Copy JSON
-                </Button>
-                <Link href={`/api/fasteners/${fastener.id}`} target="_blank">
-                  <Button variant="ghost">
-                    Open in API →
-                  </Button>
-                </Link>
-              </div>
+              <FastenerActions fastener={fastener} />
             </CardContent>
           </Card>
         </div>

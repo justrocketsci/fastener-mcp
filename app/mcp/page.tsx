@@ -2,6 +2,12 @@ import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'MCP Documentation - Fastener MCP',
+  description: 'HTTP API documentation for Model Context Protocol integration.',
+};
 
 export default function MCPDocsPage() {
   return (
