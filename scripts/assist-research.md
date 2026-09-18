@@ -146,12 +146,101 @@
 
 ## Summary
 
-- **Total AN/MS rows researched**: 26 (12 AN + 14 MS)
-- **Dist Statement A (public)**: 26 (100%)
-- **Dimensional data extracted**: 26
+- **Total AN/MS rows researched**: 105 (Phase 1: 26 + Phase 3: 79)
+- **Dist Statement A (public)**: 105 (100%)
+- **Dimensional data extracted**: 105
 - **Metadata-only (restricted)**: 0
 
 All researched AN/MS specifications were found to have Distribution Statement A with publicly available dash charts on ASSIST QuickSearch. Dimensional data has been extracted and properly cited with ASSIST document references.
+
+---
+
+## Phase 3 Additions (2026-09-18)
+
+**Date:** 2026-09-18  
+**Engineer:** Cloud Agent  
+**Task:** Expand Dist-A ASSIST catalog with high-traffic AN/MS families  
+**Added:** 79 new gov_spec entries (26 → 105 total)
+
+### MS24693 (Non-Structural Countersunk Screws)
+- **Specification**: MS24693 series (formerly AN507)
+- **ASSIST Doc**: MS24693
+- **Dist Statement**: A (publicly available)
+- **Status**: Dimensional data extracted
+- **Notes**: 100° countersunk head, non-structural machine screws
+- **Dash numbers added**: S40, S41, S42, S92, S93, S94, S162, S163, S164, S252, S253, S254 (12 entries)
+
+### MS24694 (Structural Countersunk Screws)
+- **Specification**: MS24694 series (formerly AN509)
+- **ASSIST Doc**: MS24694
+- **Dist Statement**: A (publicly available)
+- **Status**: Dimensional data extracted
+- **Notes**: 100° countersunk head, structural machine screws, higher strength than MS24693
+- **Dash numbers added**: C1, C2, C3, C26, C27, C28, C29, C50, C51, C52 (10 entries)
+
+### MS51957 (Pan Head Machine Screws)
+- **Specification**: MS51957 series
+- **ASSIST Doc**: MS51957
+- **Dist Statement**: A (publicly available)
+- **Status**: Dimensional data extracted
+- **Notes**: Pan head, cross-recessed, corrosion-resistant steel (Type 302)
+- **Dash numbers added**: 1, 10, 20, 30, 40, 50, 51, 52, 60, 61 (10 entries)
+
+### AN310 (Castle Nuts)
+- **Specification**: AN310 series
+- **ASSIST Doc**: AN310
+- **Dist Statement**: A (publicly available)
+- **Status**: Dimensional data extracted
+- **Notes**: Castellated hex nuts for cotter pin retention
+- **Dash numbers added**: 3, 4, 5, 6, 7, 8, 10 (7 entries)
+
+### AN380 (Cotter Pins)
+- **Specification**: AN380 series
+- **ASSIST Doc**: AN380
+- **Dist Statement**: A (publicly available)
+- **Status**: Dimensional data extracted
+- **Notes**: Split cotter pins for securing castle nuts and clevis pins
+- **Dash numbers added**: 2-1, 2-2, 3-1, 3-2, 4-1, 4-2, 5-1, 5-2, 6-2 (9 entries)
+
+### AN363 (Elastic Stop Nuts)
+- **Specification**: AN363 series
+- **ASSIST Doc**: AN363
+- **Dist Statement**: A (publicly available)
+- **Status**: Dimensional data extracted
+- **Notes**: Self-locking hex nuts with nylon insert
+- **Dash numbers added**: 428, 524, 624, 720, 820, 1032 (6 entries)
+
+### AN364 (Elastic Stop Nuts, Reduced Height)
+- **Specification**: AN364 series
+- **ASSIST Doc**: AN364
+- **Dist Statement**: A (publicly available)
+- **Status**: Dimensional data extracted
+- **Notes**: Self-locking hex nuts with nylon insert, reduced height
+- **Dash numbers added**: 428, 524, 624, 720, 820, 1032 (6 entries)
+
+### MS20995 (Lockwire)
+- **Specification**: MS20995 series
+- **ASSIST Doc**: MS20995
+- **Dist Statement**: A (publicly available)
+- **Status**: Dimensional data extracted
+- **Notes**: Safety lockwire, corrosion-resistant steel
+- **Dash numbers added**: C20, C25, C32, C41, C51 (5 entries)
+
+### MS35206 (Fillister Head Machine Screws)
+- **Specification**: MS35206 series (formerly AN515)
+- **ASSIST Doc**: MS35206
+- **Dist Statement**: A (publicly available)
+- **Status**: Dimensional data extracted
+- **Notes**: Fillister head machine screws, slotted
+- **Dash numbers added**: 416, 420, 632, 820, 824, 1016, 1020, 1024 (8 entries)
+
+### MS35207 (82° Flat Countersunk Machine Screws)
+- **Specification**: MS35207 series
+- **ASSIST Doc**: MS35207
+- **Dist Statement**: A (publicly available)
+- **Status**: Dimensional data extracted
+- **Notes**: 82° flat countersunk head machine screws, slotted
+- **Dash numbers added**: 416, 420, 632, 820, 1016, 1020 (6 entries)
 
 ## ASSIST QuickSearch Links
 
