@@ -1,0 +1,262 @@
+import Link from 'next/link';
+import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+
+export default function MCPDocsPage() {
+  return (
+    <div className="flex flex-col min-h-screen bg-background">
+      <header className="border-b border-border bg-card">
+        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+          <Link href="/" className="text-2xl font-bold text-foreground">
+            Fastener MCP
+          </Link>
+          <nav className="flex gap-6">
+            <Link href="/search" className="text-sm font-medium text-muted-foreground hover:text-foreground">
+              Search
+            </Link>
+            <Link href="/mcp" className="text-sm font-medium text-foreground">
+              MCP Docs
+            </Link>
+          </nav>
+        </div>
+      </header>
+
+      <main className="flex-1 py-8 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <div className="mb-8">
+            <Badge variant="secondary" className="mb-2">
+              HTTP API
+            </Badge>
+            <h1 className="text-3xl font-bold mb-2">MCP Tools Documentation</h1>
+            <p className="text-muted-foreground">
+              HTTP endpoints designed for AI agent integration via Model Context Protocol (MCP).
+            </p>
+          </div>
+
+          <div className="space-y-8">
+            <Card>
+              <CardHeader>
+                <CardTitle>list_fasteners</CardTitle>
+                <CardDescription>Search and filter fasteners by criteria</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h3 className="font-semibold mb-2">Endpoint</h3>
+                  <code className="block bg-muted p-3 rounded text-sm">
+                    GET /api/fasteners
+                  </code>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">Query Parameters</h3>
+                  <ul className="space-y-2 text-sm">
+                    <li><code className="bg-muted px-2 py-1 rounded">q</code> - Search query (designation, material, capabilities)</li>
+                    <li><code className="bg-muted px-2 py-1 rounded">family</code> - Filter by spec family (iso, an, ms)</li>
+                    <li><code className="bg-muted px-2 py-1 rounded">diameter</code> - Filter by diameter (mm or inch)</li>
+                    <li><code className="bg-muted px-2 py-1 rounded">material</code> - Filter by material keyword</li>
+                    <li><code className="bg-muted px-2 py-1 rounded">limit</code> - Max results (default: 50)</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">Example Request</h3>
+                  <pre className="bg-muted p-3 rounded text-sm overflow-x-auto">
+{`curl "https://fastener-mcp.example/api/fasteners?family=iso&q=steel&limit=10"`}
+                  </pre>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">Example Response</h3>
+                  <pre className="bg-muted p-3 rounded text-sm overflow-x-auto">
+{`{
+  "count": 2,
+  "results": [
+    {
+      "id": "iso-4017-m6-30",
+      "designation": "ISO 4017 M6×30",
+      "family": "iso",
+      "diameter": 6,
+      "length_mm": 30,
+      "thread": "M6×1.0",
+      "material": "Steel Grade 8.8",
+      "tensile_strength_mpa": 800,
+      "coating": "Zinc plated",
+      "notes": "Hex head bolt, fully threaded",
+      "capabilities": ["structural", "general-purpose", "moderate-strength"]
+    }
+  ]
+}`}
+                  </pre>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>get_fastener</CardTitle>
+                <CardDescription>Retrieve details for a specific fastener by ID</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h3 className="font-semibold mb-2">Endpoint</h3>
+                  <code className="block bg-muted p-3 rounded text-sm">
+                    GET /api/fasteners/:id
+                  </code>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">Example Request</h3>
+                  <pre className="bg-muted p-3 rounded text-sm overflow-x-auto">
+{`curl "https://fastener-mcp.example/api/fasteners/iso-4017-m6-30"`}
+                  </pre>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">Example Response</h3>
+                  <pre className="bg-muted p-3 rounded text-sm overflow-x-auto">
+{`{
+  "id": "iso-4017-m6-30",
+  "designation": "ISO 4017 M6×30",
+  "family": "iso",
+  "diameter": 6,
+  "length_mm": 30,
+  "thread": "M6×1.0",
+  "material": "Steel Grade 8.8",
+  "tensile_strength_mpa": 800,
+  "coating": "Zinc plated",
+  "notes": "Hex head bolt, fully threaded",
+  "capabilities": ["structural", "general-purpose", "moderate-strength"]
+}`}
+                  </pre>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>recommend_fastener</CardTitle>
+                <CardDescription>Get ranked fastener recommendations based on requirements</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h3 className="font-semibold mb-2">Endpoint</h3>
+                  <code className="block bg-muted p-3 rounded text-sm">
+                    POST /api/recommend
+                  </code>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">Request Body</h3>
+                  <ul className="space-y-2 text-sm">
+                    <li><code className="bg-muted px-2 py-1 rounded">diameter</code> - Required diameter (mm or inch)</li>
+                    <li><code className="bg-muted px-2 py-1 rounded">length</code> - Required length (mm)</li>
+                    <li><code className="bg-muted px-2 py-1 rounded">material</code> - Preferred material (e.g., "steel", "stainless")</li>
+                    <li><code className="bg-muted px-2 py-1 rounded">load_n</code> - Load requirement in Newtons</li>
+                    <li><code className="bg-muted px-2 py-1 rounded">environment</code> - Operating environment (e.g., "outdoor", "aerospace")</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">Example Request</h3>
+                  <pre className="bg-muted p-3 rounded text-sm overflow-x-auto">
+{`curl -X POST "https://fastener-mcp.example/api/recommend" \\
+  -H "Content-Type: application/json" \\
+  -d '{
+    "diameter": 6,
+    "length": 30,
+    "material": "steel",
+    "load_n": 5000,
+    "environment": "outdoor"
+  }'`}
+                  </pre>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">Example Response</h3>
+                  <pre className="bg-muted p-3 rounded text-sm overflow-x-auto">
+{`{
+  "count": 3,
+  "recommendations": [
+    {
+      "id": "iso-4017-m6-30",
+      "designation": "ISO 4017 M6×30",
+      "family": "iso",
+      "diameter": 6,
+      "length_mm": 30,
+      "material": "Steel Grade 8.8",
+      "match_score": 150,
+      "reasons": [
+        "Diameter matches requirement",
+        "Length matches requirement",
+        "Material matches requirement"
+      ]
+    }
+  ]
+}`}
+                  </pre>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-amber-200 bg-amber-50 dark:bg-amber-950 dark:border-amber-800">
+              <CardHeader>
+                <CardTitle>Important Notes</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3 text-sm">
+                <p>
+                  <Badge variant="outline" className="mr-2">SAMPLE DATA</Badge>
+                  This is a demonstration dataset with ~40 representative parts. It is NOT a complete or certified mil-spec catalog.
+                </p>
+                <p>
+                  Data includes sample ISO metric, AN (Army-Navy), and MS (Military Standard) specifications for AI agent testing and development.
+                </p>
+                <p>
+                  Do not use for production aerospace, defense, or safety-critical applications without validating against authoritative specifications.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>MCP Stdio Integration (Optional)</CardTitle>
+                <CardDescription>Full MCP server implementation is optional for this MVP</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-3 text-sm">
+                <p>
+                  The HTTP endpoints above can be called directly by AI agents or wrapped in an MCP stdio server.
+                </p>
+                <p>
+                  For stdio MCP integration, implement tools that map to these endpoints:
+                </p>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li><code>list_fasteners</code> → GET /api/fasteners</li>
+                  <li><code>get_fastener</code> → GET /api/fasteners/:id</li>
+                  <li><code>recommend_fastener</code> → POST /api/recommend</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </main>
+
+      <footer className="border-t border-border py-8 px-4 mt-12">
+        <div className="container mx-auto max-w-4xl">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-sm text-muted-foreground">
+              <Badge variant="outline" className="mr-2">SAMPLE DATA</Badge>
+              Not a certified mil-spec or aerospace catalog.
+            </p>
+            <div className="flex gap-4">
+              <Link href="/search" className="text-sm text-muted-foreground hover:text-foreground">
+                Search
+              </Link>
+              <Link href="/mcp" className="text-sm text-muted-foreground hover:text-foreground">
+                MCP Docs
+              </Link>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
