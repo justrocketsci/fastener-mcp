@@ -23,6 +23,20 @@ interface Fastener {
   coating: string;
   notes: string;
   capabilities: string[];
+  standard?: string;
+  revision?: string;
+  source_kind?: string;
+  source_ref?: string;
+  license?: string;
+  source_url?: string;
+  citation?: {
+    standard?: string;
+    revision?: string;
+    source_kind: string;
+    source_ref: string;
+    license: string;
+    source_url?: string;
+  };
 }
 
 export default function SearchPage() {
@@ -130,7 +144,7 @@ export default function SearchPage() {
         <div className="container mx-auto max-w-7xl">
           <Alert className="mb-6 bg-muted border-border">
             <AlertDescription className="text-sm text-muted-foreground">
-              Sample catalog for demo — not a certified mil/aerospace source.
+              Sourced open library with dimensional extracts from BOLTS and other open datasets. Not a substitute for controlling ISO/ASME/MIL standards.
             </AlertDescription>
           </Alert>
 
@@ -153,7 +167,7 @@ export default function SearchPage() {
                       <TableHead className="text-xs uppercase text-muted-foreground font-semibold">Length</TableHead>
                       <TableHead className="text-xs uppercase text-muted-foreground font-semibold">Material</TableHead>
                       <TableHead className="text-xs uppercase text-muted-foreground font-semibold">Strength</TableHead>
-                      <TableHead className="text-xs uppercase text-muted-foreground font-semibold">Status</TableHead>
+                      <TableHead className="text-xs uppercase text-muted-foreground font-semibold">Source</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
@@ -203,7 +217,13 @@ export default function SearchPage() {
                             {getStrengthNote(fastener)}
                           </TableCell>
                           <TableCell>
-                            <Badge variant="secondary" className="text-xs">Sample</Badge>
+                            {fastener.source_kind === 'open_library' ? (
+                              <Badge variant="default" className="text-xs">Open Library</Badge>
+                            ) : fastener.source_kind === 'distributor_ref' ? (
+                              <Badge variant="secondary" className="text-xs">Legacy</Badge>
+                            ) : (
+                              <Badge variant="outline" className="text-xs">{fastener.source_kind}</Badge>
+                            )}
                           </TableCell>
                         </TableRow>
                       ))
@@ -240,7 +260,13 @@ export default function SearchPage() {
                                 <p className="font-mono text-sm text-primary">{fastener.id}</p>
                                 <p className="font-semibold">{fastener.designation}</p>
                               </div>
-                              <Badge variant="secondary" className="text-xs">Sample</Badge>
+                              {fastener.source_kind === 'open_library' ? (
+                                <Badge variant="default" className="text-xs">Open Library</Badge>
+                              ) : fastener.source_kind === 'distributor_ref' ? (
+                                <Badge variant="secondary" className="text-xs">Legacy</Badge>
+                              ) : (
+                                <Badge variant="outline" className="text-xs">{fastener.source_kind}</Badge>
+                              )}
                             </div>
                             <div className="flex gap-4 text-sm text-muted-foreground">
                               <span>Ø{fastener.diameter > 1 ? `${fastener.diameter}mm` : `${fastener.diameter}"`}</span>
@@ -265,8 +291,8 @@ export default function SearchPage() {
         <div className="container mx-auto max-w-7xl">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              <Badge variant="outline" className="mr-2">SAMPLE DATA</Badge>
-              Sample catalog for demo — not a certified mil/aerospace source.
+              <Badge variant="outline" className="mr-2">OPEN LIBRARY</Badge>
+              Sourced dimensional data — not a substitute for controlling standards.
             </p>
             <div className="flex gap-4">
               <Link href="/search" className="text-sm text-muted-foreground hover:text-foreground">

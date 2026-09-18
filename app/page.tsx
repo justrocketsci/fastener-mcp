@@ -29,7 +29,7 @@ export default function Home() {
           <div className="container mx-auto max-w-6xl">
             <Alert className="mb-8 bg-muted border-border">
               <AlertDescription className="text-sm text-muted-foreground">
-                Sample catalog for demo — not a certified mil/aerospace source.
+                Sourced open library with dimensional extracts from BOLTS and other open datasets. Not a substitute for controlling ISO/ASME/MIL standards.
               </AlertDescription>
             </Alert>
             
@@ -156,8 +156,8 @@ export default function Home() {
         <div className="container mx-auto max-w-5xl">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              <Badge variant="outline" className="mr-2">SAMPLE DATA</Badge>
-              Sample catalog for demo — not a certified mil/aerospace source.
+              <Badge variant="outline" className="mr-2">OPEN LIBRARY</Badge>
+              Sourced dimensional data — not a substitute for controlling standards.
             </p>
             <div className="flex gap-4">
               <Link href="/search" className="text-sm text-muted-foreground hover:text-foreground">

@@ -93,7 +93,7 @@ export default async function FastenerDetailPage({ params }: PageProps) {
 
           <Alert className="mb-6 bg-muted border-border">
             <AlertDescription className="text-sm text-muted-foreground">
-              Sample catalog for demo — not a certified mil/aerospace source.
+              Sourced open library with dimensional extracts from BOLTS and other open datasets. Not a substitute for controlling ISO/ASME/MIL standards.
             </AlertDescription>
           </Alert>
 
@@ -121,7 +121,13 @@ export default async function FastenerDetailPage({ params }: PageProps) {
                     </div>
                     <div className="flex gap-2 flex-wrap">
                       <Badge variant="outline">{getFamilyLabel(fastener.family)}</Badge>
-                      <Badge variant="secondary">Sample</Badge>
+                      {fastener.source_kind === 'open_library' ? (
+                        <Badge variant="default">Open Library</Badge>
+                      ) : fastener.source_kind === 'distributor_ref' ? (
+                        <Badge variant="secondary">Legacy</Badge>
+                      ) : (
+                        <Badge variant="outline">{fastener.source_kind}</Badge>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -189,6 +195,48 @@ export default async function FastenerDetailPage({ params }: PageProps) {
                 </div>
               )}
 
+              {fastener.source_kind && fastener.source_kind !== 'distributor_ref' && (
+                <div className="border-t pt-6 mt-6">
+                  <dt className="text-sm font-semibold text-muted-foreground mb-3">Source Citation</dt>
+                  <dd className="space-y-2 text-sm">
+                    {fastener.standard && (
+                      <div>
+                        <span className="font-semibold">Standard:</span> {fastener.standard}
+                        {fastener.revision && fastener.revision !== 'unknown' && (
+                          <span className="text-muted-foreground"> (Rev. {fastener.revision})</span>
+                        )}
+                      </div>
+                    )}
+                    <div>
+                      <span className="font-semibold">Source:</span>{' '}
+                      {fastener.source_kind === 'open_library' ? 'Open Library' : fastener.source_kind}
+                      {' '}<span className="text-muted-foreground">({fastener.source_ref})</span>
+                    </div>
+                    {fastener.license && (
+                      <div>
+                        <span className="font-semibold">License:</span>{' '}
+                        <Badge variant="outline" className="text-xs">{fastener.license}</Badge>
+                      </div>
+                    )}
+                    {fastener.source_url && (
+                      <div>
+                        <a 
+                          href={fastener.source_url} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-primary hover:underline"
+                        >
+                          View upstream source →
+                        </a>
+                      </div>
+                    )}
+                    <p className="text-xs text-muted-foreground italic mt-2">
+                      Dimensional extract only. Not a substitute for the controlling standard.
+                    </p>
+                  </dd>
+                </div>
+              )}
+
               <FastenerActions fastener={fastener} />
             </CardContent>
           </Card>
@@ -199,8 +247,8 @@ export default async function FastenerDetailPage({ params }: PageProps) {
         <div className="container mx-auto max-w-4xl">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              <Badge variant="outline" className="mr-2">SAMPLE DATA</Badge>
-              Sample catalog for demo — not a certified mil/aerospace source.
+              <Badge variant="outline" className="mr-2">OPEN LIBRARY</Badge>
+              Sourced dimensional data — not a substitute for controlling standards.
             </p>
             <div className="flex gap-4">
               <Link href="/search" className="text-sm text-muted-foreground hover:text-foreground">
