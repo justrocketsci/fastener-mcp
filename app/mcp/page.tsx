@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -36,14 +37,25 @@ export default function MCPDocsPage() {
             </AlertDescription>
           </Alert>
 
-          <div className="mb-8">
-            <Badge variant="secondary" className="mb-2">
-              HTTP API
-            </Badge>
-            <h1 className="text-3xl font-bold mb-2">MCP Tools Documentation</h1>
-            <p className="text-muted-foreground">
-              HTTP endpoints designed for AI agent integration via Model Context Protocol (MCP).
-            </p>
+          <div className="mb-8 flex flex-col md:flex-row gap-6 items-start">
+            <div className="flex-1">
+              <Badge variant="secondary" className="mb-2">
+                HTTP API
+              </Badge>
+              <h1 className="text-3xl font-bold mb-2">MCP Tools Documentation</h1>
+              <p className="text-muted-foreground">
+                HTTP endpoints designed for AI agent integration via Model Context Protocol (MCP).
+              </p>
+            </div>
+            <div className="flex-shrink-0 hidden md:block">
+              <Image
+                src="/illustrations/socket-screw.png"
+                alt="Flat illustration of a socket head cap screw"
+                width={120}
+                height={120}
+                className="w-28 h-28 object-contain opacity-40"
+              />
+            </div>
           </div>
 
           <div className="space-y-8">

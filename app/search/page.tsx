@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
@@ -158,8 +159,17 @@ export default function SearchPage() {
                   <TableBody>
                     {results.length === 0 ? (
                       <TableRow>
-                        <TableCell colSpan={7} className="text-center py-12 text-muted-foreground">
-                          No matches in sample set — try M6 or AN3
+                        <TableCell colSpan={7} className="text-center py-12">
+                          <div className="flex flex-col items-center gap-4">
+                            <Image
+                              src="/illustrations/hex-bolt.png"
+                              alt="Flat illustration of a hex head bolt"
+                              width={120}
+                              height={120}
+                              className="w-30 h-30 object-contain opacity-50"
+                            />
+                            <p className="text-muted-foreground">No matches in sample set — try M6 or AN3</p>
+                          </div>
                         </TableCell>
                       </TableRow>
                     ) : (
@@ -206,8 +216,17 @@ export default function SearchPage() {
               <div className="md:hidden space-y-3">
                 {results.length === 0 ? (
                   <Card>
-                    <CardContent className="py-12 text-center">
-                      <p className="text-muted-foreground">No matches in sample set — try M6 or AN3</p>
+                    <CardContent className="py-12">
+                      <div className="flex flex-col items-center gap-4">
+                        <Image
+                          src="/illustrations/hex-bolt.png"
+                          alt="Flat illustration of a hex head bolt"
+                          width={120}
+                          height={120}
+                          className="w-30 h-30 object-contain opacity-50"
+                        />
+                        <p className="text-center text-muted-foreground">No matches in sample set — try M6 or AN3</p>
+                      </div>
                     </CardContent>
                   </Card>
                 ) : (

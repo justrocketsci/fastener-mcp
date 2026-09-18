@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription } from '@/components/ui/alert';
@@ -47,6 +48,19 @@ export default async function FastenerDetailPage({ params }: PageProps) {
     }
   };
 
+  const getFamilyIllustration = (fam: string) => {
+    switch (fam) {
+      case 'iso':
+        return { src: '/illustrations/hex-bolt.png', alt: 'Flat illustration of a hex head bolt' };
+      case 'an':
+        return { src: '/illustrations/an-bolt.png', alt: 'Flat illustration of an AN aerospace bolt' };
+      case 'ms':
+        return { src: '/illustrations/rivet.png', alt: 'Flat illustration of a rivet' };
+      default:
+        return { src: '/illustrations/hex-bolt.png', alt: 'Flat illustration of a hex head bolt' };
+    }
+  };
+
   const copyToClipboard = () => {
     navigator.clipboard.writeText(JSON.stringify(fastener, null, 2));
   };
@@ -85,18 +99,31 @@ export default async function FastenerDetailPage({ params }: PageProps) {
 
           <Card>
             <CardHeader>
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <CardTitle className="text-3xl font-bold font-heading mb-2">
-                    {fastener.designation}
-                  </CardTitle>
-                  <CardDescription className="text-base">
-                    {fastener.notes}
-                  </CardDescription>
+              <div className="flex flex-col md:flex-row gap-6 items-start">
+                <div className="flex-shrink-0">
+                  <Image
+                    src={getFamilyIllustration(fastener.family).src}
+                    alt={getFamilyIllustration(fastener.family).alt}
+                    width={200}
+                    height={200}
+                    className="w-40 h-40 md:w-50 md:h-50 object-contain"
+                  />
                 </div>
-                <div className="flex gap-2">
-                  <Badge variant="outline">{getFamilyLabel(fastener.family)}</Badge>
-                  <Badge variant="secondary">Sample</Badge>
+                <div className="flex-1">
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <CardTitle className="text-3xl font-bold font-heading mb-2">
+                        {fastener.designation}
+                      </CardTitle>
+                      <CardDescription className="text-base">
+                        {fastener.notes}
+                      </CardDescription>
+                    </div>
+                    <div className="flex gap-2 flex-wrap">
+                      <Badge variant="outline">{getFamilyLabel(fastener.family)}</Badge>
+                      <Badge variant="secondary">Sample</Badge>
+                    </div>
+                  </div>
                 </div>
               </div>
             </CardHeader>
