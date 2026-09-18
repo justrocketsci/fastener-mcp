@@ -29,6 +29,7 @@ export default function SearchPage() {
     const params = new URLSearchParams();
     if (query) params.append('q', query);
     if (family !== 'all') params.append('family', family);
+    params.append('limit', '200'); // Ensure all rows visible (catalog has 61)
     
     try {
       const response = await fetch(`/api/fasteners?${params}`);

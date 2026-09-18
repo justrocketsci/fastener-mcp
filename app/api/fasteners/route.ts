@@ -10,7 +10,7 @@ export async function GET(request: NextRequest) {
   const material = searchParams.get('material')?.toLowerCase() || '';
   const standard = searchParams.get('standard')?.toLowerCase() || '';
   const source_kind = searchParams.get('source_kind') || '';
-  const limit = parseInt(searchParams.get('limit') || '50');
+  const limit = parseInt(searchParams.get('limit') || '200');
 
   let results = [...fasteners] as Fastener[];
 
