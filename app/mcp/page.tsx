@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Badge } from '@/components/ui/badge';
+import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
 export default function MCPDocsPage() {
@@ -23,6 +24,12 @@ export default function MCPDocsPage() {
 
       <main className="flex-1 py-8 px-4">
         <div className="container mx-auto max-w-4xl">
+          <Alert className="mb-6 bg-muted border-border">
+            <AlertDescription className="text-sm text-muted-foreground">
+              Sample catalog for demo — not a certified mil/aerospace source.
+            </AlertDescription>
+          </Alert>
+
           <div className="mb-8">
             <Badge variant="secondary" className="mb-2">
               HTTP API
@@ -213,6 +220,9 @@ export default function MCPDocsPage() {
                 <p>
                   Do not use for production aerospace, defense, or safety-critical applications without validating against authoritative specifications.
                 </p>
+                <p className="text-muted-foreground pt-2 border-t border-amber-200 dark:border-amber-800">
+                  Paid MCP access — coming later
+                </p>
               </CardContent>
             </Card>
 
@@ -244,7 +254,7 @@ export default function MCPDocsPage() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
               <Badge variant="outline" className="mr-2">SAMPLE DATA</Badge>
-              Not a certified mil-spec or aerospace catalog.
+              Sample catalog for demo — not a certified mil/aerospace source.
             </p>
             <div className="flex gap-4">
               <Link href="/search" className="text-sm text-muted-foreground hover:text-foreground">
