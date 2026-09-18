@@ -9,20 +9,7 @@ import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-
-interface Fastener {
-  id: string;
-  designation: string;
-  family: 'iso' | 'an' | 'ms';
-  diameter: number;
-  length_mm: number;
-  thread: string;
-  material: string;
-  tensile_strength_mpa: number;
-  coating: string;
-  notes: string;
-  capabilities: string[];
-}
+import type { Fastener } from '@/lib/types';
 
 export default function SearchPage() {
   const [query, setQuery] = useState('');
@@ -82,6 +69,25 @@ export default function SearchPage() {
     return '—';
   };
 
+  const getSourceBadge = (fastener: Fastener) => {
+    if (!fastener.source_kind) {
+      return <Badge variant="secondary" className="text-xs">Sample</Badge>;
+    }
+    
+    switch (fastener.source_kind) {
+      case 'open_library':
+        return <Badge className="text-xs bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200">Open</Badge>;
+      case 'gov_spec':
+        return <Badge className="text-xs bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200">Gov</Badge>;
+      case 'purchased_std':
+        return <Badge className="text-xs bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200">Purchased</Badge>;
+      case 'distributor_ref':
+        return <Badge variant="secondary" className="text-xs">Legacy</Badge>;
+      default:
+        return <Badge variant="secondary" className="text-xs">Sample</Badge>;
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <header className="sticky top-0 z-10 border-b border-border bg-card">
@@ -129,7 +135,7 @@ export default function SearchPage() {
         <div className="container mx-auto max-w-7xl">
           <Alert className="mb-6 bg-muted border-border">
             <AlertDescription className="text-sm text-muted-foreground">
-              Sample catalog for demo — not a certified mil/aerospace source.
+              Mixed catalog: Open library (BOLTS) + US Gov specs (ASSIST Dist Stmt A) — not a substitute for controlling standards.
             </AlertDescription>
           </Alert>
 
@@ -193,7 +199,7 @@ export default function SearchPage() {
                             {getStrengthNote(fastener)}
                           </TableCell>
                           <TableCell>
-                            <Badge variant="secondary" className="text-xs">Sample</Badge>
+                            {getSourceBadge(fastener)}
                           </TableCell>
                         </TableRow>
                       ))
@@ -221,7 +227,7 @@ export default function SearchPage() {
                                 <p className="font-mono text-sm text-primary">{fastener.id}</p>
                                 <p className="font-semibold">{fastener.designation}</p>
                               </div>
-                              <Badge variant="secondary" className="text-xs">Sample</Badge>
+                              {getSourceBadge(fastener)}
                             </div>
                             <div className="flex gap-4 text-sm text-muted-foreground">
                               <span>Ø{fastener.diameter > 1 ? `${fastener.diameter}mm` : `${fastener.diameter}"`}</span>
@@ -246,8 +252,8 @@ export default function SearchPage() {
         <div className="container mx-auto max-w-7xl">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              <Badge variant="outline" className="mr-2">SAMPLE DATA</Badge>
-              Sample catalog for demo — not a certified mil/aerospace source.
+              <Badge variant="outline" className="mr-2">MIXED CATALOG</Badge>
+              Open library (BOLTS LGPL-2.1+) + US Gov specs (Dist Stmt A) — not a substitute for controlling standards.
             </p>
             <div className="flex gap-4">
               <Link href="/search" className="text-sm text-muted-foreground hover:text-foreground">

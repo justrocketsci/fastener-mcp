@@ -10,7 +10,13 @@
     "tensile_strength_mpa": 800,
     "coating": "Zinc plated",
     "notes": "Hex head bolt, fully threaded",
-    "capabilities": ["structural", "general-purpose", "moderate-strength"]
+    "capabilities": ["structural", "general-purpose", "moderate-strength"],
+    "source_kind": "open_library",
+    "source_ref": "BOLTS-ISO4017",
+    "source_url": "https://boltsparts.github.io/",
+    "revision": "ISO 4017:2014",
+    "license": "LGPL-2.1+",
+    "confidence": "exact"
   },
   {
     "id": "iso-4017-m8-40",
@@ -23,7 +29,13 @@
     "tensile_strength_mpa": 1000,
     "coating": "Black oxide",
     "notes": "Hex head bolt, high strength",
-    "capabilities": ["high-strength", "structural", "vibration-resistant"]
+    "capabilities": ["high-strength", "structural", "vibration-resistant"],
+    "source_kind": "open_library",
+    "source_ref": "BOLTS-ISO4017",
+    "source_url": "https://boltsparts.github.io/",
+    "revision": "ISO 4017:2014",
+    "license": "LGPL-2.1+",
+    "confidence": "exact"
   },
   {
     "id": "iso-4762-m5-20",
@@ -36,7 +48,13 @@
     "tensile_strength_mpa": 1200,
     "coating": "Black oxide",
     "notes": "Socket head cap screw",
-    "capabilities": ["high-strength", "compact", "precision"]
+    "capabilities": ["high-strength", "compact", "precision"],
+    "source_kind": "open_library",
+    "source_ref": "BOLTS-ISO4762",
+    "source_url": "https://boltsparts.github.io/",
+    "revision": "ISO 4762:2004",
+    "license": "LGPL-2.1+",
+    "confidence": "exact"
   },
   {
     "id": "iso-4762-m10-50",
@@ -49,7 +67,13 @@
     "tensile_strength_mpa": 700,
     "coating": "None (passivated)",
     "notes": "Socket head cap screw, corrosion resistant",
-    "capabilities": ["corrosion-resistant", "structural", "marine-grade"]
+    "capabilities": ["corrosion-resistant", "structural", "marine-grade"],
+    "source_kind": "open_library",
+    "source_ref": "BOLTS-ISO4762",
+    "source_url": "https://boltsparts.github.io/",
+    "revision": "ISO 4762:2004",
+    "license": "LGPL-2.1+",
+    "confidence": "exact"
   },
   {
     "id": "iso-7380-m4-16",
@@ -62,7 +86,13 @@
     "tensile_strength_mpa": 1000,
     "coating": "Zinc plated",
     "notes": "Button head socket cap screw",
-    "capabilities": ["low-profile", "aesthetic", "general-purpose"]
+    "capabilities": ["low-profile", "aesthetic", "general-purpose"],
+    "source_kind": "open_library",
+    "source_ref": "BOLTS-ISO7380",
+    "source_url": "https://boltsparts.github.io/",
+    "revision": "ISO 7380:2011",
+    "license": "LGPL-2.1+",
+    "confidence": "exact"
   },
   {
     "id": "iso-4014-m12-60",
@@ -75,7 +105,13 @@
     "tensile_strength_mpa": 800,
     "coating": "Hot-dip galvanized",
     "notes": "Hex head bolt, partially threaded",
-    "capabilities": ["heavy-duty", "outdoor", "corrosion-resistant"]
+    "capabilities": ["heavy-duty", "outdoor", "corrosion-resistant"],
+    "source_kind": "open_library",
+    "source_ref": "BOLTS-ISO4014",
+    "source_url": "https://boltsparts.github.io/",
+    "revision": "ISO 4014:2011",
+    "license": "LGPL-2.1+",
+    "confidence": "exact"
   },
   {
     "id": "iso-7045-m3-12",
@@ -88,7 +124,13 @@
     "tensile_strength_mpa": 800,
     "coating": "None (passivated)",
     "notes": "Pan head Phillips screw",
-    "capabilities": ["light-duty", "corrosion-resistant", "tamper-evident"]
+    "capabilities": ["light-duty", "corrosion-resistant", "tamper-evident"],
+    "source_kind": "open_library",
+    "source_ref": "BOLTS-ISO7045",
+    "source_url": "https://boltsparts.github.io/",
+    "revision": "ISO 7045:2011",
+    "license": "LGPL-2.1+",
+    "confidence": "exact"
   },
   {
     "id": "iso-4032-m8",
@@ -101,7 +143,13 @@
     "tensile_strength_mpa": 800,
     "coating": "Zinc plated",
     "notes": "Hex nut, standard height",
-    "capabilities": ["general-purpose", "standard"]
+    "capabilities": ["general-purpose", "standard"],
+    "source_kind": "open_library",
+    "source_ref": "BOLTS-ISO4032",
+    "source_url": "https://boltsparts.github.io/",
+    "revision": "ISO 4032:2012",
+    "license": "LGPL-2.1+",
+    "confidence": "exact"
   },
   {
     "id": "iso-7092-8",
@@ -114,8 +162,14 @@
     "tensile_strength_mpa": 0,
     "coating": "Zinc plated",
     "notes": "Flat washer, normal series",
-    "capabilities": ["load-distribution", "surface-protection"]
-  },
+    "capabilities": ["load-distribution", "surface-protection"],
+    "source_kind": "open_library",
+    "source_ref": "BOLTS-ISO7092",
+    "source_url": "https://boltsparts.github.io/",
+    "revision": "ISO 7092:2000",
+    "license": "LGPL-2.1+",
+    "confidence": "exact"
+    },
   {
     "id": "iso-10642-m6-25",
     "designation": "ISO 10642 M6×25",
@@ -127,9 +181,15 @@
     "tensile_strength_mpa": 1000,
     "coating": "Black oxide",
     "notes": "Countersunk socket head cap screw",
-    "capabilities": ["flush-mount", "high-strength", "precision"]
+    "capabilities": ["flush-mount", "high-strength", "precision"],
+    "source_kind": "open_library",
+    "source_ref": "BOLTS-ISO10642",
+    "source_url": "https://boltsparts.github.io/",
+    "revision": "ISO 10642:2004",
+    "license": "LGPL-2.1+",
+    "confidence": "exact"
   },
-  {
+    {
     "id": "an3-10a",
     "designation": "AN3-10A",
     "family": "an",
@@ -139,8 +199,14 @@
     "material": "Steel AN-QQ-S-626",
     "tensile_strength_mpa": 1035,
     "coating": "Cadmium plated",
-    "notes": "Drilled head hex bolt, general purpose",
-    "capabilities": ["aerospace", "safety-wire", "high-strength"]
+    "notes": "Drilled head hex bolt, general purpose. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "safety-wire", "high-strength"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN3",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN3",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "an4-12a",
@@ -152,8 +218,14 @@
     "material": "Steel AN-QQ-S-626",
     "tensile_strength_mpa": 1035,
     "coating": "Cadmium plated",
-    "notes": "Drilled head hex bolt",
-    "capabilities": ["aerospace", "safety-wire", "vibration-resistant"]
+    "notes": "Drilled head hex bolt. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "safety-wire", "vibration-resistant"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN4",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN4",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "an5-20a",
@@ -165,8 +237,14 @@
     "material": "Steel AN-QQ-S-626",
     "tensile_strength_mpa": 1035,
     "coating": "Cadmium plated",
-    "notes": "Drilled head hex bolt, long grip",
-    "capabilities": ["aerospace", "structural", "safety-wire"]
+    "notes": "Drilled head hex bolt, long grip. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "structural", "safety-wire"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN5",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN5",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "an6-16a",
@@ -178,8 +256,14 @@
     "material": "Steel AN-QQ-S-626",
     "tensile_strength_mpa": 1035,
     "coating": "Cadmium plated",
-    "notes": "Drilled head hex bolt",
-    "capabilities": ["aerospace", "heavy-duty", "safety-wire"]
+    "notes": "Drilled head hex bolt. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "heavy-duty", "safety-wire"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN6",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN6",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "an7-10a",
@@ -191,8 +275,14 @@
     "material": "Steel AN-QQ-S-626",
     "tensile_strength_mpa": 1035,
     "coating": "Cadmium plated",
-    "notes": "Drilled head hex bolt, large diameter",
-    "capabilities": ["aerospace", "heavy-duty", "structural"]
+    "notes": "Drilled head hex bolt, large diameter. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "heavy-duty", "structural"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN7",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN7",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "an73-6a",
@@ -204,8 +294,14 @@
     "material": "Steel AN-QQ-S-626",
     "tensile_strength_mpa": 1035,
     "coating": "Cadmium plated",
-    "notes": "Drilled shank bolt, close tolerance",
-    "capabilities": ["aerospace", "precision", "reamed-hole"]
+    "notes": "Drilled shank bolt, close tolerance. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "precision", "reamed-hole"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN73",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN73",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "an74-12a",
@@ -217,8 +313,14 @@
     "material": "Steel AN-QQ-S-626",
     "tensile_strength_mpa": 1035,
     "coating": "Cadmium plated",
-    "notes": "Drilled shank bolt, internal wrenching",
-    "capabilities": ["aerospace", "precision", "compact"]
+    "notes": "Drilled shank bolt, internal wrenching. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "precision", "compact"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN74",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN74",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "an173-3",
@@ -230,8 +332,14 @@
     "material": "Steel AN-QQ-S-626",
     "tensile_strength_mpa": 1035,
     "coating": "Cadmium plated",
-    "notes": "Shear nut, castellated",
-    "capabilities": ["aerospace", "safety-wire", "anti-rotation"]
+    "notes": "Shear nut, castellated. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "safety-wire", "anti-rotation"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN173",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN173",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "an315-4r",
@@ -243,9 +351,15 @@
     "material": "Steel AN-QQ-S-626",
     "tensile_strength_mpa": 1035,
     "coating": "Cadmium plated",
-    "notes": "Plain nut, reduced height",
-    "capabilities": ["aerospace", "light-weight", "low-profile"]
-  },
+    "notes": "Plain nut, reduced height. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "light-weight", "low-profile"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN315",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN315",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
+    },
   {
     "id": "an960-416",
     "designation": "AN960-416",
@@ -256,8 +370,52 @@
     "material": "Steel AN-QQ-S-626",
     "tensile_strength_mpa": 0,
     "coating": "Cadmium plated",
-    "notes": "Flat washer, light pattern",
-    "capabilities": ["aerospace", "load-distribution"]
+    "notes": "Flat washer, light pattern. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "load-distribution"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN960",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN960",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
+  },
+    {
+    "id": "an500a10-8",
+    "designation": "AN500A10-8",
+    "family": "an",
+    "diameter": 0.19,
+    "length_mm": 20.32,
+    "thread": "10-32 UNF",
+    "material": "Aluminum alloy",
+    "tensile_strength_mpa": 310,
+    "coating": "Anodized",
+    "notes": "Pan head screw, light alloy. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "light-weight", "corrosion-resistant"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN500",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN500",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
+  },
+  {
+    "id": "an525-10r8",
+    "designation": "AN525-10R8",
+    "family": "an",
+    "diameter": 0.19,
+    "length_mm": 20.32,
+    "thread": "10-32 UNF",
+    "material": "Steel AN-QQ-S-626",
+    "tensile_strength_mpa": 1035,
+    "coating": "Cadmium plated",
+    "notes": "Countersunk washer head screw. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "flush-mount", "structural"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN525",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN525",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "ms20470ad4-6",
@@ -269,8 +427,14 @@
     "material": "Aluminum 2117-T4",
     "tensile_strength_mpa": 310,
     "coating": "None",
-    "notes": "Universal head rivet, driven",
-    "capabilities": ["aerospace", "permanent", "light-weight"]
+    "notes": "Universal head rivet, driven. Supersedes AN470. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "permanent", "light-weight"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS20470",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20470",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "ms20470ad5-8",
@@ -282,8 +446,14 @@
     "material": "Aluminum 2117-T4",
     "tensile_strength_mpa": 310,
     "coating": "None",
-    "notes": "Universal head rivet",
-    "capabilities": ["aerospace", "permanent", "general-purpose"]
+    "notes": "Universal head rivet. Supersedes AN470. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "permanent", "general-purpose"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS20470",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20470",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "ms20426ad4-5",
@@ -295,8 +465,14 @@
     "material": "Aluminum 2117-T4",
     "tensile_strength_mpa": 310,
     "coating": "None",
-    "notes": "Countersunk head rivet, flush mount",
-    "capabilities": ["aerospace", "aerodynamic", "flush-mount"]
+    "notes": "Countersunk head rivet, flush mount. Supersedes AN426. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "aerodynamic", "flush-mount"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS20426",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20426",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "ms20613-4c8",
@@ -308,8 +484,14 @@
     "material": "Corrosion-resistant steel",
     "tensile_strength_mpa": 1035,
     "coating": "Passivated",
-    "notes": "Hex head bolt, drilled",
-    "capabilities": ["aerospace", "corrosion-resistant", "safety-wire"]
+    "notes": "Hex head bolt, drilled. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "corrosion-resistant", "safety-wire"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS20613",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20613",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "ms20613-5c12",
@@ -321,8 +503,14 @@
     "material": "Corrosion-resistant steel",
     "tensile_strength_mpa": 1035,
     "coating": "Passivated",
-    "notes": "Hex head bolt, corrosion resistant",
-    "capabilities": ["aerospace", "marine-grade", "safety-wire"]
+    "notes": "Hex head bolt, corrosion resistant. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "marine-grade", "safety-wire"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS20613",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20613",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "ms20004-4c6",
@@ -334,8 +522,14 @@
     "material": "Corrosion-resistant steel",
     "tensile_strength_mpa": 1035,
     "coating": "Passivated",
-    "notes": "Internal wrenching bolt",
-    "capabilities": ["aerospace", "precision", "compact"]
+    "notes": "Internal wrenching bolt. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "precision", "compact"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS20004",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20004",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "ms21250-4l",
@@ -347,9 +541,15 @@
     "material": "Corrosion-resistant steel",
     "tensile_strength_mpa": 1035,
     "coating": "Passivated",
-    "notes": "Self-locking nut, all-metal",
-    "capabilities": ["aerospace", "vibration-resistant", "reusable"]
-  },
+    "notes": "Self-locking nut, all-metal. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "vibration-resistant", "reusable"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS21250",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS21250",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
+    },
   {
     "id": "ms21250-5l",
     "designation": "MS21250-5L",
@@ -360,10 +560,16 @@
     "material": "Corrosion-resistant steel",
     "tensile_strength_mpa": 1035,
     "coating": "Passivated",
-    "notes": "Self-locking nut, heavy-duty",
-    "capabilities": ["aerospace", "vibration-resistant", "structural"]
+    "notes": "Self-locking nut, heavy-duty. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "vibration-resistant", "structural"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS21250",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS21250",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
-  {
+    {
     "id": "ms35333-41",
     "designation": "MS35333-41",
     "family": "ms",
@@ -373,8 +579,14 @@
     "material": "Steel",
     "tensile_strength_mpa": 0,
     "coating": "Zinc plated",
-    "notes": "Flat washer, standard",
-    "capabilities": ["aerospace", "load-distribution"]
+    "notes": "Flat washer, standard. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "load-distribution"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS35333",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS35333",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "ms35338-45",
@@ -386,8 +598,90 @@
     "material": "Steel",
     "tensile_strength_mpa": 0,
     "coating": "Cadmium plated",
-    "notes": "Lock washer, split type",
-    "capabilities": ["aerospace", "anti-loosening", "vibration-resistant"]
+    "notes": "Lock washer, split type. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "anti-loosening", "vibration-resistant"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS35338",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS35338",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
+  },
+  {
+    "id": "ms20392-2c12",
+    "designation": "MS20392-2C12",
+    "family": "ms",
+    "diameter": 0.125,
+    "length_mm": 30.48,
+    "thread": "None (clevis pin)",
+    "material": "Corrosion-resistant steel",
+    "tensile_strength_mpa": 0,
+    "coating": "Passivated",
+    "notes": "Clevis pin, drilled head. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "articulating-joint", "removable"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS20392",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20392",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
+  },
+  {
+    "id": "ms20392-3c16",
+    "designation": "MS20392-3C16",
+    "family": "ms",
+    "diameter": 0.1875,
+    "length_mm": 40.64,
+    "thread": "None (clevis pin)",
+    "material": "Corrosion-resistant steel",
+    "tensile_strength_mpa": 0,
+    "coating": "Passivated",
+    "notes": "Clevis pin, large diameter. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "heavy-duty", "articulating-joint"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS20392",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20392",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
+  },
+  {
+    "id": "ms20001-6c10",
+    "designation": "MS20001-6C10",
+    "family": "ms",
+    "diameter": 0.375,
+    "length_mm": 25.4,
+    "thread": "3/8-24 UNF",
+    "material": "Corrosion-resistant steel",
+    "tensile_strength_mpa": 1035,
+    "coating": "Passivated",
+    "notes": "Hex head bolt, close tolerance. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "precision", "high-strength"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS20001",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20001",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
+  },
+  {
+    "id": "ms24665-132",
+    "designation": "MS24665-132",
+    "family": "ms",
+    "diameter": 0.132,
+    "length_mm": 0,
+    "thread": "None (cotter pin)",
+    "material": "Corrosion-resistant steel",
+    "tensile_strength_mpa": 0,
+    "coating": "Passivated",
+    "notes": "Cotter pin, split type. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "capabilities": ["aerospace", "safety-retention", "removable"],
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS24665",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24665",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "iso-2338-6x50",
@@ -400,7 +694,13 @@
     "tensile_strength_mpa": 0,
     "coating": "None",
     "notes": "Parallel dowel pin",
-    "capabilities": ["precision", "alignment", "anti-rotation"]
+    "capabilities": ["precision", "alignment", "anti-rotation"],
+    "source_kind": "open_library",
+    "source_ref": "BOLTS-ISO2338",
+    "source_url": "https://boltsparts.github.io/",
+    "revision": "ISO 2338:1997",
+    "license": "LGPL-2.1+",
+    "confidence": "exact"
   },
   {
     "id": "iso-8734-5x40",
@@ -413,7 +713,13 @@
     "tensile_strength_mpa": 0,
     "coating": "None",
     "notes": "Slotted spring pin, rolled",
-    "capabilities": ["vibration-resistant", "quick-assembly", "reusable"]
+    "capabilities": ["vibration-resistant", "quick-assembly", "reusable"],
+    "source_kind": "open_library",
+    "source_ref": "BOLTS-ISO8734",
+    "source_url": "https://boltsparts.github.io/",
+    "revision": "ISO 8734:2010",
+    "license": "LGPL-2.1+",
+    "confidence": "exact"
   },
   {
     "id": "iso-1207-m5-20",
@@ -426,8 +732,14 @@
     "tensile_strength_mpa": 400,
     "coating": "Zinc plated",
     "notes": "Slotted cheese head screw",
-    "capabilities": ["light-duty", "hand-assembly", "low-torque"]
-  },
+    "capabilities": ["light-duty", "hand-assembly", "low-torque"],
+    "source_kind": "open_library",
+    "source_ref": "BOLTS-ISO1207",
+    "source_url": "https://boltsparts.github.io/",
+    "revision": "ISO 1207:2010",
+    "license": "LGPL-2.1+",
+    "confidence": "exact"
+    },
   {
     "id": "iso-7089-10",
     "designation": "ISO 7089 Ø10",
@@ -439,8 +751,14 @@
     "tensile_strength_mpa": 0,
     "coating": "Zinc plated",
     "notes": "Flat washer, normal series, hardened",
-    "capabilities": ["load-distribution", "high-strength", "surface-protection"]
-  },
+    "capabilities": ["load-distribution", "high-strength", "surface-protection"],
+    "source_kind": "open_library",
+    "source_ref": "BOLTS-ISO7089",
+    "source_url": "https://boltsparts.github.io/",
+    "revision": "ISO 7089:2000",
+    "license": "LGPL-2.1+",
+    "confidence": "exact"
+    },
   {
     "id": "iso-4026-m6-10",
     "designation": "ISO 4026 M6×10",
@@ -452,84 +770,12 @@
     "tensile_strength_mpa": 1200,
     "coating": "Black oxide",
     "notes": "Hexagon socket set screw, flat point",
-    "capabilities": ["anti-rotation", "adjustment", "precision"]
-  },
-  {
-    "id": "an500a10-8",
-    "designation": "AN500A10-8",
-    "family": "an",
-    "diameter": 0.19,
-    "length_mm": 20.32,
-    "thread": "10-32 UNF",
-    "material": "Aluminum alloy",
-    "tensile_strength_mpa": 310,
-    "coating": "Anodized",
-    "notes": "Pan head screw, light alloy",
-    "capabilities": ["aerospace", "light-weight", "corrosion-resistant"]
-  },
-  {
-    "id": "an525-10r8",
-    "designation": "AN525-10R8",
-    "family": "an",
-    "diameter": 0.19,
-    "length_mm": 20.32,
-    "thread": "10-32 UNF",
-    "material": "Steel AN-QQ-S-626",
-    "tensile_strength_mpa": 1035,
-    "coating": "Cadmium plated",
-    "notes": "Countersunk washer head screw",
-    "capabilities": ["aerospace", "flush-mount", "structural"]
-  },
-  {
-    "id": "ms20392-2c12",
-    "designation": "MS20392-2C12",
-    "family": "ms",
-    "diameter": 0.125,
-    "length_mm": 30.48,
-    "thread": "None (clevis pin)",
-    "material": "Corrosion-resistant steel",
-    "tensile_strength_mpa": 0,
-    "coating": "Passivated",
-    "notes": "Clevis pin, drilled head",
-    "capabilities": ["aerospace", "articulating-joint", "removable"]
-  },
-  {
-    "id": "ms20392-3c16",
-    "designation": "MS20392-3C16",
-    "family": "ms",
-    "diameter": 0.1875,
-    "length_mm": 40.64,
-    "thread": "None (clevis pin)",
-    "material": "Corrosion-resistant steel",
-    "tensile_strength_mpa": 0,
-    "coating": "Passivated",
-    "notes": "Clevis pin, large diameter",
-    "capabilities": ["aerospace", "heavy-duty", "articulating-joint"]
-  },
-  {
-    "id": "ms20001-6c10",
-    "designation": "MS20001-6C10",
-    "family": "ms",
-    "diameter": 0.375,
-    "length_mm": 25.4,
-    "thread": "3/8-24 UNF",
-    "material": "Corrosion-resistant steel",
-    "tensile_strength_mpa": 1035,
-    "coating": "Passivated",
-    "notes": "Hex head bolt, close tolerance",
-    "capabilities": ["aerospace", "precision", "high-strength"]
-  },
-  {
-    "id": "ms24665-132",
-    "designation": "MS24665-132",
-    "family": "ms",
-    "diameter": 0.132,
-    "length_mm": 0,
-    "thread": "None (cotter pin)",
-    "material": "Corrosion-resistant steel",
-    "tensile_strength_mpa": 0,
-    "coating": "Passivated",
-    "notes": "Cotter pin, split type",
-    "capabilities": ["aerospace", "safety-retention", "removable"]
+    "capabilities": ["anti-rotation", "adjustment", "precision"],
+    "source_kind": "open_library",
+    "source_ref": "BOLTS-ISO4026",
+    "source_url": "https://boltsparts.github.io/",
+    "revision": "ISO 4026:2004",
+    "license": "LGPL-2.1+",
+    "confidence": "exact"
   }
-]
+    ]
