@@ -139,7 +139,7 @@ export default function SearchPage() {
         <div className="container mx-auto max-w-7xl">
           <Alert className="mb-6 bg-muted border-border">
             <AlertDescription className="text-sm text-muted-foreground">
-              Mixed catalog: Open library (BOLTS) + US Gov specs (ASSIST Dist Stmt A) — not a substitute for controlling standards.
+              Mixed catalog: Open-library ISO + Dist-A AN/MS + proprietary NAS extracts — not a substitute for controlling standards.
             </AlertDescription>
           </Alert>
 
@@ -257,7 +257,7 @@ export default function SearchPage() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
               <Badge variant="outline" className="mr-2">MIXED CATALOG</Badge>
-              Open library (BOLTS LGPL-2.1+) + US Gov specs (Dist Stmt A) — not a substitute for controlling standards.
+              Open-library ISO (BOLTS MIT/LGPL) + Dist-A AN/MS (ASSIST) + proprietary NAS extracts — not a substitute for controlling standards.
             </p>
             <div className="flex gap-4">
               <Link href="/search" className="text-sm text-muted-foreground hover:text-foreground">

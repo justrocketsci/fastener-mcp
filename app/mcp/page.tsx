@@ -33,7 +33,7 @@ export default function MCPDocsPage() {
         <div className="container mx-auto max-w-4xl">
           <Alert className="mb-6 bg-muted border-border">
             <AlertDescription className="text-sm text-muted-foreground">
-              Sample catalog for demo — not a certified mil/aerospace source.
+              Mixed catalog: Open-library ISO + Dist-A AN/MS + proprietary NAS extracts — not a substitute for controlling standards.
             </AlertDescription>
           </Alert>
 
@@ -76,7 +76,7 @@ export default function MCPDocsPage() {
                   <h3 className="font-semibold mb-2">Query Parameters</h3>
                   <ul className="space-y-2 text-sm">
                     <li><code className="bg-muted px-2 py-1 rounded">q</code> - Search query (designation, material, capabilities)</li>
-                    <li><code className="bg-muted px-2 py-1 rounded">family</code> - Filter by spec family (iso, an, ms)</li>
+                    <li><code className="bg-muted px-2 py-1 rounded">family</code> - Filter by spec family (iso, an, ms, nas)</li>
                     <li><code className="bg-muted px-2 py-1 rounded">diameter</code> - Filter by diameter (mm or inch)</li>
                     <li><code className="bg-muted px-2 py-1 rounded">material</code> - Filter by material keyword</li>
                     <li><code className="bg-muted px-2 py-1 rounded">limit</code> - Max results (default: 50)</li>
@@ -229,11 +229,11 @@ export default function MCPDocsPage() {
               </CardHeader>
               <CardContent className="space-y-3 text-sm">
                 <p>
-                  <Badge variant="outline" className="mr-2">SAMPLE DATA</Badge>
-                  This is a demonstration dataset with ~40 representative parts. It is NOT a complete or certified mil-spec catalog.
+                  <Badge variant="outline" className="mr-2">MIXED CATALOG</Badge>
+                  This is a demonstration dataset with ~109 representative parts. It is NOT a complete or certified mil-spec catalog.
                 </p>
                 <p>
-                  Data includes sample ISO metric, AN (Army-Navy), and MS (Military Standard) specifications for AI agent testing and development.
+                  Data includes sample ISO metric, AN (Army-Navy), MS (Military Standard), and NAS (proprietary aerospace) specifications for AI agent testing and development.
                 </p>
                 <p>
                   Do not use for production aerospace, defense, or safety-critical applications without validating against authoritative specifications.
@@ -271,8 +271,8 @@ export default function MCPDocsPage() {
         <div className="container mx-auto max-w-4xl">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              <Badge variant="outline" className="mr-2">SAMPLE DATA</Badge>
-              Sample catalog for demo — not a certified mil/aerospace source.
+              <Badge variant="outline" className="mr-2">MIXED CATALOG</Badge>
+              Open-library ISO (BOLTS MIT/LGPL) + Dist-A AN/MS (ASSIST) + proprietary NAS extracts — not a substitute for controlling standards.
             </p>
             <div className="flex gap-4">
               <Link href="/search" className="text-sm text-muted-foreground hover:text-foreground">
