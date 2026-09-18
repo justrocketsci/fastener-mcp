@@ -43,6 +43,8 @@ export default async function FastenerDetailPage({ params }: PageProps) {
         return 'AN (Army-Navy)';
       case 'ms':
         return 'MS (Military Std)';
+      case 'nas':
+        return 'NAS (Aerospace)';
       default:
         return fam.toUpperCase();
     }
@@ -99,6 +101,8 @@ export default async function FastenerDetailPage({ params }: PageProps) {
                 ? 'Dimensional data from DLA ASSIST — Distribution Statement A. Not a substitute for the controlling standard.'
                 : fastener.source_kind === 'open_library'
                 ? 'Dimensional data from open library sources. Not a substitute for the controlling standard.'
+                : fastener.source_kind === 'purchased_std'
+                ? 'Dimensional extract from purchased standard. Not a substitute for the controlling standard.'
                 : 'Sample catalog for demo — not a certified mil/aerospace source.'}
             </AlertDescription>
           </Alert>
@@ -159,7 +163,7 @@ export default async function FastenerDetailPage({ params }: PageProps) {
                   <dd>{fastener.material}</dd>
                 </div>
 
-                {fastener.tensile_strength_mpa > 0 && (
+                {fastener.tensile_strength_mpa && fastener.tensile_strength_mpa > 0 && (
                   <div>
                     <dt className="text-sm font-semibold text-muted-foreground mb-1">Tensile Strength</dt>
                     <dd>{fastener.tensile_strength_mpa} MPa</dd>
@@ -242,6 +246,8 @@ export default async function FastenerDetailPage({ params }: PageProps) {
                             ? 'Distribution Statement A: Approved for public release; distribution unlimited. Not a substitute for the controlling specification.'
                             : fastener.source_kind === 'open_library'
                             ? 'Open-source dimensional data. Not a substitute for the controlling ISO standard.'
+                            : fastener.source_kind === 'purchased_std' && (fastener.license === 'proprietary-cite' || fastener.license === 'proprietary_cite')
+                            ? 'Proprietary standard — dimensional extract only. Do not redistribute the source standard. Not a substitute for the controlling specification.'
                             : 'This data is provided for reference only. Always consult the controlling specification.'}
                         </p>
                       </div>

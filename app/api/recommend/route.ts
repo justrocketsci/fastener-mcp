@@ -58,7 +58,7 @@ export async function POST(request: NextRequest) {
       }
     }
 
-    if (load_n !== undefined && fastener.tensile_strength_mpa > 0) {
+    if (load_n !== undefined && fastener.tensile_strength_mpa && fastener.tensile_strength_mpa > 0) {
       const area_mm2 = Math.PI * Math.pow(fastener.diameter / 2, 2);
       const capacity_n = fastener.tensile_strength_mpa * area_mm2;
       if (capacity_n > load_n * 1.5) {

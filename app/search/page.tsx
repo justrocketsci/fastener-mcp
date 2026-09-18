@@ -55,13 +55,15 @@ export default function SearchPage() {
         return 'AN';
       case 'ms':
         return 'MS';
+      case 'nas':
+        return 'NAS';
       default:
         return fam.toUpperCase();
     }
   };
 
   const getStrengthNote = (fastener: Fastener) => {
-    if (fastener.tensile_strength_mpa > 0) {
+    if (fastener.tensile_strength_mpa && fastener.tensile_strength_mpa > 0) {
       return `${fastener.tensile_strength_mpa} MPa`;
     }
     if (fastener.capabilities.includes('high-strength')) {
@@ -123,6 +125,7 @@ export default function SearchPage() {
                 <SelectItem value="iso">ISO</SelectItem>
                 <SelectItem value="an">AN</SelectItem>
                 <SelectItem value="ms">MS</SelectItem>
+                <SelectItem value="nas">NAS</SelectItem>
               </SelectContent>
             </Select>
             <Button type="submit" disabled={loading}>

@@ -1,5 +1,5 @@
 export type SourceKind = 'open_library' | 'gov_spec' | 'purchased_std' | 'distributor_ref';
-export type License = 'CC0' | 'MIT' | 'LGPL-2.1+' | 'public_domain_us_gov' | 'proprietary_cite' | 'unknown' | 'sample-only';
+export type License = 'CC0' | 'MIT' | 'LGPL-2.1+' | 'public_domain_us_gov' | 'proprietary_cite' | 'proprietary-cite' | 'unknown' | 'sample-only';
 
 export interface Dimensions {
   d?: number;
@@ -22,12 +22,13 @@ export interface Properties {
 export interface Fastener {
   id: string;
   designation: string;
-  family: 'iso' | 'an' | 'ms';
+  family: 'iso' | 'an' | 'ms' | 'nas';
   diameter: number;
+  diameter_unit?: 'mm' | 'in';
   length_mm: number;
   thread: string;
   material: string;
-  tensile_strength_mpa: number;
+  tensile_strength_mpa?: number;
   coating: string;
   notes: string;
   capabilities: string[];
