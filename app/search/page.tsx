@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
@@ -10,34 +9,7 @@ import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-
-interface Fastener {
-  id: string;
-  designation: string;
-  family: 'iso' | 'an' | 'ms';
-  diameter: number;
-  length_mm: number;
-  thread: string;
-  material: string;
-  tensile_strength_mpa: number;
-  coating: string;
-  notes: string;
-  capabilities: string[];
-  standard?: string;
-  revision?: string;
-  source_kind?: string;
-  source_ref?: string;
-  license?: string;
-  source_url?: string;
-  citation?: {
-    standard?: string;
-    revision?: string;
-    source_kind: string;
-    source_ref: string;
-    license: string;
-    source_url?: string;
-  };
-}
+import type { Fastener } from '@/lib/types';
 
 export default function SearchPage() {
   const [query, setQuery] = useState('');
@@ -97,6 +69,25 @@ export default function SearchPage() {
     return '—';
   };
 
+  const getSourceBadge = (fastener: Fastener) => {
+    if (!fastener.source_kind) {
+      return <Badge variant="secondary" className="text-xs">Sample</Badge>;
+    }
+    
+    switch (fastener.source_kind) {
+      case 'open_library':
+        return <Badge className="text-xs bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200">Open</Badge>;
+      case 'gov_spec':
+        return <Badge className="text-xs bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200">Gov</Badge>;
+      case 'purchased_std':
+        return <Badge className="text-xs bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200">Purchased</Badge>;
+      case 'distributor_ref':
+        return <Badge variant="secondary" className="text-xs">Legacy</Badge>;
+      default:
+        return <Badge variant="secondary" className="text-xs">Sample</Badge>;
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-background">
       <header className="sticky top-0 z-10 border-b border-border bg-card">
@@ -144,7 +135,7 @@ export default function SearchPage() {
         <div className="container mx-auto max-w-7xl">
           <Alert className="mb-6 bg-muted border-border">
             <AlertDescription className="text-sm text-muted-foreground">
-              Sourced open library with dimensional extracts from BOLTS and other open datasets. Not a substitute for controlling ISO/ASME/MIL standards.
+              Mixed catalog: Open library (BOLTS) + US Gov specs (ASSIST Dist Stmt A) — not a substitute for controlling standards.
             </AlertDescription>
           </Alert>
 
@@ -167,23 +158,14 @@ export default function SearchPage() {
                       <TableHead className="text-xs uppercase text-muted-foreground font-semibold">Length</TableHead>
                       <TableHead className="text-xs uppercase text-muted-foreground font-semibold">Material</TableHead>
                       <TableHead className="text-xs uppercase text-muted-foreground font-semibold">Strength</TableHead>
-                      <TableHead className="text-xs uppercase text-muted-foreground font-semibold">Source</TableHead>
+                      <TableHead className="text-xs uppercase text-muted-foreground font-semibold">Status</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
                     {results.length === 0 ? (
                       <TableRow>
-                        <TableCell colSpan={7} className="text-center py-12">
-                          <div className="flex flex-col items-center gap-4">
-                            <Image
-                              src="/illustrations/hex-bolt.png"
-                              alt="Flat illustration of a hex head bolt"
-                              width={120}
-                              height={120}
-                              className="w-30 h-30 object-contain opacity-50"
-                            />
-                            <p className="text-muted-foreground">No matches in sample set — try M6 or AN3</p>
-                          </div>
+                        <TableCell colSpan={7} className="text-center py-12 text-muted-foreground">
+                          No matches in sample set — try M6 or AN3
                         </TableCell>
                       </TableRow>
                     ) : (
@@ -217,13 +199,7 @@ export default function SearchPage() {
                             {getStrengthNote(fastener)}
                           </TableCell>
                           <TableCell>
-                            {fastener.source_kind === 'open_library' ? (
-                              <Badge variant="default" className="text-xs">Open Library</Badge>
-                            ) : fastener.source_kind === 'distributor_ref' ? (
-                              <Badge variant="secondary" className="text-xs">Legacy</Badge>
-                            ) : (
-                              <Badge variant="outline" className="text-xs">{fastener.source_kind}</Badge>
-                            )}
+                            {getSourceBadge(fastener)}
                           </TableCell>
                         </TableRow>
                       ))
@@ -236,17 +212,8 @@ export default function SearchPage() {
               <div className="md:hidden space-y-3">
                 {results.length === 0 ? (
                   <Card>
-                    <CardContent className="py-12">
-                      <div className="flex flex-col items-center gap-4">
-                        <Image
-                          src="/illustrations/hex-bolt.png"
-                          alt="Flat illustration of a hex head bolt"
-                          width={120}
-                          height={120}
-                          className="w-30 h-30 object-contain opacity-50"
-                        />
-                        <p className="text-center text-muted-foreground">No matches in sample set — try M6 or AN3</p>
-                      </div>
+                    <CardContent className="py-12 text-center">
+                      <p className="text-muted-foreground">No matches in sample set — try M6 or AN3</p>
                     </CardContent>
                   </Card>
                 ) : (
@@ -260,13 +227,7 @@ export default function SearchPage() {
                                 <p className="font-mono text-sm text-primary">{fastener.id}</p>
                                 <p className="font-semibold">{fastener.designation}</p>
                               </div>
-                              {fastener.source_kind === 'open_library' ? (
-                                <Badge variant="default" className="text-xs">Open Library</Badge>
-                              ) : fastener.source_kind === 'distributor_ref' ? (
-                                <Badge variant="secondary" className="text-xs">Legacy</Badge>
-                              ) : (
-                                <Badge variant="outline" className="text-xs">{fastener.source_kind}</Badge>
-                              )}
+                              {getSourceBadge(fastener)}
                             </div>
                             <div className="flex gap-4 text-sm text-muted-foreground">
                               <span>Ø{fastener.diameter > 1 ? `${fastener.diameter}mm` : `${fastener.diameter}"`}</span>
@@ -292,7 +253,7 @@ export default function SearchPage() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
               <Badge variant="outline" className="mr-2">MIXED CATALOG</Badge>
-              Open-library ISO + legacy AN/MS refs — not a substitute for controlling standards.
+              Open library (BOLTS LGPL-2.1+) + US Gov specs (Dist Stmt A) — not a substitute for controlling standards.
             </p>
             <div className="flex gap-4">
               <Link href="/search" className="text-sm text-muted-foreground hover:text-foreground">

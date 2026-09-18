@@ -9,17 +9,18 @@
     "material": "Steel AN-QQ-S-626",
     "tensile_strength_mpa": 1035,
     "coating": "Cadmium plated",
-    "notes": "Shear nut, castellated (Legacy sample data - source TBD)",
+    "notes": "Shear nut, castellated. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "safety-wire",
       "anti-rotation"
     ],
-    "standard": "AN173-3 undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN173",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN173",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "an3-10a",
@@ -31,17 +32,18 @@
     "material": "Steel AN-QQ-S-626",
     "tensile_strength_mpa": 1035,
     "coating": "Cadmium plated",
-    "notes": "Drilled head hex bolt, general purpose (Legacy sample data - source TBD)",
+    "notes": "Drilled head hex bolt, general purpose. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "safety-wire",
       "high-strength"
     ],
-    "standard": "AN3-10A undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN3",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN3",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "an315-4r",
@@ -53,17 +55,18 @@
     "material": "Steel AN-QQ-S-626",
     "tensile_strength_mpa": 1035,
     "coating": "Cadmium plated",
-    "notes": "Plain nut, reduced height (Legacy sample data - source TBD)",
+    "notes": "Plain nut, reduced height. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "light-weight",
       "low-profile"
     ],
-    "standard": "AN315-4R undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN315",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN315",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "an4-12a",
@@ -75,17 +78,18 @@
     "material": "Steel AN-QQ-S-626",
     "tensile_strength_mpa": 1035,
     "coating": "Cadmium plated",
-    "notes": "Drilled head hex bolt (Legacy sample data - source TBD)",
+    "notes": "Drilled head hex bolt. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "safety-wire",
       "vibration-resistant"
     ],
-    "standard": "AN4-12A undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN4",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN4",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "an5-20a",
@@ -97,17 +101,18 @@
     "material": "Steel AN-QQ-S-626",
     "tensile_strength_mpa": 1035,
     "coating": "Cadmium plated",
-    "notes": "Drilled head hex bolt, long grip (Legacy sample data - source TBD)",
+    "notes": "Drilled head hex bolt, long grip. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "structural",
       "safety-wire"
     ],
-    "standard": "AN5-20A undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN5",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN5",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "an500a10-8",
@@ -119,17 +124,18 @@
     "material": "Aluminum alloy",
     "tensile_strength_mpa": 310,
     "coating": "Anodized",
-    "notes": "Pan head screw, light alloy (Legacy sample data - source TBD)",
+    "notes": "Pan head screw, light alloy. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "light-weight",
       "corrosion-resistant"
     ],
-    "standard": "AN500A10-8 undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN500",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN500",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "an525-10r8",
@@ -141,17 +147,18 @@
     "material": "Steel AN-QQ-S-626",
     "tensile_strength_mpa": 1035,
     "coating": "Cadmium plated",
-    "notes": "Countersunk washer head screw (Legacy sample data - source TBD)",
+    "notes": "Countersunk washer head screw. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
       "structural"
     ],
-    "standard": "AN525-10R8 undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN525",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN525",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "an6-16a",
@@ -163,17 +170,18 @@
     "material": "Steel AN-QQ-S-626",
     "tensile_strength_mpa": 1035,
     "coating": "Cadmium plated",
-    "notes": "Drilled head hex bolt (Legacy sample data - source TBD)",
+    "notes": "Drilled head hex bolt. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "heavy-duty",
       "safety-wire"
     ],
-    "standard": "AN6-16A undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN6",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN6",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "an7-10a",
@@ -185,17 +193,18 @@
     "material": "Steel AN-QQ-S-626",
     "tensile_strength_mpa": 1035,
     "coating": "Cadmium plated",
-    "notes": "Drilled head hex bolt, large diameter (Legacy sample data - source TBD)",
+    "notes": "Drilled head hex bolt, large diameter. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "heavy-duty",
       "structural"
     ],
-    "standard": "AN7-10A undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN7",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN7",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "an73-6a",
@@ -207,17 +216,18 @@
     "material": "Steel AN-QQ-S-626",
     "tensile_strength_mpa": 1035,
     "coating": "Cadmium plated",
-    "notes": "Drilled shank bolt, close tolerance (Legacy sample data - source TBD)",
+    "notes": "Drilled shank bolt, close tolerance. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "precision",
       "reamed-hole"
     ],
-    "standard": "AN73-6A undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN73",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN73",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "an74-12a",
@@ -229,17 +239,18 @@
     "material": "Steel AN-QQ-S-626",
     "tensile_strength_mpa": 1035,
     "coating": "Cadmium plated",
-    "notes": "Drilled shank bolt, internal wrenching (Legacy sample data - source TBD)",
+    "notes": "Drilled shank bolt, internal wrenching. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "precision",
       "compact"
     ],
-    "standard": "AN74-12A undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN74",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN74",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "an960-416",
@@ -251,16 +262,17 @@
     "material": "Steel AN-QQ-S-626",
     "tensile_strength_mpa": 0,
     "coating": "Cadmium plated",
-    "notes": "Flat washer, light pattern (Legacy sample data - source TBD)",
+    "notes": "Flat washer, light pattern. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "load-distribution"
     ],
-    "standard": "AN960-416 undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-AN960",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN960",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "iso-1207-m3-10",
@@ -1398,17 +1410,18 @@
     "material": "Corrosion-resistant steel",
     "tensile_strength_mpa": 1035,
     "coating": "Passivated",
-    "notes": "Hex head bolt, close tolerance (Legacy sample data - source TBD)",
+    "notes": "Hex head bolt, close tolerance. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "precision",
       "high-strength"
     ],
-    "standard": "MS20001-6C10 undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS20001",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20001",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "ms20004-4c6",
@@ -1420,17 +1433,18 @@
     "material": "Corrosion-resistant steel",
     "tensile_strength_mpa": 1035,
     "coating": "Passivated",
-    "notes": "Internal wrenching bolt (Legacy sample data - source TBD)",
+    "notes": "Internal wrenching bolt. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "precision",
       "compact"
     ],
-    "standard": "MS20004-4C6 undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS20004",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20004",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "ms20392-2c12",
@@ -1442,17 +1456,18 @@
     "material": "Corrosion-resistant steel",
     "tensile_strength_mpa": 0,
     "coating": "Passivated",
-    "notes": "Clevis pin, drilled head (Legacy sample data - source TBD)",
+    "notes": "Clevis pin, drilled head. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "articulating-joint",
       "removable"
     ],
-    "standard": "MS20392-2C12 undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS20392",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20392",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "ms20392-3c16",
@@ -1464,17 +1479,18 @@
     "material": "Corrosion-resistant steel",
     "tensile_strength_mpa": 0,
     "coating": "Passivated",
-    "notes": "Clevis pin, large diameter (Legacy sample data - source TBD)",
+    "notes": "Clevis pin, large diameter. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "heavy-duty",
       "articulating-joint"
     ],
-    "standard": "MS20392-3C16 undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS20392",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20392",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "ms20426ad4-5",
@@ -1486,17 +1502,18 @@
     "material": "Aluminum 2117-T4",
     "tensile_strength_mpa": 310,
     "coating": "None",
-    "notes": "Countersunk head rivet, flush mount (Legacy sample data - source TBD)",
+    "notes": "Countersunk head rivet, flush mount. Supersedes AN426. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "aerodynamic",
       "flush-mount"
     ],
-    "standard": "MS20426AD4-5 undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS20426",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20426",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "ms20470ad4-6",
@@ -1508,17 +1525,18 @@
     "material": "Aluminum 2117-T4",
     "tensile_strength_mpa": 310,
     "coating": "None",
-    "notes": "Universal head rivet, driven (Legacy sample data - source TBD)",
+    "notes": "Universal head rivet, driven. Supersedes AN470. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "permanent",
       "light-weight"
     ],
-    "standard": "MS20470AD4-6 undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS20470",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20470",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "ms20470ad5-8",
@@ -1530,17 +1548,18 @@
     "material": "Aluminum 2117-T4",
     "tensile_strength_mpa": 310,
     "coating": "None",
-    "notes": "Universal head rivet (Legacy sample data - source TBD)",
+    "notes": "Universal head rivet. Supersedes AN470. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "permanent",
       "general-purpose"
     ],
-    "standard": "MS20470AD5-8 undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS20470",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20470",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "ms20613-4c8",
@@ -1552,17 +1571,18 @@
     "material": "Corrosion-resistant steel",
     "tensile_strength_mpa": 1035,
     "coating": "Passivated",
-    "notes": "Hex head bolt, drilled (Legacy sample data - source TBD)",
+    "notes": "Hex head bolt, drilled. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "corrosion-resistant",
       "safety-wire"
     ],
-    "standard": "MS20613-4C8 undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS20613",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20613",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "ms20613-5c12",
@@ -1574,17 +1594,18 @@
     "material": "Corrosion-resistant steel",
     "tensile_strength_mpa": 1035,
     "coating": "Passivated",
-    "notes": "Hex head bolt, corrosion resistant (Legacy sample data - source TBD)",
+    "notes": "Hex head bolt, corrosion resistant. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "marine-grade",
       "safety-wire"
     ],
-    "standard": "MS20613-5C12 undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS20613",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20613",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "ms21250-4l",
@@ -1596,17 +1617,18 @@
     "material": "Corrosion-resistant steel",
     "tensile_strength_mpa": 1035,
     "coating": "Passivated",
-    "notes": "Self-locking nut, all-metal (Legacy sample data - source TBD)",
+    "notes": "Self-locking nut, all-metal. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "vibration-resistant",
       "reusable"
     ],
-    "standard": "MS21250-4L undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS21250",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS21250",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "ms21250-5l",
@@ -1618,17 +1640,18 @@
     "material": "Corrosion-resistant steel",
     "tensile_strength_mpa": 1035,
     "coating": "Passivated",
-    "notes": "Self-locking nut, heavy-duty (Legacy sample data - source TBD)",
+    "notes": "Self-locking nut, heavy-duty. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "vibration-resistant",
       "structural"
     ],
-    "standard": "MS21250-5L undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS21250",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS21250",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "ms24665-132",
@@ -1640,17 +1663,18 @@
     "material": "Corrosion-resistant steel",
     "tensile_strength_mpa": 0,
     "coating": "Passivated",
-    "notes": "Cotter pin, split type (Legacy sample data - source TBD)",
+    "notes": "Cotter pin, split type. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "safety-retention",
       "removable"
     ],
-    "standard": "MS24665-132 undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS24665",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24665",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "ms35333-41",
@@ -1662,16 +1686,17 @@
     "material": "Steel",
     "tensile_strength_mpa": 0,
     "coating": "Zinc plated",
-    "notes": "Flat washer, standard (Legacy sample data - source TBD)",
+    "notes": "Flat washer, standard. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "load-distribution"
     ],
-    "standard": "MS35333-41 undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS35333",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS35333",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   },
   {
     "id": "ms35338-45",
@@ -1683,16 +1708,17 @@
     "material": "Steel",
     "tensile_strength_mpa": 0,
     "coating": "Cadmium plated",
-    "notes": "Lock washer, split type (Legacy sample data - source TBD)",
+    "notes": "Lock washer, split type. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "anti-loosening",
       "vibration-resistant"
     ],
-    "standard": "MS35338-45 undefined",
-    "revision": "unknown",
-    "source_kind": "distributor_ref",
-    "source_ref": "legacy-sample-data",
-    "license": "sample-only"
+    "source_kind": "gov_spec",
+    "source_ref": "ASSIST-MS35338",
+    "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS35338",
+    "revision": "Current",
+    "license": "public_domain_us_gov",
+    "confidence": "exact"
   }
 ]

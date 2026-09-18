@@ -1,21 +1,10 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
+import type { Fastener } from '@/lib/types';
 
 interface FastenerActionsProps {
-  fastener: {
-    id: string;
-    designation: string;
-    family: string;
-    diameter: number;
-    length_mm: number;
-    thread: string;
-    material: string;
-    tensile_strength_mpa: number;
-    coating: string;
-    notes: string;
-    capabilities: string[];
-  };
+  fastener: Fastener;
 }
 
 export function FastenerActions({ fastener }: FastenerActionsProps) {

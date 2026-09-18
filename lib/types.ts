@@ -1,8 +1,5 @@
-export type SourceKind = 
-  | 'open_library'
-  | 'gov_spec'
-  | 'purchased_std'
-  | 'distributor_ref';
+export type SourceKind = 'open_library' | 'gov_spec' | 'purchased_std' | 'distributor_ref';
+export type License = 'CC0' | 'MIT' | 'LGPL-2.1+' | 'public_domain_us_gov' | 'proprietary_cite' | 'unknown' | 'sample-only';
 
 export interface Dimensions {
   d?: number;
@@ -22,15 +19,6 @@ export interface Properties {
   [key: string]: string | number | undefined;
 }
 
-export interface Source {
-  standard?: string;
-  revision?: string;
-  source_kind: SourceKind;
-  source_ref: string;
-  license: string;
-  source_url?: string;
-}
-
 export interface Fastener {
   id: string;
   designation: string;
@@ -44,12 +32,30 @@ export interface Fastener {
   notes: string;
   capabilities: string[];
   
+  // Source citation fields (Phase 1+2)
   standard?: string;
-  revision?: string;
   source_kind?: SourceKind;
   source_ref?: string;
-  license?: string;
   source_url?: string;
+  revision?: string;
+  license?: License | string;
+  confidence?: 'exact' | 'derived' | 'approximate';
   dims?: Dimensions;
   properties?: Properties;
+}
+
+export interface FastenerSearchParams {
+  q?: string;
+  family?: string;
+  diameter?: number | string;
+  material?: string;
+  limit?: number;
+}
+
+export interface FastenerRecommendation {
+  diameter?: number;
+  length?: number;
+  material?: string;
+  load_n?: number;
+  environment?: string;
 }
