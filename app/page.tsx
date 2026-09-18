@@ -156,8 +156,8 @@ export default function Home() {
         <div className="container mx-auto max-w-5xl">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              <Badge variant="outline" className="mr-2">OPEN LIBRARY</Badge>
-              Sourced dimensional data — not a substitute for controlling standards.
+              <Badge variant="outline" className="mr-2">MIXED CATALOG</Badge>
+              Open-library ISO + legacy AN/MS refs — not a substitute for controlling standards.
             </p>
             <div className="flex gap-4">
               <Link href="/search" className="text-sm text-muted-foreground hover:text-foreground">

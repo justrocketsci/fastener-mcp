@@ -237,6 +237,27 @@ export default async function FastenerDetailPage({ params }: PageProps) {
                 </div>
               )}
 
+              {fastener.source_kind === 'distributor_ref' && (
+                <div className="border-t pt-6 mt-6">
+                  <dt className="text-sm font-semibold text-muted-foreground mb-3">Legacy Reference</dt>
+                  <dd className="space-y-2 text-sm">
+                    <div>
+                      <span className="font-semibold">Source:</span>{' '}
+                      Distributor reference / sample data
+                      {' '}<span className="text-muted-foreground">({fastener.source_ref})</span>
+                    </div>
+                    <div>
+                      <span className="font-semibold">Status:</span>{' '}
+                      <Badge variant="secondary" className="text-xs">Legacy sample only</Badge>
+                    </div>
+                    <p className="text-xs text-muted-foreground italic mt-2">
+                      Sample data for demonstration. Not a controlling mil-spec or aerospace source. 
+                      Consult official AN/MS specifications and authorized distributors for production use.
+                    </p>
+                  </dd>
+                </div>
+              )}
+
               <FastenerActions fastener={fastener} />
             </CardContent>
           </Card>
@@ -247,8 +268,8 @@ export default async function FastenerDetailPage({ params }: PageProps) {
         <div className="container mx-auto max-w-4xl">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              <Badge variant="outline" className="mr-2">OPEN LIBRARY</Badge>
-              Sourced dimensional data — not a substitute for controlling standards.
+              <Badge variant="outline" className="mr-2">MIXED CATALOG</Badge>
+              Open-library ISO + legacy AN/MS refs — not a substitute for controlling standards.
             </p>
             <div className="flex gap-4">
               <Link href="/search" className="text-sm text-muted-foreground hover:text-foreground">
