@@ -4,7 +4,10 @@ import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { FastenerActions } from './fastener-actions';
+import { ModelSection } from './model-section';
 import fasteners from '@/data/fasteners.json';
+import fs from 'fs';
+import path from 'path';
 import type { Metadata } from 'next';
 import type { Fastener } from '@/lib/types';
 
@@ -34,6 +37,9 @@ export default async function FastenerDetailPage({ params }: PageProps) {
   if (!fastener) {
     notFound();
   }
+
+  const modelPath = path.join(process.cwd(), 'public', 'models', `${id}.step`);
+  const modelExists = fs.existsSync(modelPath);
 
   const getFamilyLabel = (fam: string) => {
     switch (fam) {
@@ -242,6 +248,10 @@ export default async function FastenerDetailPage({ params }: PageProps) {
                     </CardContent>
                   </Card>
                 </div>
+              )}
+
+              {fastener.length_mm > 0 && (
+                <ModelSection fastener={fastener} modelExists={modelExists} />
               )}
 
               <FastenerActions fastener={fastener} />

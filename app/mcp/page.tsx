@@ -153,6 +153,62 @@ export default function MCPDocsPage() {
 
             <Card>
               <CardHeader>
+                <CardTitle>get_fastener_model</CardTitle>
+                <CardDescription>Retrieve 3D STEP model and dimensions for a specific fastener</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h3 className="font-semibold mb-2">Endpoint</h3>
+                  <code className="block bg-muted p-3 rounded text-sm">
+                    GET /api/fasteners/:id/model
+                  </code>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">Example Request</h3>
+                  <pre className="bg-muted p-3 rounded text-sm overflow-x-auto">
+{`curl "https://fastener-mcp.example/api/fasteners/nas1352-04-6/model"`}
+                  </pre>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">Example Response</h3>
+                  <pre className="bg-muted p-3 rounded text-sm overflow-x-auto">
+{`{
+  "id": "nas1352-04-6",
+  "designation": "NAS1352-04-6",
+  "dimensions": {
+    "diameter": 0.112,
+    "diameter_unit": "in",
+    "length_mm": 15.875,
+    "thread": "#4-40 UNF"
+  },
+  "model_url": "https://fastener-mcp.example/models/nas1352-04-6.step",
+  "model_format": "STEP AP214",
+  "simplified_not_for_certification": true,
+  "disclaimer": "Simplified cylindrical approximation for visualization only. NOT certified for engineering analysis or manufacturing. Always consult the controlling specification.",
+  "citation": {
+    "standard": "NAS1352",
+    "revision": "Rev 11",
+    "source_kind": "purchased_std",
+    "source_ref": "NAS1352 Rev 11 (Anu-supplied PDF extract)",
+    "license": "proprietary_cite"
+  }
+}`}
+                  </pre>
+                </div>
+
+                <Alert className="bg-amber-50 dark:bg-amber-950 border-amber-200 dark:border-amber-800">
+                  <AlertDescription className="text-sm">
+                    <strong>NOT FOR CERTIFICATION:</strong> STEP models are simplified cylindrical approximations. 
+                    Do not use for FEA, manufacturing tolerances, or certified engineering work.
+                  </AlertDescription>
+                </Alert>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
                 <CardTitle>recommend_fastener</CardTitle>
                 <CardDescription>Get ranked fastener recommendations based on requirements</CardDescription>
               </CardHeader>
@@ -253,6 +309,7 @@ export default function MCPDocsPage() {
                 <ul className="list-disc list-inside space-y-1 ml-4">
                   <li><code>list_fasteners</code> → GET /api/fasteners</li>
                   <li><code>get_fastener</code> → GET /api/fasteners/:id</li>
+                  <li><code>get_fastener_model</code> → GET /api/fasteners/:id/model</li>
                   <li><code>recommend_fastener</code> → POST /api/recommend</li>
                 </ul>
               </CardContent>
