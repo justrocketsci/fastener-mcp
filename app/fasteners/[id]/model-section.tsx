@@ -55,7 +55,7 @@ export function ModelSection({ fastener, modelExists }: ModelSectionProps) {
                   </Button>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Import in Onshape via File → Import (API push is a later spike).
+                  Import in Onshape via File → Import (or any CAD). API push comes later.
                 </p>
               </>
             ) : (
