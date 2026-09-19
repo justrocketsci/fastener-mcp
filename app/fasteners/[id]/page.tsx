@@ -95,18 +95,6 @@ export default async function FastenerDetailPage({ params }: PageProps) {
             </Link>
           </div>
 
-          <Alert className="mb-6 bg-muted border-border">
-            <AlertDescription className="text-sm text-muted-foreground">
-              {fastener.source_kind === 'gov_spec' 
-                ? 'Dimensional data from DLA ASSIST — Distribution Statement A. Not a substitute for the controlling standard.'
-                : fastener.source_kind === 'open_library'
-                ? 'Dimensional data from open library sources. Not a substitute for the controlling standard.'
-                : fastener.source_kind === 'purchased_std'
-                ? 'Dimensional extract from purchased standard. Not a substitute for the controlling standard.'
-                : 'Sample catalog for demo — not a certified mil/aerospace source.'}
-            </AlertDescription>
-          </Alert>
-
           <Card>
             <CardHeader>
               <div className="flex items-start justify-between gap-4">
@@ -264,19 +252,13 @@ export default async function FastenerDetailPage({ params }: PageProps) {
 
       <footer className="border-t border-border py-8 px-4 mt-12">
         <div className="container mx-auto max-w-4xl">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-muted-foreground">
-              <Badge variant="outline" className="mr-2">MIXED CATALOG</Badge>
-              Open-library ISO (BOLTS MIT/LGPL) + Dist-A AN/MS (ASSIST) + proprietary NAS extracts — not a substitute for controlling standards.
-            </p>
-            <div className="flex gap-4">
-              <Link href="/search" className="text-sm text-muted-foreground hover:text-foreground">
-                Search
-              </Link>
-              <Link href="/mcp" className="text-sm text-muted-foreground hover:text-foreground">
-                MCP Docs
-              </Link>
-            </div>
+          <div className="flex justify-center items-center gap-4">
+            <Link href="/search" className="text-sm text-muted-foreground hover:text-foreground">
+              Search
+            </Link>
+            <Link href="/mcp" className="text-sm text-muted-foreground hover:text-foreground">
+              MCP Docs
+            </Link>
           </div>
         </div>
       </footer>

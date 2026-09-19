@@ -137,12 +137,6 @@ export default function SearchPage() {
 
       <main className="flex-1 py-8 px-4">
         <div className="container mx-auto max-w-7xl">
-          <Alert className="mb-6 bg-muted border-border">
-            <AlertDescription className="text-sm text-muted-foreground">
-              Mixed catalog: Open-library ISO + Dist-A AN/MS + proprietary NAS extracts — not a substitute for controlling standards.
-            </AlertDescription>
-          </Alert>
-
           {searched && (
             <>
               <div className="mb-4">
@@ -254,19 +248,13 @@ export default function SearchPage() {
 
       <footer className="border-t border-border py-8 px-4 mt-12">
         <div className="container mx-auto max-w-7xl">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-muted-foreground">
-              <Badge variant="outline" className="mr-2">MIXED CATALOG</Badge>
-              Open-library ISO (BOLTS MIT/LGPL) + Dist-A AN/MS (ASSIST) + proprietary NAS extracts — not a substitute for controlling standards.
-            </p>
-            <div className="flex gap-4">
-              <Link href="/search" className="text-sm text-muted-foreground hover:text-foreground">
-                Search
-              </Link>
-              <Link href="/mcp" className="text-sm text-muted-foreground hover:text-foreground">
-                MCP Docs
-              </Link>
-            </div>
+          <div className="flex justify-center items-center gap-4">
+            <Link href="/search" className="text-sm text-muted-foreground hover:text-foreground">
+              Search
+            </Link>
+            <Link href="/mcp" className="text-sm text-muted-foreground hover:text-foreground">
+              MCP Docs
+            </Link>
           </div>
         </div>
       </footer>

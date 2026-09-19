@@ -26,12 +26,6 @@ export default function Home() {
       <main className="flex-1">
         <section className="py-12 px-4">
           <div className="container mx-auto max-w-4xl">
-            <Alert className="mb-8 bg-muted border-border">
-              <AlertDescription className="text-sm text-muted-foreground">
-                Mixed catalog: Open-library ISO + Dist-A AN/MS + proprietary NAS extracts — not a substitute for controlling standards.
-              </AlertDescription>
-            </Alert>
-            
             <div className="text-center mb-12">
               <h1 className="text-5xl font-bold mb-6 tracking-tight font-heading">
                 Fastener specifications for AI CAD agents
@@ -52,24 +46,6 @@ export default function Home() {
                   </Button>
                 </Link>
               </div>
-            </div>
-
-            <div className="flex flex-wrap gap-2 justify-center mb-12">
-              <Link href="/search?q=M6">
-                <Badge variant="outline" className="cursor-pointer hover:bg-accent">
-                  M6 × 20 ISO
-                </Badge>
-              </Link>
-              <Link href="/search?q=AN3">
-                <Badge variant="outline" className="cursor-pointer hover:bg-accent">
-                  AN3
-                </Badge>
-              </Link>
-              <Link href="/search?q=MS24693">
-                <Badge variant="outline" className="cursor-pointer hover:bg-accent">
-                  MS24693
-                </Badge>
-              </Link>
             </div>
           </div>
         </section>
@@ -114,19 +90,13 @@ export default function Home() {
 
       <footer className="border-t border-border py-8 px-4">
         <div className="container mx-auto max-w-5xl">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-muted-foreground">
-              <Badge variant="outline" className="mr-2">MIXED CATALOG</Badge>
-              Open-library ISO (BOLTS MIT/LGPL) + Dist-A AN/MS (ASSIST) + proprietary NAS extracts — not a substitute for controlling standards.
-            </p>
-            <div className="flex gap-4">
-              <Link href="/search" className="text-sm text-muted-foreground hover:text-foreground">
-                Search
-              </Link>
-              <Link href="/mcp" className="text-sm text-muted-foreground hover:text-foreground">
-                MCP Docs
-              </Link>
-            </div>
+          <div className="flex justify-center items-center gap-4">
+            <Link href="/search" className="text-sm text-muted-foreground hover:text-foreground">
+              Search
+            </Link>
+            <Link href="/mcp" className="text-sm text-muted-foreground hover:text-foreground">
+              MCP Docs
+            </Link>
           </div>
         </div>
       </footer>
