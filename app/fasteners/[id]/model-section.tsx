@@ -36,23 +36,28 @@ export function ModelSection({ fastener, modelExists }: ModelSectionProps) {
           </CardHeader>
           <CardContent className="space-y-3">
             {modelExists ? (
-              <div className="flex gap-2">
-                <a 
-                  href={`/models/${fastener.id}.step`}
-                  download={`${fastener.designation}.step`}
-                  className="inline-flex items-center"
-                >
-                  <Button className="bg-[#4F46E5] hover:bg-[#4338CA] text-white">
-                    Download STEP
+              <>
+                <div className="flex gap-2">
+                  <a 
+                    href={`/models/${fastener.id}.step`}
+                    download={`${fastener.designation}.step`}
+                    className="inline-flex items-center"
+                  >
+                    <Button className="bg-[#4F46E5] hover:bg-[#4338CA] text-white">
+                      Download STEP
+                    </Button>
+                  </a>
+                  <Button 
+                    variant="outline"
+                    onClick={copyModelUrl}
+                  >
+                    Copy model URL
                   </Button>
-                </a>
-                <Button 
-                  variant="outline"
-                  onClick={copyModelUrl}
-                >
-                  Copy model URL
-                </Button>
-              </div>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Import in Onshape via File → Import (API push is a later spike).
+                </p>
+              </>
             ) : (
               <p className="text-sm text-muted-foreground">Model not generated yet</p>
             )}
