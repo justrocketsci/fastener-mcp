@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -25,26 +26,41 @@ export default function Home() {
 
       <main className="flex-1">
         <section className="py-12 px-4">
-          <div className="container mx-auto max-w-4xl">
-            <div className="text-center mb-12">
-              <h1 className="text-5xl font-bold mb-6 tracking-tight font-heading">
-                Fastener specifications for AI CAD agents
-              </h1>
-              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Structured fastener data (ISO, AN, MS specs) optimized for AI agents building mechanical assemblies. 
-                Query by diameter, length, material, and load requirements.
-              </p>
-              <div className="flex gap-4 justify-center">
-                <Link href="/search">
-                  <Button size="lg">
-                    Try Sample Search
-                  </Button>
-                </Link>
-                <Link href="/mcp">
-                  <Button size="lg" variant="outline">
-                    MCP Docs
-                  </Button>
-                </Link>
+          <div className="container mx-auto max-w-6xl">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h1 className="text-5xl font-bold mb-6 tracking-tight font-heading">
+                  Fastener specifications for AI CAD agents
+                </h1>
+                <p className="text-xl text-muted-foreground mb-8">
+                  Structured fastener data (ISO, AN, MS specs) optimized for AI agents building mechanical assemblies. 
+                  Query by diameter, length, material, and load requirements.
+                </p>
+                <div className="flex gap-4">
+                  <Link href="/search">
+                    <Button size="lg">
+                      Try Sample Search
+                    </Button>
+                  </Link>
+                  <Link href="/mcp">
+                    <Button size="lg" variant="outline">
+                      MCP Docs
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+              <div className="hidden md:block">
+                <div className="bg-[#F8FAFC] rounded-xl border border-border p-8">
+                  <Image
+                    src="/illustrations/hero-composition.png"
+                    alt="Flat illustration of fasteners"
+                    width={800}
+                    height={600}
+                    className="w-full h-auto object-contain"
+                    style={{ maxHeight: '400px' }}
+                    priority
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -55,6 +71,15 @@ export default function Home() {
             <div className="grid md:grid-cols-3 gap-6">
               <Card>
                 <CardHeader>
+                  <div className="mb-4 flex justify-center">
+                    <Image
+                      src="/illustrations/hex-bolt.png"
+                      alt="Hex bolt illustration"
+                      width={80}
+                      height={80}
+                      className="w-20 h-20 object-contain"
+                    />
+                  </div>
                   <CardTitle>Search by Size & Spec</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -65,6 +90,15 @@ export default function Home() {
               </Card>
               <Card>
                 <CardHeader>
+                  <div className="mb-4 flex justify-center">
+                    <Image
+                      src="/illustrations/socket-screw.png"
+                      alt="Socket screw illustration"
+                      width={80}
+                      height={80}
+                      className="w-20 h-20 object-contain"
+                    />
+                  </div>
                   <CardTitle>Spec Families</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -75,6 +109,15 @@ export default function Home() {
               </Card>
               <Card>
                 <CardHeader>
+                  <div className="mb-4 flex justify-center">
+                    <Image
+                      src="/illustrations/an-bolt.png"
+                      alt="AN bolt illustration"
+                      width={80}
+                      height={80}
+                      className="w-20 h-20 object-contain"
+                    />
+                  </div>
                   <CardTitle>Agent-Ready JSON API</CardTitle>
                 </CardHeader>
                 <CardContent>
