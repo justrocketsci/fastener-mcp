@@ -1,7 +1,7 @@
 #!/usr/bin/env tsx
 
 /**
- * Verify that each STL file contains exactly one solid body
+ * Verify that each STL file contains exactly one connected solid body
  * rather than multiple separate bodies.
  * 
  * This ensures Onshape and other CAD tools import fasteners as one part.
@@ -10,9 +10,23 @@
 import fs from 'fs';
 import path from 'path';
 
+interface Vector3 {
+  x: number;
+  y: number;
+  z: number;
+}
+
+interface Triangle {
+  v1: Vector3;
+  v2: Vector3;
+  v3: Vector3;
+}
+
 interface VerificationResult {
   filename: string;
   solidCount: number;
+  connectedComponents: number;
+  triangleCount: number;
   isValid: boolean;
 }
 
@@ -22,14 +36,110 @@ function countSolids(stlContent: string): number {
   return matches ? matches.length : 0;
 }
 
+function parseStlTriangles(stlContent: string): Triangle[] {
+  const triangles: Triangle[] = [];
+  const lines = stlContent.split('\n');
+  
+  let currentTriangle: Partial<Triangle> = {};
+  let vertexIndex = 0;
+  
+  for (const line of lines) {
+    const trimmed = line.trim();
+    
+    if (trimmed.startsWith('vertex ')) {
+      const parts = trimmed.split(/\s+/);
+      const vertex: Vector3 = {
+        x: parseFloat(parts[1]),
+        y: parseFloat(parts[2]),
+        z: parseFloat(parts[3])
+      };
+      
+      if (vertexIndex === 0) {
+        currentTriangle.v1 = vertex;
+      } else if (vertexIndex === 1) {
+        currentTriangle.v2 = vertex;
+      } else if (vertexIndex === 2) {
+        currentTriangle.v3 = vertex;
+        triangles.push(currentTriangle as Triangle);
+        currentTriangle = {};
+        vertexIndex = -1;
+      }
+      vertexIndex++;
+    }
+  }
+  
+  return triangles;
+}
+
+function vertexKey(v: Vector3): string {
+  return `${v.x.toFixed(9)},${v.y.toFixed(9)},${v.z.toFixed(9)}`;
+}
+
+function countConnectedComponents(triangles: Triangle[]): number {
+  if (triangles.length === 0) return 0;
+  
+  const vertexToTriangles = new Map<string, number[]>();
+  
+  triangles.forEach((tri, idx) => {
+    [tri.v1, tri.v2, tri.v3].forEach(v => {
+      const key = vertexKey(v);
+      if (!vertexToTriangles.has(key)) {
+        vertexToTriangles.set(key, []);
+      }
+      vertexToTriangles.get(key)!.push(idx);
+    });
+  });
+  
+  const triangleGraph = new Map<number, Set<number>>();
+  for (let i = 0; i < triangles.length; i++) {
+    triangleGraph.set(i, new Set());
+  }
+  
+  triangles.forEach((tri, idx) => {
+    [tri.v1, tri.v2, tri.v3].forEach(v => {
+      const key = vertexKey(v);
+      const neighbors = vertexToTriangles.get(key) || [];
+      neighbors.forEach(neighborIdx => {
+        if (neighborIdx !== idx) {
+          triangleGraph.get(idx)!.add(neighborIdx);
+        }
+      });
+    });
+  });
+  
+  const visited = new Set<number>();
+  let componentCount = 0;
+  
+  function dfs(triIdx: number) {
+    if (visited.has(triIdx)) return;
+    visited.add(triIdx);
+    
+    const neighbors = triangleGraph.get(triIdx) || new Set();
+    neighbors.forEach(neighbor => dfs(neighbor));
+  }
+  
+  for (let i = 0; i < triangles.length; i++) {
+    if (!visited.has(i)) {
+      componentCount++;
+      dfs(i);
+    }
+  }
+  
+  return componentCount;
+}
+
 function verifyStlFile(filepath: string): VerificationResult {
   const content = fs.readFileSync(filepath, 'utf-8');
   const solidCount = countSolids(content);
+  const triangles = parseStlTriangles(content);
+  const connectedComponents = countConnectedComponents(triangles);
   
   return {
     filename: path.basename(filepath),
     solidCount,
-    isValid: solidCount === 1
+    connectedComponents,
+    triangleCount: triangles.length,
+    isValid: solidCount === 1 && connectedComponents === 1
   };
 }
 
@@ -50,26 +160,33 @@ function main() {
     process.exit(1);
   }
 
-  console.log(`Verifying ${stlFiles.length} STL files...\n`);
+  console.log(`Verifying ${stlFiles.length} STL files (checking connected components)...\n`);
 
   const results: VerificationResult[] = stlFiles.map(verifyStlFile);
   
   const validFiles = results.filter(r => r.isValid);
   const invalidFiles = results.filter(r => !r.isValid);
 
-  console.log(`✓ Valid (single body): ${validFiles.length}`);
+  console.log(`✓ Valid (single connected body): ${validFiles.length}`);
   
   if (invalidFiles.length > 0) {
-    console.log(`✗ Invalid (multiple bodies): ${invalidFiles.length}\n`);
-    console.log('Files with multiple bodies:');
+    console.log(`✗ Invalid (disconnected or multiple bodies): ${invalidFiles.length}\n`);
+    console.log('Files with issues:');
     invalidFiles.forEach(r => {
-      console.log(`  - ${r.filename}: ${r.solidCount} solid blocks`);
+      const issues: string[] = [];
+      if (r.solidCount !== 1) {
+        issues.push(`${r.solidCount} solid blocks`);
+      }
+      if (r.connectedComponents !== 1) {
+        issues.push(`${r.connectedComponents} connected components`);
+      }
+      console.log(`  - ${r.filename}: ${issues.join(', ')} (${r.triangleCount} triangles)`);
     });
     process.exit(1);
   }
 
-  console.log('\n✓ All STL files contain exactly one solid body');
-  console.log('  Onshape and other CAD tools will import each fastener as a single part.');
+  console.log('\n✓ All STL files are watertight single-body solids (1 connected component)');
+  console.log('  Onshape and other CAD tools will import each fastener as a single solid part.');
 }
 
 main();

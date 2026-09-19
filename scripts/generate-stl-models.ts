@@ -194,6 +194,41 @@ function generateHexMesh(diameter: number, height: number, zOffset: number, incl
   return triangles;
 }
 
+function generateAnnulusMesh(innerRadius: number, outerRadius: number, z: number, segments: number = 16): Triangle[] {
+  const triangles: Triangle[] = [];
+  
+  for (let i = 0; i < segments; i++) {
+    const angle1 = (i / segments) * 2 * Math.PI;
+    const angle2 = ((i + 1) / segments) * 2 * Math.PI;
+    
+    const innerX1 = innerRadius * Math.cos(angle1);
+    const innerY1 = innerRadius * Math.sin(angle1);
+    const innerX2 = innerRadius * Math.cos(angle2);
+    const innerY2 = innerRadius * Math.sin(angle2);
+    
+    const outerX1 = outerRadius * Math.cos(angle1);
+    const outerY1 = outerRadius * Math.sin(angle1);
+    const outerX2 = outerRadius * Math.cos(angle2);
+    const outerY2 = outerRadius * Math.sin(angle2);
+    
+    const inner1: Vector3 = { x: innerX1, y: innerY1, z };
+    const inner2: Vector3 = { x: innerX2, y: innerY2, z };
+    const outer1: Vector3 = { x: outerX1, y: outerY1, z };
+    const outer2: Vector3 = { x: outerX2, y: outerY2, z };
+    
+    triangles.push({
+      normal: { x: 0, y: 0, z: -1 },
+      v1: outer1, v2: inner1, v3: outer2
+    });
+    triangles.push({
+      normal: { x: 0, y: 0, z: -1 },
+      v1: outer2, v2: inner1, v3: inner2
+    });
+  }
+  
+  return triangles;
+}
+
 function generateWasherMesh(innerRadius: number, outerRadius: number, thickness: number): Triangle[] {
   const triangles: Triangle[] = [];
   const segments = 16;
@@ -266,6 +301,7 @@ function generateHexBoltStl(fastener: any, dims: FastenerDimensions): string {
   const triangles: Triangle[] = [];
   
   triangles.push(...generateCylinderMesh(dims.diameter / 2, dims.length, 0, 16, true, false));
+  triangles.push(...generateAnnulusMesh(dims.diameter / 2, dims.headDiameter / 2, dims.length, 16));
   triangles.push(...generateHexMesh(dims.headDiameter, dims.headHeight, dims.length, false, true));
   
   let stl = generateStlHeader(fastener.id);
@@ -281,6 +317,7 @@ function generateSocketCapScrewStl(fastener: any, dims: FastenerDimensions): str
   const triangles: Triangle[] = [];
   
   triangles.push(...generateCylinderMesh(dims.diameter / 2, dims.length, 0, 16, true, false));
+  triangles.push(...generateAnnulusMesh(dims.diameter / 2, dims.headDiameter / 2, dims.length, 16));
   triangles.push(...generateCylinderMesh(dims.headDiameter / 2, dims.headHeight, dims.length, 16, false, true));
   
   let stl = generateStlHeader(fastener.id);
