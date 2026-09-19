@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { FastenerActions } from './fastener-actions';
@@ -237,6 +238,55 @@ export default async function FastenerDetailPage({ params }: PageProps) {
                             : fastener.source_kind === 'purchased_std' && (fastener.license === 'proprietary-cite' || fastener.license === 'proprietary_cite')
                             ? 'Proprietary standard — dimensional extract only. Do not redistribute the source standard. Not a substitute for the controlling specification.'
                             : 'This data is provided for reference only. Always consult the controlling specification.'}
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              )}
+
+              {fastener.length_mm > 0 && (
+                <div className="border-t border-border pt-6">
+                  <h3 className="text-sm font-semibold text-muted-foreground mb-3">3D Model</h3>
+                  <Card className="bg-muted/50">
+                    <CardContent className="pt-4">
+                      <div className="space-y-3">
+                        <div className="flex items-start justify-between gap-4">
+                          <div className="flex-1">
+                            <p className="font-semibold mb-1">Simplified STEP Model</p>
+                            <p className="text-sm text-muted-foreground mb-2">
+                              Basic cylindrical approximation for visualization and manual import into Onshape or other CAD tools.
+                            </p>
+                            <Alert className="mb-3 bg-amber-50 dark:bg-amber-950 border-amber-200 dark:border-amber-800">
+                              <AlertDescription className="text-sm">
+                                <strong>NOT FOR CERTIFICATION:</strong> This is a simplified geometric approximation only. 
+                                Do not use for engineering analysis, FEA, or certified manufacturing. Always consult the controlling specification.
+                              </AlertDescription>
+                            </Alert>
+                          </div>
+                        </div>
+                        <div className="flex gap-2">
+                          <a 
+                            href={`/models/${fastener.id}.step`}
+                            download={`${fastener.designation}.step`}
+                            className="inline-flex items-center"
+                          >
+                            <Button variant="default">
+                              Download STEP File
+                            </Button>
+                          </a>
+                          <a 
+                            href={`/api/fasteners/${fastener.id}/model`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Button variant="outline">
+                              View Model API →
+                            </Button>
+                          </a>
+                        </div>
+                        <p className="text-xs text-muted-foreground italic border-t border-border pt-3">
+                          Model format: STEP AP214 • Approximation type: Cylindrical solids with basic head geometry
                         </p>
                       </div>
                     </CardContent>
