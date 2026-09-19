@@ -39,7 +39,7 @@ export default function Home() {
                 <div className="flex gap-4">
                   <Link href="/search">
                     <Button size="lg">
-                      Try Sample Search
+                      Explore the catalog
                     </Button>
                   </Link>
                   <Link href="/mcp">
