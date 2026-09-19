@@ -84,6 +84,18 @@ function triangleToStl(triangle: Triangle): string {
   endfacet\n`;
 }
 
+function snapZero(value: number): number {
+  return Math.abs(value) < 1e-10 ? 0 : value;
+}
+
+function makeVertex(x: number, y: number, z: number): Vector3 {
+  return {
+    x: snapZero(x),
+    y: snapZero(y),
+    z: snapZero(z)
+  };
+}
+
 function computeNormal(v1: Vector3, v2: Vector3, v3: Vector3): Vector3 {
   const u = { x: v2.x - v1.x, y: v2.y - v1.y, z: v2.z - v1.z };
   const v = { x: v3.x - v1.x, y: v3.y - v1.y, z: v3.z - v1.z };
@@ -100,93 +112,112 @@ function computeNormal(v1: Vector3, v2: Vector3, v3: Vector3): Vector3 {
   return { x: nx / length, y: ny / length, z: nz / length };
 }
 
+function generateCylinderRim(radius: number, z: number, segments: number): Vector3[] {
+  const vertices: Vector3[] = [];
+  for (let i = 0; i < segments; i++) {
+    const angle = (i / segments) * 2 * Math.PI;
+    vertices.push(makeVertex(
+      radius * Math.cos(angle),
+      radius * Math.sin(angle),
+      z
+    ));
+  }
+  return vertices;
+}
+
 function generateCylinderMesh(radius: number, height: number, zOffset: number, segments: number = 16, includeBottom: boolean = true, includeTop: boolean = true): Triangle[] {
   const triangles: Triangle[] = [];
+  const bottomRim = generateCylinderRim(radius, zOffset, segments);
+  const topRim = generateCylinderRim(radius, zOffset + height, segments);
   
   for (let i = 0; i < segments; i++) {
-    const angle1 = (i / segments) * 2 * Math.PI;
-    const angle2 = ((i + 1) / segments) * 2 * Math.PI;
-    
-    const x1 = radius * Math.cos(angle1);
-    const y1 = radius * Math.sin(angle1);
-    const x2 = radius * Math.cos(angle2);
-    const y2 = radius * Math.sin(angle2);
-    
-    const bottom1: Vector3 = { x: x1, y: y1, z: zOffset };
-    const bottom2: Vector3 = { x: x2, y: y2, z: zOffset };
-    const top1: Vector3 = { x: x1, y: y1, z: zOffset + height };
-    const top2: Vector3 = { x: x2, y: y2, z: zOffset + height };
+    const next = (i + 1) % segments;
     
     triangles.push({
-      normal: computeNormal(bottom1, top1, bottom2),
-      v1: bottom1, v2: top1, v3: bottom2
+      normal: computeNormal(bottomRim[i], topRim[i], bottomRim[next]),
+      v1: bottomRim[i], v2: topRim[i], v3: bottomRim[next]
     });
     triangles.push({
-      normal: computeNormal(top1, top2, bottom2),
-      v1: top1, v2: top2, v3: bottom2
+      normal: computeNormal(topRim[i], topRim[next], bottomRim[next]),
+      v1: topRim[i], v2: topRim[next], v3: bottomRim[next]
     });
-    
-    if (includeBottom) {
-      const center: Vector3 = { x: 0, y: 0, z: zOffset };
+  }
+  
+  if (includeBottom) {
+    const center = makeVertex(0, 0, zOffset);
+    for (let i = 0; i < segments; i++) {
+      const next = (i + 1) % segments;
       triangles.push({
         normal: { x: 0, y: 0, z: -1 },
-        v1: center, v2: bottom2, v3: bottom1
+        v1: center, v2: bottomRim[next], v3: bottomRim[i]
       });
     }
-    
-    if (includeTop) {
-      const topCenter: Vector3 = { x: 0, y: 0, z: zOffset + height };
+  }
+  
+  if (includeTop) {
+    const center = makeVertex(0, 0, zOffset + height);
+    for (let i = 0; i < segments; i++) {
+      const next = (i + 1) % segments;
       triangles.push({
         normal: { x: 0, y: 0, z: 1 },
-        v1: topCenter, v2: top1, v3: top2
+        v1: center, v2: topRim[i], v3: topRim[next]
       });
     }
   }
   
   return triangles;
+}
+
+function generateHexRim(diameter: number, z: number): Vector3[] {
+  const radius = diameter / 2;
+  const vertices: Vector3[] = [];
+  for (let i = 0; i < 6; i++) {
+    const angle = (i / 6) * 2 * Math.PI;
+    vertices.push(makeVertex(
+      radius * Math.cos(angle),
+      radius * Math.sin(angle),
+      z
+    ));
+  }
+  return vertices;
 }
 
 function generateHexMesh(diameter: number, height: number, zOffset: number, includeBottom: boolean = true, includeTop: boolean = true): Triangle[] {
   const triangles: Triangle[] = [];
-  const radius = diameter / 2;
-  const segments = 6;
+  const bottomRim = generateHexRim(diameter, zOffset);
+  const topRim = generateHexRim(diameter, zOffset + height);
   
-  for (let i = 0; i < segments; i++) {
-    const angle1 = (i / segments) * 2 * Math.PI;
-    const angle2 = ((i + 1) / segments) * 2 * Math.PI;
-    
-    const x1 = radius * Math.cos(angle1);
-    const y1 = radius * Math.sin(angle1);
-    const x2 = radius * Math.cos(angle2);
-    const y2 = radius * Math.sin(angle2);
-    
-    const bottom1: Vector3 = { x: x1, y: y1, z: zOffset };
-    const bottom2: Vector3 = { x: x2, y: y2, z: zOffset };
-    const top1: Vector3 = { x: x1, y: y1, z: zOffset + height };
-    const top2: Vector3 = { x: x2, y: y2, z: zOffset + height };
+  for (let i = 0; i < 6; i++) {
+    const next = (i + 1) % 6;
     
     triangles.push({
-      normal: computeNormal(bottom1, top1, bottom2),
-      v1: bottom1, v2: top1, v3: bottom2
+      normal: computeNormal(bottomRim[i], topRim[i], bottomRim[next]),
+      v1: bottomRim[i], v2: topRim[i], v3: bottomRim[next]
     });
     triangles.push({
-      normal: computeNormal(top1, top2, bottom2),
-      v1: top1, v2: top2, v3: bottom2
+      normal: computeNormal(topRim[i], topRim[next], bottomRim[next]),
+      v1: topRim[i], v2: topRim[next], v3: bottomRim[next]
     });
-    
-    if (includeBottom) {
-      const center: Vector3 = { x: 0, y: 0, z: zOffset };
+  }
+  
+  if (includeBottom) {
+    const center = makeVertex(0, 0, zOffset);
+    for (let i = 0; i < 6; i++) {
+      const next = (i + 1) % 6;
       triangles.push({
         normal: { x: 0, y: 0, z: -1 },
-        v1: center, v2: bottom2, v3: bottom1
+        v1: center, v2: bottomRim[next], v3: bottomRim[i]
       });
     }
-    
-    if (includeTop) {
-      const topCenter: Vector3 = { x: 0, y: 0, z: zOffset + height };
+  }
+  
+  if (includeTop) {
+    const center = makeVertex(0, 0, zOffset + height);
+    for (let i = 0; i < 6; i++) {
+      const next = (i + 1) % 6;
       triangles.push({
         normal: { x: 0, y: 0, z: 1 },
-        v1: topCenter, v2: top1, v3: top2
+        v1: center, v2: topRim[i], v3: topRim[next]
       });
     }
   }
@@ -194,36 +225,52 @@ function generateHexMesh(diameter: number, height: number, zOffset: number, incl
   return triangles;
 }
 
-function generateAnnulusMesh(innerRadius: number, outerRadius: number, z: number, segments: number = 16): Triangle[] {
+function generateAnnularPolygonMesh(innerRim: Vector3[], outerRim: Vector3[]): Triangle[] {
   const triangles: Triangle[] = [];
+  const innerCount = innerRim.length;
+  const outerCount = outerRim.length;
   
-  for (let i = 0; i < segments; i++) {
-    const angle1 = (i / segments) * 2 * Math.PI;
-    const angle2 = ((i + 1) / segments) * 2 * Math.PI;
+  if (innerCount === outerCount) {
+    for (let i = 0; i < innerCount; i++) {
+      const next = (i + 1) % innerCount;
+      triangles.push({
+        normal: { x: 0, y: 0, z: -1 },
+        v1: outerRim[i], v2: innerRim[i], v3: outerRim[next]
+      });
+      triangles.push({
+        normal: { x: 0, y: 0, z: -1 },
+        v1: outerRim[next], v2: innerRim[i], v3: innerRim[next]
+      });
+    }
+  } else {
+    let innerIdx = 0;
+    let outerIdx = 0;
     
-    const innerX1 = innerRadius * Math.cos(angle1);
-    const innerY1 = innerRadius * Math.sin(angle1);
-    const innerX2 = innerRadius * Math.cos(angle2);
-    const innerY2 = innerRadius * Math.sin(angle2);
-    
-    const outerX1 = outerRadius * Math.cos(angle1);
-    const outerY1 = outerRadius * Math.sin(angle1);
-    const outerX2 = outerRadius * Math.cos(angle2);
-    const outerY2 = outerRadius * Math.sin(angle2);
-    
-    const inner1: Vector3 = { x: innerX1, y: innerY1, z };
-    const inner2: Vector3 = { x: innerX2, y: innerY2, z };
-    const outer1: Vector3 = { x: outerX1, y: outerY1, z };
-    const outer2: Vector3 = { x: outerX2, y: outerY2, z };
-    
-    triangles.push({
-      normal: { x: 0, y: 0, z: -1 },
-      v1: outer1, v2: inner1, v3: outer2
-    });
-    triangles.push({
-      normal: { x: 0, y: 0, z: -1 },
-      v1: outer2, v2: inner1, v3: inner2
-    });
+    while (innerIdx < innerCount || outerIdx < outerCount) {
+      const innerNext = (innerIdx + 1) % innerCount;
+      const outerNext = (outerIdx + 1) % outerCount;
+      
+      const innerAngle = (innerNext / innerCount) * 2 * Math.PI;
+      const outerAngle = (outerNext / outerCount) * 2 * Math.PI;
+      
+      if (innerIdx < innerCount && (outerIdx >= outerCount || innerAngle <= outerAngle)) {
+        triangles.push({
+          normal: { x: 0, y: 0, z: -1 },
+          v1: innerRim[innerIdx],
+          v2: outerRim[outerIdx % outerCount],
+          v3: innerRim[innerNext]
+        });
+        innerIdx++;
+      } else if (outerIdx < outerCount) {
+        triangles.push({
+          normal: { x: 0, y: 0, z: -1 },
+          v1: outerRim[outerIdx],
+          v2: outerRim[outerNext],
+          v3: innerRim[innerIdx % innerCount]
+        });
+        outerIdx++;
+      }
+    }
   }
   
   return triangles;
@@ -233,64 +280,48 @@ function generateWasherMesh(innerRadius: number, outerRadius: number, thickness:
   const triangles: Triangle[] = [];
   const segments = 16;
   
+  const innerBottomRim = generateCylinderRim(innerRadius, 0, segments);
+  const innerTopRim = generateCylinderRim(innerRadius, thickness, segments);
+  const outerBottomRim = generateCylinderRim(outerRadius, 0, segments);
+  const outerTopRim = generateCylinderRim(outerRadius, thickness, segments);
+  
   for (let i = 0; i < segments; i++) {
-    const angle1 = (i / segments) * 2 * Math.PI;
-    const angle2 = ((i + 1) / segments) * 2 * Math.PI;
-    
-    const innerX1 = innerRadius * Math.cos(angle1);
-    const innerY1 = innerRadius * Math.sin(angle1);
-    const innerX2 = innerRadius * Math.cos(angle2);
-    const innerY2 = innerRadius * Math.sin(angle2);
-    
-    const outerX1 = outerRadius * Math.cos(angle1);
-    const outerY1 = outerRadius * Math.sin(angle1);
-    const outerX2 = outerRadius * Math.cos(angle2);
-    const outerY2 = outerRadius * Math.sin(angle2);
-    
-    const bottomInner1: Vector3 = { x: innerX1, y: innerY1, z: 0 };
-    const bottomInner2: Vector3 = { x: innerX2, y: innerY2, z: 0 };
-    const topInner1: Vector3 = { x: innerX1, y: innerY1, z: thickness };
-    const topInner2: Vector3 = { x: innerX2, y: innerY2, z: thickness };
-    
-    const bottomOuter1: Vector3 = { x: outerX1, y: outerY1, z: 0 };
-    const bottomOuter2: Vector3 = { x: outerX2, y: outerY2, z: 0 };
-    const topOuter1: Vector3 = { x: outerX1, y: outerY1, z: thickness };
-    const topOuter2: Vector3 = { x: outerX2, y: outerY2, z: thickness };
+    const next = (i + 1) % segments;
     
     triangles.push({
       normal: { x: 0, y: 0, z: -1 },
-      v1: bottomOuter1, v2: bottomOuter2, v3: bottomInner1
+      v1: outerBottomRim[i], v2: outerBottomRim[next], v3: innerBottomRim[i]
     });
     triangles.push({
       normal: { x: 0, y: 0, z: -1 },
-      v1: bottomOuter2, v2: bottomInner2, v3: bottomInner1
+      v1: outerBottomRim[next], v2: innerBottomRim[next], v3: innerBottomRim[i]
     });
     
     triangles.push({
       normal: { x: 0, y: 0, z: 1 },
-      v1: topOuter1, v2: topInner1, v3: topOuter2
+      v1: outerTopRim[i], v2: innerTopRim[i], v3: outerTopRim[next]
     });
     triangles.push({
       normal: { x: 0, y: 0, z: 1 },
-      v1: topOuter2, v2: topInner1, v3: topInner2
+      v1: outerTopRim[next], v2: innerTopRim[i], v3: innerTopRim[next]
     });
     
     triangles.push({
-      normal: computeNormal(bottomOuter1, topOuter1, bottomOuter2),
-      v1: bottomOuter1, v2: topOuter1, v3: bottomOuter2
+      normal: computeNormal(outerBottomRim[i], outerTopRim[i], outerBottomRim[next]),
+      v1: outerBottomRim[i], v2: outerTopRim[i], v3: outerBottomRim[next]
     });
     triangles.push({
-      normal: computeNormal(topOuter1, topOuter2, bottomOuter2),
-      v1: topOuter1, v2: topOuter2, v3: bottomOuter2
+      normal: computeNormal(outerTopRim[i], outerTopRim[next], outerBottomRim[next]),
+      v1: outerTopRim[i], v2: outerTopRim[next], v3: outerBottomRim[next]
     });
     
     triangles.push({
-      normal: computeNormal(bottomInner1, bottomInner2, topInner1),
-      v1: bottomInner1, v2: bottomInner2, v3: topInner1
+      normal: computeNormal(innerBottomRim[i], innerBottomRim[next], innerTopRim[i]),
+      v1: innerBottomRim[i], v2: innerBottomRim[next], v3: innerTopRim[i]
     });
     triangles.push({
-      normal: computeNormal(bottomInner2, topInner2, topInner1),
-      v1: bottomInner2, v2: topInner2, v3: topInner1
+      normal: computeNormal(innerBottomRim[next], innerTopRim[next], innerTopRim[i]),
+      v1: innerBottomRim[next], v2: innerTopRim[next], v3: innerTopRim[i]
     });
   }
   
@@ -299,9 +330,13 @@ function generateWasherMesh(innerRadius: number, outerRadius: number, thickness:
 
 function generateHexBoltStl(fastener: any, dims: FastenerDimensions): string {
   const triangles: Triangle[] = [];
+  const segments = 16;
   
-  triangles.push(...generateCylinderMesh(dims.diameter / 2, dims.length, 0, 16, true, false));
-  triangles.push(...generateAnnulusMesh(dims.diameter / 2, dims.headDiameter / 2, dims.length, 16));
+  const shaftTopRim = generateCylinderRim(dims.diameter / 2, dims.length, segments);
+  const hexBottomRim = generateHexRim(dims.headDiameter, dims.length);
+  
+  triangles.push(...generateCylinderMesh(dims.diameter / 2, dims.length, 0, segments, true, false));
+  triangles.push(...generateAnnularPolygonMesh(shaftTopRim, hexBottomRim));
   triangles.push(...generateHexMesh(dims.headDiameter, dims.headHeight, dims.length, false, true));
   
   let stl = generateStlHeader(fastener.id);
@@ -315,10 +350,14 @@ function generateHexBoltStl(fastener: any, dims: FastenerDimensions): string {
 
 function generateSocketCapScrewStl(fastener: any, dims: FastenerDimensions): string {
   const triangles: Triangle[] = [];
+  const segments = 16;
   
-  triangles.push(...generateCylinderMesh(dims.diameter / 2, dims.length, 0, 16, true, false));
-  triangles.push(...generateAnnulusMesh(dims.diameter / 2, dims.headDiameter / 2, dims.length, 16));
-  triangles.push(...generateCylinderMesh(dims.headDiameter / 2, dims.headHeight, dims.length, 16, false, true));
+  const shaftTopRim = generateCylinderRim(dims.diameter / 2, dims.length, segments);
+  const headBottomRim = generateCylinderRim(dims.headDiameter / 2, dims.length, segments);
+  
+  triangles.push(...generateCylinderMesh(dims.diameter / 2, dims.length, 0, segments, true, false));
+  triangles.push(...generateAnnularPolygonMesh(shaftTopRim, headBottomRim));
+  triangles.push(...generateCylinderMesh(dims.headDiameter / 2, dims.headHeight, dims.length, segments, false, true));
   
   let stl = generateStlHeader(fastener.id);
   for (const triangle of triangles) {

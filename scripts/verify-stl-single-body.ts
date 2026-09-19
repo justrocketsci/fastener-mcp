@@ -27,6 +27,7 @@ interface VerificationResult {
   solidCount: number;
   connectedComponents: number;
   triangleCount: number;
+  boundaryEdges: number;
   isValid: boolean;
 }
 
@@ -73,6 +74,38 @@ function parseStlTriangles(stlContent: string): Triangle[] {
 
 function vertexKey(v: Vector3): string {
   return `${v.x.toFixed(9)},${v.y.toFixed(9)},${v.z.toFixed(9)}`;
+}
+
+function edgeKey(v1: Vector3, v2: Vector3): string {
+  const k1 = vertexKey(v1);
+  const k2 = vertexKey(v2);
+  return k1 < k2 ? `${k1}|${k2}` : `${k2}|${k1}`;
+}
+
+function countBoundaryEdges(triangles: Triangle[]): number {
+  const edgeCount = new Map<string, number>();
+  
+  triangles.forEach(tri => {
+    const edges = [
+      [tri.v1, tri.v2],
+      [tri.v2, tri.v3],
+      [tri.v3, tri.v1]
+    ];
+    
+    edges.forEach(([v1, v2]) => {
+      const key = edgeKey(v1, v2);
+      edgeCount.set(key, (edgeCount.get(key) || 0) + 1);
+    });
+  });
+  
+  let boundaryCount = 0;
+  edgeCount.forEach(count => {
+    if (count !== 2) {
+      boundaryCount++;
+    }
+  });
+  
+  return boundaryCount;
 }
 
 function countConnectedComponents(triangles: Triangle[]): number {
@@ -133,13 +166,15 @@ function verifyStlFile(filepath: string): VerificationResult {
   const solidCount = countSolids(content);
   const triangles = parseStlTriangles(content);
   const connectedComponents = countConnectedComponents(triangles);
+  const boundaryEdges = countBoundaryEdges(triangles);
   
   return {
     filename: path.basename(filepath),
     solidCount,
     connectedComponents,
     triangleCount: triangles.length,
-    isValid: solidCount === 1 && connectedComponents === 1
+    boundaryEdges,
+    isValid: solidCount === 1 && connectedComponents === 1 && boundaryEdges === 0
   };
 }
 
@@ -167,10 +202,10 @@ function main() {
   const validFiles = results.filter(r => r.isValid);
   const invalidFiles = results.filter(r => !r.isValid);
 
-  console.log(`✓ Valid (single connected body): ${validFiles.length}`);
+  console.log(`✓ Valid (single watertight body): ${validFiles.length}`);
   
   if (invalidFiles.length > 0) {
-    console.log(`✗ Invalid (disconnected or multiple bodies): ${invalidFiles.length}\n`);
+    console.log(`✗ Invalid (not watertight or disconnected): ${invalidFiles.length}\n`);
     console.log('Files with issues:');
     invalidFiles.forEach(r => {
       const issues: string[] = [];
@@ -180,13 +215,19 @@ function main() {
       if (r.connectedComponents !== 1) {
         issues.push(`${r.connectedComponents} connected components`);
       }
+      if (r.boundaryEdges > 0) {
+        issues.push(`${r.boundaryEdges} boundary edges (not watertight)`);
+      }
       console.log(`  - ${r.filename}: ${issues.join(', ')} (${r.triangleCount} triangles)`);
     });
     process.exit(1);
   }
 
-  console.log('\n✓ All STL files are watertight single-body solids (1 connected component)');
-  console.log('  Onshape and other CAD tools will import each fastener as a single solid part.');
+  console.log('\n✓ All STL files are watertight closed manifolds');
+  console.log('  - 1 solid block per file');
+  console.log('  - 1 connected component (all triangles share vertices)');
+  console.log('  - 0 boundary edges (every edge used exactly twice)');
+  console.log('  → Onshape will import each fastener as bodyType: solid');
 }
 
 main();
