@@ -20,13 +20,6 @@ solid iso-4017-m8-40
       vertex 4.000000e+0 0.000000e+0 0.000000e+0
     endloop
   endfacet
-  facet normal 0.000000e+0 0.000000e+0 1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex 4.000000e+0 0.000000e+0 4.000000e+1
-      vertex 3.695518e+0 1.530734e+0 4.000000e+1
-    endloop
-  endfacet
   facet normal -8.314696e-1 -5.555702e-1 0.000000e+0
     outer loop
       vertex 3.695518e+0 1.530734e+0 0.000000e+0
@@ -46,13 +39,6 @@ solid iso-4017-m8-40
       vertex 0.000000e+0 0.000000e+0 0.000000e+0
       vertex 2.828427e+0 2.828427e+0 0.000000e+0
       vertex 3.695518e+0 1.530734e+0 0.000000e+0
-    endloop
-  endfacet
-  facet normal 0.000000e+0 0.000000e+0 1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex 3.695518e+0 1.530734e+0 4.000000e+1
-      vertex 2.828427e+0 2.828427e+0 4.000000e+1
     endloop
   endfacet
   facet normal -5.555702e-1 -8.314696e-1 0.000000e+0
@@ -76,13 +62,6 @@ solid iso-4017-m8-40
       vertex 2.828427e+0 2.828427e+0 0.000000e+0
     endloop
   endfacet
-  facet normal 0.000000e+0 0.000000e+0 1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex 2.828427e+0 2.828427e+0 4.000000e+1
-      vertex 1.530734e+0 3.695518e+0 4.000000e+1
-    endloop
-  endfacet
   facet normal -1.950903e-1 -9.807853e-1 0.000000e+0
     outer loop
       vertex 1.530734e+0 3.695518e+0 0.000000e+0
@@ -102,13 +81,6 @@ solid iso-4017-m8-40
       vertex 0.000000e+0 0.000000e+0 0.000000e+0
       vertex 2.449294e-16 4.000000e+0 0.000000e+0
       vertex 1.530734e+0 3.695518e+0 0.000000e+0
-    endloop
-  endfacet
-  facet normal 0.000000e+0 0.000000e+0 1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex 1.530734e+0 3.695518e+0 4.000000e+1
-      vertex 2.449294e-16 4.000000e+0 4.000000e+1
     endloop
   endfacet
   facet normal 1.950903e-1 -9.807853e-1 0.000000e+0
@@ -132,13 +104,6 @@ solid iso-4017-m8-40
       vertex 2.449294e-16 4.000000e+0 0.000000e+0
     endloop
   endfacet
-  facet normal 0.000000e+0 0.000000e+0 1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex 2.449294e-16 4.000000e+0 4.000000e+1
-      vertex -1.530734e+0 3.695518e+0 4.000000e+1
-    endloop
-  endfacet
   facet normal 5.555702e-1 -8.314696e-1 0.000000e+0
     outer loop
       vertex -1.530734e+0 3.695518e+0 0.000000e+0
@@ -158,13 +123,6 @@ solid iso-4017-m8-40
       vertex 0.000000e+0 0.000000e+0 0.000000e+0
       vertex -2.828427e+0 2.828427e+0 0.000000e+0
       vertex -1.530734e+0 3.695518e+0 0.000000e+0
-    endloop
-  endfacet
-  facet normal 0.000000e+0 0.000000e+0 1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex -1.530734e+0 3.695518e+0 4.000000e+1
-      vertex -2.828427e+0 2.828427e+0 4.000000e+1
     endloop
   endfacet
   facet normal 8.314696e-1 -5.555702e-1 0.000000e+0
@@ -188,13 +146,6 @@ solid iso-4017-m8-40
       vertex -2.828427e+0 2.828427e+0 0.000000e+0
     endloop
   endfacet
-  facet normal 0.000000e+0 0.000000e+0 1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex -2.828427e+0 2.828427e+0 4.000000e+1
-      vertex -3.695518e+0 1.530734e+0 4.000000e+1
-    endloop
-  endfacet
   facet normal 9.807853e-1 -1.950903e-1 0.000000e+0
     outer loop
       vertex -3.695518e+0 1.530734e+0 0.000000e+0
@@ -214,13 +165,6 @@ solid iso-4017-m8-40
       vertex 0.000000e+0 0.000000e+0 0.000000e+0
       vertex -4.000000e+0 4.898587e-16 0.000000e+0
       vertex -3.695518e+0 1.530734e+0 0.000000e+0
-    endloop
-  endfacet
-  facet normal 0.000000e+0 0.000000e+0 1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex -3.695518e+0 1.530734e+0 4.000000e+1
-      vertex -4.000000e+0 4.898587e-16 4.000000e+1
     endloop
   endfacet
   facet normal 9.807853e-1 1.950903e-1 0.000000e+0
@@ -244,13 +188,6 @@ solid iso-4017-m8-40
       vertex -4.000000e+0 4.898587e-16 0.000000e+0
     endloop
   endfacet
-  facet normal 0.000000e+0 0.000000e+0 1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex -4.000000e+0 4.898587e-16 4.000000e+1
-      vertex -3.695518e+0 -1.530734e+0 4.000000e+1
-    endloop
-  endfacet
   facet normal 8.314696e-1 5.555702e-1 0.000000e+0
     outer loop
       vertex -3.695518e+0 -1.530734e+0 0.000000e+0
@@ -270,13 +207,6 @@ solid iso-4017-m8-40
       vertex 0.000000e+0 0.000000e+0 0.000000e+0
       vertex -2.828427e+0 -2.828427e+0 0.000000e+0
       vertex -3.695518e+0 -1.530734e+0 0.000000e+0
-    endloop
-  endfacet
-  facet normal 0.000000e+0 0.000000e+0 1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex -3.695518e+0 -1.530734e+0 4.000000e+1
-      vertex -2.828427e+0 -2.828427e+0 4.000000e+1
     endloop
   endfacet
   facet normal 5.555702e-1 8.314696e-1 0.000000e+0
@@ -300,13 +230,6 @@ solid iso-4017-m8-40
       vertex -2.828427e+0 -2.828427e+0 0.000000e+0
     endloop
   endfacet
-  facet normal 0.000000e+0 0.000000e+0 1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex -2.828427e+0 -2.828427e+0 4.000000e+1
-      vertex -1.530734e+0 -3.695518e+0 4.000000e+1
-    endloop
-  endfacet
   facet normal 1.950903e-1 9.807853e-1 0.000000e+0
     outer loop
       vertex -1.530734e+0 -3.695518e+0 0.000000e+0
@@ -326,13 +249,6 @@ solid iso-4017-m8-40
       vertex 0.000000e+0 0.000000e+0 0.000000e+0
       vertex -7.347881e-16 -4.000000e+0 0.000000e+0
       vertex -1.530734e+0 -3.695518e+0 0.000000e+0
-    endloop
-  endfacet
-  facet normal 0.000000e+0 0.000000e+0 1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex -1.530734e+0 -3.695518e+0 4.000000e+1
-      vertex -7.347881e-16 -4.000000e+0 4.000000e+1
     endloop
   endfacet
   facet normal -1.950903e-1 9.807853e-1 0.000000e+0
@@ -356,13 +272,6 @@ solid iso-4017-m8-40
       vertex -7.347881e-16 -4.000000e+0 0.000000e+0
     endloop
   endfacet
-  facet normal 0.000000e+0 0.000000e+0 1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex -7.347881e-16 -4.000000e+0 4.000000e+1
-      vertex 1.530734e+0 -3.695518e+0 4.000000e+1
-    endloop
-  endfacet
   facet normal -5.555702e-1 8.314696e-1 0.000000e+0
     outer loop
       vertex 1.530734e+0 -3.695518e+0 0.000000e+0
@@ -382,13 +291,6 @@ solid iso-4017-m8-40
       vertex 0.000000e+0 0.000000e+0 0.000000e+0
       vertex 2.828427e+0 -2.828427e+0 0.000000e+0
       vertex 1.530734e+0 -3.695518e+0 0.000000e+0
-    endloop
-  endfacet
-  facet normal 0.000000e+0 0.000000e+0 1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex 1.530734e+0 -3.695518e+0 4.000000e+1
-      vertex 2.828427e+0 -2.828427e+0 4.000000e+1
     endloop
   endfacet
   facet normal -8.314696e-1 5.555702e-1 0.000000e+0
@@ -412,13 +314,6 @@ solid iso-4017-m8-40
       vertex 2.828427e+0 -2.828427e+0 0.000000e+0
     endloop
   endfacet
-  facet normal 0.000000e+0 0.000000e+0 1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex 2.828427e+0 -2.828427e+0 4.000000e+1
-      vertex 3.695518e+0 -1.530734e+0 4.000000e+1
-    endloop
-  endfacet
   facet normal -9.807853e-1 1.950903e-1 0.000000e+0
     outer loop
       vertex 3.695518e+0 -1.530734e+0 0.000000e+0
@@ -438,13 +333,6 @@ solid iso-4017-m8-40
       vertex 0.000000e+0 0.000000e+0 0.000000e+0
       vertex 4.000000e+0 -9.797174e-16 0.000000e+0
       vertex 3.695518e+0 -1.530734e+0 0.000000e+0
-    endloop
-  endfacet
-  facet normal 0.000000e+0 0.000000e+0 1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex 3.695518e+0 -1.530734e+0 4.000000e+1
-      vertex 4.000000e+0 -9.797174e-16 4.000000e+1
     endloop
   endfacet
   facet normal -8.660254e-1 -5.000000e-1 0.000000e+0
@@ -459,13 +347,6 @@ solid iso-4017-m8-40
       vertex 6.500000e+0 0.000000e+0 4.530000e+1
       vertex 3.250000e+0 5.629165e+0 4.530000e+1
       vertex 3.250000e+0 5.629165e+0 4.000000e+1
-    endloop
-  endfacet
-  facet normal 0.000000e+0 0.000000e+0 -1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex 3.250000e+0 5.629165e+0 4.000000e+1
-      vertex 6.500000e+0 0.000000e+0 4.000000e+1
     endloop
   endfacet
   facet normal 0.000000e+0 0.000000e+0 1.000000e+0
@@ -487,13 +368,6 @@ solid iso-4017-m8-40
       vertex 3.250000e+0 5.629165e+0 4.530000e+1
       vertex -3.250000e+0 5.629165e+0 4.530000e+1
       vertex -3.250000e+0 5.629165e+0 4.000000e+1
-    endloop
-  endfacet
-  facet normal 0.000000e+0 0.000000e+0 -1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex -3.250000e+0 5.629165e+0 4.000000e+1
-      vertex 3.250000e+0 5.629165e+0 4.000000e+1
     endloop
   endfacet
   facet normal 0.000000e+0 0.000000e+0 1.000000e+0
@@ -515,13 +389,6 @@ solid iso-4017-m8-40
       vertex -3.250000e+0 5.629165e+0 4.530000e+1
       vertex -6.500000e+0 7.960204e-16 4.530000e+1
       vertex -6.500000e+0 7.960204e-16 4.000000e+1
-    endloop
-  endfacet
-  facet normal 0.000000e+0 0.000000e+0 -1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex -6.500000e+0 7.960204e-16 4.000000e+1
-      vertex -3.250000e+0 5.629165e+0 4.000000e+1
     endloop
   endfacet
   facet normal 0.000000e+0 0.000000e+0 1.000000e+0
@@ -543,13 +410,6 @@ solid iso-4017-m8-40
       vertex -6.500000e+0 7.960204e-16 4.530000e+1
       vertex -3.250000e+0 -5.629165e+0 4.530000e+1
       vertex -3.250000e+0 -5.629165e+0 4.000000e+1
-    endloop
-  endfacet
-  facet normal 0.000000e+0 0.000000e+0 -1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex -3.250000e+0 -5.629165e+0 4.000000e+1
-      vertex -6.500000e+0 7.960204e-16 4.000000e+1
     endloop
   endfacet
   facet normal 0.000000e+0 0.000000e+0 1.000000e+0
@@ -571,13 +431,6 @@ solid iso-4017-m8-40
       vertex -3.250000e+0 -5.629165e+0 4.530000e+1
       vertex 3.250000e+0 -5.629165e+0 4.530000e+1
       vertex 3.250000e+0 -5.629165e+0 4.000000e+1
-    endloop
-  endfacet
-  facet normal 0.000000e+0 0.000000e+0 -1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex 3.250000e+0 -5.629165e+0 4.000000e+1
-      vertex -3.250000e+0 -5.629165e+0 4.000000e+1
     endloop
   endfacet
   facet normal 0.000000e+0 0.000000e+0 1.000000e+0
@@ -599,13 +452,6 @@ solid iso-4017-m8-40
       vertex 3.250000e+0 -5.629165e+0 4.530000e+1
       vertex 6.500000e+0 -1.592041e-15 4.530000e+1
       vertex 6.500000e+0 -1.592041e-15 4.000000e+1
-    endloop
-  endfacet
-  facet normal 0.000000e+0 0.000000e+0 -1.000000e+0
-    outer loop
-      vertex 0.000000e+0 0.000000e+0 4.000000e+1
-      vertex 6.500000e+0 -1.592041e-15 4.000000e+1
-      vertex 3.250000e+0 -5.629165e+0 4.000000e+1
     endloop
   endfacet
   facet normal 0.000000e+0 0.000000e+0 1.000000e+0

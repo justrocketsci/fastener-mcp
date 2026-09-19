@@ -100,7 +100,7 @@ function computeNormal(v1: Vector3, v2: Vector3, v3: Vector3): Vector3 {
   return { x: nx / length, y: ny / length, z: nz / length };
 }
 
-function generateCylinderMesh(radius: number, height: number, zOffset: number, segments: number = 16): Triangle[] {
+function generateCylinderMesh(radius: number, height: number, zOffset: number, segments: number = 16, includeBottom: boolean = true, includeTop: boolean = true): Triangle[] {
   const triangles: Triangle[] = [];
   
   for (let i = 0; i < segments; i++) {
@@ -126,23 +126,27 @@ function generateCylinderMesh(radius: number, height: number, zOffset: number, s
       v1: top1, v2: top2, v3: bottom2
     });
     
-    const center: Vector3 = { x: 0, y: 0, z: zOffset };
-    triangles.push({
-      normal: { x: 0, y: 0, z: -1 },
-      v1: center, v2: bottom2, v3: bottom1
-    });
+    if (includeBottom) {
+      const center: Vector3 = { x: 0, y: 0, z: zOffset };
+      triangles.push({
+        normal: { x: 0, y: 0, z: -1 },
+        v1: center, v2: bottom2, v3: bottom1
+      });
+    }
     
-    const topCenter: Vector3 = { x: 0, y: 0, z: zOffset + height };
-    triangles.push({
-      normal: { x: 0, y: 0, z: 1 },
-      v1: topCenter, v2: top1, v3: top2
-    });
+    if (includeTop) {
+      const topCenter: Vector3 = { x: 0, y: 0, z: zOffset + height };
+      triangles.push({
+        normal: { x: 0, y: 0, z: 1 },
+        v1: topCenter, v2: top1, v3: top2
+      });
+    }
   }
   
   return triangles;
 }
 
-function generateHexMesh(diameter: number, height: number, zOffset: number): Triangle[] {
+function generateHexMesh(diameter: number, height: number, zOffset: number, includeBottom: boolean = true, includeTop: boolean = true): Triangle[] {
   const triangles: Triangle[] = [];
   const radius = diameter / 2;
   const segments = 6;
@@ -170,17 +174,21 @@ function generateHexMesh(diameter: number, height: number, zOffset: number): Tri
       v1: top1, v2: top2, v3: bottom2
     });
     
-    const center: Vector3 = { x: 0, y: 0, z: zOffset };
-    triangles.push({
-      normal: { x: 0, y: 0, z: -1 },
-      v1: center, v2: bottom2, v3: bottom1
-    });
+    if (includeBottom) {
+      const center: Vector3 = { x: 0, y: 0, z: zOffset };
+      triangles.push({
+        normal: { x: 0, y: 0, z: -1 },
+        v1: center, v2: bottom2, v3: bottom1
+      });
+    }
     
-    const topCenter: Vector3 = { x: 0, y: 0, z: zOffset + height };
-    triangles.push({
-      normal: { x: 0, y: 0, z: 1 },
-      v1: topCenter, v2: top1, v3: top2
-    });
+    if (includeTop) {
+      const topCenter: Vector3 = { x: 0, y: 0, z: zOffset + height };
+      triangles.push({
+        normal: { x: 0, y: 0, z: 1 },
+        v1: topCenter, v2: top1, v3: top2
+      });
+    }
   }
   
   return triangles;
@@ -257,8 +265,8 @@ function generateWasherMesh(innerRadius: number, outerRadius: number, thickness:
 function generateHexBoltStl(fastener: any, dims: FastenerDimensions): string {
   const triangles: Triangle[] = [];
   
-  triangles.push(...generateCylinderMesh(dims.diameter / 2, dims.length, 0));
-  triangles.push(...generateHexMesh(dims.headDiameter, dims.headHeight, dims.length));
+  triangles.push(...generateCylinderMesh(dims.diameter / 2, dims.length, 0, 16, true, false));
+  triangles.push(...generateHexMesh(dims.headDiameter, dims.headHeight, dims.length, false, true));
   
   let stl = generateStlHeader(fastener.id);
   for (const triangle of triangles) {
@@ -272,8 +280,8 @@ function generateHexBoltStl(fastener: any, dims: FastenerDimensions): string {
 function generateSocketCapScrewStl(fastener: any, dims: FastenerDimensions): string {
   const triangles: Triangle[] = [];
   
-  triangles.push(...generateCylinderMesh(dims.diameter / 2, dims.length, 0));
-  triangles.push(...generateCylinderMesh(dims.headDiameter / 2, dims.headHeight, dims.length));
+  triangles.push(...generateCylinderMesh(dims.diameter / 2, dims.length, 0, 16, true, false));
+  triangles.push(...generateCylinderMesh(dims.headDiameter / 2, dims.headHeight, dims.length, 16, false, true));
   
   let stl = generateStlHeader(fastener.id);
   for (const triangle of triangles) {
