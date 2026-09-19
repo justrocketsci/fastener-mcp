@@ -38,7 +38,7 @@ export default async function FastenerDetailPage({ params }: PageProps) {
     notFound();
   }
 
-  const modelPath = path.join(process.cwd(), 'public', 'models', `${id}.step`);
+  const modelPath = path.join(process.cwd(), 'public', 'models', `${id}.stl`);
   const modelExists = fs.existsSync(modelPath);
 
   const getFamilyLabel = (fam: string) => {

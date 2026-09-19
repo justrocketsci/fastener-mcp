@@ -79,7 +79,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription>
-                    RESTful HTTP endpoints with structured responses. Search, retrieve by ID, and get intelligent recommendations. Simplified STEP models available for CAD drop-in.
+                    RESTful HTTP endpoints with structured responses. Search, retrieve by ID, and get intelligent recommendations. Simplified STL meshes available for CAD drop-in.
                   </CardDescription>
                 </CardContent>
               </Card>

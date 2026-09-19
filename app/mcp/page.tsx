@@ -154,7 +154,7 @@ export default function MCPDocsPage() {
             <Card>
               <CardHeader>
                 <CardTitle>get_fastener_model</CardTitle>
-                <CardDescription>Retrieve 3D STEP model and dimensions for a specific fastener</CardDescription>
+                <CardDescription>Retrieve 3D STL mesh and dimensions for a specific fastener</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
@@ -183,10 +183,10 @@ export default function MCPDocsPage() {
     "length_mm": 15.875,
     "thread": "#4-40 UNF"
   },
-  "model_url": "https://fastener-mcp.example/models/nas1352-04-6.step",
-  "model_format": "STEP AP214",
+  "model_url": "https://fastener-mcp.example/models/nas1352-04-6.stl",
+  "format": "stl",
   "simplified_not_for_certification": true,
-  "disclaimer": "Simplified cylindrical approximation for visualization only. NOT certified for engineering analysis or manufacturing. Always consult the controlling specification.",
+  "disclaimer": "Approximate mesh for CAD drop-in and Onshape import. NOT certified for engineering analysis or manufacturing. Always consult the controlling specification.",
   "citation": {
     "standard": "NAS1352",
     "revision": "Rev 11",
@@ -200,7 +200,7 @@ export default function MCPDocsPage() {
 
                 <Alert className="bg-amber-50 dark:bg-amber-950 border-amber-200 dark:border-amber-800">
                   <AlertDescription className="text-sm">
-                    <strong>NOT FOR CERTIFICATION:</strong> STEP models are simplified cylindrical approximations. 
+                    <strong>NOT FOR CERTIFICATION:</strong> STL models are simplified mesh approximations for CAD drop-in. 
                     Do not use for FEA, manufacturing tolerances, or certified engineering work.
                   </AlertDescription>
                 </Alert>
