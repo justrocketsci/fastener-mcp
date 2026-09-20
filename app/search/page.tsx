@@ -72,6 +72,20 @@ export default function SearchPage() {
     return '—';
   };
 
+  const getFormattedStandard = (fastener: Fastener) => {
+    if (!fastener.standard) {
+      return fastener.designation;
+    }
+    
+    const std = fastener.standard;
+    
+    if (std.startsWith('NAS') && !std.includes(' ')) {
+      return std.replace(/^(NAS)(\d+)/, '$1 $2');
+    }
+    
+    return std;
+  };
+
   const getSourceBadge = (fastener: Fastener) => {
     if (!fastener.source_kind) {
       return <Badge variant="secondary" className="text-xs">Sample</Badge>;
@@ -178,7 +192,7 @@ export default function SearchPage() {
                           </TableCell>
                           <TableCell>
                             <div className="flex items-center gap-2">
-                              <span className="text-sm">{fastener.designation}</span>
+                              <span className="text-sm">{getFormattedStandard(fastener)}</span>
                               <Badge variant="outline" className="text-xs">
                                 {getFamilyLabel(fastener.family)}
                               </Badge>
@@ -223,7 +237,7 @@ export default function SearchPage() {
                             <div className="flex items-start justify-between gap-2">
                               <div>
                                 <p className="font-mono text-sm text-primary">{fastener.id}</p>
-                                <p className="font-semibold">{fastener.designation}</p>
+                                <p className="font-semibold">{getFormattedStandard(fastener)}</p>
                               </div>
                               {getSourceBadge(fastener)}
                             </div>

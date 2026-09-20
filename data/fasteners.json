@@ -20,7 +20,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN173",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 173"
   },
   {
     "id": "an3-10a",
@@ -43,7 +44,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN3",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 3"
   },
   {
     "id": "an315-4r",
@@ -66,7 +68,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN315",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 315"
   },
   {
     "id": "an4-12a",
@@ -89,7 +92,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN4",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 4"
   },
   {
     "id": "an5-20a",
@@ -112,7 +116,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN5",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 5"
   },
   {
     "id": "an500a10-8",
@@ -135,7 +140,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN500",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 500"
   },
   {
     "id": "an525-10r8",
@@ -158,7 +164,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN525",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 525"
   },
   {
     "id": "an6-16a",
@@ -181,7 +188,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN6",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 6"
   },
   {
     "id": "an7-10a",
@@ -204,7 +212,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN7",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 7"
   },
   {
     "id": "an73-6a",
@@ -227,7 +236,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN73",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 73"
   },
   {
     "id": "an74-12a",
@@ -250,7 +260,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN74",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 74"
   },
   {
     "id": "an960-416",
@@ -272,15 +283,16 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN960",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 960"
   },
   {
     "id": "iso-1207-m3-10",
-    "designation": "ISO 1207 M3\u00d710",
+    "designation": "ISO 1207 M3×10",
     "family": "iso",
     "diameter": 3,
     "length_mm": 10,
-    "thread": "M3\u00d70.5",
+    "thread": "M3×0.5",
     "material": "Steel Grade 4.8",
     "tensile_strength_mpa": 400,
     "coating": "Zinc plated",
@@ -310,11 +322,11 @@
   },
   {
     "id": "iso-1207-m4-12",
-    "designation": "ISO 1207 M4\u00d712",
+    "designation": "ISO 1207 M4×12",
     "family": "iso",
     "diameter": 4,
     "length_mm": 12,
-    "thread": "M4\u00d70.7",
+    "thread": "M4×0.7",
     "material": "Steel Grade 4.8",
     "tensile_strength_mpa": 400,
     "coating": "Zinc plated",
@@ -344,11 +356,11 @@
   },
   {
     "id": "iso-1207-m5-16",
-    "designation": "ISO 1207 M5\u00d716",
+    "designation": "ISO 1207 M5×16",
     "family": "iso",
     "diameter": 5,
     "length_mm": 16,
-    "thread": "M5\u00d70.8",
+    "thread": "M5×0.8",
     "material": "Steel Grade 4.8",
     "tensile_strength_mpa": 400,
     "coating": "Zinc plated",
@@ -378,11 +390,11 @@
   },
   {
     "id": "iso-1207-m5-20",
-    "designation": "ISO 1207 M5\u00d720",
+    "designation": "ISO 1207 M5×20",
     "family": "iso",
     "diameter": 5,
     "length_mm": 20,
-    "thread": "M5\u00d70.8",
+    "thread": "M5×0.8",
     "material": "Steel Grade 4.8",
     "tensile_strength_mpa": 400,
     "coating": "Zinc plated",
@@ -412,11 +424,11 @@
   },
   {
     "id": "iso-1207-m6-20",
-    "designation": "ISO 1207 M6\u00d720",
+    "designation": "ISO 1207 M6×20",
     "family": "iso",
     "diameter": 6,
     "length_mm": 20,
-    "thread": "M6\u00d71",
+    "thread": "M6×1",
     "material": "Steel Grade 4.8",
     "tensile_strength_mpa": 400,
     "coating": "Zinc plated",
@@ -446,11 +458,11 @@
   },
   {
     "id": "iso-1207-m8-25",
-    "designation": "ISO 1207 M8\u00d725",
+    "designation": "ISO 1207 M8×25",
     "family": "iso",
     "diameter": 8,
     "length_mm": 25,
-    "thread": "M8\u00d71.25",
+    "thread": "M8×1.25",
     "material": "Steel Grade 4.8",
     "tensile_strength_mpa": 400,
     "coating": "Zinc plated",
@@ -480,11 +492,11 @@
   },
   {
     "id": "iso-4017-m10-50",
-    "designation": "ISO 4017 M10\u00d750",
+    "designation": "ISO 4017 M10×50",
     "family": "iso",
     "diameter": 10,
     "length_mm": 50,
-    "thread": "M10\u00d71.5",
+    "thread": "M10×1.5",
     "material": "Steel Grade 8.8",
     "tensile_strength_mpa": 800,
     "coating": "Zinc plated",
@@ -513,11 +525,11 @@
   },
   {
     "id": "iso-4017-m12-60",
-    "designation": "ISO 4017 M12\u00d760",
+    "designation": "ISO 4017 M12×60",
     "family": "iso",
     "diameter": 12,
     "length_mm": 60,
-    "thread": "M12\u00d71.75",
+    "thread": "M12×1.75",
     "material": "Steel Grade 8.8",
     "tensile_strength_mpa": 800,
     "coating": "Zinc plated",
@@ -546,11 +558,11 @@
   },
   {
     "id": "iso-4017-m3-12",
-    "designation": "ISO 4017 M3\u00d712",
+    "designation": "ISO 4017 M3×12",
     "family": "iso",
     "diameter": 3,
     "length_mm": 12,
-    "thread": "M3\u00d70.5",
+    "thread": "M3×0.5",
     "material": "Steel Grade 8.8",
     "tensile_strength_mpa": 800,
     "coating": "Zinc plated",
@@ -579,11 +591,11 @@
   },
   {
     "id": "iso-4017-m4-16",
-    "designation": "ISO 4017 M4\u00d716",
+    "designation": "ISO 4017 M4×16",
     "family": "iso",
     "diameter": 4,
     "length_mm": 16,
-    "thread": "M4\u00d70.7",
+    "thread": "M4×0.7",
     "material": "Steel Grade 8.8",
     "tensile_strength_mpa": 800,
     "coating": "Zinc plated",
@@ -612,11 +624,11 @@
   },
   {
     "id": "iso-4017-m5-20",
-    "designation": "ISO 4017 M5\u00d720",
+    "designation": "ISO 4017 M5×20",
     "family": "iso",
     "diameter": 5,
     "length_mm": 20,
-    "thread": "M5\u00d70.8",
+    "thread": "M5×0.8",
     "material": "Steel Grade 8.8",
     "tensile_strength_mpa": 800,
     "coating": "Zinc plated",
@@ -645,11 +657,11 @@
   },
   {
     "id": "iso-4017-m6-25",
-    "designation": "ISO 4017 M6\u00d725",
+    "designation": "ISO 4017 M6×25",
     "family": "iso",
     "diameter": 6,
     "length_mm": 25,
-    "thread": "M6\u00d71",
+    "thread": "M6×1",
     "material": "Steel Grade 8.8",
     "tensile_strength_mpa": 800,
     "coating": "Zinc plated",
@@ -678,11 +690,11 @@
   },
   {
     "id": "iso-4017-m6-30",
-    "designation": "ISO 4017 M6\u00d730",
+    "designation": "ISO 4017 M6×30",
     "family": "iso",
     "diameter": 6,
     "length_mm": 30,
-    "thread": "M6\u00d71",
+    "thread": "M6×1",
     "material": "Steel Grade 8.8",
     "tensile_strength_mpa": 800,
     "coating": "Zinc plated",
@@ -711,11 +723,11 @@
   },
   {
     "id": "iso-4017-m8-40",
-    "designation": "ISO 4017 M8\u00d740",
+    "designation": "ISO 4017 M8×40",
     "family": "iso",
     "diameter": 8,
     "length_mm": 40,
-    "thread": "M8\u00d71.25",
+    "thread": "M8×1.25",
     "material": "Steel Grade 8.8",
     "tensile_strength_mpa": 800,
     "coating": "Zinc plated",
@@ -748,7 +760,7 @@
     "family": "iso",
     "diameter": 10,
     "length_mm": 0,
-    "thread": "M10\u00d71.5",
+    "thread": "M10×1.5",
     "material": "Steel Grade 8",
     "tensile_strength_mpa": 800,
     "coating": "Zinc plated",
@@ -780,7 +792,7 @@
     "family": "iso",
     "diameter": 12,
     "length_mm": 0,
-    "thread": "M12\u00d71.75",
+    "thread": "M12×1.75",
     "material": "Steel Grade 8",
     "tensile_strength_mpa": 800,
     "coating": "Zinc plated",
@@ -812,7 +824,7 @@
     "family": "iso",
     "diameter": 3,
     "length_mm": 0,
-    "thread": "M3\u00d70.5",
+    "thread": "M3×0.5",
     "material": "Steel Grade 8",
     "tensile_strength_mpa": 800,
     "coating": "Zinc plated",
@@ -844,7 +856,7 @@
     "family": "iso",
     "diameter": 4,
     "length_mm": 0,
-    "thread": "M4\u00d70.7",
+    "thread": "M4×0.7",
     "material": "Steel Grade 8",
     "tensile_strength_mpa": 800,
     "coating": "Zinc plated",
@@ -876,7 +888,7 @@
     "family": "iso",
     "diameter": 5,
     "length_mm": 0,
-    "thread": "M5\u00d70.8",
+    "thread": "M5×0.8",
     "material": "Steel Grade 8",
     "tensile_strength_mpa": 800,
     "coating": "Zinc plated",
@@ -908,7 +920,7 @@
     "family": "iso",
     "diameter": 6,
     "length_mm": 0,
-    "thread": "M6\u00d71",
+    "thread": "M6×1",
     "material": "Steel Grade 8",
     "tensile_strength_mpa": 800,
     "coating": "Zinc plated",
@@ -940,7 +952,7 @@
     "family": "iso",
     "diameter": 8,
     "length_mm": 0,
-    "thread": "M8\u00d71.25",
+    "thread": "M8×1.25",
     "material": "Steel Grade 8",
     "tensile_strength_mpa": 800,
     "coating": "Zinc plated",
@@ -968,11 +980,11 @@
   },
   {
     "id": "iso-4762-m10-50",
-    "designation": "ISO 4762 M10\u00d750",
+    "designation": "ISO 4762 M10×50",
     "family": "iso",
     "diameter": 10,
     "length_mm": 50,
-    "thread": "M10\u00d71.5",
+    "thread": "M10×1.5",
     "material": "Steel Grade 12.9",
     "tensile_strength_mpa": 1200,
     "coating": "Black oxide",
@@ -1003,11 +1015,11 @@
   },
   {
     "id": "iso-4762-m12-60",
-    "designation": "ISO 4762 M12\u00d760",
+    "designation": "ISO 4762 M12×60",
     "family": "iso",
     "diameter": 12,
     "length_mm": 60,
-    "thread": "M12\u00d71.75",
+    "thread": "M12×1.75",
     "material": "Steel Grade 12.9",
     "tensile_strength_mpa": 1200,
     "coating": "Black oxide",
@@ -1038,11 +1050,11 @@
   },
   {
     "id": "iso-4762-m3-12",
-    "designation": "ISO 4762 M3\u00d712",
+    "designation": "ISO 4762 M3×12",
     "family": "iso",
     "diameter": 3,
     "length_mm": 12,
-    "thread": "M3\u00d70.5",
+    "thread": "M3×0.5",
     "material": "Steel Grade 12.9",
     "tensile_strength_mpa": 1200,
     "coating": "Black oxide",
@@ -1073,11 +1085,11 @@
   },
   {
     "id": "iso-4762-m4-16",
-    "designation": "ISO 4762 M4\u00d716",
+    "designation": "ISO 4762 M4×16",
     "family": "iso",
     "diameter": 4,
     "length_mm": 16,
-    "thread": "M4\u00d70.7",
+    "thread": "M4×0.7",
     "material": "Steel Grade 12.9",
     "tensile_strength_mpa": 1200,
     "coating": "Black oxide",
@@ -1108,11 +1120,11 @@
   },
   {
     "id": "iso-4762-m5-20",
-    "designation": "ISO 4762 M5\u00d720",
+    "designation": "ISO 4762 M5×20",
     "family": "iso",
     "diameter": 5,
     "length_mm": 20,
-    "thread": "M5\u00d70.8",
+    "thread": "M5×0.8",
     "material": "Steel Grade 12.9",
     "tensile_strength_mpa": 1200,
     "coating": "Black oxide",
@@ -1143,11 +1155,11 @@
   },
   {
     "id": "iso-4762-m6-25",
-    "designation": "ISO 4762 M6\u00d725",
+    "designation": "ISO 4762 M6×25",
     "family": "iso",
     "diameter": 6,
     "length_mm": 25,
-    "thread": "M6\u00d71",
+    "thread": "M6×1",
     "material": "Steel Grade 12.9",
     "tensile_strength_mpa": 1200,
     "coating": "Black oxide",
@@ -1178,11 +1190,11 @@
   },
   {
     "id": "iso-4762-m8-35",
-    "designation": "ISO 4762 M8\u00d735",
+    "designation": "ISO 4762 M8×35",
     "family": "iso",
     "diameter": 8,
     "length_mm": 35,
-    "thread": "M8\u00d71.25",
+    "thread": "M8×1.25",
     "material": "Steel Grade 12.9",
     "tensile_strength_mpa": 1200,
     "coating": "Black oxide",
@@ -1421,7 +1433,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20001",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 20001"
   },
   {
     "id": "ms20004-4c6",
@@ -1444,7 +1457,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20004",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 20004"
   },
   {
     "id": "ms20392-2c12",
@@ -1467,7 +1481,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20392",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 20392"
   },
   {
     "id": "ms20392-3c16",
@@ -1490,7 +1505,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20392",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 20392"
   },
   {
     "id": "ms20426ad4-5",
@@ -1513,7 +1529,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20426",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 20426"
   },
   {
     "id": "ms20470ad4-6",
@@ -1536,7 +1553,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20470",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 20470"
   },
   {
     "id": "ms20470ad5-8",
@@ -1559,7 +1577,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20470",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 20470"
   },
   {
     "id": "ms20613-4c8",
@@ -1582,7 +1601,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20613",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 20613"
   },
   {
     "id": "ms20613-5c12",
@@ -1605,7 +1625,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20613",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 20613"
   },
   {
     "id": "ms21250-4l",
@@ -1628,7 +1649,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS21250",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 21250"
   },
   {
     "id": "ms21250-5l",
@@ -1651,7 +1673,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS21250",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 21250"
   },
   {
     "id": "ms24665-132",
@@ -1674,7 +1697,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24665",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24665"
   },
   {
     "id": "ms35333-41",
@@ -1696,7 +1720,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS35333",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 35333"
   },
   {
     "id": "ms35338-45",
@@ -1719,7 +1744,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS35338",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 35338"
   },
   {
     "id": "nas1352-04-4",
@@ -3555,7 +3581,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated",
-    "notes": "Non-structural 100\u00b0 countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Non-structural 100° countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -3566,7 +3592,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24693",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24693"
   },
   {
     "id": "ms24693-s41",
@@ -3578,7 +3605,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated",
-    "notes": "Non-structural 100\u00b0 countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Non-structural 100° countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -3589,7 +3616,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24693",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24693"
   },
   {
     "id": "ms24693-s42",
@@ -3601,7 +3629,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated",
-    "notes": "Non-structural 100\u00b0 countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Non-structural 100° countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -3612,7 +3640,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24693",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24693"
   },
   {
     "id": "ms24693-s92",
@@ -3624,7 +3653,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated",
-    "notes": "Non-structural 100\u00b0 countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Non-structural 100° countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -3635,7 +3664,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24693",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24693"
   },
   {
     "id": "ms24693-s93",
@@ -3647,7 +3677,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated",
-    "notes": "Non-structural 100\u00b0 countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Non-structural 100° countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -3658,7 +3688,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24693",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24693"
   },
   {
     "id": "ms24693-s94",
@@ -3670,7 +3701,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated",
-    "notes": "Non-structural 100\u00b0 countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Non-structural 100° countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -3681,7 +3712,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24693",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24693"
   },
   {
     "id": "ms24693-s162",
@@ -3693,7 +3725,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated",
-    "notes": "Non-structural 100\u00b0 countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Non-structural 100° countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -3704,7 +3736,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24693",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24693"
   },
   {
     "id": "ms24693-s163",
@@ -3716,7 +3749,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated",
-    "notes": "Non-structural 100\u00b0 countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Non-structural 100° countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -3727,7 +3760,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24693",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24693"
   },
   {
     "id": "ms24693-s164",
@@ -3739,7 +3773,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated",
-    "notes": "Non-structural 100\u00b0 countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Non-structural 100° countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -3750,7 +3784,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24693",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24693"
   },
   {
     "id": "ms24693-s252",
@@ -3762,7 +3797,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated",
-    "notes": "Non-structural 100\u00b0 countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Non-structural 100° countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -3773,7 +3808,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24693",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24693"
   },
   {
     "id": "ms24693-s253",
@@ -3785,7 +3821,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated",
-    "notes": "Non-structural 100\u00b0 countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Non-structural 100° countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -3796,7 +3832,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24693",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24693"
   },
   {
     "id": "ms24693-s254",
@@ -3808,7 +3845,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated",
-    "notes": "Non-structural 100\u00b0 countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Non-structural 100° countersunk machine screw. Supersedes AN507. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -3819,7 +3856,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24693",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24693"
   },
   {
     "id": "ms24694-c1",
@@ -3831,7 +3869,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated or stainless",
-    "notes": "Structural 100\u00b0 countersunk machine screw. Supersedes AN509. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Structural 100° countersunk machine screw. Supersedes AN509. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -3843,7 +3881,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24694",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24694"
   },
   {
     "id": "ms24694-c2",
@@ -3855,7 +3894,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated or stainless",
-    "notes": "Structural 100\u00b0 countersunk machine screw. Supersedes AN509. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Structural 100° countersunk machine screw. Supersedes AN509. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -3867,7 +3906,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24694",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24694"
   },
   {
     "id": "ms24694-c3",
@@ -3879,7 +3919,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated or stainless",
-    "notes": "Structural 100\u00b0 countersunk machine screw. Supersedes AN509. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Structural 100° countersunk machine screw. Supersedes AN509. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -3891,7 +3931,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24694",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24694"
   },
   {
     "id": "ms24694-c26",
@@ -3903,7 +3944,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated or stainless",
-    "notes": "Structural 100\u00b0 countersunk machine screw. Supersedes AN509. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Structural 100° countersunk machine screw. Supersedes AN509. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -3915,7 +3956,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24694",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24694"
   },
   {
     "id": "ms24694-c27",
@@ -3927,7 +3969,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated or stainless",
-    "notes": "Structural 100\u00b0 countersunk machine screw. Supersedes AN509. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Structural 100° countersunk machine screw. Supersedes AN509. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -3939,7 +3981,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24694",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24694"
   },
   {
     "id": "ms24694-c28",
@@ -3951,7 +3994,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated or stainless",
-    "notes": "Structural 100\u00b0 countersunk machine screw. Supersedes AN509. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Structural 100° countersunk machine screw. Supersedes AN509. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -3963,7 +4006,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24694",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24694"
   },
   {
     "id": "ms24694-c29",
@@ -3975,7 +4019,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated or stainless",
-    "notes": "Structural 100\u00b0 countersunk machine screw. Supersedes AN509. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Structural 100° countersunk machine screw. Supersedes AN509. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -3987,7 +4031,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24694",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24694"
   },
   {
     "id": "ms24694-c50",
@@ -3999,7 +4044,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated or stainless",
-    "notes": "Structural 100\u00b0 countersunk machine screw. Supersedes AN509. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Structural 100° countersunk machine screw. Supersedes AN509. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -4011,7 +4056,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24694",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24694"
   },
   {
     "id": "ms24694-c51",
@@ -4023,7 +4069,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated or stainless",
-    "notes": "Structural 100\u00b0 countersunk machine screw. Supersedes AN509. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Structural 100° countersunk machine screw. Supersedes AN509. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -4035,7 +4081,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24694",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24694"
   },
   {
     "id": "ms24694-c52",
@@ -4047,7 +4094,7 @@
     "material": "Alloy steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated or stainless",
-    "notes": "Structural 100\u00b0 countersunk machine screw. Supersedes AN509. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "Structural 100° countersunk machine screw. Supersedes AN509. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount",
@@ -4059,7 +4106,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS24694",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 24694"
   },
   {
     "id": "ms51957-1",
@@ -4082,7 +4130,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS51957",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 51957"
   },
   {
     "id": "ms51957-10",
@@ -4105,7 +4154,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS51957",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 51957"
   },
   {
     "id": "ms51957-20",
@@ -4128,7 +4178,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS51957",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 51957"
   },
   {
     "id": "ms51957-30",
@@ -4151,7 +4202,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS51957",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 51957"
   },
   {
     "id": "ms51957-40",
@@ -4174,7 +4226,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS51957",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 51957"
   },
   {
     "id": "ms51957-50",
@@ -4197,7 +4250,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS51957",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 51957"
   },
   {
     "id": "ms51957-51",
@@ -4220,7 +4274,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS51957",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 51957"
   },
   {
     "id": "ms51957-52",
@@ -4243,7 +4298,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS51957",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 51957"
   },
   {
     "id": "ms51957-60",
@@ -4266,7 +4322,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS51957",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 51957"
   },
   {
     "id": "ms51957-61",
@@ -4289,7 +4346,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS51957",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 51957"
   },
   {
     "id": "an310-3",
@@ -4312,7 +4370,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN310",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 310"
   },
   {
     "id": "an310-4",
@@ -4335,7 +4394,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN310",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 310"
   },
   {
     "id": "an310-5",
@@ -4358,7 +4418,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN310",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 310"
   },
   {
     "id": "an310-6",
@@ -4381,7 +4442,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN310",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 310"
   },
   {
     "id": "an310-7",
@@ -4404,7 +4466,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN310",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 310"
   },
   {
     "id": "an310-8",
@@ -4427,7 +4490,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN310",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 310"
   },
   {
     "id": "an310-10",
@@ -4450,7 +4514,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN310",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 310"
   },
   {
     "id": "an380-2-1",
@@ -4473,7 +4538,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN380",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 380"
   },
   {
     "id": "an380-2-2",
@@ -4496,7 +4562,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN380",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 380"
   },
   {
     "id": "an380-3-1",
@@ -4519,7 +4586,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN380",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 380"
   },
   {
     "id": "an380-3-2",
@@ -4542,7 +4610,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN380",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 380"
   },
   {
     "id": "an380-4-1",
@@ -4565,7 +4634,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN380",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 380"
   },
   {
     "id": "an380-4-2",
@@ -4588,7 +4658,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN380",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 380"
   },
   {
     "id": "an380-5-1",
@@ -4611,7 +4682,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN380",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 380"
   },
   {
     "id": "an380-5-2",
@@ -4634,7 +4706,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN380",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 380"
   },
   {
     "id": "an380-6-2",
@@ -4657,7 +4730,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN380",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 380"
   },
   {
     "id": "an363-428",
@@ -4680,7 +4754,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN363",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 363"
   },
   {
     "id": "an363-524",
@@ -4703,7 +4778,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN363",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 363"
   },
   {
     "id": "an363-624",
@@ -4726,7 +4802,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN363",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 363"
   },
   {
     "id": "an363-720",
@@ -4749,7 +4826,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN363",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 363"
   },
   {
     "id": "an363-820",
@@ -4772,7 +4850,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN363",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 363"
   },
   {
     "id": "an363-1032",
@@ -4795,7 +4874,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN363",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 363"
   },
   {
     "id": "an364-428",
@@ -4819,7 +4899,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN364",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 364"
   },
   {
     "id": "an364-524",
@@ -4843,7 +4924,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN364",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 364"
   },
   {
     "id": "an364-624",
@@ -4867,7 +4949,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN364",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 364"
   },
   {
     "id": "an364-720",
@@ -4891,7 +4974,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN364",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 364"
   },
   {
     "id": "an364-820",
@@ -4915,7 +4999,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN364",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 364"
   },
   {
     "id": "an364-1032",
@@ -4939,7 +5024,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=AN364",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "AN 364"
   },
   {
     "id": "ms20995-c20",
@@ -4962,7 +5048,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20995",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 20995"
   },
   {
     "id": "ms20995-c25",
@@ -4985,7 +5072,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20995",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 20995"
   },
   {
     "id": "ms20995-c32",
@@ -5008,7 +5096,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20995",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 20995"
   },
   {
     "id": "ms20995-c41",
@@ -5031,7 +5120,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20995",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 20995"
   },
   {
     "id": "ms20995-c51",
@@ -5054,7 +5144,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS20995",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 20995"
   },
   {
     "id": "ms35206-416",
@@ -5076,7 +5167,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS35206",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 35206"
   },
   {
     "id": "ms35206-420",
@@ -5098,7 +5190,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS35206",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 35206"
   },
   {
     "id": "ms35206-632",
@@ -5120,7 +5213,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS35206",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 35206"
   },
   {
     "id": "ms35206-820",
@@ -5142,7 +5236,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS35206",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 35206"
   },
   {
     "id": "ms35206-824",
@@ -5164,7 +5259,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS35206",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 35206"
   },
   {
     "id": "ms35206-1016",
@@ -5186,7 +5282,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS35206",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 35206"
   },
   {
     "id": "ms35206-1020",
@@ -5208,7 +5305,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS35206",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 35206"
   },
   {
     "id": "ms35206-1024",
@@ -5230,7 +5328,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS35206",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 35206"
   },
   {
     "id": "ms35207-416",
@@ -5242,7 +5341,7 @@
     "material": "Steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated",
-    "notes": "82\u00b0 flat countersunk machine screw, slotted. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "82° flat countersunk machine screw, slotted. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount"
@@ -5252,7 +5351,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS35207",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 35207"
   },
   {
     "id": "ms35207-420",
@@ -5264,7 +5364,7 @@
     "material": "Steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated",
-    "notes": "82\u00b0 flat countersunk machine screw, slotted. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "82° flat countersunk machine screw, slotted. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount"
@@ -5274,7 +5374,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS35207",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 35207"
   },
   {
     "id": "ms35207-632",
@@ -5286,7 +5387,7 @@
     "material": "Steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated",
-    "notes": "82\u00b0 flat countersunk machine screw, slotted. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "82° flat countersunk machine screw, slotted. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount"
@@ -5296,7 +5397,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS35207",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 35207"
   },
   {
     "id": "ms35207-820",
@@ -5308,7 +5410,7 @@
     "material": "Steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated",
-    "notes": "82\u00b0 flat countersunk machine screw, slotted. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "82° flat countersunk machine screw, slotted. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount"
@@ -5318,7 +5420,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS35207",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 35207"
   },
   {
     "id": "ms35207-1016",
@@ -5330,7 +5433,7 @@
     "material": "Steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated",
-    "notes": "82\u00b0 flat countersunk machine screw, slotted. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "82° flat countersunk machine screw, slotted. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount"
@@ -5340,7 +5443,8 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS35207",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 35207"
   },
   {
     "id": "ms35207-1020",
@@ -5352,7 +5456,7 @@
     "material": "Steel",
     "tensile_strength_mpa": 862,
     "coating": "Cadmium plated",
-    "notes": "82\u00b0 flat countersunk machine screw, slotted. Dimensional data from ASSIST dash chart. Dist Statement A.",
+    "notes": "82° flat countersunk machine screw, slotted. Dimensional data from ASSIST dash chart. Dist Statement A.",
     "capabilities": [
       "aerospace",
       "flush-mount"
@@ -5362,6 +5466,7 @@
     "source_url": "https://quicksearch.dla.mil/qsSearch.aspx?searchText=MS35207",
     "revision": "Current",
     "license": "public_domain_us_gov",
-    "confidence": "exact"
+    "confidence": "exact",
+    "standard": "MS 35207"
   }
 ]
