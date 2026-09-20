@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-09-20T17:00:00Z",
+  "source": "Onshape Part Studio API",
+  "format": "STEP AP214",
+  "contains_brep": true,
+  "fasteners": [
+    {
+      "id": "iso-1207-m3-10",
+      "designation": "ISO 1207 M3\u00d710",
+      "diameter_mm": 3,
+      "length_mm": 10,
+      "file": "iso-1207-m3-10.step"
+    },
+    {
+      "id": "iso-1207-m4-12",
+      "designation": "ISO 1207 M4\u00d712",
+      "diameter_mm": 4,
+      "length_mm": 12,
+      "file": "iso-1207-m4-12.step"
+    },
+    {
+      "id": "iso-1207-m5-16",
+      "designation": "ISO 1207 M5\u00d716",
+      "diameter_mm": 5,
+      "length_mm": 16,
+      "file": "iso-1207-m5-16.step"
+    },
+    {
+      "id": "iso-1207-m5-20",
+      "designation": "ISO 1207 M5\u00d720",
+      "diameter_mm": 5,
+      "length_mm": 20,
+      "file": "iso-1207-m5-20.step"
+    },
+    {
+      "id": "iso-1207-m6-20",
+      "designation": "ISO 1207 M6\u00d720",
+      "diameter_mm": 6,
+      "length_mm": 20,
+      "file": "iso-1207-m6-20.step"
+    },
+    {
+      "id": "iso-1207-m8-25",
+      "designation": "ISO 1207 M8\u00d725",
+      "diameter_mm": 8,
+      "length_mm": 25,
+      "file": "iso-1207-m8-25.step"
+    },
+    {
+      "id": "iso-4017-m10-50",
+      "designation": "ISO 4017 M10\u00d750",
+      "diameter_mm": 10,
+      "length_mm": 50,
+      "file": "iso-4017-m10-50.step"
+    },
+    {
+      "id": "iso-4017-m12-60",
+      "designation": "ISO 4017 M12\u00d760",
+      "diameter_mm": 12,
+      "length_mm": 60,
+      "file": "iso-4017-m12-60.step"
+    },
+    {
+      "id": "iso-4017-m3-12",
+      "designation": "ISO 4017 M3\u00d712",
+      "diameter_mm": 3,
+      "length_mm": 12,
+      "file": "iso-4017-m3-12.step"
+    },
+    {
+      "id": "iso-4017-m4-16",
+      "designation": "ISO 4017 M4\u00d716",
+      "diameter_mm": 4,
+      "length_mm": 16,
+      "file": "iso-4017-m4-16.step"
+    },
+    {
+      "id": "iso-4017-m5-20",
+      "designation": "ISO 4017 M5\u00d720",
+      "diameter_mm": 5,
+      "length_mm": 20,
+      "file": "iso-4017-m5-20.step"
+    },
+    {
+      "id": "iso-4017-m6-25",
+      "designation": "ISO 4017 M6\u00d725",
+      "diameter_mm": 6,
+      "length_mm": 25,
+      "file": "iso-4017-m6-25.step"
+    },
+    {
+      "id": "iso-4017-m6-30",
+      "designation": "ISO 4017 M6\u00d730",
+      "diameter_mm": 6,
+      "length_mm": 30,
+      "file": "iso-4017-m6-30.step"
+    },
+    {
+      "id": "iso-4017-m8-40",
+      "designation": "ISO 4017 M8\u00d740",
+      "diameter_mm": 8,
+      "length_mm": 40,
+      "file": "iso-4017-m8-40.step"
+    },
+    {
+      "id": "iso-4762-m10-50",
+      "designation": "ISO 4762 M10\u00d750",
+      "diameter_mm": 10,
+      "length_mm": 50,
+      "file": "iso-4762-m10-50.step"
+    }
+  ]
+}
