@@ -1,162 +1,240 @@
-# Onshape STEP Generation
+# Onshape STEP Generation Guide
 
-This document explains how to generate high-quality BREP STEP files for fasteners using Onshape's geometry engine.
+## ⚠️ IMPORTANT: Real BREP Geometry Required
+
+This repository does NOT ship with placeholder STEP files. Engineer must run the generation script with valid Onshape API credentials to create actual MANIFOLD_SOLID_BREP geometry.
 
 ## Overview
 
-The `scripts/generate-onshape-step.py` script uses the Onshape REST API to:
-1. Create parametric fastener geometry in Part Studios
-2. Export BREP STEP files (boundary representation)
-3. Store files in `public/models/` for serving via the API
+The `scripts/generate-onshape-step.py` script uses Onshape's REST API to:
+1. Create/access Part Studio elements in an Onshape document
+2. Add parametric features (cylinders, extrudes) from catalog dimensions
+3. Export BREP STEP files with real solid geometry
+4. Save files to `public/models/` for the API to serve
 
 ## Prerequisites
 
-### Onshape API Keys
+### 1. Onshape API Keys
 
-You need Onshape API credentials:
+Get your API credentials:
 
 1. Log in to [Onshape](https://cad.onshape.com)
-2. Go to your account settings (top-right menu)
-3. Navigate to **API Keys** section
-4. Click **Create new API key**
-5. Save the Access Key and Secret Key securely
+2. Account settings (top-right) → **API Keys**
+3. **Create new API key**
+4. Save Access Key and Secret Key
 
 **⚠️ NEVER commit API keys to the repository**
 
-### Environment Variables
+### 2. Onshape Document
 
-Set these environment variables before running the script:
+You need a document where the script can create Part Studio geometry:
+
+**Option A: Use existing document**
+```bash
+export ONSHAPE_DOCUMENT_ID='your_document_id'
+export ONSHAPE_WORKSPACE_ID='your_workspace_id'
+```
+
+**Option B: Create new document via API**
+```bash
+python3 scripts/generate-onshape-step.py --create-document
+```
+
+### 3. Required Python Packages
 
 ```bash
-export ONSHAPE_ACCESS_KEY='your_access_key_here'
-export ONSHAPE_SECRET_KEY='your_secret_key_here'
+pip3 install requests
+```
+
+For advanced usage with proper FeatureScript feature addition:
+```bash
+pip3 install onshape-client
 ```
 
 ## Usage
 
-### Generate STEP Files
-
-Run the script from the workspace root:
+### Set Environment Variables
 
 ```bash
+export ONSHAPE_ACCESS_KEY='your_access_key_here'
+export ONSHAPE_SECRET_KEY='your_secret_key_here'
+export ONSHAPE_DOCUMENT_ID='your_document_id'
+export ONSHAPE_WORKSPACE_ID='your_workspace_id'
+```
+
+### Run STEP Generation
+
+```bash
+cd /path/to/fastener-mcp
 python3 scripts/generate-onshape-step.py
 ```
 
 This will:
-- Load fasteners from `data/fasteners.json`
-- Create/update geometry in Onshape Part Studios
-- Export STEP files to `public/models/`
-- Skip fasteners with `length_mm = 0` (nuts, washers)
+- Connect to Onshape with your credentials
+- Access the specified document/workspace
+- Create Part Studio geometry for each fastener
+- Export STEP files with MANIFOLD_SOLID_BREP
+- Save to `public/models/*.step`
 
-### Testing Without API Keys
+### Verify STEP Files
 
-If API keys are not set, the script will generate minimal placeholder STEP files for testing the application UI and API routes:
+Check that generated STEP files contain real geometry:
 
 ```bash
-python3 scripts/generate-onshape-step.py
+# Should see MANIFOLD_SOLID_BREP, CARTESIAN_POINT, etc.
+grep -i "MANIFOLD_SOLID_BREP\|CARTESIAN_POINT" public/models/iso-4017-m6-30.step
 ```
 
-These placeholder files are minimal ISO 10303-21 STEP files that parse correctly but contain no actual geometry. Replace with real Onshape exports for production.
+Empty files (only HEADER/APPLICATION_CONTEXT) are NOT valid.
 
-## Architecture
+## Implementation Approaches
 
-### Onshape REST API
+### Approach 1: Manual Part Studio + Script Export (RECOMMENDED)
 
-The script uses Onshape's REST API v6 with HMAC-based authentication:
+This is the most reliable approach for production:
+
+1. **Create Part Studio manually in Onshape**
+   - Open your document in Onshape
+   - Create a Part Studio
+   - Add a few fastener geometries as examples
+
+2. **Use configurations for variants**
+   - Create configuration variables for diameter, length, head type
+   - Single parametric model with configurations
+
+3. **Export via script**
+   - Use the export API to download STEP for each configuration
+   - Much simpler than programmatic feature addition
+
+### Approach 2: Onshape Python Client Library
+
+Use Onshape's official Python client:
+
+```bash
+pip3 install onshape-client
+```
 
 ```python
-from onshape_client import OnshapeClient
+from onshape_client.client import Client
 
-client = OnshapeClient(access_key, secret_key)
-step_content = client.export_step(
-    document_id="your_document_id",
-    workspace_id="your_workspace_id",
-    element_id="part_studio_element_id"
+client = Client(
+    configuration={
+        "access_key": os.environ['ONSHAPE_ACCESS_KEY'],
+        "secret_key": os.environ['ONSHAPE_SECRET_KEY']
+    }
 )
+
+# Use client methods to add features, export STEP
 ```
 
-### Parametric Geometry Creation
+See: https://github.com/onshape-public/onshape-clients
 
-**Current Status:** Template implementation
+### Approach 3: REST API Feature Addition (ADVANCED)
 
-The script demonstrates the authentication and export flow. For production use, you need to implement FeatureScript API calls to create parametric geometry:
+The current script demonstrates the REST API structure but requires completing the feature addition logic. This is complex because:
 
-1. **Create Part Studio** - Add a new Part Studio element to the document
-2. **Add Features** - Use FeatureScript API to create:
-   - Cylindrical shaft (extrude from circle sketch)
-   - Head geometry (hex, socket, pan, etc.)
-   - Thread features (cosmetic or modeled)
-3. **Regenerate** - Rebuild the feature tree
-4. **Export STEP** - Download BREP STEP file
+- Onshape features use FeatureScript
+- Feature definitions require specific JSON schema
+- Requires understanding Onshape's internal feature representation
 
-See [Onshape API Explorer](https://cad.onshape.com/glassworks/explorer) for details.
+For production, prefer Approach 1 or 2.
 
-## Test Document
+## Expected STEP File Structure
 
-The default test document referenced in the script:
-- **Document ID:** `f542e957084b482e3f7a1669`
-- **Workspace ID:** `16ea943dbdbd1d73ac65ed3e`
+Valid STEP files should contain:
 
-You may need to create your own test document and update these IDs.
-
-## Output Format
-
-Generated STEP files:
-- **Format:** ISO 10303-21 (STEP AP214 or AP242)
-- **Encoding:** ASCII
-- **Geometry:** BREP (boundary representation) from Onshape's geometry kernel
-- **Naming:** `{fastener_id}.step` (e.g., `iso-4017-m6-30.step`)
-
-## Disclaimer
-
-⚠️ **NOT FOR CERTIFICATION**
-
-Generated STEP files are approximate representations derived from catalog dimensions. They are suitable for:
-- CAD drop-in and assembly previews
-- Agent-driven design workflows
-- Rapid prototyping
-
-They are **NOT** suitable for:
-- Engineering analysis (FEA, stress testing)
-- Manufacturing with tight tolerances
-- Certified aerospace/defense applications
-
-**Always consult the controlling specification** (ISO, AN, MS, NAS standards) for certified dimensions and tolerances.
+```
+ISO-10303-21;
+HEADER;
+...
+ENDSEC;
+DATA;
+#1=APPLICATION_CONTEXT('automotive design');
+...
+#45=MANIFOLD_SOLID_BREP('',#123);
+...
+#67=CARTESIAN_POINT('',(0.0, 0.0, 0.0));
+...
+ENDSEC;
+END-ISO-10303-21;
+```
 
 ## Troubleshooting
 
-### Authentication Errors
+### Authentication Errors (401 Unauthorized)
 
-If you see `401 Unauthorized`:
-- Verify your API keys are correct
-- Check that keys are set as environment variables
-- Ensure your Onshape account has API access enabled
+- Verify API keys are correct
+- Check keys are exported as environment variables
+- Ensure Onshape account has API access enabled
 
-### Rate Limiting
+### Document Access Errors (403 Forbidden)
 
-Onshape API has rate limits. The script includes `time.sleep(0.5)` delays between requests. If you hit rate limits:
+- Verify you own the document or have edit access
+- Check document ID and workspace ID are correct
+- Ensure document is not deleted
+
+### Rate Limiting (429 Too Many Requests)
+
+The script includes delays between requests. If you hit limits:
 - Reduce batch size
-- Increase delay between requests
+- Increase `time.sleep()` delays
 - Contact Onshape support for higher limits
 
-### Missing Geometry
+### Empty STEP Files Generated
 
-If exports fail with "Part not found":
-- Ensure the Part Studio element exists
-- Verify feature creation succeeded
-- Check document/workspace IDs are correct
+If STEP files are generated but contain no geometry:
+- Check Part Studio has actual solid bodies
+- Verify export API is returning binary STEP content
+- Ensure part IDs are correct in export call
+
+### No Part Studio Found
+
+Create a Part Studio in your Onshape document:
+1. Open document in browser
+2. Insert → Part Studio
+3. Name it (e.g., "Fastener Models")
+4. Note the element ID from URL or API
+
+## Alternative: Manual Export Workflow
+
+If automated generation is blocked, you can generate STEP files manually:
+
+1. Create fastener models in Onshape Part Studio
+2. File → Export → STEP for each part
+3. Download STEP files
+4. Place in `public/models/*.step`
+5. Commit to repository
+
+This is acceptable for small catalogs (< 100 fasteners).
 
 ## Production Recommendations
 
-1. **Batch Processing** - Generate STEP files as a build step, not on-demand
-2. **Caching** - Store generated files in version control or object storage
-3. **Validation** - Verify STEP files parse correctly after generation
-4. **Error Handling** - Log failures and retry with exponential backoff
-5. **Documentation** - Maintain a mapping of fastener IDs to Onshape Part Studio elements
+1. **Pre-generate STEP files** - Don't generate on-demand
+2. **Version control models** - Commit STEP files to repo (or use LFS)
+3. **Validate exports** - Check for MANIFOLD_SOLID_BREP in each file
+4. **Automate testing** - Verify STEP files parse correctly
+5. **Document provenance** - Track which Onshape document generated each file
+
+## Security
+
+- **Never commit API keys** to version control
+- Store keys in environment variables or secrets manager
+- Use read-only API keys if possible
+- Rotate keys periodically
 
 ## References
 
 - [Onshape API Documentation](https://onshape-public.github.io/docs/)
-- [Onshape API Explorer](https://cad.onshape.com/glassworks/explorer)
+- [Onshape Python Client](https://github.com/onshape-public/onshape-clients)
+- [Onshape FeatureScript](https://cad.onshape.com/FsDoc/)
 - [ISO 10303-21 STEP Format](https://en.wikipedia.org/wiki/ISO_10303-21)
-- [Fastener Standards](https://www.fasteners.eu/)
+
+## Support
+
+For Onshape API issues:
+- [Onshape API Forum](https://forum.onshape.com/categories/api)
+- [Onshape Support](https://support.onshape.com/)
+
+For this script:
+- Check issues in the repository
+- Review documentation in `/docs`
