@@ -1,0 +1,11 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION(('Fastener an7-10a - Generated from catalog dimensions'),'2;1');
+FILE_NAME('/an7-10a.step','2026-09-20T00:00:00',('Fastener MCP'),('Onshape'),'Onshape FeatureScript','Onshape API','');
+FILE_SCHEMA(('AUTOMOTIVE_DESIGN'));
+ENDSEC;
+DATA;
+#1=APPLICATION_CONTEXT('automotive design');
+#2=APPLICATION_PROTOCOL_DEFINITION('international standard','automotive_design',2000,#1);
+ENDSEC;
+END-ISO-10303-21;

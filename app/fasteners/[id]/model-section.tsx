@@ -15,7 +15,7 @@ export function ModelSection({ fastener, modelExists }: ModelSectionProps) {
   const [showToast, setShowToast] = useState(false);
 
   const copyModelUrl = () => {
-    const url = `${window.location.origin}/models/${fastener.id}.stl`;
+    const url = `${window.location.origin}/models/${fastener.id}.step`;
     navigator.clipboard.writeText(url);
     setShowToast(true);
     setTimeout(() => setShowToast(false), 2000);
@@ -28,7 +28,7 @@ export function ModelSection({ fastener, modelExists }: ModelSectionProps) {
           <CardHeader className="pb-3">
             <div className="flex items-center gap-2">
               <CardTitle className="text-lg">Simplified 3D model</CardTitle>
-              <Badge variant="secondary" className="text-xs">Simplified STL</Badge>
+              <Badge variant="secondary" className="text-xs">Simplified STEP</Badge>
             </div>
             <CardDescription>
               Approximate geometry from catalog dims for agent/CAD drop-in. Not for certification or fit-critical use.
@@ -39,12 +39,12 @@ export function ModelSection({ fastener, modelExists }: ModelSectionProps) {
               <>
                 <div className="flex gap-2">
                   <a 
-                    href={`/models/${fastener.id}.stl`}
-                    download={`${fastener.designation}.stl`}
+                    href={`/models/${fastener.id}.step`}
+                    download={`${fastener.designation}.step`}
                     className="inline-flex items-center"
                   >
                     <Button className="bg-[#4F46E5] hover:bg-[#4338CA] text-white">
-                      Download STL
+                      Download STEP
                     </Button>
                   </a>
                   <Button 
@@ -55,7 +55,7 @@ export function ModelSection({ fastener, modelExists }: ModelSectionProps) {
                   </Button>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Import in Onshape via File → Import (or any CAD). Prefer the Part Studio tab after import — a blob-only tab can hang on Loading. API push comes later.
+                  Import in Onshape via File → Import. Generated from catalog dimensions using Onshape's geometry engine.
                 </p>
               </>
             ) : (

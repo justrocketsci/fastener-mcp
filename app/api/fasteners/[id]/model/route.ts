@@ -18,7 +18,7 @@ export async function GET(
     );
   }
 
-  const modelPath = path.join(process.cwd(), 'public', 'models', `${id}.stl`);
+  const modelPath = path.join(process.cwd(), 'public', 'models', `${id}.step`);
   const modelExists = fs.existsSync(modelPath);
 
   if (!modelExists) {
@@ -32,7 +32,7 @@ export async function GET(
   }
 
   const baseUrl = request.nextUrl.origin;
-  const modelUrl = `${baseUrl}/models/${id}.stl`;
+  const modelUrl = `${baseUrl}/models/${id}.step`;
 
   return NextResponse.json({
     id: fastener.id,
@@ -44,9 +44,9 @@ export async function GET(
       thread: fastener.thread
     },
     model_url: modelUrl,
-    format: 'stl',
+    format: 'step',
     simplified_not_for_certification: true,
-    disclaimer: 'Approximate mesh for CAD drop-in and Onshape import. NOT certified for engineering analysis or manufacturing. Always consult the controlling specification.',
+    disclaimer: 'Approximate BREP STEP geometry from Onshape Part Studio for CAD drop-in. NOT certified for engineering analysis or manufacturing. Always consult the controlling specification.',
     citation: fastener.source_kind && fastener.source_kind !== 'distributor_ref' ? {
       standard: fastener.standard,
       revision: fastener.revision,

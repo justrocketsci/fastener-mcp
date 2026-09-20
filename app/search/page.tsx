@@ -169,14 +169,12 @@ export default function SearchPage() {
                       <TableHead className="text-xs uppercase text-muted-foreground font-semibold">Diameter</TableHead>
                       <TableHead className="text-xs uppercase text-muted-foreground font-semibold">Length</TableHead>
                       <TableHead className="text-xs uppercase text-muted-foreground font-semibold">Material</TableHead>
-                      <TableHead className="text-xs uppercase text-muted-foreground font-semibold">Strength</TableHead>
-                      <TableHead className="text-xs uppercase text-muted-foreground font-semibold">Status</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
                     {results.length === 0 ? (
                       <TableRow>
-                        <TableCell colSpan={7} className="text-center py-12 text-muted-foreground">
+                        <TableCell colSpan={5} className="text-center py-12 text-muted-foreground">
                           No matches in sample set — try M6 or AN3
                         </TableCell>
                       </TableRow>
@@ -207,12 +205,6 @@ export default function SearchPage() {
                           <TableCell className="text-sm max-w-[200px] truncate">
                             {fastener.material}
                           </TableCell>
-                          <TableCell className="text-sm">
-                            {getStrengthNote(fastener)}
-                          </TableCell>
-                          <TableCell>
-                            {getSourceBadge(fastener)}
-                          </TableCell>
                         </TableRow>
                       ))
                     )}
@@ -234,12 +226,9 @@ export default function SearchPage() {
                       <Card className="cursor-pointer hover:bg-accent">
                         <CardContent className="pt-6">
                           <div className="space-y-2">
-                            <div className="flex items-start justify-between gap-2">
-                              <div>
-                                <p className="font-mono text-sm text-primary">{fastener.id}</p>
-                                <p className="font-semibold">{getFormattedStandard(fastener)}</p>
-                              </div>
-                              {getSourceBadge(fastener)}
+                            <div>
+                              <p className="font-mono text-sm text-primary">{fastener.id}</p>
+                              <p className="font-semibold">{getFormattedStandard(fastener)}</p>
                             </div>
                             <div className="flex gap-4 text-sm text-muted-foreground">
                               <span>Ø{fastener.diameter > 1 ? `${fastener.diameter}mm` : `${fastener.diameter}"`}</span>
