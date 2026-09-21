@@ -38,8 +38,9 @@ This panel is designed for **private use** with personal OAuth. It is **not subm
      - **Context**: `Inside part studio` (recommended, or choose your preferred context)
      - **Action URL**: 
        ```
-       https://fastener-mcp.vercel.app/onshape/panel?documentId={$documentId}&workspaceOrVersionId={$workspaceOrVersionId}&elementId={$elementId}
+       https://fastener-mcp.vercel.app/onshape/panel?documentId={$documentId}&workspaceId={$workspaceOrVersionId}&elementId={$elementId}
        ```
+       ⚠️ **Important**: Use `workspaceId={$workspaceOrVersionId}` (not `{$workspaceId}`) — Onshape's placeholder must be `{$workspaceOrVersionId}`.
      - **Icon**: Upload `/public/onshape/icon.svg` (32×32px, indigo rounded square with white bolt)
      - **Name**: `Fastener MCP`
      - **Tooltip**: `Fastener MCP`

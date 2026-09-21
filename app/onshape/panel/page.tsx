@@ -22,7 +22,7 @@ function OnshapePanelContent() {
 
   // Onshape query params
   const documentId = searchParams.get('documentId');
-  const workspaceOrVersionId = searchParams.get('workspaceOrVersionId');
+  const workspaceOrVersionId = searchParams.get('workspaceOrVersionId') || searchParams.get('workspaceId');
   const elementId = searchParams.get('elementId');
   const server = searchParams.get('server');
 
