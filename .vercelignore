@@ -1,0 +1,8 @@
+# Vercel build exclusions
+.venv-cadquery
+.git
+node_modules
+.next
+coverage
+*.log
+.DS_Store

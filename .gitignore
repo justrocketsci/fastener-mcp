@@ -43,3 +43,6 @@ next-env.d.ts
 # PDFs and proprietary standards
 *.pdf
 /state/
+
+# CadQuery virtual environment
+.venv-cadquery

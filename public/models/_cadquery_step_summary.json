@@ -1,0 +1,404 @@
+{
+  "generated": 44,
+  "source": "cadquery",
+  "note": "CadQuery-generated STEP files to fill Onshape export quota gaps",
+  "results": [
+    {
+      "id": "ms24693-s254",
+      "path": "public/models/ms24693-s254.step",
+      "bytes": 8447,
+      "element_id": "aa1b02a52bc60d033b58e250",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/aa1b02a52bc60d033b58e250",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms24694-c1",
+      "path": "public/models/ms24694-c1.step",
+      "bytes": 8468,
+      "element_id": "e0e51de0ede1af034ea2128d",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/e0e51de0ede1af034ea2128d",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms24694-c2",
+      "path": "public/models/ms24694-c2.step",
+      "bytes": 8471,
+      "element_id": "303277d3ef2dbf73e94eee7d",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/303277d3ef2dbf73e94eee7d",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms24694-c3",
+      "path": "public/models/ms24694-c3.step",
+      "bytes": 8472,
+      "element_id": "b0a25762b05fffb2abde85e8",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/b0a25762b05fffb2abde85e8",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms24694-c26",
+      "path": "public/models/ms24694-c26.step",
+      "bytes": 8447,
+      "element_id": "ee364505633c77c6c61b8718",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/ee364505633c77c6c61b8718",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms24694-c27",
+      "path": "public/models/ms24694-c27.step",
+      "bytes": 8447,
+      "element_id": "584ba47b41152ae3aa7de779",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/584ba47b41152ae3aa7de779",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms24694-c28",
+      "path": "public/models/ms24694-c28.step",
+      "bytes": 8448,
+      "element_id": "8166e939576b526d99e82758",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/8166e939576b526d99e82758",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms24694-c29",
+      "path": "public/models/ms24694-c29.step",
+      "bytes": 8447,
+      "element_id": "93e1670614d7e5098520d392",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/93e1670614d7e5098520d392",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms24694-c50",
+      "path": "public/models/ms24694-c50.step",
+      "bytes": 8382,
+      "element_id": "1b92778ea1beb8dc88e0296a",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/1b92778ea1beb8dc88e0296a",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms24694-c51",
+      "path": "public/models/ms24694-c51.step",
+      "bytes": 8383,
+      "element_id": "ef7995140d577f5c56b40950",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/ef7995140d577f5c56b40950",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms24694-c52",
+      "path": "public/models/ms24694-c52.step",
+      "bytes": 8384,
+      "element_id": "02211619a551eb9a3a727654",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/02211619a551eb9a3a727654",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms51957-1",
+      "path": "public/models/ms51957-1.step",
+      "bytes": 9685,
+      "element_id": "33c060a8848651f291beedc4",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/33c060a8848651f291beedc4",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms51957-10",
+      "path": "public/models/ms51957-10.step",
+      "bytes": 9799,
+      "element_id": "8d322107222f3bd4bde734b4",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/8d322107222f3bd4bde734b4",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms51957-20",
+      "path": "public/models/ms51957-20.step",
+      "bytes": 9799,
+      "element_id": "f65c91be3ac6a62c2d62031d",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/f65c91be3ac6a62c2d62031d",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms51957-30",
+      "path": "public/models/ms51957-30.step",
+      "bytes": 9792,
+      "element_id": "d85c65d4f8e85954160636d9",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/d85c65d4f8e85954160636d9",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms51957-40",
+      "path": "public/models/ms51957-40.step",
+      "bytes": 9789,
+      "element_id": "d9fa228fa584a15068c8d1d3",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/d9fa228fa584a15068c8d1d3",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms51957-50",
+      "path": "public/models/ms51957-50.step",
+      "bytes": 9774,
+      "element_id": "581b7e5238ddbc8a88af9d82",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/581b7e5238ddbc8a88af9d82",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms51957-51",
+      "path": "public/models/ms51957-51.step",
+      "bytes": 9774,
+      "element_id": "bcf7aeff624c123ea775b170",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/bcf7aeff624c123ea775b170",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms51957-52",
+      "path": "public/models/ms51957-52.step",
+      "bytes": 9774,
+      "element_id": "843f814cd187acbadcc0ed17",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/843f814cd187acbadcc0ed17",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms51957-60",
+      "path": "public/models/ms51957-60.step",
+      "bytes": 9710,
+      "element_id": "1593e402881edf0f889b90f5",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/1593e402881edf0f889b90f5",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms51957-61",
+      "path": "public/models/ms51957-61.step",
+      "bytes": 9710,
+      "element_id": "6fb2cdf261f162543909dc6d",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/6fb2cdf261f162543909dc6d",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "an380-2-1",
+      "path": "public/models/an380-2-1.step",
+      "bytes": 5782,
+      "element_id": "1fc2a85fb5eecdfb8335f964",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/1fc2a85fb5eecdfb8335f964",
+      "family": "an",
+      "source": "cadquery"
+    },
+    {
+      "id": "an380-2-2",
+      "path": "public/models/an380-2-2.step",
+      "bytes": 5784,
+      "element_id": "b343fb7cdcf858acb7ff30c8",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/b343fb7cdcf858acb7ff30c8",
+      "family": "an",
+      "source": "cadquery"
+    },
+    {
+      "id": "an380-3-1",
+      "path": "public/models/an380-3-1.step",
+      "bytes": 5787,
+      "element_id": "83336ddb179fcb21fdfc3dc4",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/83336ddb179fcb21fdfc3dc4",
+      "family": "an",
+      "source": "cadquery"
+    },
+    {
+      "id": "an380-3-2",
+      "path": "public/models/an380-3-2.step",
+      "bytes": 5787,
+      "element_id": "b4cc2a04d75b1d71b589d778",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/b4cc2a04d75b1d71b589d778",
+      "family": "an",
+      "source": "cadquery"
+    },
+    {
+      "id": "an380-4-1",
+      "path": "public/models/an380-4-1.step",
+      "bytes": 5784,
+      "element_id": "15568856b0179de263895508",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/15568856b0179de263895508",
+      "family": "an",
+      "source": "cadquery"
+    },
+    {
+      "id": "an380-4-2",
+      "path": "public/models/an380-4-2.step",
+      "bytes": 5784,
+      "element_id": "32ea1843380591c42712a3ab",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/32ea1843380591c42712a3ab",
+      "family": "an",
+      "source": "cadquery"
+    },
+    {
+      "id": "an380-5-1",
+      "path": "public/models/an380-5-1.step",
+      "bytes": 5780,
+      "element_id": "03162016639f50627ab552df",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/03162016639f50627ab552df",
+      "family": "an",
+      "source": "cadquery"
+    },
+    {
+      "id": "an380-5-2",
+      "path": "public/models/an380-5-2.step",
+      "bytes": 5780,
+      "element_id": "04e53571f6699d9be69d3399",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/04e53571f6699d9be69d3399",
+      "family": "an",
+      "source": "cadquery"
+    },
+    {
+      "id": "an380-6-2",
+      "path": "public/models/an380-6-2.step",
+      "bytes": 5784,
+      "element_id": "fc45220cb8a8865aa066a046",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/fc45220cb8a8865aa066a046",
+      "family": "an",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms35206-416",
+      "path": "public/models/ms35206-416.step",
+      "bytes": 9797,
+      "element_id": "65bd9bcaa4604a7fcf498c00",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/65bd9bcaa4604a7fcf498c00",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms35206-420",
+      "path": "public/models/ms35206-420.step",
+      "bytes": 9805,
+      "element_id": "c9c73416a2025541332c4c42",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/c9c73416a2025541332c4c42",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms35206-632",
+      "path": "public/models/ms35206-632.step",
+      "bytes": 9792,
+      "element_id": "c9c90d1d50bbcb17f85e54f2",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/c9c90d1d50bbcb17f85e54f2",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms35206-820",
+      "path": "public/models/ms35206-820.step",
+      "bytes": 9793,
+      "element_id": "164bd470697ddb92a6f089d0",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/164bd470697ddb92a6f089d0",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms35206-824",
+      "path": "public/models/ms35206-824.step",
+      "bytes": 9793,
+      "element_id": "b15a82f70315b9946c4b0ffd",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/b15a82f70315b9946c4b0ffd",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms35206-1016",
+      "path": "public/models/ms35206-1016.step",
+      "bytes": 9774,
+      "element_id": "cd43c5f951b94011f340b762",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/cd43c5f951b94011f340b762",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms35206-1020",
+      "path": "public/models/ms35206-1020.step",
+      "bytes": 9780,
+      "element_id": "157f0a890046bb8f14262aa2",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/157f0a890046bb8f14262aa2",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms35206-1024",
+      "path": "public/models/ms35206-1024.step",
+      "bytes": 9780,
+      "element_id": "219ba9d349fc17f6f5f51c7a",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/219ba9d349fc17f6f5f51c7a",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms35207-416",
+      "path": "public/models/ms35207-416.step",
+      "bytes": 8471,
+      "element_id": "5f1fd712f950d18e81fcd8c3",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/5f1fd712f950d18e81fcd8c3",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms35207-420",
+      "path": "public/models/ms35207-420.step",
+      "bytes": 8474,
+      "element_id": "eb8aff5264b07b6098bdbd84",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/eb8aff5264b07b6098bdbd84",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms35207-632",
+      "path": "public/models/ms35207-632.step",
+      "bytes": 8471,
+      "element_id": "f5c865d763de5ca0a62a16cf",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/f5c865d763de5ca0a62a16cf",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms35207-820",
+      "path": "public/models/ms35207-820.step",
+      "bytes": 8474,
+      "element_id": "ec6f2f708488b4127efefd58",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/ec6f2f708488b4127efefd58",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms35207-1016",
+      "path": "public/models/ms35207-1016.step",
+      "bytes": 8449,
+      "element_id": "fe6b97404eede2c7018fd84c",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/fe6b97404eede2c7018fd84c",
+      "family": "ms",
+      "source": "cadquery"
+    },
+    {
+      "id": "ms35207-1020",
+      "path": "public/models/ms35207-1020.step",
+      "bytes": 8450,
+      "element_id": "7fabc887e22531d642f3b274",
+      "element_url": "https://cad.onshape.com/documents/f542e957084b482e3f7a1669/w/16ea943dbdbd1d73ac65ed3e/e/7fabc887e22531d642f3b274",
+      "family": "ms",
+      "source": "cadquery"
+    }
+  ],
+  "updated_at": "2026-09-21T00:00:00+00:00"
+}
