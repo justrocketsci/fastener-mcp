@@ -277,6 +277,19 @@ export default function MCPDocsPage() {
                     Mates, hole detection, and fit-critical validation (L2/L3) are not yet implemented.
                   </AlertDescription>
                 </Alert>
+
+                <div className="mt-4 pt-4 border-t border-border">
+                  <h4 className="font-semibold mb-2 text-sm">Experimental Adapter</h4>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    An experimental Onshape adapter is available via <code className="bg-muted px-1 py-0.5 rounded text-xs">POST /api/adapters/onshape/insert</code>
+                  </p>
+                  <ul className="text-sm text-muted-foreground space-y-1 ml-4 list-disc">
+                    <li>Requires server environment variables: <code className="bg-muted px-1 py-0.5 rounded text-xs">ONSHAPE_ACCESS_KEY</code> and <code className="bg-muted px-1 py-0.5 rounded text-xs">ONSHAPE_SECRET_KEY</code></li>
+                    <li>Inserts STEP file at document origin/frame</li>
+                    <li>No automatic mates or hole detection</li>
+                    <li>Uses configured test document for all inserts</li>
+                  </ul>
+                </div>
               </CardContent>
             </Card>
 

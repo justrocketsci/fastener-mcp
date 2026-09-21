@@ -5,6 +5,7 @@ import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { FastenerActions } from './fastener-actions';
 import { ModelSection } from './model-section';
+import { PlacementSection } from './placement-section';
 import fasteners from '@/data/fasteners.json';
 import fs from 'fs';
 import path from 'path';
@@ -40,6 +41,7 @@ export default async function FastenerDetailPage({ params }: PageProps) {
 
   const modelPath = path.join(process.cwd(), 'public', 'models', `${id}.step`);
   const modelExists = fs.existsSync(modelPath);
+  const onshapeConfigured = !!(process.env.ONSHAPE_ACCESS_KEY && process.env.ONSHAPE_SECRET_KEY);
 
   const getFamilyLabel = (fam: string) => {
     switch (fam) {
@@ -253,6 +255,12 @@ export default async function FastenerDetailPage({ params }: PageProps) {
               {fastener.length_mm > 0 && (
                 <ModelSection fastener={fastener} modelExists={modelExists} />
               )}
+
+              <PlacementSection 
+                fastener={fastener} 
+                modelExists={modelExists} 
+                onshapeConfigured={onshapeConfigured}
+              />
 
               <FastenerActions fastener={fastener} />
             </CardContent>
