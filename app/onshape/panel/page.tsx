@@ -170,13 +170,16 @@ function OnshapePanelContent() {
     return fastener.length_mm > 0;
   };
 
-  const handleDownloadSTEP = (fastenerId: string) => {
-    window.open(`/api/fasteners/${fastenerId}/model`, '_blank');
+  const handleDownloadSTEP = () => {
+    if (placementData?.model?.url) {
+      window.open(placementData.model.url, '_blank');
+    }
   };
 
-  const handleCopyModelURL = (fastenerId: string) => {
-    const url = `${window.location.origin}/api/fasteners/${fastenerId}/model`;
-    navigator.clipboard.writeText(url);
+  const handleCopyModelURL = () => {
+    if (placementData?.model?.url) {
+      navigator.clipboard.writeText(placementData.model.url);
+    }
   };
 
   const handleCopyPlacement = () => {
@@ -278,7 +281,7 @@ function OnshapePanelContent() {
                   <span className="text-[10px] px-1.5 py-0.5 rounded-full border border-slate-200 text-slate-500">
                     {getSourceLabel(fastener.source_kind)}
                   </span>
-                  {hasModel(fastener) && (
+                  {fastener.length_mm > 0 && (
                     <span className="text-[10px] px-1.5 py-0.5 rounded-full border border-indigo-200 text-indigo-600">
                       STEP
                     </span>
@@ -329,12 +332,16 @@ function OnshapePanelContent() {
             </div>
 
             {/* Model Card */}
-            {hasModel(selectedFastener) ? (
+            {placementData?.model ? (
               <div className="border border-slate-200 rounded-[10px] p-3 bg-white">
                 <h3 className="text-[13px] font-semibold mb-1.5 flex items-center gap-2">
                   Simplified 3D model
-                  <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded-full border border-slate-200 text-slate-500">
-                    Simplified STEP
+                  <span className={`text-[10px] font-semibold px-1.5 py-0.5 rounded-full border ${
+                    placementData.model.available 
+                      ? 'border-indigo-200 text-indigo-600' 
+                      : 'border-slate-200 text-slate-500'
+                  }`}>
+                    {placementData.model.available ? 'STEP Available' : 'STEP Unavailable'}
                   </span>
                 </h3>
                 <p className="text-xs text-slate-500 leading-snug mb-2.5">
@@ -342,14 +349,16 @@ function OnshapePanelContent() {
                 </p>
                 <div className="flex gap-1.5">
                   <button
-                    onClick={() => handleDownloadSTEP(selectedFastener.id)}
-                    className="h-8 px-3 bg-indigo-600 text-white rounded-lg text-xs font-semibold hover:bg-indigo-700"
+                    onClick={handleDownloadSTEP}
+                    disabled={!placementData.model.available}
+                    className="h-8 px-3 bg-indigo-600 text-white rounded-lg text-xs font-semibold hover:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     Download STEP
                   </button>
                   <button
-                    onClick={() => handleCopyModelURL(selectedFastener.id)}
-                    className="h-8 px-3 bg-transparent border border-slate-200 rounded-lg text-xs font-semibold hover:bg-slate-50"
+                    onClick={handleCopyModelURL}
+                    disabled={!placementData.model.available}
+                    className="h-8 px-3 bg-transparent border border-slate-200 rounded-lg text-xs font-semibold hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     Copy model URL
                   </button>
@@ -359,7 +368,7 @@ function OnshapePanelContent() {
             ) : (
               <div className="border border-slate-200 rounded-[10px] p-3 bg-white">
                 <h3 className="text-[13px] font-semibold mb-1.5">Simplified 3D model</h3>
-                <p className="text-xs text-slate-500">No STEP yet</p>
+                <p className="text-xs text-slate-500">Loading model data...</p>
               </div>
             )}
 
@@ -379,20 +388,18 @@ function OnshapePanelContent() {
                 <>
                   <dl className="grid grid-cols-[88px_1fr] gap-x-2 gap-y-1 text-xs mb-2.5">
                     <dt className="text-slate-500">Axis</dt>
-                    <dd className="font-mono text-[11px]">{placementData.axis || '+Z along shank toward tip'}</dd>
+                    <dd className="font-mono text-[11px]">{placementData.frame?.axis || '—'}</dd>
                     
                     <dt className="text-slate-500">Origin</dt>
-                    <dd className="font-mono text-[11px]">{placementData.origin || 'Head bearing face center'}</dd>
+                    <dd className="font-mono text-[11px]">{placementData.frame?.origin || '—'}</dd>
                     
-                    {placementData.grip && (
-                      <>
-                        <dt className="text-slate-500">Grip</dt>
-                        <dd className="font-mono text-[11px]">{placementData.grip}</dd>
-                      </>
-                    )}
+                    <dt className="text-slate-500">Grip</dt>
+                    <dd className="font-mono text-[11px]">
+                      {placementData.frame?.grip_length_mm ? `${placementData.frame.grip_length_mm} mm` : '—'}
+                    </dd>
                     
                     <dt className="text-slate-500">Head side</dt>
-                    <dd className="font-mono text-[11px]">{placementData.head_side || '+Z'}</dd>
+                    <dd className="font-mono text-[11px]">{placementData.frame?.head_side || '—'}</dd>
                   </dl>
                   
                   <div className="flex gap-1.5 mb-2.5">
