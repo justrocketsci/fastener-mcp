@@ -55,7 +55,7 @@ export function ModelSection({ fastener, modelExists }: ModelSectionProps) {
                   </Button>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Import in Onshape via File → Import. Generated from catalog dimensions using Onshape's geometry engine.
+                  Import in Onshape via File → Import. Generated from catalog dimensions with CadQuery (OpenCascade BREP).
                 </p>
               </>
             ) : (

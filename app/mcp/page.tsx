@@ -186,7 +186,7 @@ export default function MCPDocsPage() {
   "model_url": "https://fastener-mcp.example/models/nas1352-04-6.step",
   "format": "step",
   "simplified_not_for_certification": true,
-  "disclaimer": "Approximate BREP STEP geometry from Onshape Part Studio for CAD drop-in. NOT certified for engineering analysis or manufacturing. Always consult the controlling specification.",
+  "disclaimer": "Approximate BREP STEP from catalog dimensions via CadQuery / OpenCascade. NOT certified for engineering analysis or manufacturing. Always consult the controlling specification.",
   "citation": {
     "standard": "NAS1352",
     "revision": "Rev 11",
@@ -200,7 +200,7 @@ export default function MCPDocsPage() {
 
                 <Alert className="bg-amber-50 dark:bg-amber-950 border-amber-200 dark:border-amber-800">
                   <AlertDescription className="text-sm">
-                    <strong>NOT FOR CERTIFICATION:</strong> STEP models are simplified parametric approximations generated from catalog dimensions using Onshape's geometry engine. 
+                    <strong>NOT FOR CERTIFICATION:</strong> STEP models are approximate BREP from catalog dimensions via CadQuery (OpenCascade BREP). 
                     Do not use for FEA, manufacturing tolerances, or certified engineering work.
                   </AlertDescription>
                 </Alert>

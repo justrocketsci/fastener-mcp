@@ -46,7 +46,7 @@ export async function GET(
     model_url: modelUrl,
     format: 'step',
     simplified_not_for_certification: true,
-    disclaimer: 'Approximate BREP STEP geometry from Onshape Part Studio for CAD drop-in. NOT certified for engineering analysis or manufacturing. Always consult the controlling specification.',
+    disclaimer: 'Approximate BREP STEP from catalog dimensions via CadQuery / OpenCascade. NOT certified for engineering analysis or manufacturing. Always consult the controlling specification.',
     citation: fastener.source_kind && fastener.source_kind !== 'distributor_ref' ? {
       standard: fastener.standard,
       revision: fastener.revision,
