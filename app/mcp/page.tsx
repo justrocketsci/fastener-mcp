@@ -6,8 +6,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'MCP Documentation - Fastener MCP',
-  description: 'HTTP API documentation for Model Context Protocol integration.',
+  title: 'MCP Server - Fastener MCP',
+  description: 'Model Context Protocol server for AI agents. Connect Cursor, Claude, or other MCP clients to search and retrieve fastener specs and 3D models.',
 };
 
 export default function MCPDocsPage() {
@@ -34,11 +34,11 @@ export default function MCPDocsPage() {
           <div className="mb-8 flex flex-col md:flex-row gap-6 items-start">
             <div className="flex-1">
               <Badge variant="secondary" className="mb-2">
-                HTTP API
+                Live MCP Server
               </Badge>
-              <h1 className="text-3xl font-bold mb-2">MCP Tools Documentation</h1>
+              <h1 className="text-3xl font-bold mb-2">MCP Server for AI Agents</h1>
               <p className="text-muted-foreground">
-                HTTP endpoints designed for AI agent integration via Model Context Protocol (MCP).
+                Streamable HTTP transport for Model Context Protocol. Connect Cursor, Claude Desktop, or other MCP clients to search fasteners and retrieve 3D STEP models.
               </p>
             </div>
             <div className="flex-shrink-0 hidden md:block">
@@ -53,9 +53,98 @@ export default function MCPDocsPage() {
           </div>
 
           <div className="space-y-8">
+            <Card className="border-indigo-200 bg-indigo-50 dark:bg-indigo-950 dark:border-indigo-800">
+              <CardHeader>
+                <CardTitle>Connect to MCP Server</CardTitle>
+                <CardDescription>Add this server to Cursor, Claude Desktop, or any MCP client</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h3 className="font-semibold mb-2">Server URL</h3>
+                  <code className="block bg-background p-3 rounded text-sm font-mono">
+                    https://fastener-mcp.vercel.app/api/mcp
+                  </code>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">Cursor Configuration</h3>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Add to your Cursor settings (Cursor Settings → Features → Model Context Protocol):
+                  </p>
+                  <pre className="bg-background p-3 rounded text-sm overflow-x-auto">
+{`{
+  "mcpServers": {
+    "fastener-mcp": {
+      "url": "https://fastener-mcp.vercel.app/api/mcp"
+    }
+  }
+}`}
+                  </pre>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">Claude Desktop Configuration</h3>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Add to <code className="bg-muted px-1 py-0.5 rounded text-xs">claude_desktop_config.json</code>:
+                  </p>
+                  <pre className="bg-background p-3 rounded text-sm overflow-x-auto">
+{`{
+  "mcpServers": {
+    "fastener-mcp": {
+      "url": "https://fastener-mcp.vercel.app/api/mcp"
+    }
+  }
+}`}
+                  </pre>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">MCP Inspector</h3>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Test with the official MCP Inspector:
+                  </p>
+                  <pre className="bg-background p-3 rounded text-sm overflow-x-auto">
+{`npx @modelcontextprotocol/inspector \\
+  https://fastener-mcp.vercel.app/api/mcp`}
+                  </pre>
+                </div>
+
+                <Alert className="bg-background">
+                  <AlertDescription className="text-sm">
+                    <strong>Transport:</strong> Streamable HTTP (MCP specification 2026-07-28). No authentication required for read-only catalog access.
+                  </AlertDescription>
+                </Alert>
+              </CardContent>
+            </Card>
+
             <Card>
               <CardHeader>
-                <CardTitle>list_fasteners</CardTitle>
+                <CardTitle>Available Tools</CardTitle>
+                <CardDescription>Four MCP tools wrapping existing REST APIs</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-3 text-sm">
+                <div>
+                  <code className="font-semibold">search_fasteners</code>
+                  <p className="text-muted-foreground mt-1">Search and filter fasteners by designation, family, diameter, material, standard</p>
+                </div>
+                <div>
+                  <code className="font-semibold">get_fastener</code>
+                  <p className="text-muted-foreground mt-1">Retrieve detailed specifications for a specific fastener by ID</p>
+                </div>
+                <div>
+                  <code className="font-semibold">get_fastener_model</code>
+                  <p className="text-muted-foreground mt-1">Get 3D STEP geometry URL and dimensions (absolute production URL)</p>
+                </div>
+                <div>
+                  <code className="font-semibold">get_placement_packet</code>
+                  <p className="text-muted-foreground mt-1">Get CAD-agnostic placement packet with coordinate frame and honesty level (L1: insert-at-frame)</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>search_fasteners</CardTitle>
                 <CardDescription>Search and filter fasteners by criteria</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -382,22 +471,41 @@ export default function MCPDocsPage() {
 
             <Card>
               <CardHeader>
-                <CardTitle>MCP Stdio Integration (Optional)</CardTitle>
-                <CardDescription>Full MCP server implementation is optional for this MVP</CardDescription>
+                <CardTitle>Primary Consumers</CardTitle>
+                <CardDescription>Who uses this MCP server</CardDescription>
               </CardHeader>
               <CardContent className="space-y-3 text-sm">
                 <p>
-                  The HTTP endpoints above can be called directly by AI agents or wrapped in an MCP stdio server.
-                </p>
-                <p>
-                  For stdio MCP integration, implement tools that map to these endpoints:
+                  This server is designed for <strong>AI coding assistants and CAD agents</strong> that connect to remote MCP servers:
                 </p>
                 <ul className="list-disc list-inside space-y-1 ml-4">
-                  <li><code>list_fasteners</code> → GET /api/fasteners</li>
-                  <li><code>get_fastener</code> → GET /api/fasteners/:id</li>
-                  <li><code>get_fastener_model</code> → GET /api/fasteners/:id/model</li>
-                  <li><code>get_placement_packet</code> → GET /api/fasteners/:id/placement</li>
-                  <li><code>recommend_fastener</code> → POST /api/recommend</li>
+                  <li><strong>Cursor</strong> — AI code editor with MCP support</li>
+                  <li><strong>Claude Desktop</strong> — Anthropic&apos;s desktop app with MCP integration</li>
+                  <li><strong>AI CAD workflows</strong> — Use alongside Zoo MCP (<code>uvx zoo-mcp</code>) for fastener → KCL/import workflows</li>
+                  <li><strong>MCP Inspector</strong> — Official debugging tool</li>
+                </ul>
+                <p className="mt-3 text-muted-foreground">
+                  Note: Adam&apos;s MCP (<code>https://adam.new/mcp</code>) is their own server, not a consumer of third-party MCP servers. 
+                  Users running Adam&apos;s CAD tools would configure this Fastener MCP in their Cursor/Claude client.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Direct REST API Access</CardTitle>
+                <CardDescription>HTTP endpoints underlying the MCP tools (optional, for non-MCP integrations)</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-3 text-sm">
+                <p>
+                  MCP tools wrap these existing REST endpoints. You can call them directly without MCP:
+                </p>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li><code>GET /api/fasteners</code> — Search/list</li>
+                  <li><code>GET /api/fasteners/:id</code> — Detail</li>
+                  <li><code>GET /api/fasteners/:id/model</code> — 3D STEP URL</li>
+                  <li><code>GET /api/fasteners/:id/placement</code> — Placement packet</li>
+                  <li><code>POST /api/recommend</code> — Recommendations</li>
                 </ul>
               </CardContent>
             </Card>
