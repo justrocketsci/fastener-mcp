@@ -43,6 +43,9 @@ export default async function FastenerDetailPage({ params }: PageProps) {
   const modelExists = fs.existsSync(modelPath);
   const onshapeConfigured = !!(process.env.ONSHAPE_ACCESS_KEY && process.env.ONSHAPE_SECRET_KEY);
 
+  // Onshape insert feature parked until Anu reopens it
+  const onshapeConfigured = false;
+
   const getFamilyLabel = (fam: string) => {
     switch (fam) {
       case 'iso':
