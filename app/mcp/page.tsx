@@ -209,6 +209,79 @@ export default function MCPDocsPage() {
 
             <Card>
               <CardHeader>
+                <CardTitle>get_placement_packet</CardTitle>
+                <CardDescription>Get CAD-agnostic placement packet with frame, honesty, and adapter info</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h3 className="font-semibold mb-2">Endpoint</h3>
+                  <code className="block bg-muted p-3 rounded text-sm">
+                    GET /api/fasteners/:id/placement
+                  </code>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">Example Request</h3>
+                  <pre className="bg-muted p-3 rounded text-sm overflow-x-auto">
+{`curl "https://fastener-mcp.example/api/fasteners/iso-4017-m6-30/placement"`}
+                  </pre>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">Example Response</h3>
+                  <pre className="bg-muted p-3 rounded text-sm overflow-x-auto">
+{`{
+  "schema": "fastener-mcp.placement.v0",
+  "id": "iso-4017-m6-30",
+  "part_designation": "ISO 4017 M6×30",
+  "standard": "ISO 4017",
+  "model": {
+    "format": "step",
+    "url": "https://fastener-mcp.example/models/iso-4017-m6-30.step",
+    "available": true
+  },
+  "frame": {
+    "origin": "head_bearing_face_center",
+    "axis": "+Z_along_shank_toward_tip",
+    "units": "mm",
+    "grip_length_mm": 30,
+    "head_side": "+Z"
+  },
+  "citations": {
+    "source_kind": "open_library",
+    "source_ref": "fasteners library",
+    "source_url": "https://github.com/boltsparts/BOLTS",
+    "revision": "0.4",
+    "license": "LGPL-2.1+",
+    "confidence": "exact"
+  },
+  "honesty": {
+    "level": "L1_insert_at_frame",
+    "not_certified_mates": true,
+    "not_fit_critical": true,
+    "geometry": "Approximate BREP STEP from catalog dimensions via CadQuery / OpenCascade (or Onshape export when applicable). NOT certified for engineering analysis or manufacturing."
+  },
+  "adapters": {
+    "onshape": {
+      "insert": "POST /api/adapters/onshape/insert",
+      "status": "experimental"
+    }
+  }
+}`}
+                  </pre>
+                </div>
+
+                <Alert className="bg-blue-50 dark:bg-blue-950 border-blue-200 dark:border-blue-800">
+                  <AlertDescription className="text-sm">
+                    <strong>L1 PLACEMENT HONESTY:</strong> This packet enables insert-at-frame placement only. 
+                    Mates, hole detection, and fit-critical validation (L2/L3) are not yet implemented.
+                  </AlertDescription>
+                </Alert>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
                 <CardTitle>recommend_fastener</CardTitle>
                 <CardDescription>Get ranked fastener recommendations based on requirements</CardDescription>
               </CardHeader>
@@ -310,6 +383,7 @@ export default function MCPDocsPage() {
                   <li><code>list_fasteners</code> → GET /api/fasteners</li>
                   <li><code>get_fastener</code> → GET /api/fasteners/:id</li>
                   <li><code>get_fastener_model</code> → GET /api/fasteners/:id/model</li>
+                  <li><code>get_placement_packet</code> → GET /api/fasteners/:id/placement</li>
                   <li><code>recommend_fastener</code> → POST /api/recommend</li>
                 </ul>
               </CardContent>
