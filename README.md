@@ -9,6 +9,7 @@ Agent-facing fastener knowledge for AI CAD workflows. Sample dataset covering IS
 - **Structured Fastener Database**: ~40 representative parts across ISO, AN, and MS families
 - **HTTP API**: RESTful endpoints for search, retrieval, and intelligent recommendations
 - **Web UI**: Browse and filter fasteners with modern, accessible interface
+- **Onshape Panel**: Element right panel integration for in-CAD catalog access (see [docs/ONSHAPE_PANEL.md](docs/ONSHAPE_PANEL.md))
 - **MCP-Ready**: Designed for Model Context Protocol agent integration
 - **Design System**: Built with Default Page design tokens (indigo primary, clean neutrals)
 
@@ -63,11 +64,14 @@ curl -X POST "http://localhost:3000/api/recommend" \
 │   ├── api/
 │   │   ├── fasteners/         # Search & get endpoints
 │   │   └── recommend/          # Recommendation endpoint
+│   ├── onshape/panel/          # Onshape Element right panel
 │   ├── search/                 # Browse UI
 │   ├── mcp/                    # MCP documentation
 │   └── page.tsx                # Marketing landing
 ├── data/
 │   └── fasteners.json          # Seed dataset (40 parts)
+├── docs/
+│   └── ONSHAPE_PANEL.md        # Onshape integration guide
 └── components/ui/              # shadcn components
 ```
 
