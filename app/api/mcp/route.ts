@@ -5,6 +5,9 @@ import type { Fastener } from '@/lib/types';
 import { buildPlacementPacket } from '@/lib/placement-packet';
 import fs from 'fs';
 import path from 'path';
+import { inputs, type ToolName } from '@/lib/catalog/schemas';
+import { execute } from '@/lib/catalog/service';
+import { errorPayload } from '@/lib/catalog/errors';
 
 const handler = createMcpHandler(
   (server) => {
@@ -238,6 +241,52 @@ const handler = createMcpHandler(
         };
       }
     );
+
+    // Tools 5-8: Codex catalog extras (installation, compatibility, offers, BOM)
+    const codexToolDescriptions: Record<string, string> = {
+      get_installation_requirements: "Read sourced installation requirements and required missing host/process context.",
+      get_compatible_parts: "Find checked nominal companion interfaces and unresolved assembly requirements.",
+      compare_supplier_offers: "Compare exact supplier variants for quantity, destination and currency. Partial costs never imply a delivered-cost winner.",
+      build_parts_list: "Aggregate explicit part revisions and quantities into JSON and escaped CSV. No purchasing."
+    };
+
+    const codexTools = [
+      'get_installation_requirements',
+      'get_compatible_parts', 
+      'compare_supplier_offers',
+      'build_parts_list'
+    ] as const;
+
+    for (const toolName of codexTools) {
+      server.registerTool(
+        toolName,
+        {
+          title: toolName.replaceAll('_', ' '),
+          description: codexToolDescriptions[toolName],
+          inputSchema: inputs[toolName as ToolName]
+        },
+        async (args: unknown) => {
+          try {
+            const result = execute(toolName as ToolName, args);
+            return {
+              content: [{
+                type: 'text' as const,
+                text: JSON.stringify(result, null, 2)
+              }]
+            };
+          } catch (e) {
+            const result = errorPayload(e);
+            return {
+              isError: true,
+              content: [{
+                type: 'text' as const,
+                text: JSON.stringify(result, null, 2)
+              }]
+            };
+          }
+        }
+      );
+    }
   },
   {
     serverInfo: {

@@ -1,0 +1,615 @@
+{
+  "schema_version": "fastener-mcp.v2",
+  "snapshot": "offers-20260922-0250",
+  "published_at": "2026-09-22T02:50:00Z",
+  "observations": [
+    {
+      "product_id": "bolt-depot-6416",
+      "price": {
+        "observed_at": "2026-09-22T02:50:00Z",
+        "currency": "USD",
+        "basis": "each",
+        "tier_basis": "items",
+        "tiers": [
+          {
+            "minimum": 1,
+            "amount": "0.20"
+          },
+          {
+            "minimum": 100,
+            "amount": "0.142"
+          },
+          {
+            "minimum": 1000,
+            "amount": "0.121"
+          }
+        ],
+        "minimum_quantity": 1,
+        "order_increment": 1,
+        "scope": "public",
+        "valid_until": null
+      },
+      "availability": {
+        "checked_at": "2026-09-22T02:50:00Z",
+        "status": "unknown",
+        "quantity": null
+      },
+      "delivery": null,
+      "charges": [],
+      "refresh_error": null,
+      "evidence_url": "https://boltdepot.com/Product-Details?product=6416"
+    },
+    {
+      "product_id": "monster-bolts-36230284044",
+      "price": {
+        "observed_at": "2026-09-22T02:50:00Z",
+        "currency": "USD",
+        "basis": "pack",
+        "tier_basis": "items",
+        "tiers": [
+          {
+            "minimum": 1,
+            "amount": "2.17"
+          }
+        ],
+        "minimum_quantity": 10,
+        "order_increment": 10,
+        "scope": "public",
+        "valid_until": null
+      },
+      "availability": {
+        "checked_at": "2026-09-22T02:50:00Z",
+        "status": "unknown",
+        "quantity": null
+      },
+      "delivery": null,
+      "charges": [],
+      "refresh_error": null,
+      "evidence_url": "https://monsterbolts.com/products/socket-cap-a2-m6?variant=36230284044"
+    },
+    {
+      "product_id": "bolt-depot-6417",
+      "price": {
+        "observed_at": "2026-09-22T02:50:00Z",
+        "currency": "USD",
+        "basis": "each",
+        "tier_basis": "items",
+        "tiers": [
+          {
+            "minimum": 1,
+            "amount": "0.21"
+          },
+          {
+            "minimum": 100,
+            "amount": "0.1481"
+          },
+          {
+            "minimum": 1000,
+            "amount": "0.126"
+          }
+        ],
+        "minimum_quantity": 1,
+        "order_increment": 1,
+        "scope": "public",
+        "valid_until": null
+      },
+      "availability": {
+        "checked_at": "2026-09-22T02:50:00Z",
+        "status": "unknown",
+        "quantity": null
+      },
+      "delivery": null,
+      "charges": [],
+      "refresh_error": null,
+      "evidence_url": "https://boltdepot.com/Product-Details?product=6417"
+    },
+    {
+      "product_id": "monster-bolts-36230284172",
+      "price": {
+        "observed_at": "2026-09-22T02:50:00Z",
+        "currency": "USD",
+        "basis": "pack",
+        "tier_basis": "items",
+        "tiers": [
+          {
+            "minimum": 1,
+            "amount": "2.25"
+          }
+        ],
+        "minimum_quantity": 10,
+        "order_increment": 10,
+        "scope": "public",
+        "valid_until": null
+      },
+      "availability": {
+        "checked_at": "2026-09-22T02:50:00Z",
+        "status": "unknown",
+        "quantity": null
+      },
+      "delivery": null,
+      "charges": [],
+      "refresh_error": null,
+      "evidence_url": "https://monsterbolts.com/products/socket-cap-a2-m6?variant=36230284172"
+    },
+    {
+      "product_id": "bolt-depot-6418",
+      "price": {
+        "observed_at": "2026-09-22T02:50:00Z",
+        "currency": "USD",
+        "basis": "each",
+        "tier_basis": "items",
+        "tiers": [
+          {
+            "minimum": 1,
+            "amount": "0.22"
+          },
+          {
+            "minimum": 100,
+            "amount": "0.1606"
+          },
+          {
+            "minimum": 1000,
+            "amount": "0.137"
+          }
+        ],
+        "minimum_quantity": 1,
+        "order_increment": 1,
+        "scope": "public",
+        "valid_until": null
+      },
+      "availability": {
+        "checked_at": "2026-09-22T02:50:00Z",
+        "status": "unknown",
+        "quantity": null
+      },
+      "delivery": null,
+      "charges": [],
+      "refresh_error": null,
+      "evidence_url": "https://boltdepot.com/Product-Details?product=6418"
+    },
+    {
+      "product_id": "monster-bolts-36230284300",
+      "price": {
+        "observed_at": "2026-09-22T02:50:00Z",
+        "currency": "USD",
+        "basis": "pack",
+        "tier_basis": "items",
+        "tiers": [
+          {
+            "minimum": 1,
+            "amount": "2.31"
+          }
+        ],
+        "minimum_quantity": 10,
+        "order_increment": 10,
+        "scope": "public",
+        "valid_until": null
+      },
+      "availability": {
+        "checked_at": "2026-09-22T02:50:00Z",
+        "status": "unknown",
+        "quantity": null
+      },
+      "delivery": null,
+      "charges": [],
+      "refresh_error": null,
+      "evidence_url": "https://monsterbolts.com/products/socket-cap-a2-m6?variant=36230284300"
+    },
+    {
+      "product_id": "bolt-depot-6419",
+      "price": {
+        "observed_at": "2026-09-22T02:50:00Z",
+        "currency": "USD",
+        "basis": "each",
+        "tier_basis": "items",
+        "tiers": [
+          {
+            "minimum": 1,
+            "amount": "0.24"
+          },
+          {
+            "minimum": 100,
+            "amount": "0.1694"
+          },
+          {
+            "minimum": 1000,
+            "amount": "0.144"
+          }
+        ],
+        "minimum_quantity": 1,
+        "order_increment": 1,
+        "scope": "public",
+        "valid_until": null
+      },
+      "availability": {
+        "checked_at": "2026-09-22T02:50:00Z",
+        "status": "unknown",
+        "quantity": null
+      },
+      "delivery": null,
+      "charges": [],
+      "refresh_error": null,
+      "evidence_url": "https://boltdepot.com/Product-Details?product=6419"
+    },
+    {
+      "product_id": "monster-bolts-36230284492",
+      "price": {
+        "observed_at": "2026-09-22T02:50:00Z",
+        "currency": "USD",
+        "basis": "pack",
+        "tier_basis": "items",
+        "tiers": [
+          {
+            "minimum": 1,
+            "amount": "2.52"
+          }
+        ],
+        "minimum_quantity": 10,
+        "order_increment": 10,
+        "scope": "public",
+        "valid_until": null
+      },
+      "availability": {
+        "checked_at": "2026-09-22T02:50:00Z",
+        "status": "unknown",
+        "quantity": null
+      },
+      "delivery": null,
+      "charges": [],
+      "refresh_error": null,
+      "evidence_url": "https://monsterbolts.com/products/socket-cap-a2-m6?variant=36230284492"
+    },
+    {
+      "product_id": "bolt-depot-6420",
+      "price": {
+        "observed_at": "2026-09-22T02:50:00Z",
+        "currency": "USD",
+        "basis": "each",
+        "tier_basis": "items",
+        "tiers": [
+          {
+            "minimum": 1,
+            "amount": "0.25"
+          },
+          {
+            "minimum": 100,
+            "amount": "0.175"
+          },
+          {
+            "minimum": 1000,
+            "amount": "0.149"
+          }
+        ],
+        "minimum_quantity": 1,
+        "order_increment": 1,
+        "scope": "public",
+        "valid_until": null
+      },
+      "availability": {
+        "checked_at": "2026-09-22T02:50:00Z",
+        "status": "unknown",
+        "quantity": null
+      },
+      "delivery": null,
+      "charges": [],
+      "refresh_error": null,
+      "evidence_url": "https://boltdepot.com/Product-Details?product=6420"
+    },
+    {
+      "product_id": "monster-bolts-36230284620",
+      "price": {
+        "observed_at": "2026-09-22T02:50:00Z",
+        "currency": "USD",
+        "basis": "pack",
+        "tier_basis": "items",
+        "tiers": [
+          {
+            "minimum": 1,
+            "amount": "2.60"
+          }
+        ],
+        "minimum_quantity": 10,
+        "order_increment": 10,
+        "scope": "public",
+        "valid_until": null
+      },
+      "availability": {
+        "checked_at": "2026-09-22T02:50:00Z",
+        "status": "unknown",
+        "quantity": null
+      },
+      "delivery": null,
+      "charges": [],
+      "refresh_error": null,
+      "evidence_url": "https://monsterbolts.com/products/socket-cap-a2-m6?variant=36230284620"
+    },
+    {
+      "product_id": "bolt-depot-4773",
+      "price": {
+        "observed_at": "2026-09-22T02:50:00Z",
+        "currency": "USD",
+        "basis": "each",
+        "tier_basis": "items",
+        "tiers": [
+          {
+            "minimum": 1,
+            "amount": "0.07"
+          },
+          {
+            "minimum": 100,
+            "amount": "0.0239"
+          },
+          {
+            "minimum": 1000,
+            "amount": "0.0195"
+          }
+        ],
+        "minimum_quantity": 1,
+        "order_increment": 1,
+        "scope": "public",
+        "valid_until": null
+      },
+      "availability": {
+        "checked_at": "2026-09-22T02:50:00Z",
+        "status": "unknown",
+        "quantity": null
+      },
+      "delivery": null,
+      "charges": [],
+      "refresh_error": null,
+      "evidence_url": "https://boltdepot.com/Product-Details?product=4773"
+    },
+    {
+      "product_id": "bolt-depot-4774",
+      "price": {
+        "observed_at": "2026-09-22T02:50:00Z",
+        "currency": "USD",
+        "basis": "each",
+        "tier_basis": "items",
+        "tiers": [
+          {
+            "minimum": 1,
+            "amount": "0.07"
+          },
+          {
+            "minimum": 100,
+            "amount": "0.0279"
+          },
+          {
+            "minimum": 1000,
+            "amount": "0.0228"
+          }
+        ],
+        "minimum_quantity": 1,
+        "order_increment": 1,
+        "scope": "public",
+        "valid_until": null
+      },
+      "availability": {
+        "checked_at": "2026-09-22T02:50:00Z",
+        "status": "unknown",
+        "quantity": null
+      },
+      "delivery": null,
+      "charges": [],
+      "refresh_error": null,
+      "evidence_url": "https://boltdepot.com/Product-Details?product=4774"
+    },
+    {
+      "product_id": "bolt-depot-4775",
+      "price": {
+        "observed_at": "2026-09-22T02:50:00Z",
+        "currency": "USD",
+        "basis": "each",
+        "tier_basis": "items",
+        "tiers": [
+          {
+            "minimum": 1,
+            "amount": "0.07"
+          },
+          {
+            "minimum": 100,
+            "amount": "0.0369"
+          },
+          {
+            "minimum": 1000,
+            "amount": "0.03"
+          }
+        ],
+        "minimum_quantity": 1,
+        "order_increment": 1,
+        "scope": "public",
+        "valid_until": null
+      },
+      "availability": {
+        "checked_at": "2026-09-22T02:50:00Z",
+        "status": "unknown",
+        "quantity": null
+      },
+      "delivery": null,
+      "charges": [],
+      "refresh_error": null,
+      "evidence_url": "https://boltdepot.com/Product-Details?product=4775"
+    },
+    {
+      "product_id": "bolt-depot-4776",
+      "price": {
+        "observed_at": "2026-09-22T02:50:00Z",
+        "currency": "USD",
+        "basis": "each",
+        "tier_basis": "items",
+        "tiers": [
+          {
+            "minimum": 1,
+            "amount": "0.11"
+          },
+          {
+            "minimum": 100,
+            "amount": "0.0647"
+          },
+          {
+            "minimum": 1000,
+            "amount": "0.0529"
+          }
+        ],
+        "minimum_quantity": 1,
+        "order_increment": 1,
+        "scope": "public",
+        "valid_until": null
+      },
+      "availability": {
+        "checked_at": "2026-09-22T02:50:00Z",
+        "status": "unknown",
+        "quantity": null
+      },
+      "delivery": null,
+      "charges": [],
+      "refresh_error": null,
+      "evidence_url": "https://boltdepot.com/Product-Details?product=4776"
+    },
+    {
+      "product_id": "bolt-depot-4513",
+      "price": {
+        "observed_at": "2026-09-22T02:50:00Z",
+        "currency": "USD",
+        "basis": "each",
+        "tier_basis": "items",
+        "tiers": [
+          {
+            "minimum": 1,
+            "amount": "0.05"
+          },
+          {
+            "minimum": 100,
+            "amount": "0.0145"
+          },
+          {
+            "minimum": 1000,
+            "amount": "0.0122"
+          }
+        ],
+        "minimum_quantity": 1,
+        "order_increment": 1,
+        "scope": "public",
+        "valid_until": null
+      },
+      "availability": {
+        "checked_at": "2026-09-22T02:50:00Z",
+        "status": "unknown",
+        "quantity": null
+      },
+      "delivery": null,
+      "charges": [],
+      "refresh_error": null,
+      "evidence_url": "https://boltdepot.com/Product-Details?product=4513"
+    },
+    {
+      "product_id": "bolt-depot-4514",
+      "price": {
+        "observed_at": "2026-09-22T02:50:00Z",
+        "currency": "USD",
+        "basis": "each",
+        "tier_basis": "items",
+        "tiers": [
+          {
+            "minimum": 1,
+            "amount": "0.05"
+          },
+          {
+            "minimum": 100,
+            "amount": "0.0166"
+          },
+          {
+            "minimum": 1000,
+            "amount": "0.0139"
+          }
+        ],
+        "minimum_quantity": 1,
+        "order_increment": 1,
+        "scope": "public",
+        "valid_until": null
+      },
+      "availability": {
+        "checked_at": "2026-09-22T02:50:00Z",
+        "status": "unknown",
+        "quantity": null
+      },
+      "delivery": null,
+      "charges": [],
+      "refresh_error": null,
+      "evidence_url": "https://boltdepot.com/Product-Details?product=4514"
+    },
+    {
+      "product_id": "bolt-depot-4515",
+      "price": {
+        "observed_at": "2026-09-22T02:50:00Z",
+        "currency": "USD",
+        "basis": "each",
+        "tier_basis": "items",
+        "tiers": [
+          {
+            "minimum": 1,
+            "amount": "0.05"
+          },
+          {
+            "minimum": 100,
+            "amount": "0.0234"
+          },
+          {
+            "minimum": 1000,
+            "amount": "0.0197"
+          }
+        ],
+        "minimum_quantity": 1,
+        "order_increment": 1,
+        "scope": "public",
+        "valid_until": null
+      },
+      "availability": {
+        "checked_at": "2026-09-22T02:50:00Z",
+        "status": "unknown",
+        "quantity": null
+      },
+      "delivery": null,
+      "charges": [],
+      "refresh_error": null,
+      "evidence_url": "https://boltdepot.com/Product-Details?product=4515"
+    },
+    {
+      "product_id": "bolt-depot-4516",
+      "price": {
+        "observed_at": "2026-09-22T02:50:00Z",
+        "currency": "USD",
+        "basis": "each",
+        "tier_basis": "items",
+        "tiers": [
+          {
+            "minimum": 1,
+            "amount": "0.06"
+          },
+          {
+            "minimum": 100,
+            "amount": "0.0395"
+          },
+          {
+            "minimum": 1000,
+            "amount": "0.0332"
+          }
+        ],
+        "minimum_quantity": 1,
+        "order_increment": 1,
+        "scope": "public",
+        "valid_until": null
+      },
+      "availability": {
+        "checked_at": "2026-09-22T02:50:00Z",
+        "status": "unknown",
+        "quantity": null
+      },
+      "delivery": null,
+      "charges": [],
+      "refresh_error": null,
+      "evidence_url": "https://boltdepot.com/Product-Details?product=4516"
+    }
+  ]
+}
