@@ -121,8 +121,12 @@ export function compare(
       .filter((t) => t.minimum <= tierCount)
       .sort((a, b) => b.minimum - a.minimum)[0];
     if (price && !tier) reasons.push("No applicable price tier");
+    // An excluded currency/scope must not be relabeled as the requested currency,
+    // or combined with charges quoted in that requested scope.
+    const comparablePrice =
+      price?.currency === input.currency && price.scope === input.price_scope;
     const subtotal =
-      tier && price && purchased !== null
+      tier && price && comparablePrice && purchased !== null
         ? micros(tier.amount) *
           BigInt(
             price.basis === "pack" ? purchased / product.pack_size : purchased,
