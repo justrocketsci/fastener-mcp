@@ -404,7 +404,14 @@ test("A14 stale prices, different currencies/scopes, missing deadlines are not r
   let obs = observations();
   obs[0].price!.currency = "EUR";
   obs[1].price!.scope = "account:secret";
-  assert.equal(compare(getPart(id), input(), fixed, obs).links_only.length, 2);
+  const mismatched = compare(getPart(id), input(), fixed, obs);
+  assert.equal(mismatched.links_only.length, 2);
+  assert(
+    mismatched.links_only.every(
+      (o) => o.merchandise_subtotal === null && o.known_cost === null,
+    ),
+    "Foreign-currency/account amounts must not be shown as requested-scope totals",
+  );
   obs = observations();
   assert.equal(
     compare(getPart(id), input(), fixed + 25 * 3600000, obs).links_only.length,
