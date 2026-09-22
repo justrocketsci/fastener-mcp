@@ -1,0 +1,31 @@
+{
+  "schema_version": "fastener-mcp.v2",
+  "items": [
+    {
+      "id": "bolt-depot",
+      "name": "Bolt Depot",
+      "markets": [
+        "US"
+      ],
+      "import_method": "maintainer_import",
+      "price_max_age_hours": 24,
+      "stock_max_age_hours": 24,
+      "source_urls": [
+        "https://boltdepot.com"
+      ]
+    },
+    {
+      "id": "monster-bolts",
+      "name": "Monster Bolts",
+      "markets": [
+        "US"
+      ],
+      "import_method": "maintainer_import",
+      "price_max_age_hours": 24,
+      "stock_max_age_hours": 24,
+      "source_urls": [
+        "https://monsterbolts.com"
+      ]
+    }
+  ]
+}

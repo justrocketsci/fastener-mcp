@@ -1,0 +1,23 @@
+{
+  "schema_version": "fastener-mcp.v2",
+  "part": "iso4762-m4x12-reference",
+  "revision": 1,
+  "checks": [
+    "STEP reopened with OpenCascade",
+    "one solid; valid topology; finite bounds; positive volume",
+    "origin/minimum Z",
+    "length/maximum Z",
+    "shank diameter X",
+    "shank diameter Y",
+    "head diameter X",
+    "head diameter Y",
+    "head/shank continuity at origin",
+    "socket across flats",
+    "socket open at head top; sourced recess depth and solid floor"
+  ],
+  "tolerance_mm": 0.01,
+  "volume_mm3": 289.14603013009986,
+  "visual_review": "passed",
+  "checked_at": "2026-09-22T02:59:52.835897Z",
+  "reviewed_at": "2026-09-22T03:04:34.898138Z"
+}

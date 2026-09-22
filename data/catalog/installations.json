@@ -1,0 +1,1216 @@
+{
+  "schema_version": "fastener-mcp.v2",
+  "items": [
+    {
+      "id": "iso4762-m6x10-a2-installation",
+      "parts": [
+        {
+          "id": "iso4762-m6x10-a2",
+          "revision": 1
+        }
+      ],
+      "type": "clearance",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-6416",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "iso4762-m6x12-a2-installation",
+      "parts": [
+        {
+          "id": "iso4762-m6x12-a2",
+          "revision": 1
+        }
+      ],
+      "type": "clearance",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-6417",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "iso4762-m6x16-a2-installation",
+      "parts": [
+        {
+          "id": "iso4762-m6x16-a2",
+          "revision": 1
+        }
+      ],
+      "type": "clearance",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-6418",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "iso4762-m6x20-a2-installation",
+      "parts": [
+        {
+          "id": "iso4762-m6x20-a2",
+          "revision": 1
+        }
+      ],
+      "type": "clearance",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-6419",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "iso4762-m6x25-a2-installation",
+      "parts": [
+        {
+          "id": "iso4762-m6x25-a2",
+          "revision": 1
+        }
+      ],
+      "type": "clearance",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-6420",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "iso4762-m3x12-reference-installation",
+      "parts": [
+        {
+          "id": "iso4762-m3x12-reference",
+          "revision": 1
+        }
+      ],
+      "type": "clearance",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "bolts-hex-socket",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "iso4762-m4x12-reference-installation",
+      "parts": [
+        {
+          "id": "iso4762-m4x12-reference",
+          "revision": 1
+        }
+      ],
+      "type": "clearance",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "bolts-hex-socket",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "din933-m3x20-reference-installation",
+      "parts": [
+        {
+          "id": "din933-m3x20-reference",
+          "revision": 1
+        }
+      ],
+      "type": "clearance",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "bolts-hex",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "din933-m4x20-reference-installation",
+      "parts": [
+        {
+          "id": "din933-m4x20-reference",
+          "revision": 1
+        }
+      ],
+      "type": "clearance",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "bolts-hex",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "din933-m5x20-reference-installation",
+      "parts": [
+        {
+          "id": "din933-m5x20-reference",
+          "revision": 1
+        }
+      ],
+      "type": "clearance",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "bolts-hex",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "din933-m6x20-reference-installation",
+      "parts": [
+        {
+          "id": "din933-m6x20-reference",
+          "revision": 1
+        }
+      ],
+      "type": "clearance",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "bolts-hex",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "din7991-m3x20-reference-installation",
+      "parts": [
+        {
+          "id": "din7991-m3x20-reference",
+          "revision": 1
+        }
+      ],
+      "type": "countersink",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "bolts-hex-socket",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "din7991-m4x20-reference-installation",
+      "parts": [
+        {
+          "id": "din7991-m4x20-reference",
+          "revision": 1
+        }
+      ],
+      "type": "countersink",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "bolts-hex-socket",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "din7991-m5x20-reference-installation",
+      "parts": [
+        {
+          "id": "din7991-m5x20-reference",
+          "revision": 1
+        }
+      ],
+      "type": "countersink",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "bolts-hex-socket",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "din7991-m6x20-reference-installation",
+      "parts": [
+        {
+          "id": "din7991-m6x20-reference",
+          "revision": 1
+        }
+      ],
+      "type": "countersink",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "bolts-hex-socket",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "din934-m3-a2-installation",
+      "parts": [
+        {
+          "id": "din934-m3-a2",
+          "revision": 1
+        }
+      ],
+      "type": "seating",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-4773",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "din934-m4-a2-installation",
+      "parts": [
+        {
+          "id": "din934-m4-a2",
+          "revision": 1
+        }
+      ],
+      "type": "seating",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-4774",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "din934-m5-a2-installation",
+      "parts": [
+        {
+          "id": "din934-m5-a2",
+          "revision": 1
+        }
+      ],
+      "type": "seating",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-4775",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "din934-m6-a2-installation",
+      "parts": [
+        {
+          "id": "din934-m6-a2",
+          "revision": 1
+        }
+      ],
+      "type": "seating",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-4776",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "din125-m3-a2-installation",
+      "parts": [
+        {
+          "id": "din125-m3-a2",
+          "revision": 1
+        }
+      ],
+      "type": "seating",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-4513",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "din125-m4-a2-installation",
+      "parts": [
+        {
+          "id": "din125-m4-a2",
+          "revision": 1
+        }
+      ],
+      "type": "seating",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-4514",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "din125-m5-a2-installation",
+      "parts": [
+        {
+          "id": "din125-m5-a2",
+          "revision": 1
+        }
+      ],
+      "type": "seating",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-4515",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "din125-m6-a2-installation",
+      "parts": [
+        {
+          "id": "din125-m6-a2",
+          "revision": 1
+        }
+      ],
+      "type": "seating",
+      "status": "unavailable",
+      "required_context": [],
+      "conditions": [],
+      "dimensions": {},
+      "instructions": [],
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-4516",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+      ]
+    },
+    {
+      "id": "helicoil-plus-m3-1.5d-4130-installation",
+      "parts": [
+        {
+          "id": "helicoil-plus-m3-1.5d-4130",
+          "revision": 1
+        }
+      ],
+      "type": "wire_insert",
+      "status": "documented",
+      "required_context": [
+        "host_material",
+        "process",
+        "hole_type"
+      ],
+      "conditions": [
+        "HELICOIL Plus Free Running 4130 series only.",
+        "Cut receiving thread using the specified HELICOIL/STI tap; an ordinary M-size tap is not equivalent.",
+        "Drill choice must be checked against D1HC for the actual host material/process."
+      ],
+      "dimensions": {
+        "suggested_drill": {
+          "value": 3.2,
+          "unit": "mm",
+          "normalized_mm": 3.2,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M3: suggested_drill",
+            "verification": "checked"
+          }
+        },
+        "holding_crest_min": {
+          "value": 3.11,
+          "unit": "mm",
+          "normalized_mm": 3.11,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M3: holding_crest_min",
+            "verification": "checked"
+          }
+        },
+        "holding_crest_max": {
+          "value": 3.22,
+          "unit": "mm",
+          "normalized_mm": 3.22,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M3: holding_crest_max",
+            "verification": "checked"
+          }
+        },
+        "holding_major_min": {
+          "value": 3.65,
+          "unit": "mm",
+          "normalized_mm": 3.65,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M3: holding_major_min",
+            "verification": "checked"
+          }
+        },
+        "minimum_full_thread_depth": {
+          "value": 4.5,
+          "unit": "mm",
+          "normalized_mm": 4.5,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M3: minimum_full_thread_depth",
+            "verification": "checked"
+          }
+        },
+        "thread_runout_e1": {
+          "value": 2.8,
+          "unit": "mm",
+          "normalized_mm": 2.8,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M3: thread_runout_e1",
+            "verification": "checked"
+          }
+        },
+        "minimum_blind_tap_depth": {
+          "value": 7.3,
+          "unit": "mm",
+          "normalized_mm": 7.3,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M3: minimum_blind_tap_depth",
+            "verification": "checked"
+          }
+        },
+        "seat_below_surface_min": {
+          "value": 0.125,
+          "unit": "mm",
+          "normalized_mm": 0.125,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M3: seat_below_surface_min",
+            "verification": "checked"
+          }
+        },
+        "seat_below_surface_max": {
+          "value": 0.25,
+          "unit": "mm",
+          "normalized_mm": 0.25,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M3: seat_below_surface_max",
+            "verification": "checked"
+          }
+        },
+        "max_screw_depth_tang_retained": {
+          "value": 4.2,
+          "unit": "mm",
+          "normalized_mm": 4.2,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M3: max_screw_depth_tang_retained",
+            "verification": "checked"
+          }
+        }
+      },
+      "instructions": [
+        "Use HELICOIL/STI M3 × 0.5 receiving-thread tooling.",
+        "Receiving thread has a 60 degree profile. Before tapping, countersink 90 degrees and deburr; drawing gives countersink diameter DHC + 0.1 mm.",
+        "For series production the manufacturer recommends adding at least one pitch to t1 and t2.",
+        "Break and remove the tang where required; maximum screw-in depth with tang retained is separately reported."
+      ],
+      "evidence": [
+        {
+          "source_id": "boellhoff-0100",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "Confirm host material/process, tap tolerances, tang procedure, wall thickness and load suitability with the manufacturer."
+      ]
+    },
+    {
+      "id": "helicoil-plus-m4-1.5d-4130-installation",
+      "parts": [
+        {
+          "id": "helicoil-plus-m4-1.5d-4130",
+          "revision": 1
+        }
+      ],
+      "type": "wire_insert",
+      "status": "documented",
+      "required_context": [
+        "host_material",
+        "process",
+        "hole_type"
+      ],
+      "conditions": [
+        "HELICOIL Plus Free Running 4130 series only.",
+        "Cut receiving thread using the specified HELICOIL/STI tap; an ordinary M-size tap is not equivalent.",
+        "Drill choice must be checked against D1HC for the actual host material/process."
+      ],
+      "dimensions": {
+        "suggested_drill": {
+          "value": 4.2,
+          "unit": "mm",
+          "normalized_mm": 4.2,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M4: suggested_drill",
+            "verification": "checked"
+          }
+        },
+        "holding_crest_min": {
+          "value": 4.15,
+          "unit": "mm",
+          "normalized_mm": 4.15,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M4: holding_crest_min",
+            "verification": "checked"
+          }
+        },
+        "holding_crest_max": {
+          "value": 4.29,
+          "unit": "mm",
+          "normalized_mm": 4.29,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M4: holding_crest_max",
+            "verification": "checked"
+          }
+        },
+        "holding_major_min": {
+          "value": 4.91,
+          "unit": "mm",
+          "normalized_mm": 4.91,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M4: holding_major_min",
+            "verification": "checked"
+          }
+        },
+        "minimum_full_thread_depth": {
+          "value": 6,
+          "unit": "mm",
+          "normalized_mm": 6,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M4: minimum_full_thread_depth",
+            "verification": "checked"
+          }
+        },
+        "thread_runout_e1": {
+          "value": 3.8,
+          "unit": "mm",
+          "normalized_mm": 3.8,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M4: thread_runout_e1",
+            "verification": "checked"
+          }
+        },
+        "minimum_blind_tap_depth": {
+          "value": 9.8,
+          "unit": "mm",
+          "normalized_mm": 9.8,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M4: minimum_blind_tap_depth",
+            "verification": "checked"
+          }
+        },
+        "seat_below_surface_min": {
+          "value": 0.175,
+          "unit": "mm",
+          "normalized_mm": 0.175,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M4: seat_below_surface_min",
+            "verification": "checked"
+          }
+        },
+        "seat_below_surface_max": {
+          "value": 0.35,
+          "unit": "mm",
+          "normalized_mm": 0.35,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M4: seat_below_surface_max",
+            "verification": "checked"
+          }
+        },
+        "max_screw_depth_tang_retained": {
+          "value": 5.6,
+          "unit": "mm",
+          "normalized_mm": 5.6,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M4: max_screw_depth_tang_retained",
+            "verification": "checked"
+          }
+        }
+      },
+      "instructions": [
+        "Use HELICOIL/STI M4 × 0.7 receiving-thread tooling.",
+        "Receiving thread has a 60 degree profile. Before tapping, countersink 90 degrees and deburr; drawing gives countersink diameter DHC + 0.1 mm.",
+        "For series production the manufacturer recommends adding at least one pitch to t1 and t2.",
+        "Break and remove the tang where required; maximum screw-in depth with tang retained is separately reported."
+      ],
+      "evidence": [
+        {
+          "source_id": "boellhoff-0100",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "Confirm host material/process, tap tolerances, tang procedure, wall thickness and load suitability with the manufacturer."
+      ]
+    },
+    {
+      "id": "helicoil-plus-m5-1.5d-4130-installation",
+      "parts": [
+        {
+          "id": "helicoil-plus-m5-1.5d-4130",
+          "revision": 1
+        }
+      ],
+      "type": "wire_insert",
+      "status": "documented",
+      "required_context": [
+        "host_material",
+        "process",
+        "hole_type"
+      ],
+      "conditions": [
+        "HELICOIL Plus Free Running 4130 series only.",
+        "Cut receiving thread using the specified HELICOIL/STI tap; an ordinary M-size tap is not equivalent.",
+        "Drill choice must be checked against D1HC for the actual host material/process."
+      ],
+      "dimensions": {
+        "suggested_drill": {
+          "value": 5.2,
+          "unit": "mm",
+          "normalized_mm": 5.2,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M5: suggested_drill",
+            "verification": "checked"
+          }
+        },
+        "holding_crest_min": {
+          "value": 5.17,
+          "unit": "mm",
+          "normalized_mm": 5.17,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M5: holding_crest_min",
+            "verification": "checked"
+          }
+        },
+        "holding_crest_max": {
+          "value": 5.33,
+          "unit": "mm",
+          "normalized_mm": 5.33,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M5: holding_crest_max",
+            "verification": "checked"
+          }
+        },
+        "holding_major_min": {
+          "value": 6.04,
+          "unit": "mm",
+          "normalized_mm": 6.04,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M5: holding_major_min",
+            "verification": "checked"
+          }
+        },
+        "minimum_full_thread_depth": {
+          "value": 7.5,
+          "unit": "mm",
+          "normalized_mm": 7.5,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M5: minimum_full_thread_depth",
+            "verification": "checked"
+          }
+        },
+        "thread_runout_e1": {
+          "value": 4.2,
+          "unit": "mm",
+          "normalized_mm": 4.2,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M5: thread_runout_e1",
+            "verification": "checked"
+          }
+        },
+        "minimum_blind_tap_depth": {
+          "value": 11.7,
+          "unit": "mm",
+          "normalized_mm": 11.7,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M5: minimum_blind_tap_depth",
+            "verification": "checked"
+          }
+        },
+        "seat_below_surface_min": {
+          "value": 0.2,
+          "unit": "mm",
+          "normalized_mm": 0.2,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M5: seat_below_surface_min",
+            "verification": "checked"
+          }
+        },
+        "seat_below_surface_max": {
+          "value": 0.4,
+          "unit": "mm",
+          "normalized_mm": 0.4,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M5: seat_below_surface_max",
+            "verification": "checked"
+          }
+        },
+        "max_screw_depth_tang_retained": {
+          "value": 7.1,
+          "unit": "mm",
+          "normalized_mm": 7.1,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M5: max_screw_depth_tang_retained",
+            "verification": "checked"
+          }
+        }
+      },
+      "instructions": [
+        "Use HELICOIL/STI M5 × 0.8 receiving-thread tooling.",
+        "Receiving thread has a 60 degree profile. Before tapping, countersink 90 degrees and deburr; drawing gives countersink diameter DHC + 0.1 mm.",
+        "For series production the manufacturer recommends adding at least one pitch to t1 and t2.",
+        "Break and remove the tang where required; maximum screw-in depth with tang retained is separately reported."
+      ],
+      "evidence": [
+        {
+          "source_id": "boellhoff-0100",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "Confirm host material/process, tap tolerances, tang procedure, wall thickness and load suitability with the manufacturer."
+      ]
+    },
+    {
+      "id": "helicoil-plus-m6-1.5d-4130-installation",
+      "parts": [
+        {
+          "id": "helicoil-plus-m6-1.5d-4130",
+          "revision": 1
+        }
+      ],
+      "type": "wire_insert",
+      "status": "documented",
+      "required_context": [
+        "host_material",
+        "process",
+        "hole_type"
+      ],
+      "conditions": [
+        "HELICOIL Plus Free Running 4130 series only.",
+        "Cut receiving thread using the specified HELICOIL/STI tap; an ordinary M-size tap is not equivalent.",
+        "Drill choice must be checked against D1HC for the actual host material/process."
+      ],
+      "dimensions": {
+        "suggested_drill": {
+          "value": 6.3,
+          "unit": "mm",
+          "normalized_mm": 6.3,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M6: suggested_drill",
+            "verification": "checked"
+          }
+        },
+        "holding_crest_min": {
+          "value": 6.22,
+          "unit": "mm",
+          "normalized_mm": 6.22,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M6: holding_crest_min",
+            "verification": "checked"
+          }
+        },
+        "holding_crest_max": {
+          "value": 6.41,
+          "unit": "mm",
+          "normalized_mm": 6.41,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M6: holding_crest_max",
+            "verification": "checked"
+          }
+        },
+        "holding_major_min": {
+          "value": 7.3,
+          "unit": "mm",
+          "normalized_mm": 7.3,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M6: holding_major_min",
+            "verification": "checked"
+          }
+        },
+        "minimum_full_thread_depth": {
+          "value": 9,
+          "unit": "mm",
+          "normalized_mm": 9,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M6: minimum_full_thread_depth",
+            "verification": "checked"
+          }
+        },
+        "thread_runout_e1": {
+          "value": 5.1,
+          "unit": "mm",
+          "normalized_mm": 5.1,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M6: thread_runout_e1",
+            "verification": "checked"
+          }
+        },
+        "minimum_blind_tap_depth": {
+          "value": 14.1,
+          "unit": "mm",
+          "normalized_mm": 14.1,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M6: minimum_blind_tap_depth",
+            "verification": "checked"
+          }
+        },
+        "seat_below_surface_min": {
+          "value": 0.25,
+          "unit": "mm",
+          "normalized_mm": 0.25,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M6: seat_below_surface_min",
+            "verification": "checked"
+          }
+        },
+        "seat_below_surface_max": {
+          "value": 0.5,
+          "unit": "mm",
+          "normalized_mm": 0.5,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M6: seat_below_surface_max",
+            "verification": "checked"
+          }
+        },
+        "max_screw_depth_tang_retained": {
+          "value": 8.5,
+          "unit": "mm",
+          "normalized_mm": 8.5,
+          "derivation": "Source nominal value",
+          "limits": null,
+          "evidence": {
+            "source_id": "boellhoff-0100",
+            "locator": "Printed pp23–24 M6: max_screw_depth_tang_retained",
+            "verification": "checked"
+          }
+        }
+      },
+      "instructions": [
+        "Use HELICOIL/STI M6 × 1 receiving-thread tooling.",
+        "Receiving thread has a 60 degree profile. Before tapping, countersink 90 degrees and deburr; drawing gives countersink diameter DHC + 0.1 mm.",
+        "For series production the manufacturer recommends adding at least one pitch to t1 and t2.",
+        "Break and remove the tang where required; maximum screw-in depth with tang retained is separately reported."
+      ],
+      "evidence": [
+        {
+          "source_id": "boellhoff-0100",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ],
+      "unresolved": [
+        "Confirm host material/process, tap tolerances, tang procedure, wall thickness and load suitability with the manufacturer."
+      ]
+    }
+  ]
+}

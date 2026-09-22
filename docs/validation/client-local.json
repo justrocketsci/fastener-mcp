@@ -1,0 +1,1007 @@
+{
+  "summary": {
+    "result": "passed",
+    "checks": [
+      "8 read-only SDK tools",
+      "REST/MCP parity",
+      "anonymous model URL",
+      "SHA-256 and byte size",
+      "independent STEP import",
+      "errors and retired routes"
+    ],
+    "catalog_release": "catalog-20260922-1",
+    "geometry_version": "v1-7b5b7ccab7ff",
+    "model_url": "http://localhost:3100/models/iso4762-m6x20-a2-simplified/v1-7b5b7ccab7ff/model.step",
+    "model_sha256": "dded6d79fdcc8e18e4afbbdd5cdddeea363a655fe2d0c6de6be98a46d646c20a",
+    "model_bytes": 9669,
+    "measured_cad": {
+      "solid_count": 1,
+      "head_diameter_mm": 10,
+      "z_min_mm": -6,
+      "z_max_mm": 20,
+      "tolerance_mm": 0.01
+    },
+    "origin": "http://localhost:3100",
+    "checked_at": "2026-09-22T03:39:09.500Z",
+    "environment": {
+      "node": "v22.22.3",
+      "os": "darwin",
+      "architecture": "arm64"
+    },
+    "http_search": {
+      "samples": 20,
+      "p95_ms": 0.8609169999999722,
+      "response_bytes": 2413,
+      "scope": "Warm HTTP, includes network; not the in-process performance target"
+    },
+    "total_client_duration_ms": 1522.940167
+  },
+  "calls": [
+    {
+      "name": "search_fasteners",
+      "arguments": {
+        "category": "socket_screw",
+        "diameter": 6,
+        "diameter_unit": "mm",
+        "length": 20,
+        "length_unit": "mm"
+      },
+      "response": {
+        "schema_version": "fastener-mcp.v2",
+        "catalog_release": "catalog-20260922-1",
+        "total": 1,
+        "exact_matches": [
+          {
+            "id": "iso4762-m6x20-a2",
+            "revision": 1,
+            "designation": "ISO 4762 M6 × 1 × 20 mm socket screw",
+            "category": "socket_screw",
+            "status": "active",
+            "thread": {
+              "system": "metric",
+              "designation": "M6x1",
+              "nominal_diameter_mm": 6,
+              "pitch_mm": 1,
+              "original_tpi": null,
+              "handedness": "right",
+              "class": null,
+              "role": "external"
+            },
+            "material": "A2 stainless steel",
+            "grade": null,
+            "geometry_detail": [
+              "simplified"
+            ],
+            "match_classification": "exact",
+            "differences": []
+          }
+        ],
+        "alternatives": [],
+        "next_cursor": null,
+        "matched_requirements": {
+          "category": "socket_screw",
+          "diameter": 6,
+          "diameter_unit": "mm",
+          "length": 20,
+          "length_unit": "mm",
+          "source_status": "active"
+        },
+        "missing_requirements": []
+      },
+      "duration_ms": 12.10941600000001
+    },
+    {
+      "name": "get_fastener",
+      "arguments": {
+        "id": "iso4762-m6x20-a2",
+        "revision": 1
+      },
+      "response": {
+        "schema_version": "fastener-mcp.v2",
+        "catalog_release": "catalog-20260922-1",
+        "part": {
+          "id": "iso4762-m6x20-a2",
+          "revision": 1,
+          "designation": "ISO 4762 M6 × 1 × 20 mm socket screw",
+          "category": "socket_screw",
+          "status": "active",
+          "verified_at": "2026-09-22T02:50:00Z",
+          "standards": [
+            "ISO 4762",
+            "DIN 912"
+          ],
+          "aliases": [
+            "M6 socket screw"
+          ],
+          "manufacturer": null,
+          "manufacturer_part_number": null,
+          "superseded_by": null,
+          "thread": {
+            "system": "metric",
+            "designation": "M6x1",
+            "nominal_diameter_mm": 6,
+            "pitch_mm": 1,
+            "original_tpi": null,
+            "handedness": "right",
+            "class": null,
+            "role": "external"
+          },
+          "nominal_size_mm": 6,
+          "dimensions": {
+            "diameter": {
+              "value": 6,
+              "unit": "mm",
+              "normalized_mm": 6,
+              "derivation": "Source nominal value",
+              "limits": null,
+              "evidence": {
+                "source_id": "source-bolt-depot-6419",
+                "locator": "diameter",
+                "verification": "checked"
+              }
+            },
+            "length": {
+              "value": 20,
+              "unit": "mm",
+              "normalized_mm": 20,
+              "derivation": "Source nominal value",
+              "limits": null,
+              "evidence": {
+                "source_id": "source-bolt-depot-6419",
+                "locator": "length",
+                "verification": "checked"
+              }
+            },
+            "head_diameter": {
+              "value": 10,
+              "unit": "mm",
+              "normalized_mm": 10,
+              "derivation": "Source nominal value",
+              "limits": [
+                9.78,
+                10.22
+              ],
+              "evidence": {
+                "source_id": "source-bolt-depot-6419",
+                "locator": "head_diameter",
+                "verification": "checked"
+              }
+            },
+            "head_height": {
+              "value": 6,
+              "unit": "mm",
+              "normalized_mm": 6,
+              "derivation": "Source nominal value",
+              "limits": [
+                5.7,
+                6
+              ],
+              "evidence": {
+                "source_id": "source-bolt-depot-6419",
+                "locator": "head_height",
+                "verification": "checked"
+              }
+            },
+            "drive_af": {
+              "value": 5,
+              "unit": "mm",
+              "normalized_mm": 5,
+              "derivation": "Source nominal value",
+              "limits": null,
+              "evidence": {
+                "source_id": "source-bolt-depot-6419",
+                "locator": "drive_af",
+                "verification": "checked"
+              }
+            },
+            "drive_depth": {
+              "value": 3,
+              "unit": "mm",
+              "normalized_mm": 3,
+              "derivation": "Source nominal value",
+              "limits": null,
+              "evidence": {
+                "source_id": "bolts-hex-socket",
+                "locator": "hexsocketheadcap M6 t_min",
+                "verification": "checked"
+              }
+            }
+          },
+          "length_meaning": "under_head",
+          "grip_length_mm": null,
+          "attributes": {
+            "material": "A2 stainless steel",
+            "grade": null,
+            "finish": null,
+            "head_type": "socket",
+            "drive_type": "hex_socket",
+            "insert_type": null
+          },
+          "evidence": [
+            {
+              "source_id": "source-bolt-depot-6419",
+              "locator": "Product attributes / size table",
+              "verification": "checked"
+            }
+          ],
+          "installation_ids": [
+            "iso4762-m6x20-a2-installation"
+          ],
+          "geometry_ids": [
+            "iso4762-m6x20-a2-simplified"
+          ],
+          "notes": [
+            "Geometry represents nominal reference dimensions; grade and finish remain unspecified unless recorded."
+          ]
+        },
+        "sources": [
+          {
+            "id": "source-bolt-depot-6419",
+            "title": "ISO 4762 M6 × 1 × 20 mm socket screw / 6419",
+            "publisher": "Bolt Depot",
+            "url": "https://boltdepot.com/Product-Details?product=6419",
+            "revision": null,
+            "retrieved_at": "2026-09-22T02:50:00Z",
+            "kind": "vendor",
+            "usage": "Linked factual attributes only; original publication not redistributed.",
+            "authority": "vendor",
+            "extraction": "Numerical attributes checked against displayed source; no certification claim."
+          },
+          {
+            "id": "bolts-hex-socket",
+            "title": "BOLTS hex_socket dimensional tables",
+            "publisher": "Johannes Reinhardt / BOLTS",
+            "url": "https://raw.githubusercontent.com/boltsparts/BOLTS_archive/05a2acd1f77737789a313b4c77f1f8eea35da256/data/hex_socket.blt",
+            "revision": "05a2acd1f77737789a313b4c77f1f8eea35da256",
+            "retrieved_at": "2026-09-22T02:50:00Z",
+            "kind": "open_library",
+            "usage": "LGPL-2.1-or-later; selected factual dimensions attributed in THIRD_PARTY_NOTICES.md. No source CAD code copied.",
+            "authority": "open_library",
+            "extraction": "Numerical attributes checked against displayed source; no certification claim."
+          }
+        ],
+        "supplier_products": [
+          {
+            "id": "bolt-depot-6419",
+            "supplier_id": "bolt-depot",
+            "sku": "6419",
+            "part": {
+              "id": "iso4762-m6x20-a2",
+              "revision": 1
+            },
+            "url": "https://boltdepot.com/Product-Details?product=6419",
+            "manufacturer": null,
+            "pack_size": 1,
+            "match_status": "exact",
+            "checked_attributes": {
+              "diameter_mm": "6",
+              "material": "A2 / 18-8 stainless",
+              "category": "socket_screw",
+              "standard": "ISO 4762",
+              "pitch_mm": "1",
+              "handedness": "right (DIN metric standard)",
+              "length_mm": "20"
+            },
+            "unresolved": [
+              "Property class and finish are unspecified; does not satisfy a request that requires either.",
+              "Nominal CAD surfaces do not represent manufacturing tolerances."
+            ],
+            "verified_at": "2026-09-22T02:50:00Z",
+            "part_fingerprint": "ea2ec1b38e19dd2188cafe5124d76d73b5ab0980cbb07ca7daa23e1b2406bf06",
+            "model_representation": "standard_nominal",
+            "evidence": [
+              {
+                "source_id": "source-bolt-depot-6419",
+                "locator": "Product attributes / size table",
+                "verification": "checked"
+              }
+            ]
+          },
+          {
+            "id": "monster-bolts-36230284492",
+            "supplier_id": "monster-bolts",
+            "sku": "36230284492",
+            "part": {
+              "id": "iso4762-m6x20-a2",
+              "revision": 1
+            },
+            "url": "https://monsterbolts.com/products/socket-cap-a2-m6?variant=36230284492",
+            "manufacturer": null,
+            "pack_size": 10,
+            "match_status": "exact",
+            "checked_attributes": {
+              "diameter_mm": "6",
+              "material": "A2 / 18-8 stainless",
+              "category": "socket_screw",
+              "standard": "ISO 4762",
+              "pitch_mm": "1",
+              "handedness": "right (DIN metric standard)",
+              "length_mm": "20"
+            },
+            "unresolved": [
+              "Property class and finish are unspecified; does not satisfy a request that requires either.",
+              "Nominal CAD surfaces do not represent manufacturing tolerances."
+            ],
+            "verified_at": "2026-09-22T02:50:00Z",
+            "part_fingerprint": "ea2ec1b38e19dd2188cafe5124d76d73b5ab0980cbb07ca7daa23e1b2406bf06",
+            "model_representation": "standard_nominal",
+            "evidence": [
+              {
+                "source_id": "source-monster-bolts-36230284492",
+                "locator": "Product attributes / size table",
+                "verification": "checked"
+              }
+            ]
+          }
+        ]
+      },
+      "duration_ms": 3.6482500000000186
+    },
+    {
+      "name": "get_fastener_model",
+      "arguments": {
+        "id": "iso4762-m6x20-a2",
+        "revision": 1
+      },
+      "response": {
+        "schema_version": "fastener-mcp.v2",
+        "catalog_release": "catalog-20260922-1",
+        "part": {
+          "id": "iso4762-m6x20-a2",
+          "revision": 1
+        },
+        "model": {
+          "id": "iso4762-m6x20-a2-simplified",
+          "version": "v1-7b5b7ccab7ff",
+          "parts": [
+            {
+              "id": "iso4762-m6x20-a2",
+              "revision": 1
+            }
+          ],
+          "recipe_id": "socket_screw",
+          "recipe_version": "2.0.0",
+          "parameter_hash": "cdd50ce5d6022c4464d6a382e374d8ee314bcfbf03a861306a78294489fa685a",
+          "build_key": "7b5b7ccab7ff2e32af1c8409ce10c73bc9d24ac384678a9ded321d63dde559dd",
+          "toolchain": {
+            "python": "3.12.13",
+            "cadquery": "2.6.1",
+            "ocp": "7.8.1.1"
+          },
+          "detail": "simplified",
+          "state": "not_applicable",
+          "format": "step",
+          "units": "mm",
+          "asset_path": "/models/iso4762-m6x20-a2-simplified/v1-7b5b7ccab7ff/model.step",
+          "bytes": 9669,
+          "sha256": "dded6d79fdcc8e18e4afbbdd5cdddeea363a655fe2d0c6de6be98a46d646c20a",
+          "preview_paths": [
+            "/models/iso4762-m6x20-a2-simplified/v1-7b5b7ccab7ff/preview.png"
+          ],
+          "bounds_mm": {
+            "min": [
+              -5,
+              -5,
+              -6
+            ],
+            "max": [
+              5,
+              5,
+              20
+            ]
+          },
+          "frame": {
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "origin_datum": "head_bearing_face",
+            "positive_z": "Shank extends +Z; head extends -Z",
+            "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals ±Y). Circular bodies have arbitrary X.",
+            "datums": {
+              "head_bearing_face": 0,
+              "minimum_z": -6,
+              "maximum_z": 20
+            },
+            "handedness": "right"
+          },
+          "validation": {
+            "status": "passed",
+            "checked_at": "2026-09-22T02:59:52.835897Z",
+            "tolerance_mm": 0.01,
+            "report_path": "/models/iso4762-m6x20-a2-simplified/v1-7b5b7ccab7ff/checks.json",
+            "checks": [
+              "STEP reopened with OpenCascade",
+              "one solid; valid topology; finite bounds; positive volume",
+              "origin/minimum Z",
+              "length/maximum Z",
+              "shank diameter X",
+              "shank diameter Y",
+              "head diameter X",
+              "head diameter Y",
+              "head/shank continuity at origin"
+            ],
+            "visual_review": "passed",
+            "withdrawal_reason": null
+          },
+          "represented_features": [
+            "diameter",
+            "length",
+            "head_diameter",
+            "head_height"
+          ],
+          "omitted_features": [
+            "Thread helices and tolerance-class fit",
+            "Small edge breaks, chamfers and fillets",
+            "Hex socket recess"
+          ],
+          "intended_uses": [
+            "layout",
+            "reference"
+          ],
+          "representation": "standard_nominal",
+          "url": "http://localhost:3100/models/iso4762-m6x20-a2-simplified/v1-7b5b7ccab7ff/model.step",
+          "preview_urls": [
+            "http://localhost:3100/models/iso4762-m6x20-a2-simplified/v1-7b5b7ccab7ff/preview.png"
+          ],
+          "report_url": "http://localhost:3100/models/iso4762-m6x20-a2-simplified/v1-7b5b7ccab7ff/checks.json"
+        }
+      },
+      "duration_ms": 5.168875000000014
+    },
+    {
+      "name": "get_placement_packet",
+      "arguments": {
+        "id": "iso4762-m6x20-a2",
+        "revision": 1
+      },
+      "response": {
+        "schema_version": "fastener-mcp.v2",
+        "catalog_release": "catalog-20260922-1",
+        "placement_schema": "fastener-mcp.placement.v1",
+        "part": {
+          "id": "iso4762-m6x20-a2",
+          "revision": 1
+        },
+        "geometry": {
+          "id": "iso4762-m6x20-a2-simplified",
+          "version": "v1-7b5b7ccab7ff",
+          "sha256": "dded6d79fdcc8e18e4afbbdd5cdddeea363a655fe2d0c6de6be98a46d646c20a",
+          "url": "http://localhost:3100/models/iso4762-m6x20-a2-simplified/v1-7b5b7ccab7ff/model.step",
+          "units": "mm",
+          "detail": "simplified",
+          "state": "not_applicable"
+        },
+        "frame": {
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "origin_datum": "head_bearing_face",
+          "positive_z": "Shank extends +Z; head extends -Z",
+          "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals ±Y). Circular bodies have arbitrary X.",
+          "datums": {
+            "head_bearing_face": 0,
+            "minimum_z": -6,
+            "maximum_z": 20
+          },
+          "handedness": "right"
+        },
+        "grip_length_mm": null,
+        "capability": "local frame reference; no automatic mates or hole detection"
+      },
+      "duration_ms": 2.385249999999985
+    },
+    {
+      "name": "get_installation_requirements",
+      "arguments": {
+        "id": "iso4762-m6x20-a2",
+        "revision": 1
+      },
+      "response": {
+        "schema_version": "fastener-mcp.v2",
+        "catalog_release": "catalog-20260922-1",
+        "part": {
+          "id": "iso4762-m6x20-a2",
+          "revision": 1
+        },
+        "status": "unavailable",
+        "missing_inputs": [],
+        "context": {
+          "id": "iso4762-m6x20-a2",
+          "revision": 1
+        },
+        "requirements": [
+          {
+            "id": "iso4762-m6x20-a2-installation",
+            "parts": [
+              {
+                "id": "iso4762-m6x20-a2",
+                "revision": 1
+              }
+            ],
+            "type": "clearance",
+            "status": "unavailable",
+            "required_context": [],
+            "conditions": [],
+            "dimensions": {},
+            "instructions": [],
+            "evidence": [
+              {
+                "source_id": "source-bolt-depot-6419",
+                "locator": "Product attributes / size table",
+                "verification": "checked"
+              }
+            ],
+            "unresolved": [
+              "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+            ]
+          }
+        ],
+        "unresolved": [
+          "No checked installation table for this part/process. Supply an applicable drawing; do not infer hole dimensions from the model."
+        ],
+        "application_approval": false
+      },
+      "duration_ms": 2.703624999999988
+    },
+    {
+      "name": "get_compatible_parts",
+      "arguments": {
+        "id": "iso4762-m6x20-a2"
+      },
+      "response": {
+        "schema_version": "fastener-mcp.v2",
+        "catalog_release": "catalog-20260922-1",
+        "anchor": {
+          "id": "iso4762-m6x20-a2",
+          "revision": 1
+        },
+        "candidates": [
+          {
+            "part": {
+              "id": "din934-m6-a2",
+              "revision": 1,
+              "designation": "DIN 934 M6 × 1 hex nut",
+              "category": "hex_nut",
+              "status": "active",
+              "thread": {
+                "system": "metric",
+                "designation": "M6x1",
+                "nominal_diameter_mm": 6,
+                "pitch_mm": 1,
+                "original_tpi": null,
+                "handedness": "right",
+                "class": null,
+                "role": "internal"
+              },
+              "material": "A2 stainless steel",
+              "grade": null,
+              "geometry_detail": [
+                "simplified"
+              ],
+              "match_classification": "exact",
+              "differences": []
+            },
+            "quantity": 1,
+            "relationship": "thread_interface",
+            "status": "compatible_for_stated_constraints",
+            "checked_attributes": [
+              "thread_system",
+              "nominal_diameter",
+              "pitch",
+              "handedness"
+            ],
+            "conditions": [
+              "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+            ],
+            "conflicts": [],
+            "unresolved": [
+              "Load, grip, engagement, bearing area, host material and installation process are not approved."
+            ]
+          },
+          {
+            "part": {
+              "id": "din125-m6-a2",
+              "revision": 1,
+              "designation": "DIN 125 M6 flat washer",
+              "category": "flat_washer",
+              "status": "active",
+              "thread": {
+                "system": "none",
+                "designation": null,
+                "nominal_diameter_mm": null,
+                "pitch_mm": null,
+                "original_tpi": null,
+                "handedness": null,
+                "class": null,
+                "role": "none"
+              },
+              "material": "A2 stainless steel",
+              "grade": null,
+              "geometry_detail": [
+                "simplified"
+              ],
+              "match_classification": "exact",
+              "differences": []
+            },
+            "quantity": 1,
+            "relationship": "seating",
+            "status": "compatible_for_stated_constraints",
+            "checked_attributes": [
+              "nominal_size",
+              "washer_bore_and_head_width"
+            ],
+            "conditions": [
+              "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+            ],
+            "conflicts": [],
+            "unresolved": [
+              "Load, grip, engagement, bearing area, host material and installation process are not approved."
+            ]
+          },
+          {
+            "part": {
+              "id": "helicoil-plus-m6-1.5d-4130",
+              "revision": 1,
+              "designation": "HELICOIL Plus 4130 M6 × 1 × 9 mm wire insert",
+              "category": "wire_insert",
+              "status": "active",
+              "thread": {
+                "system": "metric",
+                "designation": "M6x1",
+                "nominal_diameter_mm": 6,
+                "pitch_mm": 1,
+                "original_tpi": null,
+                "handedness": "right",
+                "class": null,
+                "role": "internal"
+              },
+              "material": "A2 stainless steel",
+              "grade": null,
+              "geometry_detail": [
+                "simplified"
+              ],
+              "match_classification": "exact",
+              "differences": []
+            },
+            "quantity": 1,
+            "relationship": "thread_interface",
+            "status": "compatible_for_stated_constraints",
+            "checked_attributes": [
+              "thread_system",
+              "nominal_diameter",
+              "pitch",
+              "handedness"
+            ],
+            "conditions": [
+              "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+            ],
+            "conflicts": [],
+            "unresolved": [
+              "Load, grip, engagement, bearing area, host material and installation process are not approved."
+            ]
+          }
+        ],
+        "unresolved": [
+          "Companions are a shortlist. Assembly strength, grip, thread engagement, installation and load suitability require separate verification."
+        ],
+        "status": "shortlist"
+      },
+      "duration_ms": 3.3945830000000115
+    },
+    {
+      "name": "build_parts_list",
+      "arguments": {
+        "lines": [
+          {
+            "id": "iso4762-m6x20-a2",
+            "revision": 1,
+            "quantity": 2
+          },
+          {
+            "id": "din934-m6-a2",
+            "quantity": 2
+          }
+        ]
+      },
+      "response": {
+        "schema_version": "fastener-mcp.v2",
+        "catalog_release": "catalog-20260922-1",
+        "lines": [
+          {
+            "id": "iso4762-m6x20-a2",
+            "revision": 1,
+            "designation": "ISO 4762 M6 × 1 × 20 mm socket screw",
+            "quantity": 2,
+            "supplier_product_id": null,
+            "geometry": {
+              "id": "iso4762-m6x20-a2-simplified",
+              "version": "v1-7b5b7ccab7ff",
+              "sha256": "dded6d79fdcc8e18e4afbbdd5cdddeea363a655fe2d0c6de6be98a46d646c20a",
+              "url": "http://localhost:3100/models/iso4762-m6x20-a2-simplified/v1-7b5b7ccab7ff/model.step"
+            },
+            "unresolved": [
+              "Supplier not selected",
+              "Installation and assembly suitability require verification"
+            ]
+          },
+          {
+            "id": "din934-m6-a2",
+            "revision": 1,
+            "designation": "DIN 934 M6 × 1 hex nut",
+            "quantity": 2,
+            "supplier_product_id": null,
+            "geometry": {
+              "id": "din934-m6-a2-simplified",
+              "version": "v1-b8a70cb457a5",
+              "sha256": "4f7b4ad560361e571d385dd989f74c13aff23099bbf652b4cfb669533793fc95",
+              "url": "http://localhost:3100/models/din934-m6-a2-simplified/v1-b8a70cb457a5/model.step"
+            },
+            "unresolved": [
+              "Supplier not selected",
+              "Installation and assembly suitability require verification"
+            ]
+          }
+        ],
+        "total_quantity": 4,
+        "csv": "\"id\",\"revision\",\"designation\",\"quantity\",\"supplier_product_id\",\"geometry_version\",\"geometry_sha256\",\"unresolved\"\r\n\"iso4762-m6x20-a2\",\"1\",\"ISO 4762 M6 × 1 × 20 mm socket screw\",\"2\",\"\",\"v1-7b5b7ccab7ff\",\"dded6d79fdcc8e18e4afbbdd5cdddeea363a655fe2d0c6de6be98a46d646c20a\",\"Supplier not selected; Installation and assembly suitability require verification\"\r\n\"din934-m6-a2\",\"1\",\"DIN 934 M6 × 1 hex nut\",\"2\",\"\",\"v1-b8a70cb457a5\",\"4f7b4ad560361e571d385dd989f74c13aff23099bbf652b4cfb669533793fc95\",\"Supplier not selected; Installation and assembly suitability require verification\"\r\n",
+        "notes": [
+          "No basket shipping optimization or automatic order."
+        ]
+      },
+      "duration_ms": 2.942333000000019
+    },
+    {
+      "name": "compare_supplier_offers",
+      "arguments": {
+        "id": "iso4762-m6x20-a2",
+        "quantity": 11,
+        "destination": "US",
+        "currency": "USD"
+      },
+      "response": {
+        "schema_version": "fastener-mcp.v2",
+        "catalog_release": "catalog-20260922-1",
+        "offers_snapshot": "offers-20260922-0250",
+        "part": {
+          "id": "iso4762-m6x20-a2",
+          "revision": 1
+        },
+        "request": {
+          "id": "iso4762-m6x20-a2",
+          "quantity": 11,
+          "destination": "US",
+          "currency": "USD",
+          "include_alternatives": false,
+          "price_scope": "public"
+        },
+        "complete_totals": [],
+        "partial_costs": [
+          {
+            "product_id": "bolt-depot-6419",
+            "supplier": "Bolt Depot",
+            "supplier_id": "bolt-depot",
+            "sku": "6419",
+            "url": "https://boltdepot.com/Product-Details?product=6419",
+            "match_status": "exact",
+            "group": "partial",
+            "reasons": [],
+            "requested_quantity": 11,
+            "purchased_quantity": 11,
+            "excess_quantity": 0,
+            "pack_size": 1,
+            "currency": "USD",
+            "price_scope": "public",
+            "merchandise_subtotal": "2.64",
+            "known_cost": "2.64",
+            "delivered_total": null,
+            "charges": {
+              "shipping": null,
+              "tax": null,
+              "duty": null
+            },
+            "missing": [
+              "shipping",
+              "tax",
+              "duty",
+              "stock"
+            ],
+            "estimated_components": [],
+            "price_observed_at": "2026-09-22T02:50:00Z",
+            "stock_checked_at": "2026-09-22T02:50:00Z",
+            "delivery_checked_at": null,
+            "stock_status": "unknown",
+            "refresh_error": null,
+            "ranking_basis": "merchandise_subtotal",
+            "limitations": [
+              "Property class and finish are unspecified; does not satisfy a request that requires either.",
+              "Nominal CAD surfaces do not represent manufacturing tolerances."
+            ]
+          },
+          {
+            "product_id": "monster-bolts-36230284492",
+            "supplier": "Monster Bolts",
+            "supplier_id": "monster-bolts",
+            "sku": "36230284492",
+            "url": "https://monsterbolts.com/products/socket-cap-a2-m6?variant=36230284492",
+            "match_status": "exact",
+            "group": "partial",
+            "reasons": [],
+            "requested_quantity": 11,
+            "purchased_quantity": 20,
+            "excess_quantity": 9,
+            "pack_size": 10,
+            "currency": "USD",
+            "price_scope": "public",
+            "merchandise_subtotal": "5.04",
+            "known_cost": "5.04",
+            "delivered_total": null,
+            "charges": {
+              "shipping": null,
+              "tax": null,
+              "duty": null
+            },
+            "missing": [
+              "shipping",
+              "tax",
+              "duty",
+              "stock"
+            ],
+            "estimated_components": [],
+            "price_observed_at": "2026-09-22T02:50:00Z",
+            "stock_checked_at": "2026-09-22T02:50:00Z",
+            "delivery_checked_at": null,
+            "stock_status": "unknown",
+            "refresh_error": null,
+            "ranking_basis": "merchandise_subtotal",
+            "limitations": [
+              "Property class and finish are unspecified; does not satisfy a request that requires either.",
+              "Nominal CAD surfaces do not represent manufacturing tolerances."
+            ]
+          }
+        ],
+        "links_only": [],
+        "alternatives": [],
+        "lowest_complete_offer": null,
+        "winner": null,
+        "comparison_scope": [
+          "bolt-depot",
+          "monster-bolts"
+        ],
+        "explanation": "No complete delivered-cost winner. Partial offers rank merchandise only; missing charges and stock remain unknown."
+      },
+      "duration_ms": 2.393875000000037
+    },
+    {
+      "name": "get_fastener_model",
+      "arguments": {
+        "id": "iso4762-m6x20-a2",
+        "revision": 1
+      },
+      "response": {
+        "schema_version": "fastener-mcp.v2",
+        "catalog_release": "catalog-20260922-1",
+        "part": {
+          "id": "iso4762-m6x20-a2",
+          "revision": 1
+        },
+        "model": {
+          "id": "iso4762-m6x20-a2-simplified",
+          "version": "v1-7b5b7ccab7ff",
+          "parts": [
+            {
+              "id": "iso4762-m6x20-a2",
+              "revision": 1
+            }
+          ],
+          "recipe_id": "socket_screw",
+          "recipe_version": "2.0.0",
+          "parameter_hash": "cdd50ce5d6022c4464d6a382e374d8ee314bcfbf03a861306a78294489fa685a",
+          "build_key": "7b5b7ccab7ff2e32af1c8409ce10c73bc9d24ac384678a9ded321d63dde559dd",
+          "toolchain": {
+            "python": "3.12.13",
+            "cadquery": "2.6.1",
+            "ocp": "7.8.1.1"
+          },
+          "detail": "simplified",
+          "state": "not_applicable",
+          "format": "step",
+          "units": "mm",
+          "asset_path": "/models/iso4762-m6x20-a2-simplified/v1-7b5b7ccab7ff/model.step",
+          "bytes": 9669,
+          "sha256": "dded6d79fdcc8e18e4afbbdd5cdddeea363a655fe2d0c6de6be98a46d646c20a",
+          "preview_paths": [
+            "/models/iso4762-m6x20-a2-simplified/v1-7b5b7ccab7ff/preview.png"
+          ],
+          "bounds_mm": {
+            "min": [
+              -5,
+              -5,
+              -6
+            ],
+            "max": [
+              5,
+              5,
+              20
+            ]
+          },
+          "frame": {
+            "origin": [
+              0,
+              0,
+              0
+            ],
+            "axis": [
+              0,
+              0,
+              1
+            ],
+            "origin_datum": "head_bearing_face",
+            "positive_z": "Shank extends +Z; head extends -Z",
+            "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals ±Y). Circular bodies have arbitrary X.",
+            "datums": {
+              "head_bearing_face": 0,
+              "minimum_z": -6,
+              "maximum_z": 20
+            },
+            "handedness": "right"
+          },
+          "validation": {
+            "status": "passed",
+            "checked_at": "2026-09-22T02:59:52.835897Z",
+            "tolerance_mm": 0.01,
+            "report_path": "/models/iso4762-m6x20-a2-simplified/v1-7b5b7ccab7ff/checks.json",
+            "checks": [
+              "STEP reopened with OpenCascade",
+              "one solid; valid topology; finite bounds; positive volume",
+              "origin/minimum Z",
+              "length/maximum Z",
+              "shank diameter X",
+              "shank diameter Y",
+              "head diameter X",
+              "head diameter Y",
+              "head/shank continuity at origin"
+            ],
+            "visual_review": "passed",
+            "withdrawal_reason": null
+          },
+          "represented_features": [
+            "diameter",
+            "length",
+            "head_diameter",
+            "head_height"
+          ],
+          "omitted_features": [
+            "Thread helices and tolerance-class fit",
+            "Small edge breaks, chamfers and fillets",
+            "Hex socket recess"
+          ],
+          "intended_uses": [
+            "layout",
+            "reference"
+          ],
+          "representation": "standard_nominal",
+          "url": "http://localhost:3100/models/iso4762-m6x20-a2-simplified/v1-7b5b7ccab7ff/model.step",
+          "preview_urls": [
+            "http://localhost:3100/models/iso4762-m6x20-a2-simplified/v1-7b5b7ccab7ff/preview.png"
+          ],
+          "report_url": "http://localhost:3100/models/iso4762-m6x20-a2-simplified/v1-7b5b7ccab7ff/checks.json"
+        }
+      },
+      "duration_ms": 1.975667000000044
+    }
+  ]
+}

@@ -1,0 +1,1139 @@
+{
+  "schema_version": "fastener-mcp.v2",
+  "id": "catalog-20260922-1",
+  "created_at": "2026-09-22T03:15:28.968Z",
+  "documents": [
+    {
+      "path": "data/catalog/parts.json",
+      "snapshot_path": "data/catalog/history/releases/catalog-20260922-1/0-parts.json",
+      "sha256": "cb6ea6680cd75a8fafcca69daf2a7cd91f878e6cf4f52d7402978b93b3392f96"
+    },
+    {
+      "path": "data/catalog/sources.json",
+      "snapshot_path": "data/catalog/history/releases/catalog-20260922-1/1-sources.json",
+      "sha256": "e9fdee8989b66258bf5240c1efeafbcb97c7a6508c3df4211286cea5506e921c"
+    },
+    {
+      "path": "data/catalog/installations.json",
+      "snapshot_path": "data/catalog/history/releases/catalog-20260922-1/2-installations.json",
+      "sha256": "f5547c432752b3ac482de59dcaa5b51039947d745e14d2a9b1927c3387ca6e33"
+    },
+    {
+      "path": "data/catalog/compatibility.json",
+      "snapshot_path": "data/catalog/history/releases/catalog-20260922-1/3-compatibility.json",
+      "sha256": "7fefdcd131f94d68871c122d865d35780c4ecfda86cef9cee0aa91adacb570da"
+    },
+    {
+      "path": "data/catalog/suppliers.json",
+      "snapshot_path": "data/catalog/history/releases/catalog-20260922-1/4-suppliers.json",
+      "sha256": "db72a23323da53f01e6b0feaa0a3507b54068e6eb97498a8b87190ac68bdae67"
+    },
+    {
+      "path": "data/catalog/supplier-products.json",
+      "snapshot_path": "data/catalog/history/releases/catalog-20260922-1/5-supplier-products.json",
+      "sha256": "d320feb7ef323d35fa0626884fa0dcf4a1cc795574088363af13406cfc5b0d7b"
+    },
+    {
+      "path": "data/catalog/history/revisions.json",
+      "snapshot_path": "data/catalog/history/releases/catalog-20260922-1/6-revisions.json",
+      "sha256": "6c52629247ded5a3e9709e0292401ffea6f489b2d2838394101134c386e430e4"
+    },
+    {
+      "path": "data/geometry/manifest.json",
+      "snapshot_path": "data/catalog/history/releases/catalog-20260922-1/7-manifest.json",
+      "sha256": "3a97419015e65a78ac98dfcf8fd026ddd90511eb03f09ca1534ae823ae34fe50"
+    },
+    {
+      "path": "data/geometry/visual-review.json",
+      "snapshot_path": "data/catalog/history/releases/catalog-20260922-1/8-visual-review.json",
+      "sha256": "2291ab8349ab7183f572bc7827c42933d469341efd57fdb93ca3958afa7ae1c1"
+    },
+    {
+      "path": "data/catalog/release.json",
+      "snapshot_path": "data/catalog/history/releases/catalog-20260922-1/9-release.json",
+      "sha256": "3f2dab1e088448a5e91094a51b114985dbd2021247f23eb52d2190902162daab"
+    }
+  ],
+  "parts": [
+    {
+      "id": "iso4762-m6x10-a2",
+      "revision": 1
+    },
+    {
+      "id": "iso4762-m6x12-a2",
+      "revision": 1
+    },
+    {
+      "id": "iso4762-m6x16-a2",
+      "revision": 1
+    },
+    {
+      "id": "iso4762-m6x20-a2",
+      "revision": 1
+    },
+    {
+      "id": "iso4762-m6x25-a2",
+      "revision": 1
+    },
+    {
+      "id": "iso4762-m3x12-reference",
+      "revision": 1
+    },
+    {
+      "id": "iso4762-m4x12-reference",
+      "revision": 1
+    },
+    {
+      "id": "din933-m3x20-reference",
+      "revision": 1
+    },
+    {
+      "id": "din933-m4x20-reference",
+      "revision": 1
+    },
+    {
+      "id": "din933-m5x20-reference",
+      "revision": 1
+    },
+    {
+      "id": "din933-m6x20-reference",
+      "revision": 1
+    },
+    {
+      "id": "din7991-m3x20-reference",
+      "revision": 1
+    },
+    {
+      "id": "din7991-m4x20-reference",
+      "revision": 1
+    },
+    {
+      "id": "din7991-m5x20-reference",
+      "revision": 1
+    },
+    {
+      "id": "din7991-m6x20-reference",
+      "revision": 1
+    },
+    {
+      "id": "din934-m3-a2",
+      "revision": 1
+    },
+    {
+      "id": "din934-m4-a2",
+      "revision": 1
+    },
+    {
+      "id": "din934-m5-a2",
+      "revision": 1
+    },
+    {
+      "id": "din934-m6-a2",
+      "revision": 1
+    },
+    {
+      "id": "din125-m3-a2",
+      "revision": 1
+    },
+    {
+      "id": "din125-m4-a2",
+      "revision": 1
+    },
+    {
+      "id": "din125-m5-a2",
+      "revision": 1
+    },
+    {
+      "id": "din125-m6-a2",
+      "revision": 1
+    },
+    {
+      "id": "helicoil-plus-m3-1.5d-4130",
+      "revision": 1
+    },
+    {
+      "id": "helicoil-plus-m4-1.5d-4130",
+      "revision": 1
+    },
+    {
+      "id": "helicoil-plus-m5-1.5d-4130",
+      "revision": 1
+    },
+    {
+      "id": "helicoil-plus-m6-1.5d-4130",
+      "revision": 1
+    },
+    {
+      "id": "an173-3",
+      "revision": 1
+    },
+    {
+      "id": "an3-10a",
+      "revision": 1
+    },
+    {
+      "id": "an315-4r",
+      "revision": 1
+    },
+    {
+      "id": "an4-12a",
+      "revision": 1
+    },
+    {
+      "id": "an5-20a",
+      "revision": 1
+    },
+    {
+      "id": "an500a10-8",
+      "revision": 1
+    },
+    {
+      "id": "an525-10r8",
+      "revision": 1
+    },
+    {
+      "id": "an6-16a",
+      "revision": 1
+    },
+    {
+      "id": "an7-10a",
+      "revision": 1
+    },
+    {
+      "id": "an73-6a",
+      "revision": 1
+    },
+    {
+      "id": "an74-12a",
+      "revision": 1
+    },
+    {
+      "id": "an960-416",
+      "revision": 1
+    },
+    {
+      "id": "iso-1207-m3-10",
+      "revision": 1
+    },
+    {
+      "id": "iso-1207-m4-12",
+      "revision": 1
+    },
+    {
+      "id": "iso-1207-m5-16",
+      "revision": 1
+    },
+    {
+      "id": "iso-1207-m5-20",
+      "revision": 1
+    },
+    {
+      "id": "iso-1207-m6-20",
+      "revision": 1
+    },
+    {
+      "id": "iso-1207-m8-25",
+      "revision": 1
+    },
+    {
+      "id": "iso-4017-m10-50",
+      "revision": 1
+    },
+    {
+      "id": "iso-4017-m12-60",
+      "revision": 1
+    },
+    {
+      "id": "iso-4017-m3-12",
+      "revision": 1
+    },
+    {
+      "id": "iso-4017-m4-16",
+      "revision": 1
+    },
+    {
+      "id": "iso-4017-m5-20",
+      "revision": 1
+    },
+    {
+      "id": "iso-4017-m6-25",
+      "revision": 1
+    },
+    {
+      "id": "iso-4017-m6-30",
+      "revision": 1
+    },
+    {
+      "id": "iso-4017-m8-40",
+      "revision": 1
+    },
+    {
+      "id": "iso-4032-m10",
+      "revision": 1
+    },
+    {
+      "id": "iso-4032-m12",
+      "revision": 1
+    },
+    {
+      "id": "iso-4032-m3",
+      "revision": 1
+    },
+    {
+      "id": "iso-4032-m4",
+      "revision": 1
+    },
+    {
+      "id": "iso-4032-m5",
+      "revision": 1
+    },
+    {
+      "id": "iso-4032-m6",
+      "revision": 1
+    },
+    {
+      "id": "iso-4032-m8",
+      "revision": 1
+    },
+    {
+      "id": "iso-4762-m10-50",
+      "revision": 1
+    },
+    {
+      "id": "iso-4762-m12-60",
+      "revision": 1
+    },
+    {
+      "id": "iso-4762-m3-12",
+      "revision": 1
+    },
+    {
+      "id": "iso-4762-m4-16",
+      "revision": 1
+    },
+    {
+      "id": "iso-4762-m5-20",
+      "revision": 1
+    },
+    {
+      "id": "iso-4762-m6-25",
+      "revision": 1
+    },
+    {
+      "id": "iso-4762-m8-35",
+      "revision": 1
+    },
+    {
+      "id": "iso-7089-m10",
+      "revision": 1
+    },
+    {
+      "id": "iso-7089-m12",
+      "revision": 1
+    },
+    {
+      "id": "iso-7089-m3",
+      "revision": 1
+    },
+    {
+      "id": "iso-7089-m4",
+      "revision": 1
+    },
+    {
+      "id": "iso-7089-m5",
+      "revision": 1
+    },
+    {
+      "id": "iso-7089-m6",
+      "revision": 1
+    },
+    {
+      "id": "iso-7089-m8",
+      "revision": 1
+    },
+    {
+      "id": "ms20001-6c10",
+      "revision": 1
+    },
+    {
+      "id": "ms20004-4c6",
+      "revision": 1
+    },
+    {
+      "id": "ms20392-2c12",
+      "revision": 1
+    },
+    {
+      "id": "ms20392-3c16",
+      "revision": 1
+    },
+    {
+      "id": "ms20426ad4-5",
+      "revision": 1
+    },
+    {
+      "id": "ms20470ad4-6",
+      "revision": 1
+    },
+    {
+      "id": "ms20470ad5-8",
+      "revision": 1
+    },
+    {
+      "id": "ms20613-4c8",
+      "revision": 1
+    },
+    {
+      "id": "ms20613-5c12",
+      "revision": 1
+    },
+    {
+      "id": "ms21250-4l",
+      "revision": 1
+    },
+    {
+      "id": "ms21250-5l",
+      "revision": 1
+    },
+    {
+      "id": "ms24665-132",
+      "revision": 1
+    },
+    {
+      "id": "ms35333-41",
+      "revision": 1
+    },
+    {
+      "id": "ms35338-45",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-04-4",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-04-6",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-04-8",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-04-10",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-04-12",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-06-4",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-06-6",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-06-8",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-06-10",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-06-12",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-06-16",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-08-4",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-08-6",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-08-8",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-08-10",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-08-12",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-08-16",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-08-20",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-3-6",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-3-8",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-3-10",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-3-12",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-3-16",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-3-20",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-3-24",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-4-6",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-4-8",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-4-10",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-4-12",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-4-16",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-4-20",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-4-24",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-4-32",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-5-6",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-5-8",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-5-10",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-5-12",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-5-16",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-5-20",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-5-24",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-5-32",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-6-8",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-6-10",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-6-12",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-6-16",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-6-20",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-6-24",
+      "revision": 1
+    },
+    {
+      "id": "nas1352-6-32",
+      "revision": 1
+    },
+    {
+      "id": "ms24693-s40",
+      "revision": 1
+    },
+    {
+      "id": "ms24693-s41",
+      "revision": 1
+    },
+    {
+      "id": "ms24693-s42",
+      "revision": 1
+    },
+    {
+      "id": "ms24693-s92",
+      "revision": 1
+    },
+    {
+      "id": "ms24693-s93",
+      "revision": 1
+    },
+    {
+      "id": "ms24693-s94",
+      "revision": 1
+    },
+    {
+      "id": "ms24693-s162",
+      "revision": 1
+    },
+    {
+      "id": "ms24693-s163",
+      "revision": 1
+    },
+    {
+      "id": "ms24693-s164",
+      "revision": 1
+    },
+    {
+      "id": "ms24693-s252",
+      "revision": 1
+    },
+    {
+      "id": "ms24693-s253",
+      "revision": 1
+    },
+    {
+      "id": "ms24693-s254",
+      "revision": 1
+    },
+    {
+      "id": "ms24694-c1",
+      "revision": 1
+    },
+    {
+      "id": "ms24694-c2",
+      "revision": 1
+    },
+    {
+      "id": "ms24694-c3",
+      "revision": 1
+    },
+    {
+      "id": "ms24694-c26",
+      "revision": 1
+    },
+    {
+      "id": "ms24694-c27",
+      "revision": 1
+    },
+    {
+      "id": "ms24694-c28",
+      "revision": 1
+    },
+    {
+      "id": "ms24694-c29",
+      "revision": 1
+    },
+    {
+      "id": "ms24694-c50",
+      "revision": 1
+    },
+    {
+      "id": "ms24694-c51",
+      "revision": 1
+    },
+    {
+      "id": "ms24694-c52",
+      "revision": 1
+    },
+    {
+      "id": "ms51957-1",
+      "revision": 1
+    },
+    {
+      "id": "ms51957-10",
+      "revision": 1
+    },
+    {
+      "id": "ms51957-20",
+      "revision": 1
+    },
+    {
+      "id": "ms51957-30",
+      "revision": 1
+    },
+    {
+      "id": "ms51957-40",
+      "revision": 1
+    },
+    {
+      "id": "ms51957-50",
+      "revision": 1
+    },
+    {
+      "id": "ms51957-51",
+      "revision": 1
+    },
+    {
+      "id": "ms51957-52",
+      "revision": 1
+    },
+    {
+      "id": "ms51957-60",
+      "revision": 1
+    },
+    {
+      "id": "ms51957-61",
+      "revision": 1
+    },
+    {
+      "id": "an310-3",
+      "revision": 1
+    },
+    {
+      "id": "an310-4",
+      "revision": 1
+    },
+    {
+      "id": "an310-5",
+      "revision": 1
+    },
+    {
+      "id": "an310-6",
+      "revision": 1
+    },
+    {
+      "id": "an310-7",
+      "revision": 1
+    },
+    {
+      "id": "an310-8",
+      "revision": 1
+    },
+    {
+      "id": "an310-10",
+      "revision": 1
+    },
+    {
+      "id": "an380-2-1",
+      "revision": 1
+    },
+    {
+      "id": "an380-2-2",
+      "revision": 1
+    },
+    {
+      "id": "an380-3-1",
+      "revision": 1
+    },
+    {
+      "id": "an380-3-2",
+      "revision": 1
+    },
+    {
+      "id": "an380-4-1",
+      "revision": 1
+    },
+    {
+      "id": "an380-4-2",
+      "revision": 1
+    },
+    {
+      "id": "an380-5-1",
+      "revision": 1
+    },
+    {
+      "id": "an380-5-2",
+      "revision": 1
+    },
+    {
+      "id": "an380-6-2",
+      "revision": 1
+    },
+    {
+      "id": "an363-428",
+      "revision": 1
+    },
+    {
+      "id": "an363-524",
+      "revision": 1
+    },
+    {
+      "id": "an363-624",
+      "revision": 1
+    },
+    {
+      "id": "an363-720",
+      "revision": 1
+    },
+    {
+      "id": "an363-820",
+      "revision": 1
+    },
+    {
+      "id": "an363-1032",
+      "revision": 1
+    },
+    {
+      "id": "an364-428",
+      "revision": 1
+    },
+    {
+      "id": "an364-524",
+      "revision": 1
+    },
+    {
+      "id": "an364-624",
+      "revision": 1
+    },
+    {
+      "id": "an364-720",
+      "revision": 1
+    },
+    {
+      "id": "an364-820",
+      "revision": 1
+    },
+    {
+      "id": "an364-1032",
+      "revision": 1
+    },
+    {
+      "id": "ms20995-c20",
+      "revision": 1
+    },
+    {
+      "id": "ms20995-c25",
+      "revision": 1
+    },
+    {
+      "id": "ms20995-c32",
+      "revision": 1
+    },
+    {
+      "id": "ms20995-c41",
+      "revision": 1
+    },
+    {
+      "id": "ms20995-c51",
+      "revision": 1
+    },
+    {
+      "id": "ms35206-416",
+      "revision": 1
+    },
+    {
+      "id": "ms35206-420",
+      "revision": 1
+    },
+    {
+      "id": "ms35206-632",
+      "revision": 1
+    },
+    {
+      "id": "ms35206-820",
+      "revision": 1
+    },
+    {
+      "id": "ms35206-824",
+      "revision": 1
+    },
+    {
+      "id": "ms35206-1016",
+      "revision": 1
+    },
+    {
+      "id": "ms35206-1020",
+      "revision": 1
+    },
+    {
+      "id": "ms35206-1024",
+      "revision": 1
+    },
+    {
+      "id": "ms35207-416",
+      "revision": 1
+    },
+    {
+      "id": "ms35207-420",
+      "revision": 1
+    },
+    {
+      "id": "ms35207-632",
+      "revision": 1
+    },
+    {
+      "id": "ms35207-820",
+      "revision": 1
+    },
+    {
+      "id": "ms35207-1016",
+      "revision": 1
+    },
+    {
+      "id": "ms35207-1020",
+      "revision": 1
+    }
+  ],
+  "assets": [
+    {
+      "id": "iso4762-m6x10-a2-simplified",
+      "version": "v1-ae7f61e62b00",
+      "path": "/models/iso4762-m6x10-a2-simplified/v1-ae7f61e62b00/model.step",
+      "sha256": "53b247eb57ebea55368afc3fd731b8f90c62939743e678be40845c7fb44ef2ef",
+      "bytes": 9669
+    },
+    {
+      "id": "iso4762-m6x10-a2-detailed",
+      "version": "v1-ec3410d9df4d",
+      "path": "/models/iso4762-m6x10-a2-detailed/v1-ec3410d9df4d/model.step",
+      "sha256": "0f916c7944cd6611981eebe4a1641d4c7d18f9ffca6ac05829e9147fdf8afaf0",
+      "bytes": 32699
+    },
+    {
+      "id": "iso4762-m6x12-a2-simplified",
+      "version": "v1-d4848a2aaa57",
+      "path": "/models/iso4762-m6x12-a2-simplified/v1-d4848a2aaa57/model.step",
+      "sha256": "2e347d73bcf7ab0f3c68ce7c6cf7c210c3d2aaec01f5ffaf98f922b5707a2b71",
+      "bytes": 9669
+    },
+    {
+      "id": "iso4762-m6x12-a2-detailed",
+      "version": "v1-ff9e04307cb5",
+      "path": "/models/iso4762-m6x12-a2-detailed/v1-ff9e04307cb5/model.step",
+      "sha256": "c9b0ee5cea6ae6c559041b4c4308a3ffe0720424fc6a5fe8cdb90624fb498109",
+      "bytes": 32699
+    },
+    {
+      "id": "iso4762-m6x16-a2-simplified",
+      "version": "v1-019f02e58eb5",
+      "path": "/models/iso4762-m6x16-a2-simplified/v1-019f02e58eb5/model.step",
+      "sha256": "dc3f2ebd35e2f33ecf8fb963da5313e984c3d4c0c5d416086f938bf407f457fc",
+      "bytes": 9669
+    },
+    {
+      "id": "iso4762-m6x20-a2-simplified",
+      "version": "v1-7b5b7ccab7ff",
+      "path": "/models/iso4762-m6x20-a2-simplified/v1-7b5b7ccab7ff/model.step",
+      "sha256": "dded6d79fdcc8e18e4afbbdd5cdddeea363a655fe2d0c6de6be98a46d646c20a",
+      "bytes": 9669
+    },
+    {
+      "id": "iso4762-m6x25-a2-simplified",
+      "version": "v1-c0840fac62dc",
+      "path": "/models/iso4762-m6x25-a2-simplified/v1-c0840fac62dc/model.step",
+      "sha256": "87b99307e95b5b458683473f4e70995938280971d2eb6062470d71b3413bb8c0",
+      "bytes": 9669
+    },
+    {
+      "id": "iso4762-m3x12-reference-simplified",
+      "version": "v1-c502c14e95de",
+      "path": "/models/iso4762-m3x12-reference-simplified/v1-c502c14e95de/model.step",
+      "sha256": "e9315fbf0d18695108af03baa686cc573d1c1cab5d2d570cbbcd5d0b98e5f48b",
+      "bytes": 9693
+    },
+    {
+      "id": "iso4762-m3x12-reference-detailed",
+      "version": "v1-a60cdecf4d34",
+      "path": "/models/iso4762-m3x12-reference-detailed/v1-a60cdecf4d34/model.step",
+      "sha256": "707cb94a849868c21e06e92018f6cbb3da560487f3dd9563a32e585098b48f53",
+      "bytes": 32922
+    },
+    {
+      "id": "iso4762-m4x12-reference-simplified",
+      "version": "v1-5051195fe938",
+      "path": "/models/iso4762-m4x12-reference-simplified/v1-5051195fe938/model.step",
+      "sha256": "b6a7d3ce1a35bd9de5fb981c5f61bc0b3b1894c9ac38f97c64cfec556a9c3b48",
+      "bytes": 9672
+    },
+    {
+      "id": "iso4762-m4x12-reference-detailed",
+      "version": "v1-543ad8b7e446",
+      "path": "/models/iso4762-m4x12-reference-detailed/v1-543ad8b7e446/model.step",
+      "sha256": "62ce0ac86d9951eae9e1a1b1336b20351aae40747108e14657993015ee427036",
+      "bytes": 32702
+    },
+    {
+      "id": "din933-m3x20-reference-simplified",
+      "version": "v1-a8fa53d2f70e",
+      "path": "/models/din933-m3x20-reference-simplified/v1-a8fa53d2f70e/model.step",
+      "sha256": "039576db0838626333e7ca609b0567a1fd62c02c6faf8986bde6377251288223",
+      "bytes": 27467
+    },
+    {
+      "id": "din933-m4x20-reference-simplified",
+      "version": "v1-cedb46f11014",
+      "path": "/models/din933-m4x20-reference-simplified/v1-cedb46f11014/model.step",
+      "sha256": "2a21d2d8576225b2e1dbb314f40d3637b6f41d19170c1dcf51c483473d6a8306",
+      "bytes": 27461
+    },
+    {
+      "id": "din933-m5x20-reference-simplified",
+      "version": "v1-d40ac0b440c2",
+      "path": "/models/din933-m5x20-reference-simplified/v1-d40ac0b440c2/model.step",
+      "sha256": "c794585a268414667639b24c4045d9ce4778fdbddabbe5c2d32271f2fd0d6774",
+      "bytes": 27433
+    },
+    {
+      "id": "din933-m6x20-reference-simplified",
+      "version": "v1-15c0e2ad88c0",
+      "path": "/models/din933-m6x20-reference-simplified/v1-15c0e2ad88c0/model.step",
+      "sha256": "5b32f82ae1bbe3c157d5bf164dbd176c0ed0219fba816df56091e3624a045265",
+      "bytes": 27407
+    },
+    {
+      "id": "din7991-m3x20-reference-simplified",
+      "version": "v1-6c9cf7b8f119",
+      "path": "/models/din7991-m3x20-reference-simplified/v1-6c9cf7b8f119/model.step",
+      "sha256": "0556f642f9b717bd77d4294e94508883e623cba3de846aeaa5dbefbcd1271310",
+      "bytes": 10785
+    },
+    {
+      "id": "din7991-m4x20-reference-simplified",
+      "version": "v1-5a68da016f8c",
+      "path": "/models/din7991-m4x20-reference-simplified/v1-5a68da016f8c/model.step",
+      "sha256": "7e687378c2ec6dc6680e918225a93be408d29dbded1bf441ece534bdca5547f6",
+      "bytes": 10773
+    },
+    {
+      "id": "din7991-m5x20-reference-simplified",
+      "version": "v1-e01db58de03d",
+      "path": "/models/din7991-m5x20-reference-simplified/v1-e01db58de03d/model.step",
+      "sha256": "3ab507a5c95c50e518fddd31caebebb99094dea892ffdf08b6bedfa48ed27adb",
+      "bytes": 10784
+    },
+    {
+      "id": "din7991-m6x20-reference-simplified",
+      "version": "v1-b0f13490b5e0",
+      "path": "/models/din7991-m6x20-reference-simplified/v1-b0f13490b5e0/model.step",
+      "sha256": "a2750cab9a62d4a43fe075fcb9c5ebba2061d6fe3e65b9b8f2d97d05a9ffe52a",
+      "bytes": 10777
+    },
+    {
+      "id": "din934-m3-a2-simplified",
+      "version": "v1-364a6d92fd28",
+      "path": "/models/din934-m3-a2-simplified/v1-364a6d92fd28/model.step",
+      "sha256": "664d28578cab8f1eaa88d9cbd6d47e7e454338680bf9eb10e78e21ad3f69f252",
+      "bytes": 28356
+    },
+    {
+      "id": "din934-m4-a2-simplified",
+      "version": "v1-0bab91a93181",
+      "path": "/models/din934-m4-a2-simplified/v1-0bab91a93181/model.step",
+      "sha256": "86ac35fe36ce85f10db6f241c558dace401c2dfd57e6a85131cac3e2a59e2ea7",
+      "bytes": 28302
+    },
+    {
+      "id": "din934-m5-a2-simplified",
+      "version": "v1-a2a6bdd2eaed",
+      "path": "/models/din934-m5-a2-simplified/v1-a2a6bdd2eaed/model.step",
+      "sha256": "259d0136f808973145fdd9adee8d3a7ee64c9549bc8ef30f22b9acafc251f89c",
+      "bytes": 28264
+    },
+    {
+      "id": "din934-m6-a2-simplified",
+      "version": "v1-b8a70cb457a5",
+      "path": "/models/din934-m6-a2-simplified/v1-b8a70cb457a5/model.step",
+      "sha256": "4f7b4ad560361e571d385dd989f74c13aff23099bbf652b4cfb669533793fc95",
+      "bytes": 28260
+    },
+    {
+      "id": "din125-m3-a2-simplified",
+      "version": "v1-f64601fdbca5",
+      "path": "/models/din125-m3-a2-simplified/v1-f64601fdbca5/model.step",
+      "sha256": "aeb5befe15efedea59f3223cbb4cc9affe0fe2d2e1f8aad5d3ff39bfec7b0bf7",
+      "bytes": 10571
+    },
+    {
+      "id": "din125-m4-a2-simplified",
+      "version": "v1-8c67a552c36b",
+      "path": "/models/din125-m4-a2-simplified/v1-8c67a552c36b/model.step",
+      "sha256": "aa11da4586f8e3c137ba9fb1a8729acfb9e01a61318720a3e3102f3b4cc580b3",
+      "bytes": 10601
+    },
+    {
+      "id": "din125-m5-a2-simplified",
+      "version": "v1-fc6d1960c755",
+      "path": "/models/din125-m5-a2-simplified/v1-fc6d1960c755/model.step",
+      "sha256": "5ba37bfea09fec56baee8bef1bfd8d37baa2e7c3f689d310e06aedfa50981aff",
+      "bytes": 10588
+    },
+    {
+      "id": "din125-m6-a2-simplified",
+      "version": "v1-9d53f954586e",
+      "path": "/models/din125-m6-a2-simplified/v1-9d53f954586e/model.step",
+      "sha256": "5e17f9aee934b09b3a92129465fb3688984af777d21239168274f7786e82e47b",
+      "bytes": 10565
+    },
+    {
+      "id": "helicoil-plus-m3-1.5d-4130-simplified",
+      "version": "v1-ed76c66f554d",
+      "path": "/models/helicoil-plus-m3-1.5d-4130-simplified/v1-ed76c66f554d/model.step",
+      "sha256": "e6565c2ac65a7c7baa2c074a83afe8d751565ee1c445d6325ca80b77a540af08",
+      "bytes": 10601
+    },
+    {
+      "id": "helicoil-plus-m4-1.5d-4130-simplified",
+      "version": "v1-56a21edd8dd7",
+      "path": "/models/helicoil-plus-m4-1.5d-4130-simplified/v1-56a21edd8dd7/model.step",
+      "sha256": "877c3181ae8ff520a2d548ca6b0f22725d34e82b7c31e604e8b31aedaff746b2",
+      "bytes": 10572
+    },
+    {
+      "id": "helicoil-plus-m5-1.5d-4130-simplified",
+      "version": "v1-c8cf6e0ed819",
+      "path": "/models/helicoil-plus-m5-1.5d-4130-simplified/v1-c8cf6e0ed819/model.step",
+      "sha256": "45a09b75723b9e6e3ee795701d84de74eb18e070d3f20eed1c20b90563a27ffc",
+      "bytes": 10593
+    },
+    {
+      "id": "helicoil-plus-m6-1.5d-4130-simplified",
+      "version": "v1-958d8ee2cd13",
+      "path": "/models/helicoil-plus-m6-1.5d-4130-simplified/v1-958d8ee2cd13/model.step",
+      "sha256": "cafa9d5063003b04c5203510c5b9d02dd4b01b4a5d6a0e71585e1659db5a00f4",
+      "bytes": 10569
+    }
+  ],
+  "rollback": "Restore all documents from this snapshot in one commit/deployment, retain all referenced immutable assets, then run catalog:validate and geometry:verify. Price snapshots are independently versioned and must still pass mapping checks."
+}

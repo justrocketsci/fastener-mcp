@@ -1,3 +1,5 @@
+> Historical document. This workflow is retired; see the current README and docs/MIGRATION.md for the portable CadQuery/MCP workflow.
+
 # ⚠️ STEP File Generation Required
 
 This repository **does NOT include pre-generated STEP files**. Engineer must run the generation script with Onshape API credentials to create actual BREP geometry.

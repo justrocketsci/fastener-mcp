@@ -1,0 +1,637 @@
+{
+  "schema_version": "fastener-mcp.v2",
+  "items": [
+    {
+      "id": "bolt-depot-6416",
+      "supplier_id": "bolt-depot",
+      "sku": "6416",
+      "part": {
+        "id": "iso4762-m6x10-a2",
+        "revision": 1
+      },
+      "url": "https://boltdepot.com/Product-Details?product=6416",
+      "manufacturer": null,
+      "pack_size": 1,
+      "match_status": "exact",
+      "checked_attributes": {
+        "diameter_mm": "6",
+        "material": "A2 / 18-8 stainless",
+        "category": "socket_screw",
+        "standard": "ISO 4762",
+        "pitch_mm": "1",
+        "handedness": "right (DIN metric standard)",
+        "length_mm": "10"
+      },
+      "unresolved": [
+        "Property class and finish are unspecified; does not satisfy a request that requires either.",
+        "Nominal CAD surfaces do not represent manufacturing tolerances."
+      ],
+      "verified_at": "2026-09-22T02:50:00Z",
+      "part_fingerprint": "bbcf780fdb756497518a863c3edd3ecb43262497d8c57733e71ad86d7f9b1a1a",
+      "model_representation": "standard_nominal",
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-6416",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ]
+    },
+    {
+      "id": "monster-bolts-36230284044",
+      "supplier_id": "monster-bolts",
+      "sku": "36230284044",
+      "part": {
+        "id": "iso4762-m6x10-a2",
+        "revision": 1
+      },
+      "url": "https://monsterbolts.com/products/socket-cap-a2-m6?variant=36230284044",
+      "manufacturer": null,
+      "pack_size": 10,
+      "match_status": "exact",
+      "checked_attributes": {
+        "diameter_mm": "6",
+        "material": "A2 / 18-8 stainless",
+        "category": "socket_screw",
+        "standard": "ISO 4762",
+        "pitch_mm": "1",
+        "handedness": "right (DIN metric standard)",
+        "length_mm": "10"
+      },
+      "unresolved": [
+        "Property class and finish are unspecified; does not satisfy a request that requires either.",
+        "Nominal CAD surfaces do not represent manufacturing tolerances."
+      ],
+      "verified_at": "2026-09-22T02:50:00Z",
+      "part_fingerprint": "bbcf780fdb756497518a863c3edd3ecb43262497d8c57733e71ad86d7f9b1a1a",
+      "model_representation": "standard_nominal",
+      "evidence": [
+        {
+          "source_id": "source-monster-bolts-36230284044",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ]
+    },
+    {
+      "id": "bolt-depot-6417",
+      "supplier_id": "bolt-depot",
+      "sku": "6417",
+      "part": {
+        "id": "iso4762-m6x12-a2",
+        "revision": 1
+      },
+      "url": "https://boltdepot.com/Product-Details?product=6417",
+      "manufacturer": null,
+      "pack_size": 1,
+      "match_status": "exact",
+      "checked_attributes": {
+        "diameter_mm": "6",
+        "material": "A2 / 18-8 stainless",
+        "category": "socket_screw",
+        "standard": "ISO 4762",
+        "pitch_mm": "1",
+        "handedness": "right (DIN metric standard)",
+        "length_mm": "12"
+      },
+      "unresolved": [
+        "Property class and finish are unspecified; does not satisfy a request that requires either.",
+        "Nominal CAD surfaces do not represent manufacturing tolerances."
+      ],
+      "verified_at": "2026-09-22T02:50:00Z",
+      "part_fingerprint": "0f273186d44d836054d6e3471ed19b1a81ae57584a16a805a955c5ba266b9d36",
+      "model_representation": "standard_nominal",
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-6417",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ]
+    },
+    {
+      "id": "monster-bolts-36230284172",
+      "supplier_id": "monster-bolts",
+      "sku": "36230284172",
+      "part": {
+        "id": "iso4762-m6x12-a2",
+        "revision": 1
+      },
+      "url": "https://monsterbolts.com/products/socket-cap-a2-m6?variant=36230284172",
+      "manufacturer": null,
+      "pack_size": 10,
+      "match_status": "exact",
+      "checked_attributes": {
+        "diameter_mm": "6",
+        "material": "A2 / 18-8 stainless",
+        "category": "socket_screw",
+        "standard": "ISO 4762",
+        "pitch_mm": "1",
+        "handedness": "right (DIN metric standard)",
+        "length_mm": "12"
+      },
+      "unresolved": [
+        "Property class and finish are unspecified; does not satisfy a request that requires either.",
+        "Nominal CAD surfaces do not represent manufacturing tolerances."
+      ],
+      "verified_at": "2026-09-22T02:50:00Z",
+      "part_fingerprint": "0f273186d44d836054d6e3471ed19b1a81ae57584a16a805a955c5ba266b9d36",
+      "model_representation": "standard_nominal",
+      "evidence": [
+        {
+          "source_id": "source-monster-bolts-36230284172",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ]
+    },
+    {
+      "id": "bolt-depot-6418",
+      "supplier_id": "bolt-depot",
+      "sku": "6418",
+      "part": {
+        "id": "iso4762-m6x16-a2",
+        "revision": 1
+      },
+      "url": "https://boltdepot.com/Product-Details?product=6418",
+      "manufacturer": null,
+      "pack_size": 1,
+      "match_status": "exact",
+      "checked_attributes": {
+        "diameter_mm": "6",
+        "material": "A2 / 18-8 stainless",
+        "category": "socket_screw",
+        "standard": "ISO 4762",
+        "pitch_mm": "1",
+        "handedness": "right (DIN metric standard)",
+        "length_mm": "16"
+      },
+      "unresolved": [
+        "Property class and finish are unspecified; does not satisfy a request that requires either.",
+        "Nominal CAD surfaces do not represent manufacturing tolerances."
+      ],
+      "verified_at": "2026-09-22T02:50:00Z",
+      "part_fingerprint": "41357697999373a38f09baf79844fd9684d21cd4e409864643d92cca226ce675",
+      "model_representation": "standard_nominal",
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-6418",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ]
+    },
+    {
+      "id": "monster-bolts-36230284300",
+      "supplier_id": "monster-bolts",
+      "sku": "36230284300",
+      "part": {
+        "id": "iso4762-m6x16-a2",
+        "revision": 1
+      },
+      "url": "https://monsterbolts.com/products/socket-cap-a2-m6?variant=36230284300",
+      "manufacturer": null,
+      "pack_size": 10,
+      "match_status": "exact",
+      "checked_attributes": {
+        "diameter_mm": "6",
+        "material": "A2 / 18-8 stainless",
+        "category": "socket_screw",
+        "standard": "ISO 4762",
+        "pitch_mm": "1",
+        "handedness": "right (DIN metric standard)",
+        "length_mm": "16"
+      },
+      "unresolved": [
+        "Property class and finish are unspecified; does not satisfy a request that requires either.",
+        "Nominal CAD surfaces do not represent manufacturing tolerances."
+      ],
+      "verified_at": "2026-09-22T02:50:00Z",
+      "part_fingerprint": "41357697999373a38f09baf79844fd9684d21cd4e409864643d92cca226ce675",
+      "model_representation": "standard_nominal",
+      "evidence": [
+        {
+          "source_id": "source-monster-bolts-36230284300",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ]
+    },
+    {
+      "id": "bolt-depot-6419",
+      "supplier_id": "bolt-depot",
+      "sku": "6419",
+      "part": {
+        "id": "iso4762-m6x20-a2",
+        "revision": 1
+      },
+      "url": "https://boltdepot.com/Product-Details?product=6419",
+      "manufacturer": null,
+      "pack_size": 1,
+      "match_status": "exact",
+      "checked_attributes": {
+        "diameter_mm": "6",
+        "material": "A2 / 18-8 stainless",
+        "category": "socket_screw",
+        "standard": "ISO 4762",
+        "pitch_mm": "1",
+        "handedness": "right (DIN metric standard)",
+        "length_mm": "20"
+      },
+      "unresolved": [
+        "Property class and finish are unspecified; does not satisfy a request that requires either.",
+        "Nominal CAD surfaces do not represent manufacturing tolerances."
+      ],
+      "verified_at": "2026-09-22T02:50:00Z",
+      "part_fingerprint": "ea2ec1b38e19dd2188cafe5124d76d73b5ab0980cbb07ca7daa23e1b2406bf06",
+      "model_representation": "standard_nominal",
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-6419",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ]
+    },
+    {
+      "id": "monster-bolts-36230284492",
+      "supplier_id": "monster-bolts",
+      "sku": "36230284492",
+      "part": {
+        "id": "iso4762-m6x20-a2",
+        "revision": 1
+      },
+      "url": "https://monsterbolts.com/products/socket-cap-a2-m6?variant=36230284492",
+      "manufacturer": null,
+      "pack_size": 10,
+      "match_status": "exact",
+      "checked_attributes": {
+        "diameter_mm": "6",
+        "material": "A2 / 18-8 stainless",
+        "category": "socket_screw",
+        "standard": "ISO 4762",
+        "pitch_mm": "1",
+        "handedness": "right (DIN metric standard)",
+        "length_mm": "20"
+      },
+      "unresolved": [
+        "Property class and finish are unspecified; does not satisfy a request that requires either.",
+        "Nominal CAD surfaces do not represent manufacturing tolerances."
+      ],
+      "verified_at": "2026-09-22T02:50:00Z",
+      "part_fingerprint": "ea2ec1b38e19dd2188cafe5124d76d73b5ab0980cbb07ca7daa23e1b2406bf06",
+      "model_representation": "standard_nominal",
+      "evidence": [
+        {
+          "source_id": "source-monster-bolts-36230284492",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ]
+    },
+    {
+      "id": "bolt-depot-6420",
+      "supplier_id": "bolt-depot",
+      "sku": "6420",
+      "part": {
+        "id": "iso4762-m6x25-a2",
+        "revision": 1
+      },
+      "url": "https://boltdepot.com/Product-Details?product=6420",
+      "manufacturer": null,
+      "pack_size": 1,
+      "match_status": "exact",
+      "checked_attributes": {
+        "diameter_mm": "6",
+        "material": "A2 / 18-8 stainless",
+        "category": "socket_screw",
+        "standard": "ISO 4762",
+        "pitch_mm": "1",
+        "handedness": "right (DIN metric standard)",
+        "length_mm": "25"
+      },
+      "unresolved": [
+        "Property class and finish are unspecified; does not satisfy a request that requires either.",
+        "Nominal CAD surfaces do not represent manufacturing tolerances."
+      ],
+      "verified_at": "2026-09-22T02:50:00Z",
+      "part_fingerprint": "a14a846e6fa9886bbed6d46d18b96f0f75a2c2762b54a6390dc18b0b7a7aa7e7",
+      "model_representation": "standard_nominal",
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-6420",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ]
+    },
+    {
+      "id": "monster-bolts-36230284620",
+      "supplier_id": "monster-bolts",
+      "sku": "36230284620",
+      "part": {
+        "id": "iso4762-m6x25-a2",
+        "revision": 1
+      },
+      "url": "https://monsterbolts.com/products/socket-cap-a2-m6?variant=36230284620",
+      "manufacturer": null,
+      "pack_size": 10,
+      "match_status": "exact",
+      "checked_attributes": {
+        "diameter_mm": "6",
+        "material": "A2 / 18-8 stainless",
+        "category": "socket_screw",
+        "standard": "ISO 4762",
+        "pitch_mm": "1",
+        "handedness": "right (DIN metric standard)",
+        "length_mm": "25"
+      },
+      "unresolved": [
+        "Property class and finish are unspecified; does not satisfy a request that requires either.",
+        "Nominal CAD surfaces do not represent manufacturing tolerances."
+      ],
+      "verified_at": "2026-09-22T02:50:00Z",
+      "part_fingerprint": "a14a846e6fa9886bbed6d46d18b96f0f75a2c2762b54a6390dc18b0b7a7aa7e7",
+      "model_representation": "standard_nominal",
+      "evidence": [
+        {
+          "source_id": "source-monster-bolts-36230284620",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ]
+    },
+    {
+      "id": "bolt-depot-4773",
+      "supplier_id": "bolt-depot",
+      "sku": "4773",
+      "part": {
+        "id": "din934-m3-a2",
+        "revision": 1
+      },
+      "url": "https://boltdepot.com/Product-Details?product=4773",
+      "manufacturer": null,
+      "pack_size": 1,
+      "match_status": "exact",
+      "checked_attributes": {
+        "diameter_mm": "3",
+        "material": "A2 / 18-8 stainless",
+        "category": "hex_nut",
+        "standard": "DIN 934",
+        "pitch_mm": "0.5",
+        "handedness": "right (DIN metric standard)"
+      },
+      "unresolved": [
+        "Property class and finish are unspecified; does not satisfy a request that requires either.",
+        "Nominal CAD surfaces do not represent manufacturing tolerances."
+      ],
+      "verified_at": "2026-09-22T02:50:00Z",
+      "part_fingerprint": "07194a6d3678c07fde4302ebb447ea1c5db14a7206cbd310481220b3cf05ce99",
+      "model_representation": "standard_nominal",
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-4773",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ]
+    },
+    {
+      "id": "bolt-depot-4774",
+      "supplier_id": "bolt-depot",
+      "sku": "4774",
+      "part": {
+        "id": "din934-m4-a2",
+        "revision": 1
+      },
+      "url": "https://boltdepot.com/Product-Details?product=4774",
+      "manufacturer": null,
+      "pack_size": 1,
+      "match_status": "exact",
+      "checked_attributes": {
+        "diameter_mm": "4",
+        "material": "A2 / 18-8 stainless",
+        "category": "hex_nut",
+        "standard": "DIN 934",
+        "pitch_mm": "0.7",
+        "handedness": "right (DIN metric standard)"
+      },
+      "unresolved": [
+        "Property class and finish are unspecified; does not satisfy a request that requires either.",
+        "Nominal CAD surfaces do not represent manufacturing tolerances."
+      ],
+      "verified_at": "2026-09-22T02:50:00Z",
+      "part_fingerprint": "f87d06158a24e992572ad0cc0b7c0aafff9ec752a14d314fcbf04d4ccb0641fb",
+      "model_representation": "standard_nominal",
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-4774",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ]
+    },
+    {
+      "id": "bolt-depot-4775",
+      "supplier_id": "bolt-depot",
+      "sku": "4775",
+      "part": {
+        "id": "din934-m5-a2",
+        "revision": 1
+      },
+      "url": "https://boltdepot.com/Product-Details?product=4775",
+      "manufacturer": null,
+      "pack_size": 1,
+      "match_status": "exact",
+      "checked_attributes": {
+        "diameter_mm": "5",
+        "material": "A2 / 18-8 stainless",
+        "category": "hex_nut",
+        "standard": "DIN 934",
+        "pitch_mm": "0.8",
+        "handedness": "right (DIN metric standard)"
+      },
+      "unresolved": [
+        "Property class and finish are unspecified; does not satisfy a request that requires either.",
+        "Nominal CAD surfaces do not represent manufacturing tolerances."
+      ],
+      "verified_at": "2026-09-22T02:50:00Z",
+      "part_fingerprint": "8d047a8fac5ff915f760ee07f5acff15692c812845ceba106cabb25cf24b5ec1",
+      "model_representation": "standard_nominal",
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-4775",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ]
+    },
+    {
+      "id": "bolt-depot-4776",
+      "supplier_id": "bolt-depot",
+      "sku": "4776",
+      "part": {
+        "id": "din934-m6-a2",
+        "revision": 1
+      },
+      "url": "https://boltdepot.com/Product-Details?product=4776",
+      "manufacturer": null,
+      "pack_size": 1,
+      "match_status": "exact",
+      "checked_attributes": {
+        "diameter_mm": "6",
+        "material": "A2 / 18-8 stainless",
+        "category": "hex_nut",
+        "standard": "DIN 934",
+        "pitch_mm": "1",
+        "handedness": "right (DIN metric standard)"
+      },
+      "unresolved": [
+        "Property class and finish are unspecified; does not satisfy a request that requires either.",
+        "Nominal CAD surfaces do not represent manufacturing tolerances."
+      ],
+      "verified_at": "2026-09-22T02:50:00Z",
+      "part_fingerprint": "783f806ac9ae0e50e393dc7133a582f8509765481dbf9570c93ba2926d8f14cf",
+      "model_representation": "standard_nominal",
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-4776",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ]
+    },
+    {
+      "id": "bolt-depot-4513",
+      "supplier_id": "bolt-depot",
+      "sku": "4513",
+      "part": {
+        "id": "din125-m3-a2",
+        "revision": 1
+      },
+      "url": "https://boltdepot.com/Product-Details?product=4513",
+      "manufacturer": null,
+      "pack_size": 1,
+      "match_status": "exact",
+      "checked_attributes": {
+        "diameter_mm": "3",
+        "material": "A2 / 18-8 stainless",
+        "category": "flat_washer",
+        "standard": "DIN 125"
+      },
+      "unresolved": [
+        "Property class and finish are unspecified; does not satisfy a request that requires either.",
+        "Nominal CAD surfaces do not represent manufacturing tolerances."
+      ],
+      "verified_at": "2026-09-22T02:50:00Z",
+      "part_fingerprint": "70def49b5c9ee5cb48cc91be6db4227adfa038cd5e5fd1831f18f4008bd58306",
+      "model_representation": "standard_nominal",
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-4513",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ]
+    },
+    {
+      "id": "bolt-depot-4514",
+      "supplier_id": "bolt-depot",
+      "sku": "4514",
+      "part": {
+        "id": "din125-m4-a2",
+        "revision": 1
+      },
+      "url": "https://boltdepot.com/Product-Details?product=4514",
+      "manufacturer": null,
+      "pack_size": 1,
+      "match_status": "exact",
+      "checked_attributes": {
+        "diameter_mm": "4",
+        "material": "A2 / 18-8 stainless",
+        "category": "flat_washer",
+        "standard": "DIN 125"
+      },
+      "unresolved": [
+        "Property class and finish are unspecified; does not satisfy a request that requires either.",
+        "Nominal CAD surfaces do not represent manufacturing tolerances."
+      ],
+      "verified_at": "2026-09-22T02:50:00Z",
+      "part_fingerprint": "8ede684128e74ccb2748367fb26975a68ae940ef42285a273de3e6de7ca59c61",
+      "model_representation": "standard_nominal",
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-4514",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ]
+    },
+    {
+      "id": "bolt-depot-4515",
+      "supplier_id": "bolt-depot",
+      "sku": "4515",
+      "part": {
+        "id": "din125-m5-a2",
+        "revision": 1
+      },
+      "url": "https://boltdepot.com/Product-Details?product=4515",
+      "manufacturer": null,
+      "pack_size": 1,
+      "match_status": "exact",
+      "checked_attributes": {
+        "diameter_mm": "5",
+        "material": "A2 / 18-8 stainless",
+        "category": "flat_washer",
+        "standard": "DIN 125"
+      },
+      "unresolved": [
+        "Property class and finish are unspecified; does not satisfy a request that requires either.",
+        "Nominal CAD surfaces do not represent manufacturing tolerances."
+      ],
+      "verified_at": "2026-09-22T02:50:00Z",
+      "part_fingerprint": "000ef1d1283e174740915b206d417c59f3a6c1a1f717b5d4bd20c56f031a95d4",
+      "model_representation": "standard_nominal",
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-4515",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ]
+    },
+    {
+      "id": "bolt-depot-4516",
+      "supplier_id": "bolt-depot",
+      "sku": "4516",
+      "part": {
+        "id": "din125-m6-a2",
+        "revision": 1
+      },
+      "url": "https://boltdepot.com/Product-Details?product=4516",
+      "manufacturer": null,
+      "pack_size": 1,
+      "match_status": "exact",
+      "checked_attributes": {
+        "diameter_mm": "6",
+        "material": "A2 / 18-8 stainless",
+        "category": "flat_washer",
+        "standard": "DIN 125"
+      },
+      "unresolved": [
+        "Property class and finish are unspecified; does not satisfy a request that requires either.",
+        "Nominal CAD surfaces do not represent manufacturing tolerances."
+      ],
+      "verified_at": "2026-09-22T02:50:00Z",
+      "part_fingerprint": "68bec17309c01e78bf5b74f4d64f211d8b29cf929d6eeed49a4a2c2abab4cae4",
+      "model_representation": "standard_nominal",
+      "evidence": [
+        {
+          "source_id": "source-bolt-depot-4516",
+          "locator": "Product attributes / size table",
+          "verification": "checked"
+        }
+      ]
+    }
+  ]
+}

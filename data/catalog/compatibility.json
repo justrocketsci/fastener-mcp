@@ -1,0 +1,1090 @@
+{
+  "schema_version": "fastener-mcp.v2",
+  "items": [
+    {
+      "id": "iso4762-m6x10-a2--din934-m6-a2",
+      "anchor": {
+        "id": "iso4762-m6x10-a2",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din934-m6-a2",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "bbcf780fdb756497518a863c3edd3ecb43262497d8c57733e71ad86d7f9b1a1a",
+      "companion_fingerprint": "783f806ac9ae0e50e393dc7133a582f8509765481dbf9570c93ba2926d8f14cf"
+    },
+    {
+      "id": "iso4762-m6x10-a2--din125-m6-a2",
+      "anchor": {
+        "id": "iso4762-m6x10-a2",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din125-m6-a2",
+        "revision": 1
+      },
+      "relationship": "seating",
+      "checked_attributes": [
+        "nominal_size",
+        "washer_bore_and_head_width"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "bbcf780fdb756497518a863c3edd3ecb43262497d8c57733e71ad86d7f9b1a1a",
+      "companion_fingerprint": "68bec17309c01e78bf5b74f4d64f211d8b29cf929d6eeed49a4a2c2abab4cae4"
+    },
+    {
+      "id": "iso4762-m6x10-a2--helicoil-plus-m6-1.5d-4130",
+      "anchor": {
+        "id": "iso4762-m6x10-a2",
+        "revision": 1
+      },
+      "companion": {
+        "id": "helicoil-plus-m6-1.5d-4130",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "bbcf780fdb756497518a863c3edd3ecb43262497d8c57733e71ad86d7f9b1a1a",
+      "companion_fingerprint": "4de51e4279a07fd30e703902ddeb386cbc3eda6599b99ff8b94c87e3742a8e70"
+    },
+    {
+      "id": "iso4762-m6x12-a2--din934-m6-a2",
+      "anchor": {
+        "id": "iso4762-m6x12-a2",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din934-m6-a2",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "0f273186d44d836054d6e3471ed19b1a81ae57584a16a805a955c5ba266b9d36",
+      "companion_fingerprint": "783f806ac9ae0e50e393dc7133a582f8509765481dbf9570c93ba2926d8f14cf"
+    },
+    {
+      "id": "iso4762-m6x12-a2--din125-m6-a2",
+      "anchor": {
+        "id": "iso4762-m6x12-a2",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din125-m6-a2",
+        "revision": 1
+      },
+      "relationship": "seating",
+      "checked_attributes": [
+        "nominal_size",
+        "washer_bore_and_head_width"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "0f273186d44d836054d6e3471ed19b1a81ae57584a16a805a955c5ba266b9d36",
+      "companion_fingerprint": "68bec17309c01e78bf5b74f4d64f211d8b29cf929d6eeed49a4a2c2abab4cae4"
+    },
+    {
+      "id": "iso4762-m6x12-a2--helicoil-plus-m6-1.5d-4130",
+      "anchor": {
+        "id": "iso4762-m6x12-a2",
+        "revision": 1
+      },
+      "companion": {
+        "id": "helicoil-plus-m6-1.5d-4130",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "0f273186d44d836054d6e3471ed19b1a81ae57584a16a805a955c5ba266b9d36",
+      "companion_fingerprint": "4de51e4279a07fd30e703902ddeb386cbc3eda6599b99ff8b94c87e3742a8e70"
+    },
+    {
+      "id": "iso4762-m6x16-a2--din934-m6-a2",
+      "anchor": {
+        "id": "iso4762-m6x16-a2",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din934-m6-a2",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "41357697999373a38f09baf79844fd9684d21cd4e409864643d92cca226ce675",
+      "companion_fingerprint": "783f806ac9ae0e50e393dc7133a582f8509765481dbf9570c93ba2926d8f14cf"
+    },
+    {
+      "id": "iso4762-m6x16-a2--din125-m6-a2",
+      "anchor": {
+        "id": "iso4762-m6x16-a2",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din125-m6-a2",
+        "revision": 1
+      },
+      "relationship": "seating",
+      "checked_attributes": [
+        "nominal_size",
+        "washer_bore_and_head_width"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "41357697999373a38f09baf79844fd9684d21cd4e409864643d92cca226ce675",
+      "companion_fingerprint": "68bec17309c01e78bf5b74f4d64f211d8b29cf929d6eeed49a4a2c2abab4cae4"
+    },
+    {
+      "id": "iso4762-m6x16-a2--helicoil-plus-m6-1.5d-4130",
+      "anchor": {
+        "id": "iso4762-m6x16-a2",
+        "revision": 1
+      },
+      "companion": {
+        "id": "helicoil-plus-m6-1.5d-4130",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "41357697999373a38f09baf79844fd9684d21cd4e409864643d92cca226ce675",
+      "companion_fingerprint": "4de51e4279a07fd30e703902ddeb386cbc3eda6599b99ff8b94c87e3742a8e70"
+    },
+    {
+      "id": "iso4762-m6x20-a2--din934-m6-a2",
+      "anchor": {
+        "id": "iso4762-m6x20-a2",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din934-m6-a2",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "ea2ec1b38e19dd2188cafe5124d76d73b5ab0980cbb07ca7daa23e1b2406bf06",
+      "companion_fingerprint": "783f806ac9ae0e50e393dc7133a582f8509765481dbf9570c93ba2926d8f14cf"
+    },
+    {
+      "id": "iso4762-m6x20-a2--din125-m6-a2",
+      "anchor": {
+        "id": "iso4762-m6x20-a2",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din125-m6-a2",
+        "revision": 1
+      },
+      "relationship": "seating",
+      "checked_attributes": [
+        "nominal_size",
+        "washer_bore_and_head_width"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "ea2ec1b38e19dd2188cafe5124d76d73b5ab0980cbb07ca7daa23e1b2406bf06",
+      "companion_fingerprint": "68bec17309c01e78bf5b74f4d64f211d8b29cf929d6eeed49a4a2c2abab4cae4"
+    },
+    {
+      "id": "iso4762-m6x20-a2--helicoil-plus-m6-1.5d-4130",
+      "anchor": {
+        "id": "iso4762-m6x20-a2",
+        "revision": 1
+      },
+      "companion": {
+        "id": "helicoil-plus-m6-1.5d-4130",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "ea2ec1b38e19dd2188cafe5124d76d73b5ab0980cbb07ca7daa23e1b2406bf06",
+      "companion_fingerprint": "4de51e4279a07fd30e703902ddeb386cbc3eda6599b99ff8b94c87e3742a8e70"
+    },
+    {
+      "id": "iso4762-m6x25-a2--din934-m6-a2",
+      "anchor": {
+        "id": "iso4762-m6x25-a2",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din934-m6-a2",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "a14a846e6fa9886bbed6d46d18b96f0f75a2c2762b54a6390dc18b0b7a7aa7e7",
+      "companion_fingerprint": "783f806ac9ae0e50e393dc7133a582f8509765481dbf9570c93ba2926d8f14cf"
+    },
+    {
+      "id": "iso4762-m6x25-a2--din125-m6-a2",
+      "anchor": {
+        "id": "iso4762-m6x25-a2",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din125-m6-a2",
+        "revision": 1
+      },
+      "relationship": "seating",
+      "checked_attributes": [
+        "nominal_size",
+        "washer_bore_and_head_width"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "a14a846e6fa9886bbed6d46d18b96f0f75a2c2762b54a6390dc18b0b7a7aa7e7",
+      "companion_fingerprint": "68bec17309c01e78bf5b74f4d64f211d8b29cf929d6eeed49a4a2c2abab4cae4"
+    },
+    {
+      "id": "iso4762-m6x25-a2--helicoil-plus-m6-1.5d-4130",
+      "anchor": {
+        "id": "iso4762-m6x25-a2",
+        "revision": 1
+      },
+      "companion": {
+        "id": "helicoil-plus-m6-1.5d-4130",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "a14a846e6fa9886bbed6d46d18b96f0f75a2c2762b54a6390dc18b0b7a7aa7e7",
+      "companion_fingerprint": "4de51e4279a07fd30e703902ddeb386cbc3eda6599b99ff8b94c87e3742a8e70"
+    },
+    {
+      "id": "iso4762-m3x12-reference--din934-m3-a2",
+      "anchor": {
+        "id": "iso4762-m3x12-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din934-m3-a2",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "4ae358caa804fbf1f09122437c05523b6ef41c10b420aaa960ad44b16a74862d",
+      "companion_fingerprint": "07194a6d3678c07fde4302ebb447ea1c5db14a7206cbd310481220b3cf05ce99"
+    },
+    {
+      "id": "iso4762-m3x12-reference--din125-m3-a2",
+      "anchor": {
+        "id": "iso4762-m3x12-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din125-m3-a2",
+        "revision": 1
+      },
+      "relationship": "seating",
+      "checked_attributes": [
+        "nominal_size",
+        "washer_bore_and_head_width"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "4ae358caa804fbf1f09122437c05523b6ef41c10b420aaa960ad44b16a74862d",
+      "companion_fingerprint": "70def49b5c9ee5cb48cc91be6db4227adfa038cd5e5fd1831f18f4008bd58306"
+    },
+    {
+      "id": "iso4762-m3x12-reference--helicoil-plus-m3-1.5d-4130",
+      "anchor": {
+        "id": "iso4762-m3x12-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "helicoil-plus-m3-1.5d-4130",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "4ae358caa804fbf1f09122437c05523b6ef41c10b420aaa960ad44b16a74862d",
+      "companion_fingerprint": "2677535218ba77eb660ad2d8ab191715cdcc291fbc22c4c9f34a3f266d316361"
+    },
+    {
+      "id": "iso4762-m4x12-reference--din934-m4-a2",
+      "anchor": {
+        "id": "iso4762-m4x12-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din934-m4-a2",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "fab12bd1ef4c5a94364d7762ddd2b366bb8420220b2656775b1c6f94541f7440",
+      "companion_fingerprint": "f87d06158a24e992572ad0cc0b7c0aafff9ec752a14d314fcbf04d4ccb0641fb"
+    },
+    {
+      "id": "iso4762-m4x12-reference--din125-m4-a2",
+      "anchor": {
+        "id": "iso4762-m4x12-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din125-m4-a2",
+        "revision": 1
+      },
+      "relationship": "seating",
+      "checked_attributes": [
+        "nominal_size",
+        "washer_bore_and_head_width"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "fab12bd1ef4c5a94364d7762ddd2b366bb8420220b2656775b1c6f94541f7440",
+      "companion_fingerprint": "8ede684128e74ccb2748367fb26975a68ae940ef42285a273de3e6de7ca59c61"
+    },
+    {
+      "id": "iso4762-m4x12-reference--helicoil-plus-m4-1.5d-4130",
+      "anchor": {
+        "id": "iso4762-m4x12-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "helicoil-plus-m4-1.5d-4130",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "fab12bd1ef4c5a94364d7762ddd2b366bb8420220b2656775b1c6f94541f7440",
+      "companion_fingerprint": "10d2af9068752716600748855bf1a3ee7b9fa7329f1b481e49240ec15bca308b"
+    },
+    {
+      "id": "din933-m3x20-reference--din934-m3-a2",
+      "anchor": {
+        "id": "din933-m3x20-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din934-m3-a2",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "31ea8084de63cb1d76a599a4d1e2cc06b10145b11e56ad87f56920b918f23eef",
+      "companion_fingerprint": "07194a6d3678c07fde4302ebb447ea1c5db14a7206cbd310481220b3cf05ce99"
+    },
+    {
+      "id": "din933-m3x20-reference--din125-m3-a2",
+      "anchor": {
+        "id": "din933-m3x20-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din125-m3-a2",
+        "revision": 1
+      },
+      "relationship": "seating",
+      "checked_attributes": [
+        "nominal_size",
+        "washer_bore_and_head_width"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "31ea8084de63cb1d76a599a4d1e2cc06b10145b11e56ad87f56920b918f23eef",
+      "companion_fingerprint": "70def49b5c9ee5cb48cc91be6db4227adfa038cd5e5fd1831f18f4008bd58306"
+    },
+    {
+      "id": "din933-m3x20-reference--helicoil-plus-m3-1.5d-4130",
+      "anchor": {
+        "id": "din933-m3x20-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "helicoil-plus-m3-1.5d-4130",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "31ea8084de63cb1d76a599a4d1e2cc06b10145b11e56ad87f56920b918f23eef",
+      "companion_fingerprint": "2677535218ba77eb660ad2d8ab191715cdcc291fbc22c4c9f34a3f266d316361"
+    },
+    {
+      "id": "din933-m4x20-reference--din934-m4-a2",
+      "anchor": {
+        "id": "din933-m4x20-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din934-m4-a2",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "a11df1f3346922815e09e1cdbfb09ee9368d50a60e34fd911e9c086d91cf45d7",
+      "companion_fingerprint": "f87d06158a24e992572ad0cc0b7c0aafff9ec752a14d314fcbf04d4ccb0641fb"
+    },
+    {
+      "id": "din933-m4x20-reference--din125-m4-a2",
+      "anchor": {
+        "id": "din933-m4x20-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din125-m4-a2",
+        "revision": 1
+      },
+      "relationship": "seating",
+      "checked_attributes": [
+        "nominal_size",
+        "washer_bore_and_head_width"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "a11df1f3346922815e09e1cdbfb09ee9368d50a60e34fd911e9c086d91cf45d7",
+      "companion_fingerprint": "8ede684128e74ccb2748367fb26975a68ae940ef42285a273de3e6de7ca59c61"
+    },
+    {
+      "id": "din933-m4x20-reference--helicoil-plus-m4-1.5d-4130",
+      "anchor": {
+        "id": "din933-m4x20-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "helicoil-plus-m4-1.5d-4130",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "a11df1f3346922815e09e1cdbfb09ee9368d50a60e34fd911e9c086d91cf45d7",
+      "companion_fingerprint": "10d2af9068752716600748855bf1a3ee7b9fa7329f1b481e49240ec15bca308b"
+    },
+    {
+      "id": "din933-m5x20-reference--din934-m5-a2",
+      "anchor": {
+        "id": "din933-m5x20-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din934-m5-a2",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "227e31c8b361224b50a0cf840111e7baae519b46f6c47eec388fadecbf14b868",
+      "companion_fingerprint": "8d047a8fac5ff915f760ee07f5acff15692c812845ceba106cabb25cf24b5ec1"
+    },
+    {
+      "id": "din933-m5x20-reference--din125-m5-a2",
+      "anchor": {
+        "id": "din933-m5x20-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din125-m5-a2",
+        "revision": 1
+      },
+      "relationship": "seating",
+      "checked_attributes": [
+        "nominal_size",
+        "washer_bore_and_head_width"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "227e31c8b361224b50a0cf840111e7baae519b46f6c47eec388fadecbf14b868",
+      "companion_fingerprint": "000ef1d1283e174740915b206d417c59f3a6c1a1f717b5d4bd20c56f031a95d4"
+    },
+    {
+      "id": "din933-m5x20-reference--helicoil-plus-m5-1.5d-4130",
+      "anchor": {
+        "id": "din933-m5x20-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "helicoil-plus-m5-1.5d-4130",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "227e31c8b361224b50a0cf840111e7baae519b46f6c47eec388fadecbf14b868",
+      "companion_fingerprint": "75e414b0d86b29cc1688ad18399d202411bbfebde9b6741b7464f71455892d4f"
+    },
+    {
+      "id": "din933-m6x20-reference--din934-m6-a2",
+      "anchor": {
+        "id": "din933-m6x20-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din934-m6-a2",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "7a8f9b5b018c987530d9c4fea0cff4b11bda140ac4ec235b84e342d5b7ab72d1",
+      "companion_fingerprint": "783f806ac9ae0e50e393dc7133a582f8509765481dbf9570c93ba2926d8f14cf"
+    },
+    {
+      "id": "din933-m6x20-reference--din125-m6-a2",
+      "anchor": {
+        "id": "din933-m6x20-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din125-m6-a2",
+        "revision": 1
+      },
+      "relationship": "seating",
+      "checked_attributes": [
+        "nominal_size",
+        "washer_bore_and_head_width"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "7a8f9b5b018c987530d9c4fea0cff4b11bda140ac4ec235b84e342d5b7ab72d1",
+      "companion_fingerprint": "68bec17309c01e78bf5b74f4d64f211d8b29cf929d6eeed49a4a2c2abab4cae4"
+    },
+    {
+      "id": "din933-m6x20-reference--helicoil-plus-m6-1.5d-4130",
+      "anchor": {
+        "id": "din933-m6x20-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "helicoil-plus-m6-1.5d-4130",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "7a8f9b5b018c987530d9c4fea0cff4b11bda140ac4ec235b84e342d5b7ab72d1",
+      "companion_fingerprint": "4de51e4279a07fd30e703902ddeb386cbc3eda6599b99ff8b94c87e3742a8e70"
+    },
+    {
+      "id": "din7991-m3x20-reference--din934-m3-a2",
+      "anchor": {
+        "id": "din7991-m3x20-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din934-m3-a2",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "cee5f2373b6f0751eea082216dc5379b5112c0e6c6390ad81338a94b9e0af632",
+      "companion_fingerprint": "07194a6d3678c07fde4302ebb447ea1c5db14a7206cbd310481220b3cf05ce99"
+    },
+    {
+      "id": "din7991-m3x20-reference--helicoil-plus-m3-1.5d-4130",
+      "anchor": {
+        "id": "din7991-m3x20-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "helicoil-plus-m3-1.5d-4130",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "cee5f2373b6f0751eea082216dc5379b5112c0e6c6390ad81338a94b9e0af632",
+      "companion_fingerprint": "2677535218ba77eb660ad2d8ab191715cdcc291fbc22c4c9f34a3f266d316361"
+    },
+    {
+      "id": "din7991-m4x20-reference--din934-m4-a2",
+      "anchor": {
+        "id": "din7991-m4x20-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din934-m4-a2",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "8053dc11d1a83e09361079a28e263414f3a7f4ec03463fbd3fe03a979ddb9396",
+      "companion_fingerprint": "f87d06158a24e992572ad0cc0b7c0aafff9ec752a14d314fcbf04d4ccb0641fb"
+    },
+    {
+      "id": "din7991-m4x20-reference--helicoil-plus-m4-1.5d-4130",
+      "anchor": {
+        "id": "din7991-m4x20-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "helicoil-plus-m4-1.5d-4130",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "8053dc11d1a83e09361079a28e263414f3a7f4ec03463fbd3fe03a979ddb9396",
+      "companion_fingerprint": "10d2af9068752716600748855bf1a3ee7b9fa7329f1b481e49240ec15bca308b"
+    },
+    {
+      "id": "din7991-m5x20-reference--din934-m5-a2",
+      "anchor": {
+        "id": "din7991-m5x20-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din934-m5-a2",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "2c84ef9e1267416103e658ea3076de50f28065536d1358e209fbc2affba3b8b7",
+      "companion_fingerprint": "8d047a8fac5ff915f760ee07f5acff15692c812845ceba106cabb25cf24b5ec1"
+    },
+    {
+      "id": "din7991-m5x20-reference--helicoil-plus-m5-1.5d-4130",
+      "anchor": {
+        "id": "din7991-m5x20-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "helicoil-plus-m5-1.5d-4130",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "2c84ef9e1267416103e658ea3076de50f28065536d1358e209fbc2affba3b8b7",
+      "companion_fingerprint": "75e414b0d86b29cc1688ad18399d202411bbfebde9b6741b7464f71455892d4f"
+    },
+    {
+      "id": "din7991-m6x20-reference--din934-m6-a2",
+      "anchor": {
+        "id": "din7991-m6x20-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "din934-m6-a2",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "7b103b229633d0942332fce90bbf1b3271e5b5505f12c063035a020f092cd96a",
+      "companion_fingerprint": "783f806ac9ae0e50e393dc7133a582f8509765481dbf9570c93ba2926d8f14cf"
+    },
+    {
+      "id": "din7991-m6x20-reference--helicoil-plus-m6-1.5d-4130",
+      "anchor": {
+        "id": "din7991-m6x20-reference",
+        "revision": 1
+      },
+      "companion": {
+        "id": "helicoil-plus-m6-1.5d-4130",
+        "revision": 1
+      },
+      "relationship": "thread_interface",
+      "checked_attributes": [
+        "thread_system",
+        "nominal_diameter",
+        "pitch",
+        "handedness"
+      ],
+      "conditions": [
+        "Nominal interface match only. Thread class and manufactured tolerances must be confirmed."
+      ],
+      "unresolved": [
+        "Load, grip, engagement, bearing area, host material and installation process are not approved."
+      ],
+      "rule_version": "metric-interface-1",
+      "anchor_fingerprint": "7b103b229633d0942332fce90bbf1b3271e5b5505f12c063035a020f092cd96a",
+      "companion_fingerprint": "4de51e4279a07fd30e703902ddeb386cbc3eda6599b99ff8b94c87e3742a8e70"
+    }
+  ]
+}

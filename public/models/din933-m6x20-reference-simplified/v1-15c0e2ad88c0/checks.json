@@ -1,0 +1,20 @@
+{
+  "schema_version": "fastener-mcp.v2",
+  "part": "din933-m6x20-reference",
+  "revision": 1,
+  "checks": [
+    "STEP reopened with OpenCascade",
+    "one solid; valid topology; finite bounds; positive volume",
+    "origin/minimum Z",
+    "length/maximum Z",
+    "shank diameter X",
+    "shank diameter Y",
+    "hex head across flats",
+    "head/shank continuity at origin"
+  ],
+  "tolerance_mm": 0.01,
+  "volume_mm3": 911.8968391599282,
+  "visual_review": "passed",
+  "checked_at": "2026-09-22T02:59:52.835897Z",
+  "reviewed_at": "2026-09-22T03:04:34.898138Z"
+}

@@ -1,148 +1,88 @@
 import Link from "next/link";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Alert, AlertDescription } from "@/components/ui/alert";
-
+import { catalogStatus } from "@/lib/catalog/service";
 export default function Home() {
+  const status = catalogStatus();
   return (
-    <div className="flex flex-col min-h-screen bg-background">
-      <header className="border-b border-border bg-card">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold text-foreground">
-            Fastener MCP
+    <main className="site-main">
+      <section className="hero">
+        <p className="eyebrow">Hardware for AI CAD agents</p>
+        <h1>
+          Find the part.
+          <br />
+          Get the geometry.
+        </h1>
+        <p className="lead">
+          Checked fastener dimensions, versioned STEP files, and matching
+          purchase links. One read-only MCP server for your CAD workflow.
+        </p>
+        <div className="actions">
+          <Link className="primary-button" href="/search">
+            Browse the catalog →
           </Link>
-          <nav className="flex gap-6">
-            <Link href="/search" className="text-sm font-medium text-muted-foreground hover:text-foreground">
-              Search
-            </Link>
-            <Link href="/mcp" className="text-sm font-medium text-muted-foreground hover:text-foreground">
-              MCP Docs
-            </Link>
-          </nav>
+          <Link className="secondary-button" href="/mcp">
+            Connect an agent
+          </Link>
         </div>
-      </header>
-
-      <main className="flex-1">
-        <section className="py-12 px-4">
-          <div className="container mx-auto max-w-6xl">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h1 className="text-5xl font-bold mb-6 tracking-tight font-heading">
-                  Fastener specifications for AI CAD agents
-                </h1>
-                <p className="text-xl text-muted-foreground mb-8">
-                  Structured fastener data (ISO, AN, MS specs) optimized for AI agents building mechanical assemblies. 
-                  Query by diameter, length, material, and load requirements.
-                </p>
-                <div className="flex gap-4">
-                  <Link href="/search">
-                    <Button size="lg">
-                      Explore the catalog
-                    </Button>
-                  </Link>
-                  <Link href="/mcp">
-                    <Button size="lg" variant="outline">
-                      MCP Docs
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-              <div className="hidden md:block">
-                <div className="bg-[#F8FAFC] rounded-xl border border-border p-8">
-                  <Image
-                    src="/illustrations/hero-composition.png"
-                    alt="Flat illustration of fasteners"
-                    width={800}
-                    height={600}
-                    className="w-full h-auto object-contain"
-                    style={{ maxHeight: '400px' }}
-                    priority
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 px-4 bg-accent">
-          <div className="container mx-auto max-w-5xl">
-            <div className="grid md:grid-cols-3 gap-6">
-              <Card>
-                <CardHeader>
-                  <div className="mb-4 flex justify-center">
-                    <Image
-                      src="/illustrations/hex-bolt.png"
-                      alt="Hex bolt illustration"
-                      width={80}
-                      height={80}
-                      className="w-20 h-20 object-contain"
-                    />
-                  </div>
-                  <CardTitle>Search by Size & Spec</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>
-                    Query fasteners by diameter, length, thread specification, and material. Filters for ISO metric, AN, and MS families.
-                  </CardDescription>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <div className="mb-4 flex justify-center">
-                    <Image
-                      src="/illustrations/socket-screw.png"
-                      alt="Socket screw illustration"
-                      width={80}
-                      height={80}
-                      className="w-20 h-20 object-contain"
-                    />
-                  </div>
-                  <CardTitle>Spec Families</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>
-                    ISO metric standards, AN (Army-Navy) aerospace hardware, and MS (Military Standard) specifications represented in sample set.
-                  </CardDescription>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <div className="mb-4 flex justify-center">
-                    <Image
-                      src="/illustrations/an-bolt.png"
-                      alt="AN bolt illustration"
-                      width={80}
-                      height={80}
-                      className="w-20 h-20 object-contain"
-                    />
-                  </div>
-                  <CardTitle>Agent-Ready JSON API</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>
-                    RESTful HTTP endpoints with structured responses. Search, retrieve by ID, and get intelligent recommendations. Simplified STL meshes available for CAD drop-in.
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer className="border-t border-border py-8 px-4">
-        <div className="container mx-auto max-w-5xl">
-          <div className="flex justify-center items-center gap-4">
-            <Link href="/search" className="text-sm text-muted-foreground hover:text-foreground">
-              Search
-            </Link>
-            <Link href="/mcp" className="text-sm text-muted-foreground hover:text-foreground">
-              MCP Docs
-            </Link>
-          </div>
+      </section>
+      <div className="stat-grid">
+        <div>
+          <strong>{status.counts.active}</strong>
+          <span>Checked part identities</span>
         </div>
-      </footer>
-    </div>
+        <div>
+          <strong>{status.counts.validated_models}</strong>
+          <span>Validated STEP variants</span>
+        </div>
+        <div>
+          <strong>6</strong>
+          <span>Hardware families</span>
+        </div>
+        <div>
+          <strong>2</strong>
+          <span>Suppliers checked</span>
+        </div>
+      </div>
+      <section className="card-grid">
+        <article className="panel">
+          <h2>Geometry you can inspect</h2>
+          <p>
+            Download files with explicit units, placement datums, checksums, and
+            a list of modeled and omitted features.
+          </p>
+        </article>
+        <article className="panel">
+          <h2>Useful companion parts</h2>
+          <p>
+            Find nuts, washers and HELICOIL inserts that match the stated
+            nominal interface. See the assembly checks that remain.
+          </p>
+        </article>
+        <article className="panel">
+          <h2>Clear purchasing comparisons</h2>
+          <p>
+            Compare exact variants for your quantity. Pack sizes and observation
+            dates are visible, and unknown shipping stays unknown.
+          </p>
+        </article>
+      </section>
+      <section className="panel">
+        <h2>Start with a complete example</h2>
+        <p>
+          <Link href="/fasteners/iso4762-m6x20-a2">
+            M6 × 20 mm socket screw
+          </Link>{" "}
+          · <Link href="/fasteners/din934-m6-a2">M6 nut</Link> ·{" "}
+          <Link href="/fasteners/din125-m6-a2">M6 washer</Link> ·{" "}
+          <Link href="/fasteners/helicoil-plus-m6-1.5d-4130">
+            M6 HELICOIL insert
+          </Link>
+        </p>
+        <p className="muted">
+          Metric launch coverage. Models are nominal layout references with
+          declared simplifications. Your CAD environment handles import and
+          placement.
+        </p>
+      </section>
+    </main>
   );
 }

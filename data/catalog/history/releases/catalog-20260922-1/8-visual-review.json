@@ -1,0 +1,193 @@
+{
+  "schema_version": "fastener-mcp.v2",
+  "reviewed_at": "2026-09-22T03:04:34.898138Z",
+  "reviewer": "Codex visual review of dual-angle tessellations from reopened STEP",
+  "items": [
+    {
+      "id": "iso4762-m6x10-a2-simplified",
+      "status": "passed",
+      "preview_sha256": "b0a61653ede5194a0f42a31f07b1f32f5ea6079738d1ac48a200f9b91e246c59",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "iso4762-m6x10-a2-detailed",
+      "status": "passed",
+      "preview_sha256": "1984e70675b5f4595b0dc3a511dc5bb37d3fd27d4e543e54c4aacad1ca19e61f",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "iso4762-m6x12-a2-simplified",
+      "status": "passed",
+      "preview_sha256": "7115ad9daf86a8691a8dd2cfeb59386e3ce4b4a72203e67f1cbec939855fd713",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "iso4762-m6x12-a2-detailed",
+      "status": "passed",
+      "preview_sha256": "04168b2bcc0b8b7bec14189f5be536ebc789345ddcc1e1e1f99dc9a27c49dd3e",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "iso4762-m6x16-a2-simplified",
+      "status": "passed",
+      "preview_sha256": "5b6a0efd143786e2435bf581a65037f7a1f30399690ad93c56dd232b416595fa",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "iso4762-m6x20-a2-simplified",
+      "status": "passed",
+      "preview_sha256": "bd7f2c77338423073f508e9d35ba6e756dcc8f28302a4d55f1043708865c4a4a",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "iso4762-m6x25-a2-simplified",
+      "status": "passed",
+      "preview_sha256": "fb921c59be44694b0c7a08bbdf7d22dc0db1b620c05d3b4ebe823489a675f2a3",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "iso4762-m3x12-reference-simplified",
+      "status": "passed",
+      "preview_sha256": "1873b775d2aef71e996ff2438c0c2d152429ca8b662f789011e57d317ef30a36",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "iso4762-m3x12-reference-detailed",
+      "status": "passed",
+      "preview_sha256": "b9593dd0fe74c9022563bf9a18c30022e7da111814ab71245aee491d1df3adf4",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "iso4762-m4x12-reference-simplified",
+      "status": "passed",
+      "preview_sha256": "38183035da31c814edb9e7cb8c6c8222621a80ce82a61cccdb6dc8e983e90863",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "iso4762-m4x12-reference-detailed",
+      "status": "passed",
+      "preview_sha256": "1765a21583b776dc39e8e766e46cc7308072b12216929a288da32faae96f766c",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "din933-m3x20-reference-simplified",
+      "status": "passed",
+      "preview_sha256": "442ed574761f2e59d8fabed09111121120c51d2665738bc6b2e33c1e22f89743",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "din933-m4x20-reference-simplified",
+      "status": "passed",
+      "preview_sha256": "84a426d263b57c9028f4fa716e2b42e0105ca775de5aa9cc8b3234ef4ce45002",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "din933-m5x20-reference-simplified",
+      "status": "passed",
+      "preview_sha256": "dec2b441a8a576c6cd68a7dc0790484c59e80bb7532cde60f3f5c47f8f6ab921",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "din933-m6x20-reference-simplified",
+      "status": "passed",
+      "preview_sha256": "a53978aa40cb5fe0821d26d51489208b216df227cebe4052d7a1ad03674d0b38",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "din7991-m3x20-reference-simplified",
+      "status": "passed",
+      "preview_sha256": "8aa5d53d4354e4b1941798d2d6eb53b3c1fba94eaf59403fdd9b8728058936be",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "din7991-m4x20-reference-simplified",
+      "status": "passed",
+      "preview_sha256": "d80111b480d4a65e068dd02447b5793793561a5bf6c3af78108d8c74d64807bf",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "din7991-m5x20-reference-simplified",
+      "status": "passed",
+      "preview_sha256": "3acdf8a1926ffd8f90987a6e6430d7358cd76867a0576c3dceda409e280c0aca",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "din7991-m6x20-reference-simplified",
+      "status": "passed",
+      "preview_sha256": "c9371639fb9aeaa97312a0bc94701dff74e562005fd55d00aeee2076c45b9107",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "din934-m3-a2-simplified",
+      "status": "passed",
+      "preview_sha256": "549b6fe704def8240773ba9c7a9ad330cc952dbd999b08b87aac52484b95a64f",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "din934-m4-a2-simplified",
+      "status": "passed",
+      "preview_sha256": "2132af4532633822da8548e6030cf4c88d4db6c9aa7b4134ddc2aefac0aeb15b",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "din934-m5-a2-simplified",
+      "status": "passed",
+      "preview_sha256": "1e592790136ebd5d5efe4409e00f8fa68b44aa0eb6717aad72d1bdf11608d7c0",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "din934-m6-a2-simplified",
+      "status": "passed",
+      "preview_sha256": "ee38738343af197430b514d0276df481809e84ea2876f5e5aa7c1b7bd81bd488",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "din125-m3-a2-simplified",
+      "status": "passed",
+      "preview_sha256": "76efb7883ff3b208eeb3ed1270e7fd46480dbe32a4f364828a699534caa2d4c4",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "din125-m4-a2-simplified",
+      "status": "passed",
+      "preview_sha256": "1c2984c9b55f0161ed9b51a258134fb8c2d656f09a3d3b3b0bf5693564dcbe27",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "din125-m5-a2-simplified",
+      "status": "passed",
+      "preview_sha256": "55312a8fded90a8aa96a4176d6d48cdbc89e69eba3bf8c3e360ac50a8b146d4f",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "din125-m6-a2-simplified",
+      "status": "passed",
+      "preview_sha256": "8a7aaa5889f9eaadaed141d122b6a9b7d7195405e0de2a124be3a4f19b83aecb",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "helicoil-plus-m3-1.5d-4130-simplified",
+      "status": "passed",
+      "preview_sha256": "a8345c67cb34da55bc19780d0c78577d92095b9aafff0a14ccd3d77274558b02",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "helicoil-plus-m4-1.5d-4130-simplified",
+      "status": "passed",
+      "preview_sha256": "52109d0403fe056d27865baf15ac0123ca1f1946439f6e51480408bf6b249754",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "helicoil-plus-m5-1.5d-4130-simplified",
+      "status": "passed",
+      "preview_sha256": "e92606d52bbba91cc9ee9ddac90082f7b1a3e0ee53380af96d71b5ca0f8fa838",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    },
+    {
+      "id": "helicoil-plus-m6-1.5d-4130-simplified",
+      "status": "passed",
+      "preview_sha256": "9a7651a7b93559702c0cc7894ad9b3666e4a70ec62fcc04465cf30cad7126e3d",
+      "notes": "Two views checked: proportions, origin-side head/seat, open bores or recessed drives where represented. Declared simplifications retained."
+    }
+  ]
+}

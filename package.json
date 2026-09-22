@@ -1,12 +1,23 @@
 {
-  "name": "tmp-scaffold",
-  "version": "0.1.0",
+  "name": "fastener-mcp",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "catalog:validate": "tsx scripts/catalog/validate.ts",
+    "catalog:release": "tsx scripts/catalog/release.ts",
+    "offers:refresh": "tsx scripts/suppliers/refresh.ts",
+    "test": "NODE_ENV=test tsx --test tests/*.test.ts",
+    "test:client": "tsx scripts/verify-client.ts",
+    "typecheck": "next typegen && tsc --noEmit",
+    "geometry:build": ".venv-cadquery/bin/python scripts/geometry/build.py",
+    "test:geometry": ".venv-cadquery/bin/python tests/geometry_cache.py",
+    "geometry:verify": ".venv-cadquery/bin/python scripts/geometry/build.py --verify",
+    "prebuild": "npm run catalog:validate",
+    "format": "prettier --write app lib components scripts/catalog/*.ts scripts/suppliers/*.ts tests/*.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",
@@ -30,6 +41,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.5",
+    "prettier": "^3.6.2",
     "tailwindcss": "^4",
     "tsx": "^4.23.13",
     "typescript": "^5"
