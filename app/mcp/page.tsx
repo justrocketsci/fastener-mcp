@@ -120,9 +120,12 @@ export default function MCPDocsPage() {
             <Card>
               <CardHeader>
                 <CardTitle>Available Tools</CardTitle>
-                <CardDescription>Four MCP tools wrapping existing REST APIs</CardDescription>
+                <CardDescription>Eight MCP tools for fastener catalog, installation, compatibility, and procurement</CardDescription>
               </CardHeader>
               <CardContent className="space-y-3 text-sm">
+                <div>
+                  <Badge variant="outline" className="mb-2">Core Catalog Tools</Badge>
+                </div>
                 <div>
                   <code className="font-semibold">search_fasteners</code>
                   <p className="text-muted-foreground mt-1">Search and filter fasteners by designation, family, diameter, material, standard</p>
@@ -139,6 +142,48 @@ export default function MCPDocsPage() {
                   <code className="font-semibold">get_placement_packet</code>
                   <p className="text-muted-foreground mt-1">Get CAD-agnostic placement packet with coordinate frame and honesty level (L1: insert-at-frame)</p>
                 </div>
+                <div className="pt-2">
+                  <Badge variant="outline" className="mb-2">Extended Catalog Tools</Badge>
+                </div>
+                <div>
+                  <code className="font-semibold">get_installation_requirements</code>
+                  <p className="text-muted-foreground mt-1">Read sourced installation requirements and required missing host/process context</p>
+                </div>
+                <div>
+                  <code className="font-semibold">get_compatible_parts</code>
+                  <p className="text-muted-foreground mt-1">Find checked nominal companion interfaces and unresolved assembly requirements</p>
+                </div>
+                <div>
+                  <code className="font-semibold">compare_supplier_offers</code>
+                  <p className="text-muted-foreground mt-1">Compare exact supplier variants for quantity, destination and currency. Partial costs never imply a delivered-cost winner.</p>
+                </div>
+                <div>
+                  <code className="font-semibold">build_parts_list</code>
+                  <p className="text-muted-foreground mt-1">Aggregate explicit part revisions and quantities into JSON and escaped CSV. No purchasing.</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-amber-200 bg-amber-50 dark:bg-amber-950 dark:border-amber-800">
+              <CardHeader>
+                <CardTitle>Supplier Offer Honesty</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3 text-sm">
+                <p>
+                  <Badge variant="outline" className="mr-2">HONEST PRICING</Badge>
+                  The <code className="bg-muted px-1 py-0.5 rounded text-xs">compare_supplier_offers</code> tool follows strict honesty rules:
+                </p>
+                <ul className="list-disc list-inside space-y-1 ml-4">
+                  <li>Only compares supplier offers with explicitly fetched data (snapshot)</li>
+                  <li>Never invents or infers shipping, tax, duty, or stock levels</li>
+                  <li>Does NOT declare a delivered-cost winner when shipping/tax/duty/stock is missing</li>
+                  <li>Returns partial cost breakdowns with clear unavailable markers</li>
+                  <li>Prices are time-stamped snapshots; check evidence URLs for currency</li>
+                </ul>
+                <p className="text-muted-foreground pt-2 border-t border-amber-200 dark:border-amber-800">
+                  Extended tools currently cover 27 metric fasteners (M3-M6 bolts, nuts, washers, helicoils). 
+                  For parts without installation/offer data, tools return structured unavailable responses.
+                </p>
               </CardContent>
             </Card>
 
@@ -500,13 +545,25 @@ export default function MCPDocsPage() {
                 <p>
                   MCP tools wrap these existing REST endpoints. You can call them directly without MCP:
                 </p>
-                <ul className="list-disc list-inside space-y-1 ml-4">
-                  <li><code>GET /api/fasteners</code> — Search/list</li>
-                  <li><code>GET /api/fasteners/:id</code> — Detail</li>
-                  <li><code>GET /api/fasteners/:id/model</code> — 3D STEP URL</li>
-                  <li><code>GET /api/fasteners/:id/placement</code> — Placement packet</li>
-                  <li><code>POST /api/recommend</code> — Recommendations</li>
-                </ul>
+                <div>
+                  <Badge variant="outline" className="mb-2">Core Endpoints</Badge>
+                  <ul className="list-disc list-inside space-y-1 ml-4 mt-2">
+                    <li><code>GET /api/fasteners</code> — Search/list</li>
+                    <li><code>GET /api/fasteners/:id</code> — Detail</li>
+                    <li><code>GET /api/fasteners/:id/model</code> — 3D STEP URL</li>
+                    <li><code>GET /api/fasteners/:id/placement</code> — Placement packet</li>
+                    <li><code>POST /api/recommend</code> — Recommendations</li>
+                  </ul>
+                </div>
+                <div className="pt-2">
+                  <Badge variant="outline" className="mb-2">Extended Endpoints</Badge>
+                  <ul className="list-disc list-inside space-y-1 ml-4 mt-2">
+                    <li><code>GET /api/fasteners/:id/installation</code> — Installation requirements</li>
+                    <li><code>POST /api/compatibility</code> — Compatible parts</li>
+                    <li><code>POST /api/offers/compare</code> — Supplier offers comparison</li>
+                    <li><code>POST /api/bom</code> — Build parts list</li>
+                  </ul>
+                </div>
               </CardContent>
             </Card>
           </div>
