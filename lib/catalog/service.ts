@@ -497,6 +497,18 @@ export function compatible(raw: z.input<typeof compatibilityInput>) {
           p.thread.class === c.thread_class);
       if (!knownClass)
         unresolved.push("Requested thread class is not established");
+      const unknownHost = Boolean(c?.host_material);
+      if (unknownHost)
+        unresolved.push(
+          "Requested host-material suitability is not established by the nominal interface checks",
+        );
+      const incompleteEngagement =
+        (c?.stack_thickness_mm !== undefined) !==
+        (c?.minimum_engagement_mm !== undefined);
+      if (incompleteEngagement)
+        unresolved.push(
+          "Both stack thickness and minimum engagement are required for a length-budget check",
+        );
       if (
         c?.stack_thickness_mm !== undefined &&
         c.minimum_engagement_mm !== undefined
@@ -522,7 +534,7 @@ export function compatible(raw: z.input<typeof compatibilityInput>) {
         relationship: r.relationship,
         status: conflicts.length
           ? "incompatible"
-          : !knownClass || stale
+          : !knownClass || stale || unknownHost || incompleteEngagement
             ? "insufficient_information"
             : "compatible_for_stated_constraints",
         checked_attributes: r.checked_attributes,

@@ -285,6 +285,18 @@ test("A09 companion matches and engagement constraints remain conditional", () =
       (c) => c.status === "insufficient_information",
     ),
   );
+  assert(
+    compatible({
+      id,
+      constraints: { host_material: "6061 aluminum" },
+    }).candidates.every((c) => c.status === "insufficient_information"),
+  );
+  assert(
+    compatible({
+      id,
+      constraints: { stack_thickness_mm: 18 },
+    }).candidates.every((c) => c.status === "insufficient_information"),
+  );
 });
 test("A10 insertion instructions require host context and preserve sourced quantities", () => {
   const r = getInstallation({ id: "helicoil-plus-m6-1.5d-4130" });
