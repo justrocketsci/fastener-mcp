@@ -1,0 +1,43 @@
+name: Validate catalog and portable CAD
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.13'
+      - name: Install pinned dependencies
+        run: |
+          npm ci
+          python -m venv .venv-cadquery
+          .venv-cadquery/bin/pip install -r scripts/geometry/requirements-lock.txt
+      - run: npm run catalog:validate
+      - run: npm run typecheck
+      - run: npm run lint -- --max-warnings=0
+      - run: npm test
+      - run: npm run test:geometry
+      - run: npm run geometry:verify
+      - run: npm run build
+        env:
+          PUBLIC_ASSET_ORIGIN: http://localhost:3100
+      - name: Real SDK download and CAD consumer
+        run: |
+          npm start -- -p 3100 > /tmp/fastener-next.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          for attempt in $(seq 1 30); do
+            if curl -fsS http://localhost:3100/api/catalog/status > /dev/null; then break; fi
+            sleep 1
+          done
+          npm run test:client
+        env:
+          PUBLIC_ASSET_ORIGIN: http://localhost:3100

@@ -1,0 +1,5 @@
+# Published CAD files are immutable byte artifacts; never normalize or text-merge them.
+*.step binary
+*.stp binary
+public/models/**/*.step linguist-generated=true
+public/models/**/*.png linguist-generated=true

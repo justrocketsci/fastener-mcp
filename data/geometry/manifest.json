@@ -1,0 +1,3012 @@
+{
+  "schema_version": "fastener-mcp.v2",
+  "items": [
+    {
+      "id": "iso4762-m6x10-a2-simplified",
+      "version": "v1-ae7f61e62b00",
+      "parts": [
+        {
+          "id": "iso4762-m6x10-a2",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "socket_screw",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "11068c5c53b058cde97a6a48efc40611eea312f20f7d218cfeae759d1c5d4668",
+      "build_key": "ae7f61e62b00f279c43a57912e09d50a81da3280016d772a2e0e255e98b4e9cc",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/iso4762-m6x10-a2-simplified/v1-ae7f61e62b00/model.step",
+      "bytes": 9669,
+      "sha256": "53b247eb57ebea55368afc3fd731b8f90c62939743e678be40845c7fb44ef2ef",
+      "preview_paths": [
+        "/models/iso4762-m6x10-a2-simplified/v1-ae7f61e62b00/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -5.0,
+          -5.0,
+          -6.0
+        ],
+        "max": [
+          5.0,
+          5.0,
+          10.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "head_bearing_face",
+        "positive_z": "Shank extends +Z; head extends -Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "head_bearing_face": 0,
+          "minimum_z": -6,
+          "maximum_z": 10
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/iso4762-m6x10-a2-simplified/v1-ae7f61e62b00/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "shank diameter X",
+          "shank diameter Y",
+          "head diameter X",
+          "head diameter Y",
+          "head/shank continuity at origin"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "diameter",
+        "length",
+        "head_diameter",
+        "head_height"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets",
+        "Hex socket recess"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "iso4762-m6x10-a2-detailed",
+      "version": "v1-ec3410d9df4d",
+      "parts": [
+        {
+          "id": "iso4762-m6x10-a2",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "socket_screw",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "11068c5c53b058cde97a6a48efc40611eea312f20f7d218cfeae759d1c5d4668",
+      "build_key": "ec3410d9df4d35bec790c2de66c3e748104736ea4bb1069e44d99210bbad5836",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "detailed",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/iso4762-m6x10-a2-detailed/v1-ec3410d9df4d/model.step",
+      "bytes": 32699,
+      "sha256": "0f916c7944cd6611981eebe4a1641d4c7d18f9ffca6ac05829e9147fdf8afaf0",
+      "preview_paths": [
+        "/models/iso4762-m6x10-a2-detailed/v1-ec3410d9df4d/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -5.0,
+          -5.0,
+          -6.0
+        ],
+        "max": [
+          5.0,
+          5.0,
+          10.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "head_bearing_face",
+        "positive_z": "Shank extends +Z; head extends -Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "head_bearing_face": 0,
+          "minimum_z": -6,
+          "maximum_z": 10
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/iso4762-m6x10-a2-detailed/v1-ec3410d9df4d/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "shank diameter X",
+          "shank diameter Y",
+          "head diameter X",
+          "head diameter Y",
+          "head/shank continuity at origin",
+          "socket across flats",
+          "socket open at head top; sourced recess depth and solid floor"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "diameter",
+        "length",
+        "head_diameter",
+        "head_height",
+        "drive_af",
+        "drive_depth"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "iso4762-m6x12-a2-simplified",
+      "version": "v1-d4848a2aaa57",
+      "parts": [
+        {
+          "id": "iso4762-m6x12-a2",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "socket_screw",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "65e14f3a02db0964558bd4aca664c12fe4a7746df100a9e9a7b58fb34e7f7977",
+      "build_key": "d4848a2aaa579a5f7ca04c953b68b7af516f51d0b22d3d3454a8aa58e46b6808",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/iso4762-m6x12-a2-simplified/v1-d4848a2aaa57/model.step",
+      "bytes": 9669,
+      "sha256": "2e347d73bcf7ab0f3c68ce7c6cf7c210c3d2aaec01f5ffaf98f922b5707a2b71",
+      "preview_paths": [
+        "/models/iso4762-m6x12-a2-simplified/v1-d4848a2aaa57/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -5.0,
+          -5.0,
+          -6.0
+        ],
+        "max": [
+          5.0,
+          5.0,
+          12.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "head_bearing_face",
+        "positive_z": "Shank extends +Z; head extends -Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "head_bearing_face": 0,
+          "minimum_z": -6,
+          "maximum_z": 12
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/iso4762-m6x12-a2-simplified/v1-d4848a2aaa57/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "shank diameter X",
+          "shank diameter Y",
+          "head diameter X",
+          "head diameter Y",
+          "head/shank continuity at origin"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "diameter",
+        "length",
+        "head_diameter",
+        "head_height"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets",
+        "Hex socket recess"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "iso4762-m6x12-a2-detailed",
+      "version": "v1-ff9e04307cb5",
+      "parts": [
+        {
+          "id": "iso4762-m6x12-a2",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "socket_screw",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "65e14f3a02db0964558bd4aca664c12fe4a7746df100a9e9a7b58fb34e7f7977",
+      "build_key": "ff9e04307cb57d2c64db0e84750592cbe0b0da113185ed541fe59be94b33c161",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "detailed",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/iso4762-m6x12-a2-detailed/v1-ff9e04307cb5/model.step",
+      "bytes": 32699,
+      "sha256": "c9b0ee5cea6ae6c559041b4c4308a3ffe0720424fc6a5fe8cdb90624fb498109",
+      "preview_paths": [
+        "/models/iso4762-m6x12-a2-detailed/v1-ff9e04307cb5/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -5.0,
+          -5.0,
+          -6.0
+        ],
+        "max": [
+          5.0,
+          5.0,
+          12.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "head_bearing_face",
+        "positive_z": "Shank extends +Z; head extends -Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "head_bearing_face": 0,
+          "minimum_z": -6,
+          "maximum_z": 12
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/iso4762-m6x12-a2-detailed/v1-ff9e04307cb5/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "shank diameter X",
+          "shank diameter Y",
+          "head diameter X",
+          "head diameter Y",
+          "head/shank continuity at origin",
+          "socket across flats",
+          "socket open at head top; sourced recess depth and solid floor"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "diameter",
+        "length",
+        "head_diameter",
+        "head_height",
+        "drive_af",
+        "drive_depth"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "iso4762-m6x16-a2-simplified",
+      "version": "v1-019f02e58eb5",
+      "parts": [
+        {
+          "id": "iso4762-m6x16-a2",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "socket_screw",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "2dc6bab61afa4154d3064c9954049090f6ca794aa0889639719d1984cc2022d7",
+      "build_key": "019f02e58eb5672fd50966dda8446bf4512975d9cc1f18a92adf4bef6106c777",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/iso4762-m6x16-a2-simplified/v1-019f02e58eb5/model.step",
+      "bytes": 9669,
+      "sha256": "dc3f2ebd35e2f33ecf8fb963da5313e984c3d4c0c5d416086f938bf407f457fc",
+      "preview_paths": [
+        "/models/iso4762-m6x16-a2-simplified/v1-019f02e58eb5/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -5.0,
+          -5.0,
+          -6.0
+        ],
+        "max": [
+          5.0,
+          5.0,
+          16.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "head_bearing_face",
+        "positive_z": "Shank extends +Z; head extends -Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "head_bearing_face": 0,
+          "minimum_z": -6,
+          "maximum_z": 16
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/iso4762-m6x16-a2-simplified/v1-019f02e58eb5/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "shank diameter X",
+          "shank diameter Y",
+          "head diameter X",
+          "head diameter Y",
+          "head/shank continuity at origin"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "diameter",
+        "length",
+        "head_diameter",
+        "head_height"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets",
+        "Hex socket recess"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "iso4762-m6x20-a2-simplified",
+      "version": "v1-7b5b7ccab7ff",
+      "parts": [
+        {
+          "id": "iso4762-m6x20-a2",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "socket_screw",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "cdd50ce5d6022c4464d6a382e374d8ee314bcfbf03a861306a78294489fa685a",
+      "build_key": "7b5b7ccab7ff2e32af1c8409ce10c73bc9d24ac384678a9ded321d63dde559dd",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/iso4762-m6x20-a2-simplified/v1-7b5b7ccab7ff/model.step",
+      "bytes": 9669,
+      "sha256": "dded6d79fdcc8e18e4afbbdd5cdddeea363a655fe2d0c6de6be98a46d646c20a",
+      "preview_paths": [
+        "/models/iso4762-m6x20-a2-simplified/v1-7b5b7ccab7ff/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -5.0,
+          -5.0,
+          -6.0
+        ],
+        "max": [
+          5.0,
+          5.0,
+          20.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "head_bearing_face",
+        "positive_z": "Shank extends +Z; head extends -Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "head_bearing_face": 0,
+          "minimum_z": -6,
+          "maximum_z": 20
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/iso4762-m6x20-a2-simplified/v1-7b5b7ccab7ff/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "shank diameter X",
+          "shank diameter Y",
+          "head diameter X",
+          "head diameter Y",
+          "head/shank continuity at origin"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "diameter",
+        "length",
+        "head_diameter",
+        "head_height"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets",
+        "Hex socket recess"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "iso4762-m6x25-a2-simplified",
+      "version": "v1-c0840fac62dc",
+      "parts": [
+        {
+          "id": "iso4762-m6x25-a2",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "socket_screw",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "01711c16baa7103f6d8e3df2eda8b31c59e6359ed436409b6bfc7bf01e691c90",
+      "build_key": "c0840fac62dc1e3e55932088ea7c95c48c6c8bd719a63264b207c3f4de38027e",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/iso4762-m6x25-a2-simplified/v1-c0840fac62dc/model.step",
+      "bytes": 9669,
+      "sha256": "87b99307e95b5b458683473f4e70995938280971d2eb6062470d71b3413bb8c0",
+      "preview_paths": [
+        "/models/iso4762-m6x25-a2-simplified/v1-c0840fac62dc/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -5.0,
+          -5.0,
+          -6.0
+        ],
+        "max": [
+          5.0,
+          5.0,
+          25.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "head_bearing_face",
+        "positive_z": "Shank extends +Z; head extends -Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "head_bearing_face": 0,
+          "minimum_z": -6,
+          "maximum_z": 25
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/iso4762-m6x25-a2-simplified/v1-c0840fac62dc/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "shank diameter X",
+          "shank diameter Y",
+          "head diameter X",
+          "head diameter Y",
+          "head/shank continuity at origin"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "diameter",
+        "length",
+        "head_diameter",
+        "head_height"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets",
+        "Hex socket recess"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "iso4762-m3x12-reference-simplified",
+      "version": "v1-c502c14e95de",
+      "parts": [
+        {
+          "id": "iso4762-m3x12-reference",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "socket_screw",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "2fd3c6e94969ff5964f495d6309c5949bd043290807d865e64180ec37a6956b0",
+      "build_key": "c502c14e95dee30ab84ba25775781ab73278b082e1272a4881548b61a723ed6a",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/iso4762-m3x12-reference-simplified/v1-c502c14e95de/model.step",
+      "bytes": 9693,
+      "sha256": "e9315fbf0d18695108af03baa686cc573d1c1cab5d2d570cbbcd5d0b98e5f48b",
+      "preview_paths": [
+        "/models/iso4762-m3x12-reference-simplified/v1-c502c14e95de/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -2.75,
+          -2.75,
+          -3.0
+        ],
+        "max": [
+          2.75,
+          2.75,
+          12.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "head_bearing_face",
+        "positive_z": "Shank extends +Z; head extends -Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "head_bearing_face": 0,
+          "minimum_z": -3,
+          "maximum_z": 12
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/iso4762-m3x12-reference-simplified/v1-c502c14e95de/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "shank diameter X",
+          "shank diameter Y",
+          "head diameter X",
+          "head diameter Y",
+          "head/shank continuity at origin"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "diameter",
+        "length",
+        "head_diameter",
+        "head_height"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets",
+        "Hex socket recess"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "iso4762-m3x12-reference-detailed",
+      "version": "v1-a60cdecf4d34",
+      "parts": [
+        {
+          "id": "iso4762-m3x12-reference",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "socket_screw",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "2fd3c6e94969ff5964f495d6309c5949bd043290807d865e64180ec37a6956b0",
+      "build_key": "a60cdecf4d34ef402eea67914ef71e0604be952a60225e7f209a2c895f2d7f93",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "detailed",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/iso4762-m3x12-reference-detailed/v1-a60cdecf4d34/model.step",
+      "bytes": 32922,
+      "sha256": "707cb94a849868c21e06e92018f6cbb3da560487f3dd9563a32e585098b48f53",
+      "preview_paths": [
+        "/models/iso4762-m3x12-reference-detailed/v1-a60cdecf4d34/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -2.75,
+          -2.75,
+          -3.0
+        ],
+        "max": [
+          2.75,
+          2.75,
+          12.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "head_bearing_face",
+        "positive_z": "Shank extends +Z; head extends -Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "head_bearing_face": 0,
+          "minimum_z": -3,
+          "maximum_z": 12
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/iso4762-m3x12-reference-detailed/v1-a60cdecf4d34/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "shank diameter X",
+          "shank diameter Y",
+          "head diameter X",
+          "head diameter Y",
+          "head/shank continuity at origin",
+          "socket across flats",
+          "socket open at head top; sourced recess depth and solid floor"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "diameter",
+        "length",
+        "head_diameter",
+        "head_height",
+        "drive_af",
+        "drive_depth"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "iso4762-m4x12-reference-simplified",
+      "version": "v1-5051195fe938",
+      "parts": [
+        {
+          "id": "iso4762-m4x12-reference",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "socket_screw",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "f22b43faa4b0d72c37d076e22e24ac209c2e69210b0fa98eb39c9eacdb4a67a6",
+      "build_key": "5051195fe938e3a8e4c724f94c074dbf906582b2cbe77c1ddbd0b1dabbdcbd05",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/iso4762-m4x12-reference-simplified/v1-5051195fe938/model.step",
+      "bytes": 9672,
+      "sha256": "b6a7d3ce1a35bd9de5fb981c5f61bc0b3b1894c9ac38f97c64cfec556a9c3b48",
+      "preview_paths": [
+        "/models/iso4762-m4x12-reference-simplified/v1-5051195fe938/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -3.5,
+          -3.5,
+          -4.0
+        ],
+        "max": [
+          3.5,
+          3.5,
+          12.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "head_bearing_face",
+        "positive_z": "Shank extends +Z; head extends -Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "head_bearing_face": 0,
+          "minimum_z": -4,
+          "maximum_z": 12
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/iso4762-m4x12-reference-simplified/v1-5051195fe938/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "shank diameter X",
+          "shank diameter Y",
+          "head diameter X",
+          "head diameter Y",
+          "head/shank continuity at origin"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "diameter",
+        "length",
+        "head_diameter",
+        "head_height"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets",
+        "Hex socket recess"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "iso4762-m4x12-reference-detailed",
+      "version": "v1-543ad8b7e446",
+      "parts": [
+        {
+          "id": "iso4762-m4x12-reference",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "socket_screw",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "f22b43faa4b0d72c37d076e22e24ac209c2e69210b0fa98eb39c9eacdb4a67a6",
+      "build_key": "543ad8b7e446ff24cf78c8d9d37ddc3d9a59d1744b08a860fc3f53b8cf721cfb",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "detailed",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/iso4762-m4x12-reference-detailed/v1-543ad8b7e446/model.step",
+      "bytes": 32702,
+      "sha256": "62ce0ac86d9951eae9e1a1b1336b20351aae40747108e14657993015ee427036",
+      "preview_paths": [
+        "/models/iso4762-m4x12-reference-detailed/v1-543ad8b7e446/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -3.5,
+          -3.5,
+          -4.0
+        ],
+        "max": [
+          3.5,
+          3.5,
+          12.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "head_bearing_face",
+        "positive_z": "Shank extends +Z; head extends -Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "head_bearing_face": 0,
+          "minimum_z": -4,
+          "maximum_z": 12
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/iso4762-m4x12-reference-detailed/v1-543ad8b7e446/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "shank diameter X",
+          "shank diameter Y",
+          "head diameter X",
+          "head diameter Y",
+          "head/shank continuity at origin",
+          "socket across flats",
+          "socket open at head top; sourced recess depth and solid floor"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "diameter",
+        "length",
+        "head_diameter",
+        "head_height",
+        "drive_af",
+        "drive_depth"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "din933-m3x20-reference-simplified",
+      "version": "v1-a8fa53d2f70e",
+      "parts": [
+        {
+          "id": "din933-m3x20-reference",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "hex_bolt",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "1f8c33c5cd04e468569e09af4af8cc75920b4b7a3a5ac8987ecc8deea914550e",
+      "build_key": "a8fa53d2f70eaf802d44665df3919cada335fc464c7f17adcb5527f52e14aa29",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/din933-m3x20-reference-simplified/v1-a8fa53d2f70e/model.step",
+      "bytes": 27467,
+      "sha256": "039576db0838626333e7ca609b0567a1fd62c02c6faf8986bde6377251288223",
+      "preview_paths": [
+        "/models/din933-m3x20-reference-simplified/v1-a8fa53d2f70e/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -3.175426480543206,
+          -2.750000000000002,
+          -2.0
+        ],
+        "max": [
+          3.1754264805432064,
+          2.7500000000000004,
+          20.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "head_bearing_face",
+        "positive_z": "Shank extends +Z; head extends -Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "head_bearing_face": 0,
+          "minimum_z": -2,
+          "maximum_z": 20
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/din933-m3x20-reference-simplified/v1-a8fa53d2f70e/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "shank diameter X",
+          "shank diameter Y",
+          "hex head across flats",
+          "head/shank continuity at origin"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "diameter",
+        "length",
+        "head_height",
+        "head_af"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "din933-m4x20-reference-simplified",
+      "version": "v1-cedb46f11014",
+      "parts": [
+        {
+          "id": "din933-m4x20-reference",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "hex_bolt",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "7a1235a5b61b70a110be4c5346642dcefa249ea5c79f6cf18e860519518e608c",
+      "build_key": "cedb46f110147923791bc8c6892f3a3c28f15f45e33df8726857ef4b7ab957cc",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/din933-m4x20-reference-simplified/v1-cedb46f11014/model.step",
+      "bytes": 27461,
+      "sha256": "2a21d2d8576225b2e1dbb314f40d3637b6f41d19170c1dcf51c483473d6a8306",
+      "preview_paths": [
+        "/models/din933-m4x20-reference-simplified/v1-cedb46f11014/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -4.041451884328285,
+          -3.5000000000000027,
+          -2.8
+        ],
+        "max": [
+          4.041451884328286,
+          3.5000000000000004,
+          20.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "head_bearing_face",
+        "positive_z": "Shank extends +Z; head extends -Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "head_bearing_face": 0,
+          "minimum_z": -2.8,
+          "maximum_z": 20
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/din933-m4x20-reference-simplified/v1-cedb46f11014/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "shank diameter X",
+          "shank diameter Y",
+          "hex head across flats",
+          "head/shank continuity at origin"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "diameter",
+        "length",
+        "head_height",
+        "head_af"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "din933-m5x20-reference-simplified",
+      "version": "v1-d40ac0b440c2",
+      "parts": [
+        {
+          "id": "din933-m5x20-reference",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "hex_bolt",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "c67c0c6981848785445d09fbd8e5d5cde99853a3cdd02d19c59597c2cd0c01d1",
+      "build_key": "d40ac0b440c244766168ffcfd568f561db8c99b1b913ea4f80192027041321e1",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/din933-m5x20-reference-simplified/v1-d40ac0b440c2/model.step",
+      "bytes": 27433,
+      "sha256": "c794585a268414667639b24c4045d9ce4778fdbddabbe5c2d32271f2fd0d6774",
+      "preview_paths": [
+        "/models/din933-m5x20-reference-simplified/v1-d40ac0b440c2/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -4.618802153518255,
+          -4.0000000000000036,
+          -3.5
+        ],
+        "max": [
+          4.618802153518255,
+          4.000000000000001,
+          20.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "head_bearing_face",
+        "positive_z": "Shank extends +Z; head extends -Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "head_bearing_face": 0,
+          "minimum_z": -3.5,
+          "maximum_z": 20
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/din933-m5x20-reference-simplified/v1-d40ac0b440c2/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "shank diameter X",
+          "shank diameter Y",
+          "hex head across flats",
+          "head/shank continuity at origin"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "diameter",
+        "length",
+        "head_height",
+        "head_af"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "din933-m6x20-reference-simplified",
+      "version": "v1-15c0e2ad88c0",
+      "parts": [
+        {
+          "id": "din933-m6x20-reference",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "hex_bolt",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "3b7ef561ffd767b96259f21c3b18cae8ca22c3099822c680c836e30bd6394f3d",
+      "build_key": "15c0e2ad88c01374eb858559381879c90ea59e22e461566c0406d22347217ea6",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/din933-m6x20-reference-simplified/v1-15c0e2ad88c0/model.step",
+      "bytes": 27407,
+      "sha256": "5b32f82ae1bbe3c157d5bf164dbd176c0ed0219fba816df56091e3624a045265",
+      "preview_paths": [
+        "/models/din933-m6x20-reference-simplified/v1-15c0e2ad88c0/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -5.7735026918971935,
+          -5.0000000000000036,
+          -4.0
+        ],
+        "max": [
+          5.7735026918971935,
+          5.000000000000001,
+          20.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "head_bearing_face",
+        "positive_z": "Shank extends +Z; head extends -Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "head_bearing_face": 0,
+          "minimum_z": -4,
+          "maximum_z": 20
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/din933-m6x20-reference-simplified/v1-15c0e2ad88c0/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "shank diameter X",
+          "shank diameter Y",
+          "hex head across flats",
+          "head/shank continuity at origin"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "diameter",
+        "length",
+        "head_height",
+        "head_af"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "din7991-m3x20-reference-simplified",
+      "version": "v1-6c9cf7b8f119",
+      "parts": [
+        {
+          "id": "din7991-m3x20-reference",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "countersunk_screw",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "232092f03741e202b402dc8bc60f58148456c029384c7c3af133a84afb30d4ef",
+      "build_key": "6c9cf7b8f1193c52838d78ed6315ce3aa2b61606e281b2754ac3dd86d76c4ec9",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/din7991-m3x20-reference-simplified/v1-6c9cf7b8f119/model.step",
+      "bytes": 10785,
+      "sha256": "0556f642f9b717bd77d4294e94508883e623cba3de846aeaa5dbefbcd1271310",
+      "preview_paths": [
+        "/models/din7991-m3x20-reference-simplified/v1-6c9cf7b8f119/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -3.0,
+          -3.0,
+          0.0
+        ],
+        "max": [
+          3.0,
+          3.0,
+          20.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "flush_top_plane",
+        "positive_z": "Body extends +Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "flush_top_plane": 0,
+          "minimum_z": 0,
+          "maximum_z": 20
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/din7991-m3x20-reference-simplified/v1-6c9cf7b8f119/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "shank diameter X",
+          "shank diameter Y",
+          "countersink included angle",
+          "top head diameter X",
+          "top head diameter Y",
+          "head/shank continuity at origin"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "diameter",
+        "length",
+        "head_diameter",
+        "head_height",
+        "cone_angle"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets",
+        "Hex socket recess"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "din7991-m4x20-reference-simplified",
+      "version": "v1-5a68da016f8c",
+      "parts": [
+        {
+          "id": "din7991-m4x20-reference",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "countersunk_screw",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "2a0298f2aeafb864de4a0fb6ec6328c8d2e02b5ae5c8aab4731d0ee5f59148c3",
+      "build_key": "5a68da016f8c1a6c35a75f6d389813695527613075c521eda7c71c3b6dc71337",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/din7991-m4x20-reference-simplified/v1-5a68da016f8c/model.step",
+      "bytes": 10773,
+      "sha256": "7e687378c2ec6dc6680e918225a93be408d29dbded1bf441ece534bdca5547f6",
+      "preview_paths": [
+        "/models/din7991-m4x20-reference-simplified/v1-5a68da016f8c/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -4.0,
+          -4.0,
+          0.0
+        ],
+        "max": [
+          4.0,
+          4.0,
+          20.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "flush_top_plane",
+        "positive_z": "Body extends +Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "flush_top_plane": 0,
+          "minimum_z": 0,
+          "maximum_z": 20
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/din7991-m4x20-reference-simplified/v1-5a68da016f8c/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "shank diameter X",
+          "shank diameter Y",
+          "countersink included angle",
+          "top head diameter X",
+          "top head diameter Y",
+          "head/shank continuity at origin"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "diameter",
+        "length",
+        "head_diameter",
+        "head_height",
+        "cone_angle"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets",
+        "Hex socket recess"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "din7991-m5x20-reference-simplified",
+      "version": "v1-e01db58de03d",
+      "parts": [
+        {
+          "id": "din7991-m5x20-reference",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "countersunk_screw",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "ec909d296ba454f5362e190458fa4d99c8d863ed1aa8da20ffa2f4f2bd3c39cf",
+      "build_key": "e01db58de03d5e5640889c163074398bdc589a1c463393b421a628c46930b9d8",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/din7991-m5x20-reference-simplified/v1-e01db58de03d/model.step",
+      "bytes": 10784,
+      "sha256": "3ab507a5c95c50e518fddd31caebebb99094dea892ffdf08b6bedfa48ed27adb",
+      "preview_paths": [
+        "/models/din7991-m5x20-reference-simplified/v1-e01db58de03d/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -5.0,
+          -5.0,
+          0.0
+        ],
+        "max": [
+          5.0,
+          5.0,
+          20.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "flush_top_plane",
+        "positive_z": "Body extends +Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "flush_top_plane": 0,
+          "minimum_z": 0,
+          "maximum_z": 20
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/din7991-m5x20-reference-simplified/v1-e01db58de03d/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "shank diameter X",
+          "shank diameter Y",
+          "countersink included angle",
+          "top head diameter X",
+          "top head diameter Y",
+          "head/shank continuity at origin"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "diameter",
+        "length",
+        "head_diameter",
+        "head_height",
+        "cone_angle"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets",
+        "Hex socket recess"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "din7991-m6x20-reference-simplified",
+      "version": "v1-b0f13490b5e0",
+      "parts": [
+        {
+          "id": "din7991-m6x20-reference",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "countersunk_screw",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "7ef4435b52905b80a18fca2cd34329131f32b81aa37024ed836da03ac546b906",
+      "build_key": "b0f13490b5e0a9a83593b3308f4d746538f272580bf28fb13b701eca096860f9",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/din7991-m6x20-reference-simplified/v1-b0f13490b5e0/model.step",
+      "bytes": 10777,
+      "sha256": "a2750cab9a62d4a43fe075fcb9c5ebba2061d6fe3e65b9b8f2d97d05a9ffe52a",
+      "preview_paths": [
+        "/models/din7991-m6x20-reference-simplified/v1-b0f13490b5e0/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -6.0,
+          -6.0,
+          0.0
+        ],
+        "max": [
+          6.0,
+          6.0,
+          20.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "flush_top_plane",
+        "positive_z": "Body extends +Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "flush_top_plane": 0,
+          "minimum_z": 0,
+          "maximum_z": 20
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/din7991-m6x20-reference-simplified/v1-b0f13490b5e0/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "shank diameter X",
+          "shank diameter Y",
+          "countersink included angle",
+          "top head diameter X",
+          "top head diameter Y",
+          "head/shank continuity at origin"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "diameter",
+        "length",
+        "head_diameter",
+        "head_height",
+        "cone_angle"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets",
+        "Hex socket recess"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "din934-m3-a2-simplified",
+      "version": "v1-364a6d92fd28",
+      "parts": [
+        {
+          "id": "din934-m3-a2",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "hex_nut",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "120c3651e1f2ae75546f51c430e52a87ec727b1dd40fb48ec8ae093796572dc5",
+      "build_key": "364a6d92fd28dcaa12368f484071aa5439faa8078e08e3b4521eab43877810f0",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/din934-m3-a2-simplified/v1-364a6d92fd28/model.step",
+      "bytes": 28356,
+      "sha256": "664d28578cab8f1eaa88d9cbd6d47e7e454338680bf9eb10e78e21ad3f69f252",
+      "preview_paths": [
+        "/models/din934-m3-a2-simplified/v1-364a6d92fd28/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -3.175426480543206,
+          -2.750000000000002,
+          0.0
+        ],
+        "max": [
+          3.1754264805432064,
+          2.7500000000000004,
+          2.4
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "lower_seating_face",
+        "positive_z": "Body extends +Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "lower_seating_face": 0,
+          "minimum_z": 0,
+          "maximum_z": 2.4
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/din934-m3-a2-simplified/v1-364a6d92fd28/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "open bore diameter",
+          "open bore diameter",
+          "open bore diameter",
+          "nut across flats",
+          "open axial bore through three independent sections"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "width_af",
+        "thickness",
+        "bore_diameter"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "din934-m4-a2-simplified",
+      "version": "v1-0bab91a93181",
+      "parts": [
+        {
+          "id": "din934-m4-a2",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "hex_nut",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "a735b195d82982d98d625308865e65947f03cca8f7faec118f4e6bbd9674e3a2",
+      "build_key": "0bab91a93181c98fa08bf5c6985e00e7f10d937ff50a6e31ca4474a0033312d5",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/din934-m4-a2-simplified/v1-0bab91a93181/model.step",
+      "bytes": 28302,
+      "sha256": "86ac35fe36ce85f10db6f241c558dace401c2dfd57e6a85131cac3e2a59e2ea7",
+      "preview_paths": [
+        "/models/din934-m4-a2-simplified/v1-0bab91a93181/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -4.041451884328285,
+          -3.5000000000000027,
+          0.0
+        ],
+        "max": [
+          4.041451884328286,
+          3.5000000000000004,
+          3.2
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "lower_seating_face",
+        "positive_z": "Body extends +Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "lower_seating_face": 0,
+          "minimum_z": 0,
+          "maximum_z": 3.2
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/din934-m4-a2-simplified/v1-0bab91a93181/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "open bore diameter",
+          "open bore diameter",
+          "open bore diameter",
+          "nut across flats",
+          "open axial bore through three independent sections"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "width_af",
+        "thickness",
+        "bore_diameter"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "din934-m5-a2-simplified",
+      "version": "v1-a2a6bdd2eaed",
+      "parts": [
+        {
+          "id": "din934-m5-a2",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "hex_nut",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "8ae1bf1698edce3ef1a6eff8cd1babafb985b5536e5ab7e63e2669f0e6f0aaa2",
+      "build_key": "a2a6bdd2eaed118c4c5ff18b1f226d77ac90fec59aac2cc0d7a57da7c583afff",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/din934-m5-a2-simplified/v1-a2a6bdd2eaed/model.step",
+      "bytes": 28264,
+      "sha256": "259d0136f808973145fdd9adee8d3a7ee64c9549bc8ef30f22b9acafc251f89c",
+      "preview_paths": [
+        "/models/din934-m5-a2-simplified/v1-a2a6bdd2eaed/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -4.618802153518255,
+          -4.0000000000000036,
+          0.0
+        ],
+        "max": [
+          4.618802153518255,
+          4.000000000000001,
+          4.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "lower_seating_face",
+        "positive_z": "Body extends +Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "lower_seating_face": 0,
+          "minimum_z": 0,
+          "maximum_z": 4
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/din934-m5-a2-simplified/v1-a2a6bdd2eaed/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "open bore diameter",
+          "open bore diameter",
+          "open bore diameter",
+          "nut across flats",
+          "open axial bore through three independent sections"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "width_af",
+        "thickness",
+        "bore_diameter"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "din934-m6-a2-simplified",
+      "version": "v1-b8a70cb457a5",
+      "parts": [
+        {
+          "id": "din934-m6-a2",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "hex_nut",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "2111e66629b16f9eb88e44b3a1d83c2e454b8b4b627ed1bb126a9e4a7c82a6c1",
+      "build_key": "b8a70cb457a54571bf85cbbdb4dbbc8134346c262d8826be00f5fbff77af99b9",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/din934-m6-a2-simplified/v1-b8a70cb457a5/model.step",
+      "bytes": 28260,
+      "sha256": "4f7b4ad560361e571d385dd989f74c13aff23099bbf652b4cfb669533793fc95",
+      "preview_paths": [
+        "/models/din934-m6-a2-simplified/v1-b8a70cb457a5/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -5.7735026918971935,
+          -5.0000000000000036,
+          0.0
+        ],
+        "max": [
+          5.7735026918971935,
+          5.000000000000001,
+          5.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "lower_seating_face",
+        "positive_z": "Body extends +Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "lower_seating_face": 0,
+          "minimum_z": 0,
+          "maximum_z": 5
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/din934-m6-a2-simplified/v1-b8a70cb457a5/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "open bore diameter",
+          "open bore diameter",
+          "open bore diameter",
+          "nut across flats",
+          "open axial bore through three independent sections"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "width_af",
+        "thickness",
+        "bore_diameter"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "din125-m3-a2-simplified",
+      "version": "v1-f64601fdbca5",
+      "parts": [
+        {
+          "id": "din125-m3-a2",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "flat_washer",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "bc8e2022f1f37f1f8981e4f802e0946d5765fae1c817e98dd077557363e36286",
+      "build_key": "f64601fdbca5a129cb838d07a41bd751e43d718abc306ecfaff76905169a1288",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/din125-m3-a2-simplified/v1-f64601fdbca5/model.step",
+      "bytes": 10571,
+      "sha256": "aeb5befe15efedea59f3223cbb4cc9affe0fe2d2e1f8aad5d3ff39bfec7b0bf7",
+      "preview_paths": [
+        "/models/din125-m3-a2-simplified/v1-f64601fdbca5/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -3.5,
+          -3.5,
+          0.0
+        ],
+        "max": [
+          3.5,
+          3.5,
+          0.5
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "lower_seating_face",
+        "positive_z": "Body extends +Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "lower_seating_face": 0,
+          "minimum_z": 0,
+          "maximum_z": 0.5
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/din125-m3-a2-simplified/v1-f64601fdbca5/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "open bore diameter",
+          "open bore diameter",
+          "open bore diameter",
+          "outer diameter",
+          "outer diameter Y",
+          "open axial bore through three independent sections"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "bore_diameter",
+        "outer_diameter",
+        "thickness"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "din125-m4-a2-simplified",
+      "version": "v1-8c67a552c36b",
+      "parts": [
+        {
+          "id": "din125-m4-a2",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "flat_washer",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "8e47aaf557b81628639a26eefc06fe4a3342e2157cde21091d5323231c6b296e",
+      "build_key": "8c67a552c36b7f4cbd5da64e52665b243430a32d2570b6a0cd0a16ddc4287bf1",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/din125-m4-a2-simplified/v1-8c67a552c36b/model.step",
+      "bytes": 10601,
+      "sha256": "aa11da4586f8e3c137ba9fb1a8729acfb9e01a61318720a3e3102f3b4cc580b3",
+      "preview_paths": [
+        "/models/din125-m4-a2-simplified/v1-8c67a552c36b/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -4.5,
+          -4.5,
+          0.0
+        ],
+        "max": [
+          4.5,
+          4.5,
+          0.8
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "lower_seating_face",
+        "positive_z": "Body extends +Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "lower_seating_face": 0,
+          "minimum_z": 0,
+          "maximum_z": 0.8
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/din125-m4-a2-simplified/v1-8c67a552c36b/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "open bore diameter",
+          "open bore diameter",
+          "open bore diameter",
+          "outer diameter",
+          "outer diameter Y",
+          "open axial bore through three independent sections"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "bore_diameter",
+        "outer_diameter",
+        "thickness"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "din125-m5-a2-simplified",
+      "version": "v1-fc6d1960c755",
+      "parts": [
+        {
+          "id": "din125-m5-a2",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "flat_washer",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "a0c85cd1b2bbdc1da638a7a40b358f8b0d6234087af610b1e9b8d0c2d5f86ca3",
+      "build_key": "fc6d1960c755f2042d2ae6cb565d885b125f2e3f237d8043f48ded4be0ab5d27",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/din125-m5-a2-simplified/v1-fc6d1960c755/model.step",
+      "bytes": 10588,
+      "sha256": "5ba37bfea09fec56baee8bef1bfd8d37baa2e7c3f689d310e06aedfa50981aff",
+      "preview_paths": [
+        "/models/din125-m5-a2-simplified/v1-fc6d1960c755/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -5.0,
+          -5.0,
+          0.0
+        ],
+        "max": [
+          5.0,
+          5.0,
+          1.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "lower_seating_face",
+        "positive_z": "Body extends +Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "lower_seating_face": 0,
+          "minimum_z": 0,
+          "maximum_z": 1
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/din125-m5-a2-simplified/v1-fc6d1960c755/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "open bore diameter",
+          "open bore diameter",
+          "open bore diameter",
+          "outer diameter",
+          "outer diameter Y",
+          "open axial bore through three independent sections"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "bore_diameter",
+        "outer_diameter",
+        "thickness"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "din125-m6-a2-simplified",
+      "version": "v1-9d53f954586e",
+      "parts": [
+        {
+          "id": "din125-m6-a2",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "flat_washer",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "10c42aecb31d16ab5a7da4277d745dc695226a01bf2585bd608971bd4abb03fd",
+      "build_key": "9d53f954586e8eb37520a2be8505f06eb72b5ae3a0a396e9a1c23a643db777e1",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "not_applicable",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/din125-m6-a2-simplified/v1-9d53f954586e/model.step",
+      "bytes": 10565,
+      "sha256": "5e17f9aee934b09b3a92129465fb3688984af777d21239168274f7786e82e47b",
+      "preview_paths": [
+        "/models/din125-m6-a2-simplified/v1-9d53f954586e/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -6.0,
+          -6.0,
+          0.0
+        ],
+        "max": [
+          6.0,
+          6.0,
+          1.6
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "lower_seating_face",
+        "positive_z": "Body extends +Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "lower_seating_face": 0,
+          "minimum_z": 0,
+          "maximum_z": 1.6
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/din125-m6-a2-simplified/v1-9d53f954586e/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "open bore diameter",
+          "open bore diameter",
+          "open bore diameter",
+          "outer diameter",
+          "outer diameter Y",
+          "open axial bore through three independent sections"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "bore_diameter",
+        "outer_diameter",
+        "thickness"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "standard_nominal"
+    },
+    {
+      "id": "helicoil-plus-m3-1.5d-4130-simplified",
+      "version": "v1-ed76c66f554d",
+      "parts": [
+        {
+          "id": "helicoil-plus-m3-1.5d-4130",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "wire_insert",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "30f2e9bdf3c315265a403f01cc3dc5d92927c5c67dfac4df1fd7e33a70f3efe6",
+      "build_key": "ed76c66f554dd2ee310efa06c2c8dfa06c42568c0b51cfd62c1125d6b4c33039",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "installed",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/helicoil-plus-m3-1.5d-4130-simplified/v1-ed76c66f554d/model.step",
+      "bytes": 10601,
+      "sha256": "e6565c2ac65a7c7baa2c074a83afe8d751565ee1c445d6325ca80b77a540af08",
+      "preview_paths": [
+        "/models/helicoil-plus-m3-1.5d-4130-simplified/v1-ed76c66f554d/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -1.825,
+          -1.825,
+          0.0
+        ],
+        "max": [
+          1.825,
+          1.825,
+          4.5
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "insertion_reference_plane",
+        "positive_z": "Body extends +Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "insertion_reference_plane": 0,
+          "minimum_z": 0,
+          "maximum_z": 4.5
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/helicoil-plus-m3-1.5d-4130-simplified/v1-ed76c66f554d/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "open bore diameter",
+          "open bore diameter",
+          "open bore diameter",
+          "outer diameter",
+          "outer diameter Y",
+          "open axial bore through three independent sections"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "length",
+        "outer_diameter",
+        "bore_diameter"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets",
+        "Actual wire coil, tang, free-state geometry and maximum clearance envelope"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "installed_nominal_reference_envelope"
+    },
+    {
+      "id": "helicoil-plus-m4-1.5d-4130-simplified",
+      "version": "v1-56a21edd8dd7",
+      "parts": [
+        {
+          "id": "helicoil-plus-m4-1.5d-4130",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "wire_insert",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "0f643d0f62884a5b2e7cd38f881bb75b587971c8cc4b158c24bace9865ee7f36",
+      "build_key": "56a21edd8dd700451ab216c8b428325e1ac6ea8e0b5ba2e63ecc8ea029aa2ef6",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "installed",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/helicoil-plus-m4-1.5d-4130-simplified/v1-56a21edd8dd7/model.step",
+      "bytes": 10572,
+      "sha256": "877c3181ae8ff520a2d548ca6b0f22725d34e82b7c31e604e8b31aedaff746b2",
+      "preview_paths": [
+        "/models/helicoil-plus-m4-1.5d-4130-simplified/v1-56a21edd8dd7/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -2.455,
+          -2.455,
+          0.0
+        ],
+        "max": [
+          2.455,
+          2.455,
+          6.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "insertion_reference_plane",
+        "positive_z": "Body extends +Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "insertion_reference_plane": 0,
+          "minimum_z": 0,
+          "maximum_z": 6
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/helicoil-plus-m4-1.5d-4130-simplified/v1-56a21edd8dd7/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "open bore diameter",
+          "open bore diameter",
+          "open bore diameter",
+          "outer diameter",
+          "outer diameter Y",
+          "open axial bore through three independent sections"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "length",
+        "outer_diameter",
+        "bore_diameter"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets",
+        "Actual wire coil, tang, free-state geometry and maximum clearance envelope"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "installed_nominal_reference_envelope"
+    },
+    {
+      "id": "helicoil-plus-m5-1.5d-4130-simplified",
+      "version": "v1-c8cf6e0ed819",
+      "parts": [
+        {
+          "id": "helicoil-plus-m5-1.5d-4130",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "wire_insert",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "a6e79eeb136a84462536e97fe2eb31e0e679aae4be95df09b3c3a968699ae635",
+      "build_key": "c8cf6e0ed819510a0ba6d2383fe18cfe8888e375492f74307a3bc5676f662cb6",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "installed",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/helicoil-plus-m5-1.5d-4130-simplified/v1-c8cf6e0ed819/model.step",
+      "bytes": 10593,
+      "sha256": "45a09b75723b9e6e3ee795701d84de74eb18e070d3f20eed1c20b90563a27ffc",
+      "preview_paths": [
+        "/models/helicoil-plus-m5-1.5d-4130-simplified/v1-c8cf6e0ed819/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -3.02,
+          -3.02,
+          0.0
+        ],
+        "max": [
+          3.02,
+          3.02,
+          7.5
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "insertion_reference_plane",
+        "positive_z": "Body extends +Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "insertion_reference_plane": 0,
+          "minimum_z": 0,
+          "maximum_z": 7.5
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/helicoil-plus-m5-1.5d-4130-simplified/v1-c8cf6e0ed819/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "open bore diameter",
+          "open bore diameter",
+          "open bore diameter",
+          "outer diameter",
+          "outer diameter Y",
+          "open axial bore through three independent sections"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "length",
+        "outer_diameter",
+        "bore_diameter"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets",
+        "Actual wire coil, tang, free-state geometry and maximum clearance envelope"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "installed_nominal_reference_envelope"
+    },
+    {
+      "id": "helicoil-plus-m6-1.5d-4130-simplified",
+      "version": "v1-958d8ee2cd13",
+      "parts": [
+        {
+          "id": "helicoil-plus-m6-1.5d-4130",
+          "revision": 1
+        }
+      ],
+      "recipe_id": "wire_insert",
+      "recipe_version": "2.0.0",
+      "parameter_hash": "f4ef7bd71002802d63131f68e972dccfff209a53cc0819d4ba225433f27a4f4e",
+      "build_key": "958d8ee2cd136e4675a49f2ccd0b0b8e436ad215932c3d49672de02e12918839",
+      "toolchain": {
+        "python": "3.12.13",
+        "cadquery": "2.6.1",
+        "ocp": "7.8.1.1"
+      },
+      "detail": "simplified",
+      "state": "installed",
+      "format": "step",
+      "units": "mm",
+      "asset_path": "/models/helicoil-plus-m6-1.5d-4130-simplified/v1-958d8ee2cd13/model.step",
+      "bytes": 10569,
+      "sha256": "cafa9d5063003b04c5203510c5b9d02dd4b01b4a5d6a0e71585e1659db5a00f4",
+      "preview_paths": [
+        "/models/helicoil-plus-m6-1.5d-4130-simplified/v1-958d8ee2cd13/preview.png"
+      ],
+      "bounds_mm": {
+        "min": [
+          -3.65,
+          -3.65,
+          0.0
+        ],
+        "max": [
+          3.65,
+          3.65,
+          9.0
+        ]
+      },
+      "frame": {
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "origin_datum": "insertion_reference_plane",
+        "positive_z": "Body extends +Z",
+        "x_reference": "Hex vertex along +X; opposite flats parallel to X (normals \u00b1Y). Circular bodies have arbitrary X.",
+        "datums": {
+          "insertion_reference_plane": 0,
+          "minimum_z": 0,
+          "maximum_z": 9
+        },
+        "handedness": "right"
+      },
+      "validation": {
+        "status": "passed",
+        "checked_at": "2026-09-22T02:59:52.835897Z",
+        "tolerance_mm": 0.01,
+        "report_path": "/models/helicoil-plus-m6-1.5d-4130-simplified/v1-958d8ee2cd13/checks.json",
+        "checks": [
+          "STEP reopened with OpenCascade",
+          "one solid; valid topology; finite bounds; positive volume",
+          "origin/minimum Z",
+          "length/maximum Z",
+          "open bore diameter",
+          "open bore diameter",
+          "open bore diameter",
+          "outer diameter",
+          "outer diameter Y",
+          "open axial bore through three independent sections"
+        ],
+        "visual_review": "passed",
+        "withdrawal_reason": null
+      },
+      "represented_features": [
+        "length",
+        "outer_diameter",
+        "bore_diameter"
+      ],
+      "omitted_features": [
+        "Thread helices and tolerance-class fit",
+        "Small edge breaks, chamfers and fillets",
+        "Actual wire coil, tang, free-state geometry and maximum clearance envelope"
+      ],
+      "intended_uses": [
+        "layout",
+        "reference"
+      ],
+      "representation": "installed_nominal_reference_envelope"
+    }
+  ]
+}

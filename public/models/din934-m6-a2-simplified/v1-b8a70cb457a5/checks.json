@@ -1,0 +1,21 @@
+{
+  "schema_version": "fastener-mcp.v2",
+  "part": "din934-m6-a2",
+  "revision": 1,
+  "checks": [
+    "STEP reopened with OpenCascade",
+    "one solid; valid topology; finite bounds; positive volume",
+    "origin/minimum Z",
+    "length/maximum Z",
+    "open bore diameter",
+    "open bore diameter",
+    "open bore diameter",
+    "nut across flats",
+    "open axial bore through three independent sections"
+  ],
+  "tolerance_mm": 0.01,
+  "volume_mm3": 291.64103248063407,
+  "visual_review": "passed",
+  "checked_at": "2026-09-22T02:59:52.835897Z",
+  "reviewed_at": "2026-09-22T03:04:34.898138Z"
+}

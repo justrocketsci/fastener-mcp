@@ -1,8 +1,0 @@
-{
-  "reason": "All pending exports have been filled with CadQuery-generated STEP files",
-  "retry_after_seconds_observed": 0,
-  "resume_after_utc": null,
-  "document_id": "f542e957084b482e3f7a1669",
-  "workspace_id": "16ea943dbdbd1d73ac65ed3e",
-  "pending": []
-}

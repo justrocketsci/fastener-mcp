@@ -1,0 +1,22 @@
+{
+  "schema_version": "fastener-mcp.v2",
+  "part": "helicoil-plus-m6-1.5d-4130",
+  "revision": 1,
+  "checks": [
+    "STEP reopened with OpenCascade",
+    "one solid; valid topology; finite bounds; positive volume",
+    "origin/minimum Z",
+    "length/maximum Z",
+    "open bore diameter",
+    "open bore diameter",
+    "open bore diameter",
+    "outer diameter",
+    "outer diameter Y",
+    "open axial bore through three independent sections"
+  ],
+  "tolerance_mm": 0.01,
+  "volume_mm3": 122.21580820627958,
+  "visual_review": "passed",
+  "checked_at": "2026-09-22T02:59:52.835897Z",
+  "reviewed_at": "2026-09-22T03:04:34.898138Z"
+}

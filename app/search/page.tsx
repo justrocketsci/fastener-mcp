@@ -1,266 +1,237 @@
-'use client';
-
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Card, CardContent } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Alert, AlertDescription } from '@/components/ui/alert';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import type { Fastener } from '@/lib/types';
-
-export default function SearchPage() {
-  const [query, setQuery] = useState('');
-  const [family, setFamily] = useState('all');
-  const [results, setResults] = useState<Fastener[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [searched, setSearched] = useState(false);
-
-  useEffect(() => {
-    fetchResults();
-  }, []);
-
-  const fetchResults = async () => {
-    setLoading(true);
-    setSearched(true);
-    
-    const params = new URLSearchParams();
-    if (query) params.append('q', query);
-    if (family !== 'all') params.append('family', family);
-    params.append('limit', '200'); // Ensure all rows visible (catalog has 61)
-    
-    try {
-      const response = await fetch(`/api/fasteners?${params}`);
-      const data = await response.json();
-      setResults(data.results || []);
-    } catch (error) {
-      console.error('Search failed:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    fetchResults();
-  };
-
-  const getFamilyLabel = (fam: string) => {
-    switch (fam) {
-      case 'iso':
-        return 'ISO';
-      case 'an':
-        return 'AN';
-      case 'ms':
-        return 'MS';
-      case 'nas':
-        return 'NAS';
-      default:
-        return fam.toUpperCase();
-    }
-  };
-
-  const getStrengthNote = (fastener: Fastener) => {
-    if (fastener.tensile_strength_mpa && fastener.tensile_strength_mpa > 0) {
-      return `${fastener.tensile_strength_mpa} MPa`;
-    }
-    if (fastener.capabilities.includes('high-strength')) {
-      return 'High strength';
-    }
-    return '—';
-  };
-
-  const getFormattedStandard = (fastener: Fastener) => {
-    if (!fastener.standard) {
-      return fastener.designation;
-    }
-    
-    const std = fastener.standard;
-    
-    if (std.startsWith('NAS') && !std.includes(' ')) {
-      return std.replace(/^(NAS)(\d+)/, '$1 $2');
-    }
-    
-    return std;
-  };
-
-  const getSourceBadge = (fastener: Fastener) => {
-    if (!fastener.source_kind) {
-      return <Badge variant="secondary" className="text-xs">Sample</Badge>;
-    }
-    
-    switch (fastener.source_kind) {
-      case 'open_library':
-        return <Badge className="text-xs bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200">Open</Badge>;
-      case 'gov_spec':
-        return <Badge className="text-xs bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200">Gov</Badge>;
-      case 'purchased_std':
-        return <Badge className="text-xs bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200">Purchased</Badge>;
-      case 'distributor_ref':
-        return <Badge variant="secondary" className="text-xs">Legacy</Badge>;
-      default:
-        return <Badge variant="secondary" className="text-xs">Sample</Badge>;
-    }
-  };
-
+import Link from "next/link";
+import { search } from "@/lib/catalog/service";
+import { query } from "@/lib/catalog/http";
+import { errorPayload } from "@/lib/catalog/errors";
+import { categorySchema } from "@/lib/catalog/schemas";
+export default async function Search({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  const params = await searchParams;
+  const qs = new URLSearchParams();
+  for (const [k, v] of Object.entries(params))
+    for (const x of Array.isArray(v) ? v : v ? [v] : [])
+      if (x !== "") qs.append(k, x);
+  let result: ReturnType<typeof search> | undefined, error: string | undefined;
+  try {
+    result = search(query(new Request("http://catalog.local/?" + qs)));
+  } catch (e) {
+    error = errorPayload(e).error.message;
+  }
+  const value = (key: string) =>
+    typeof params[key] === "string" ? (params[key] as string) : "";
+  const field = (name: string, label: string, type = "text") => (
+    <label key={name}>
+      {label}
+      <input
+        name={name}
+        type={type}
+        step={type === "number" ? "any" : undefined}
+        min={type === "number" ? "0" : undefined}
+        defaultValue={value(name)}
+      />
+    </label>
+  );
   return (
-    <div className="flex flex-col min-h-screen bg-background">
-      <header className="sticky top-0 z-10 border-b border-border bg-card">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between mb-4">
-            <Link href="/" className="text-2xl font-bold text-foreground">
-              Fastener MCP
-            </Link>
-            <nav className="flex gap-6">
-              <Link href="/search" className="text-sm font-medium text-foreground">
-                Search
-              </Link>
-              <Link href="/mcp" className="text-sm font-medium text-muted-foreground hover:text-foreground">
-                MCP Docs
-              </Link>
-            </nav>
+    <main className="site-main">
+      <p className="eyebrow">Checked catalog</p>
+      <h1>Find hardware</h1>
+      <p className="lead">
+        Every filter is a requirement. Material-independent references cannot
+        satisfy a specific material or grade.
+      </p>
+      <form className="panel filters" action="/search">
+        <label className="wide">
+          Search by ID, standard, or designation
+          <input
+            name="q"
+            defaultValue={value("q")}
+            placeholder="M6x1 or ISO 4762"
+          />
+        </label>
+        <label>
+          Category
+          <select name="category" defaultValue={value("category")}>
+            <option value="">All categories</option>
+            {categorySchema.options
+              .filter((c) => c !== "legacy")
+              .map((c) => (
+                <option key={c} value={c}>
+                  {c.replaceAll("_", " ")}
+                </option>
+              ))}
+          </select>
+        </label>
+        {field("standard", "Standard")}
+        {field("thread_size", "Thread designation")}
+        {field("diameter", "Nominal diameter", "number")}
+        <label>
+          Diameter unit
+          <select
+            name="diameter_unit"
+            defaultValue={value("diameter_unit") || "mm"}
+          >
+            <option>mm</option>
+            <option>in</option>
+          </select>
+        </label>
+        {field("length", "Length", "number")}
+        <label>
+          Length unit
+          <select
+            name="length_unit"
+            defaultValue={value("length_unit") || "mm"}
+          >
+            <option>mm</option>
+            <option>in</option>
+          </select>
+        </label>
+        <label>
+          Material
+          <select name="material" defaultValue={value("material")}>
+            <option value="">Any / unspecified</option>
+            <option>A2 stainless steel</option>
+          </select>
+        </label>
+        {field("grade", "Property grade")}
+        {field("finish", "Finish")}
+        <label>
+          Thread system
+          <select name="thread_system" defaultValue={value("thread_system")}>
+            <option value="">Any</option>
+            <option value="metric">Metric</option>
+            <option value="unified">
+              Unified (no verified launch coverage)
+            </option>
+            <option value="none">Unthreaded</option>
+          </select>
+        </label>
+        <label>
+          Geometry detail
+          <select
+            name="geometry_detail"
+            defaultValue={value("geometry_detail")}
+          >
+            <option value="">Any published detail</option>
+            <option>simplified</option>
+            <option>detailed</option>
+          </select>
+        </label>
+        <details className="wide">
+          <summary>More constraints</summary>
+          <div className="filters">
+            {field("pitch_mm", "Thread pitch (mm)", "number")}
+            {field("head_type", "Head type")}
+            {field("drive_type", "Drive type")}
+            {field("diameter_min", "Minimum diameter", "number")}
+            {field("diameter_max", "Maximum diameter", "number")}
+            {field("length_min", "Minimum length", "number")}
+            {field("length_max", "Maximum length", "number")}
+            <label>
+              Handedness
+              <select name="handedness" defaultValue={value("handedness")}>
+                <option value="">Any</option>
+                <option>right</option>
+                <option>left</option>
+              </select>
+            </label>
+            <label>
+              Source status
+              <select
+                name="source_status"
+                defaultValue={value("source_status") || "active"}
+              >
+                <option>active</option>
+                <option>legacy_unverified</option>
+                <option>deprecated</option>
+              </select>
+            </label>
           </div>
-          
-          <form onSubmit={handleSearch} className="flex gap-4">
-            <Input
-              placeholder="Search by designation, material, or capability..."
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              className="flex-1"
-            />
-            <Select value={family} onValueChange={(value) => setFamily(value || 'all')}>
-              <SelectTrigger className="w-[180px]">
-                <SelectValue placeholder="Spec Family" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="all">All</SelectItem>
-                <SelectItem value="iso">ISO</SelectItem>
-                <SelectItem value="an">AN</SelectItem>
-                <SelectItem value="ms">MS</SelectItem>
-                <SelectItem value="nas">NAS</SelectItem>
-              </SelectContent>
-            </Select>
-            <Button type="submit" disabled={loading}>
-              {loading ? 'Searching...' : 'Search'}
-            </Button>
-          </form>
-        </div>
-      </header>
-
-      <main className="flex-1 py-8 px-4">
-        <div className="container mx-auto max-w-7xl">
-          {searched && (
-            <>
-              <div className="mb-4">
-                <p className="text-sm text-muted-foreground">
-                  Found {results.length} fastener{results.length !== 1 ? 's' : ''} in sample set
-                </p>
-              </div>
-
-              {/* Desktop Table View */}
-              <div className="hidden md:block rounded-lg border border-border bg-card">
-                <Table>
-                  <TableHeader>
-                    <TableRow className="bg-muted">
-                      <TableHead className="text-xs uppercase text-muted-foreground font-semibold">Part ID</TableHead>
-                      <TableHead className="text-xs uppercase text-muted-foreground font-semibold">Spec</TableHead>
-                      <TableHead className="text-xs uppercase text-muted-foreground font-semibold">Diameter</TableHead>
-                      <TableHead className="text-xs uppercase text-muted-foreground font-semibold">Length</TableHead>
-                      <TableHead className="text-xs uppercase text-muted-foreground font-semibold">Material</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {results.length === 0 ? (
-                      <TableRow>
-                        <TableCell colSpan={5} className="text-center py-12 text-muted-foreground">
-                          No matches in sample set — try M6 or AN3
-                        </TableCell>
-                      </TableRow>
-                    ) : (
-                      results.map((fastener) => (
-                        <TableRow 
-                          key={fastener.id}
-                          className="cursor-pointer hover:bg-accent"
-                          onClick={() => window.location.href = `/fasteners/${fastener.id}`}
-                        >
-                          <TableCell className="font-mono text-sm text-primary">
-                            {fastener.id}
-                          </TableCell>
-                          <TableCell>
-                            <div className="flex items-center gap-2">
-                              <span className="text-sm">{getFormattedStandard(fastener)}</span>
-                              <Badge variant="outline" className="text-xs">
-                                {getFamilyLabel(fastener.family)}
-                              </Badge>
-                            </div>
-                          </TableCell>
-                          <TableCell className="text-sm">
-                            {fastener.diameter > 1 ? `${fastener.diameter}mm` : `${fastener.diameter}"`}
-                          </TableCell>
-                          <TableCell className="text-sm">
-                            {fastener.length_mm > 0 ? `${fastener.length_mm}mm` : '—'}
-                          </TableCell>
-                          <TableCell className="text-sm max-w-[200px] truncate">
-                            {fastener.material}
-                          </TableCell>
-                        </TableRow>
-                      ))
-                    )}
-                  </TableBody>
-                </Table>
-              </div>
-
-              {/* Mobile Card View */}
-              <div className="md:hidden space-y-3">
-                {results.length === 0 ? (
-                  <Card>
-                    <CardContent className="py-12 text-center">
-                      <p className="text-muted-foreground">No matches in sample set — try M6 or AN3</p>
-                    </CardContent>
-                  </Card>
-                ) : (
-                  results.map((fastener) => (
-                    <Link href={`/fasteners/${fastener.id}`} key={fastener.id}>
-                      <Card className="cursor-pointer hover:bg-accent">
-                        <CardContent className="pt-6">
-                          <div className="space-y-2">
-                            <div>
-                              <p className="font-mono text-sm text-primary">{fastener.id}</p>
-                              <p className="font-semibold">{getFormattedStandard(fastener)}</p>
-                            </div>
-                            <div className="flex gap-4 text-sm text-muted-foreground">
-                              <span>Ø{fastener.diameter > 1 ? `${fastener.diameter}mm` : `${fastener.diameter}"`}</span>
-                              {fastener.length_mm > 0 && <span>L{fastener.length_mm}mm</span>}
-                              <Badge variant="outline" className="text-xs">
-                                {getFamilyLabel(fastener.family)}
-                              </Badge>
-                            </div>
-                          </div>
-                        </CardContent>
-                      </Card>
-                    </Link>
-                  ))
-                )}
-              </div>
-            </>
+        </details>
+        <label className="check">
+          <input
+            name="include_alternatives"
+            type="checkbox"
+            value="true"
+            defaultChecked={value("include_alternatives") === "true"}
+          />{" "}
+          Show alternatives separately
+        </label>
+        <button type="submit" className="primary-button">
+          Search
+        </button>
+        <Link href="/search">Clear filters</Link>
+      </form>
+      {error && (
+        <p role="alert" className="notice">
+          {error}
+        </p>
+      )}
+      {result && (
+        <>
+          <div className="section-heading">
+            <h2>{result.total} exact matches</h2>
+            <span className="muted">{result.catalog_release}</span>
+          </div>
+          {!result.total && (
+            <p className="panel">
+              No checked part satisfies all of these constraints. Adjust the
+              filters or enable alternatives.
+            </p>
           )}
-        </div>
-      </main>
-
-      <footer className="border-t border-border py-8 px-4 mt-12">
-        <div className="container mx-auto max-w-7xl">
-          <div className="flex justify-center items-center gap-4">
-            <Link href="/search" className="text-sm text-muted-foreground hover:text-foreground">
-              Search
-            </Link>
-            <Link href="/mcp" className="text-sm text-muted-foreground hover:text-foreground">
-              MCP Docs
-            </Link>
+          <div className="result-grid">
+            {result.exact_matches.map((p) => (
+              <Link
+                className="panel result"
+                key={p.id}
+                href={"/fasteners/" + p.id}
+              >
+                <span className="badge">{p.category.replaceAll("_", " ")}</span>
+                <h3>{p.designation}</h3>
+                <p>
+                  {p.material ?? "Material unspecified"} ·{" "}
+                  {p.status.replaceAll("_", " ")}
+                </p>
+                <p className="muted">
+                  {p.geometry_detail.length
+                    ? p.geometry_detail.join(" / ") + " STEP"
+                    : "Geometry unavailable"}{" "}
+                  · revision {p.revision}
+                </p>
+              </Link>
+            ))}
           </div>
-        </div>
-      </footer>
-    </div>
+          {result.next_cursor && (
+            <Link
+              className="secondary-button"
+              href={
+                "/search?" +
+                new URLSearchParams({
+                  ...Object.fromEntries(qs),
+                  cursor: result.next_cursor,
+                })
+              }
+            >
+              Next page →
+            </Link>
+          )}
+          {result.alternatives.length > 0 && (
+            <section className="panel">
+              <h2>Alternatives — requirements differ</h2>
+              {result.alternatives.map((p) => (
+                <p key={p.id}>
+                  <Link href={"/fasteners/" + p.id}>{p.designation}</Link>
+                  <br />
+                  <span className="muted">
+                    Does not match: {p.differences.join(", ")}
+                  </span>
+                </p>
+              ))}
+            </section>
+          )}
+        </>
+      )}
+    </main>
   );
 }

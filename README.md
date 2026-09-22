@@ -1,165 +1,56 @@
 # Fastener MCP
 
-Agent-facing fastener knowledge for AI CAD workflows. Sample dataset covering ISO metric, AN (Army-Navy), and MS (Military Standard) specifications with structured data optimized for MCP tool integration.
+Versioned STEP geometry, source evidence, installation context and purchasing comparisons for AI CAD agents. Built with Next.js, read-only HTTP MCP, versioned JSON and offline CadQuery. **No database or Onshape account is required.**
 
-**⚠️ SAMPLE DATA ONLY** — Not a certified mil-spec or aerospace catalog. For demonstration purposes.
+The launch catalog contains 27 checked metric part identities across hex bolts, socket screws, countersunk screws, hex nuts, flat washers and HELICOIL Plus free-running inserts. It includes 31 STEP variants, 13 parts with checked purchase links and five sizes with observations from both Bolt Depot and Monster Bolts. The 188 historical IDs remain inspectable as `legacy_unverified`; their unvalidated models are withdrawn.
 
-## Features
+Models are nominal reference geometry with explicit features and omissions. Four detailed socket variants include the drive recess; all omit thread helices. Inserts are installed annular reference envelopes based on the manufacturer's receiving-thread dimensions, not actual coils or maximum clearance envelopes. Material-independent references do not satisfy a specified material/grade. Verified inch-thread coverage is not claimed.
 
-- **Structured Fastener Database**: ~40 representative parts across ISO, AN, and MS families
-- **HTTP API**: RESTful endpoints for search, retrieval, and intelligent recommendations
-- **Web UI**: Browse and filter fasteners with modern, accessible interface
-- **Onshape Panel**: Element right panel integration for in-CAD catalog access (see [docs/ONSHAPE_PANEL.md](docs/ONSHAPE_PANEL.md))
-- **MCP-Ready**: Designed for Model Context Protocol agent integration
-- **Design System**: Built with Default Page design tokens (indigo primary, clean neutrals)
+## Run locally
 
-## Stack
-
-- **Framework**: Next.js 16 + TypeScript + App Router
-- **UI**: Tailwind CSS + shadcn/ui components
-- **Data**: Static JSON seed dataset
-- **Deployment**: Vercel-ready
-
-## Getting Started
-
-### Install Dependencies
-
-```bash
-npm install
+```sh
+npm ci
+PUBLIC_ASSET_ORIGIN=http://localhost:3000 npm run dev
 ```
 
-### Run Development Server
+Set `PUBLIC_ASSET_ORIGIN` to the canonical anonymously accessible production origin when deploying. Protected Vercel preview hostnames are never used implicitly. Static models are deployed with the app; requests never execute the CAD kernel or scrape suppliers.
 
-```bash
-npm run dev
-```
+## Interfaces
 
-Open [http://localhost:3000](http://localhost:3000) to view the app.
+MCP Streamable HTTP: `https://fastener-mcp.vercel.app/api/mcp`
 
-### Verify API
+| Tool | Purpose |
+| --- | --- |
+| `search_fasteners` | Exact requirements, explicit units, separate alternatives, release-bound pagination |
+| `get_fastener` | Part revision, dimensions and evidence |
+| `get_fastener_model` | Immutable STEP URL, bytes, checksum, datums, omissions and recorded checks |
+| `get_placement_packet` | `fastener-mcp.placement.v1` local frame; no automatic mates |
+| `get_installation_requirements` | Sourced instructions or explicit unavailable/missing-context results |
+| `get_compatible_parts` | Nominal companion interfaces and unresolved assembly checks |
+| `compare_supplier_offers` | Quantity/pack/tier/freshness/scope-aware comparisons |
+| `build_parts_list` | Aggregated JSON and formula-safe CSV |
 
-Test the API endpoints:
+REST exposes `/api/fasteners`, `/api/fasteners/:id` and `/model`, `/placement`, `/installation` subroutes, plus POST `/api/compatibility`, `/api/offers/compare`, `/api/bom` and GET `/api/catalog/status`. All operations are read-only. See the website's `/mcp` guide and [migration notes](docs/MIGRATION.md).
 
-```bash
-# List all fasteners
-curl "http://localhost:3000/api/fasteners"
+Example search:
 
-# Search ISO metric bolts
-curl "http://localhost:3000/api/fasteners?family=iso&q=bolt"
-
-# Get specific fastener
-curl "http://localhost:3000/api/fasteners/iso-4017-m6-30"
-
-# Get recommendations
-curl -X POST "http://localhost:3000/api/recommend" \
-  -H "Content-Type: application/json" \
-  -d '{"diameter": 6, "length": 30, "material": "steel"}'
-```
-
-## Project Structure
-
-```
-/workspace
-├── app/
-│   ├── api/
-│   │   ├── fasteners/         # Search & get endpoints
-│   │   └── recommend/          # Recommendation endpoint
-│   ├── onshape/panel/          # Onshape Element right panel
-│   ├── search/                 # Browse UI
-│   ├── mcp/                    # MCP documentation
-│   └── page.tsx                # Marketing landing
-├── data/
-│   └── fasteners.json          # Seed dataset (40 parts)
-├── docs/
-│   └── ONSHAPE_PANEL.md        # Onshape integration guide
-└── components/ui/              # shadcn components
-```
-
-## API Endpoints
-
-### `GET /api/fasteners`
-
-Search and filter fasteners.
-
-**Query Parameters:**
-- `q` - Search query (designation, material, capabilities)
-- `family` - Filter by spec family (`iso`, `an`, `ms`)
-- `diameter` - Filter by diameter (mm or inch)
-- `material` - Filter by material keyword
-- `limit` - Max results (default: 50)
-
-### `GET /api/fasteners/:id`
-
-Get fastener details by ID.
-
-### `POST /api/recommend`
-
-Get ranked recommendations based on requirements.
-
-**Body:**
 ```json
-{
-  "diameter": 6,
-  "length": 30,
-  "material": "steel",
-  "load_n": 5000,
-  "environment": "outdoor"
-}
+{"category":"socket_screw","thread_size":"M6x1","length":20,"length_unit":"mm","material":"A2 stainless steel"}
 ```
 
-See `/mcp` route for full documentation.
+Model example: `{"id":"iso4762-m6x20-a2","revision":1}`. A consumer downloads the returned `model.url`, checks SHA-256 and bytes, imports STEP in mm and applies the local frame. Native Adam/Zoo integration is not required; a compatible MCP client and STEP-capable CAD environment are required.
 
-## Dataset
+## Checks and maintenance
 
-Sample fasteners include:
-- **ISO Metric**: Hex bolts, socket caps, countersunk screws, washers, nuts
-- **AN (Army-Navy)**: Drilled hex bolts, shear nuts, washers
-- **MS (Military Std)**: Hex bolts, rivets, self-locking nuts, clevis pins
-
-Each entry includes:
-- Designation, family, diameter, length
-- Thread specification
-- Material and coating
-- Tensile strength (where applicable)
-- Capabilities tags
-
-## Build & Deploy
-
-```bash
-# Build for production
-npm run build
-
-# Deploy to Vercel
-vercel deploy
+```sh
+uv venv --python 3.12.13 .venv-cadquery
+uv pip install --python .venv-cadquery/bin/python -r scripts/geometry/requirements-lock.txt
+./verify.sh
+PUBLIC_ASSET_ORIGIN=http://localhost:3100 npm start -- -p 3100
+# In another terminal:
+npm run test:client
 ```
 
-Or push to Origin/GitHub and connect to Vercel for automatic deployments.
+The real-client test calls all eight tools, compares REST results, downloads a file anonymously, verifies its checksum and imports it with an independent CadQuery consumer. CI repeats the offline geometry checks and client workflow.
 
-## MCP Integration
-
-The HTTP endpoints are designed for direct agent calls or wrapping in an MCP stdio server. See `/mcp` docs for integration patterns.
-
-Example MCP tools:
-- `list_fasteners` → GET /api/fasteners
-- `get_fastener` → GET /api/fasteners/:id  
-- `recommend_fastener` → POST /api/recommend
-
-## Design Tokens
-
-Using Default Page design system:
-- Primary: `#4F46E5` (indigo)
-- Background: `#FFFFFF` / `#0F172A` (dark)
-- Border: `#E2E8F0` / `#334155` (dark)
-- Radius: 6px (sm) / 10px (md) / 12px (lg)
-- Fonts: Inter Tight (headings) + Inter (body)
-
-## Important Notes
-
-- This is **sample data only** — not authoritative aerospace specs
-- Do not use for safety-critical applications
-- Monetization features are stubbed out
-- Full MCP stdio implementation is optional
-
-## License
-
-Demonstration project. Check with appropriate authorities before using fastener data in production.
+Price and stock observations have separate timestamps and a default 24-hour freshness policy. The launch snapshot contains checked public prices; stock, shipping, tax and duty are unknown. Results therefore compare merchandise subtotals and do not claim a delivered-cost winner. Refresh is a **daily maintainer-run import**, with no scheduled job or runtime scraping. See [maintenance and rollback](docs/MAINTENANCE.md), [source audit](docs/CATALOG_AUDIT.md), [release evidence](docs/RELEASE_READINESS.md) and [third-party notices](THIRD_PARTY_NOTICES.md).

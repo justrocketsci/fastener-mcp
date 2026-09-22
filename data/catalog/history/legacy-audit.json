@@ -1,0 +1,1509 @@
+{
+  "schema_version": "fastener-mcp.v2",
+  "items": [
+    {
+      "id": "an173-3",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "an3-10a",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/an3-10a.step",
+      "old_model_sha256": "5745be179fd62a23dad3009eb9a770949969b376ee3fa827ee92f9933aba0790"
+    },
+    {
+      "id": "an315-4r",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "an4-12a",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/an4-12a.step",
+      "old_model_sha256": "1a539fc094eef9a9f8788a3a82034b2f017e232ee4a7d9a6dc1376a329e6c316"
+    },
+    {
+      "id": "an5-20a",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/an5-20a.step",
+      "old_model_sha256": "111a29b58f01e786b30aeef6d2d7b96b3ab338c8964e38644aafa11d45832b30"
+    },
+    {
+      "id": "an500a10-8",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/an500a10-8.step",
+      "old_model_sha256": "9db113b4139676dc0f9193e946e70e44a33f60cd2f12c1313440db240e66cc37"
+    },
+    {
+      "id": "an525-10r8",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/an525-10r8.step",
+      "old_model_sha256": "c0cef7c38ee2a8b206d8903e011c03815fd1c7c5bc4c9b206a44bdd2b45c4c5e"
+    },
+    {
+      "id": "an6-16a",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/an6-16a.step",
+      "old_model_sha256": "3253753e0fab06e688fda760eba76443e27497f2555b130f6567221325c3c383"
+    },
+    {
+      "id": "an7-10a",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/an7-10a.step",
+      "old_model_sha256": "79b44d486a58e3e00d990b27bd3f313c977a8e654d202f305d8ce7036a090a9a"
+    },
+    {
+      "id": "an73-6a",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/an73-6a.step",
+      "old_model_sha256": "52d7ef0c90c04dcdc346beddd7750d41a4e883c042c22af1fed35fd02d5e4b0d"
+    },
+    {
+      "id": "an74-12a",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/an74-12a.step",
+      "old_model_sha256": "053863ccbedab0d7abd6fd2be86a710e1f86be9538d3537948c86c0bdfb26535"
+    },
+    {
+      "id": "an960-416",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "iso-1207-m3-10",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/iso-1207-m3-10.step",
+      "old_model_sha256": "b40990da1445557ed92c9c5214750c15affa61faa2fa5c40771da4520a79fe11"
+    },
+    {
+      "id": "iso-1207-m4-12",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/iso-1207-m4-12.step",
+      "old_model_sha256": "2dc4da368f9b39e7d4305811b3669b6f416e25c3af6594ec1e320a8f49d9c898"
+    },
+    {
+      "id": "iso-1207-m5-16",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/iso-1207-m5-16.step",
+      "old_model_sha256": "9a8a90b1241fe5f162156073be3397afb034fe70b5e97d995a953a1f481e6e2a"
+    },
+    {
+      "id": "iso-1207-m5-20",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/iso-1207-m5-20.step",
+      "old_model_sha256": "16d7825bb359660e2f946b4eae11da5f655b727f097f3d2eb199c0d355729aa2"
+    },
+    {
+      "id": "iso-1207-m6-20",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/iso-1207-m6-20.step",
+      "old_model_sha256": "e5dc972e49a7f12ec8a113d75d908ffe6b8696d5e48d39ed256d3495073d3729"
+    },
+    {
+      "id": "iso-1207-m8-25",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/iso-1207-m8-25.step",
+      "old_model_sha256": "de62b8ecef5839c6141fbada5632b9e34f803c6cad5732a1ff416393cc6d8de5"
+    },
+    {
+      "id": "iso-4017-m10-50",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/iso-4017-m10-50.step",
+      "old_model_sha256": "a1594151c72341a424833030c594e33d9ef27c94dae49b0eba0e432a7cac0c9e"
+    },
+    {
+      "id": "iso-4017-m12-60",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/iso-4017-m12-60.step",
+      "old_model_sha256": "f75dc59128c3efb34d77c961f5bec6488c250805b9f839d6a7cbecd370f2f7b4"
+    },
+    {
+      "id": "iso-4017-m3-12",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/iso-4017-m3-12.step",
+      "old_model_sha256": "aec33e7879ac2406cced710255e8f411f0532e78e95da2b4b8f4a4da5e64fc55"
+    },
+    {
+      "id": "iso-4017-m4-16",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/iso-4017-m4-16.step",
+      "old_model_sha256": "dc95e3a4b36aedbde4ea2df6646abe675ba6f40681f139fdcc32c5f41b4d7428"
+    },
+    {
+      "id": "iso-4017-m5-20",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/iso-4017-m5-20.step",
+      "old_model_sha256": "cf73d07855605dfc399e9fed261c9b06e0cb72f18f32f44367b23dc46dc87537"
+    },
+    {
+      "id": "iso-4017-m6-25",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/iso-4017-m6-25.step",
+      "old_model_sha256": "1fa26ab4a1fdd002c8741ac1452d10b6aa298adf81077d369a4614b6dcc44a25"
+    },
+    {
+      "id": "iso-4017-m6-30",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/iso-4017-m6-30.step",
+      "old_model_sha256": "3f879bd27d8cc306909eda288b48efe74dd8b612940f6cfa1c9c06e539f440b0"
+    },
+    {
+      "id": "iso-4017-m8-40",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/iso-4017-m8-40.step",
+      "old_model_sha256": "3a6cc013b29ff8154147e091e174a110db065b69b1d15c61bf12fb2b072ed972"
+    },
+    {
+      "id": "iso-4032-m10",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "iso-4032-m12",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "iso-4032-m3",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "iso-4032-m4",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "iso-4032-m5",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "iso-4032-m6",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "iso-4032-m8",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "iso-4762-m10-50",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/iso-4762-m10-50.step",
+      "old_model_sha256": "12979cb23be843d561fc18695617588687aee3b25ba4d8bf8a6ae558e9da33d7"
+    },
+    {
+      "id": "iso-4762-m12-60",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/iso-4762-m12-60.step",
+      "old_model_sha256": "d57e374ea5990f652d829af3300d115b89ced0bc70c93e75d186237d3ff54852"
+    },
+    {
+      "id": "iso-4762-m3-12",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/iso-4762-m3-12.step",
+      "old_model_sha256": "14b74ea34321d62455ccafb0233d35a365da123382e52694f543e3d30d74a8ec"
+    },
+    {
+      "id": "iso-4762-m4-16",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/iso-4762-m4-16.step",
+      "old_model_sha256": "29d25b84f709f9d0f7788124a4cd6b814ab057a159dd123cccabcb11b49ae631"
+    },
+    {
+      "id": "iso-4762-m5-20",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/iso-4762-m5-20.step",
+      "old_model_sha256": "ebc646508827eaa6b99c6ed49674d6109bfbc3716aa09b032c60323dd702abd5"
+    },
+    {
+      "id": "iso-4762-m6-25",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/iso-4762-m6-25.step",
+      "old_model_sha256": "8b4d340689000449a37058c6fb32707c34edfce717602915ccdf90ff2554e8e0"
+    },
+    {
+      "id": "iso-4762-m8-35",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/iso-4762-m8-35.step",
+      "old_model_sha256": "55be8c2b9ec42b3117bdc5a5f565a4d9e63a6d9758f2f58a250c912b61d1f784"
+    },
+    {
+      "id": "iso-7089-m10",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "iso-7089-m12",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "iso-7089-m3",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "iso-7089-m4",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "iso-7089-m5",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "iso-7089-m6",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "iso-7089-m8",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "ms20001-6c10",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms20001-6c10.step",
+      "old_model_sha256": "6a8e708fce4e741a35207e7d4e9d233c3c599a84f123991bf00fff9f45bf935c"
+    },
+    {
+      "id": "ms20004-4c6",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms20004-4c6.step",
+      "old_model_sha256": "12ec43a6e2ba97a15851d75a25ebb991c520f75d859fbeb1e347bf912533b55a"
+    },
+    {
+      "id": "ms20392-2c12",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms20392-2c12.step",
+      "old_model_sha256": "b3d64cf0a99fba4cc77a925e29bf034dc84dcd784d75c224388de62df07d9f7b"
+    },
+    {
+      "id": "ms20392-3c16",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms20392-3c16.step",
+      "old_model_sha256": "2c076bc23ab6095df1a922cf2b0f110b188b70f8c7558a2d5ac344c6bc301206"
+    },
+    {
+      "id": "ms20426ad4-5",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms20426ad4-5.step",
+      "old_model_sha256": "46c13169096770433cdaba6d11df06edab6736e6ce76afa2c02e01bd7ff5d496"
+    },
+    {
+      "id": "ms20470ad4-6",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms20470ad4-6.step",
+      "old_model_sha256": "964ea1f2d1e5d22e5b70ae97bf4e4ea99d32284c80a93f873cf5cfc9f31196a2"
+    },
+    {
+      "id": "ms20470ad5-8",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms20470ad5-8.step",
+      "old_model_sha256": "471cfada074ff72f1bfa3a9f2292a7104dd1847c02ed47d06ca7548bb1980a16"
+    },
+    {
+      "id": "ms20613-4c8",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms20613-4c8.step",
+      "old_model_sha256": "9bc6b02e8ab4e1538293a0ed2780a0115699fb49b7251a805cdcc74350273340"
+    },
+    {
+      "id": "ms20613-5c12",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms20613-5c12.step",
+      "old_model_sha256": "d751ef40211a70960c56d9cd9621265d7610b389cf27536fcaf1947991165c62"
+    },
+    {
+      "id": "ms21250-4l",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "ms21250-5l",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "ms24665-132",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "ms35333-41",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "ms35338-45",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "nas1352-04-4",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-04-4.step",
+      "old_model_sha256": "782ef8ab601897dc187ca25d2110c31449e2354e4c64993df44e91ec0593d969"
+    },
+    {
+      "id": "nas1352-04-6",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-04-6.step",
+      "old_model_sha256": "e3bafa379231494fb354bd73fddf68c668d0d483ef5d3019a6a38d994a5c1a32"
+    },
+    {
+      "id": "nas1352-04-8",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-04-8.step",
+      "old_model_sha256": "61499350569bd812be2b7e210323a8cfe9246eac3d1e10f85bdfea53d895ed29"
+    },
+    {
+      "id": "nas1352-04-10",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-04-10.step",
+      "old_model_sha256": "fcd9a250619b71c8952696d79ba3f6220cd531373966a83cc0e2fc437e6eaaa2"
+    },
+    {
+      "id": "nas1352-04-12",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-04-12.step",
+      "old_model_sha256": "d947547a70898755b180e81ec5eabc778e53497e1ecbcef9dae11ea47ef3506b"
+    },
+    {
+      "id": "nas1352-06-4",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-06-4.step",
+      "old_model_sha256": "29c2cbfa91b079bc696e1bff25d54b6a84701fcfcbf67406b8f1486aa1dd6bad"
+    },
+    {
+      "id": "nas1352-06-6",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-06-6.step",
+      "old_model_sha256": "3d2acc2344e5c804bab846914b21c9a9f79f3cf94ee70ccb51cbc963ca6e7dbf"
+    },
+    {
+      "id": "nas1352-06-8",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-06-8.step",
+      "old_model_sha256": "bedd01a9301179f3d5b9a27f4f52978e0f09cc9451e0073f683f157dfc7716e0"
+    },
+    {
+      "id": "nas1352-06-10",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-06-10.step",
+      "old_model_sha256": "901cb8d00d10e2825771150d5cc78337ddff20f78027a6360ca3db77dc280ea9"
+    },
+    {
+      "id": "nas1352-06-12",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-06-12.step",
+      "old_model_sha256": "49b3f14bd5c074cf0ecd054aba4cf77bbcf803f7330c2c551750d19077f79f8e"
+    },
+    {
+      "id": "nas1352-06-16",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-06-16.step",
+      "old_model_sha256": "ba811133f618c7d8354b4c9eb1e8fb176aef517d8dbc61588b54285e9f5d7ea8"
+    },
+    {
+      "id": "nas1352-08-4",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-08-4.step",
+      "old_model_sha256": "cd9eb8b106d0a20699688c5bd289286e720561c678eb6c1a4221590f47deb60b"
+    },
+    {
+      "id": "nas1352-08-6",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-08-6.step",
+      "old_model_sha256": "7bf410dd0b636d7c8566f582a62d8b4b3a818917e4f4f0f3f020b8483ff3cc6b"
+    },
+    {
+      "id": "nas1352-08-8",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-08-8.step",
+      "old_model_sha256": "cc8ea1a5c3ecfc12e06d19a1fccc995230bcb6ad1d5197ab2bcfe3c8c9d1fb72"
+    },
+    {
+      "id": "nas1352-08-10",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-08-10.step",
+      "old_model_sha256": "6f0b68c342ad4b3dd0b3388a9d1b0d99edeaab05f55bb89d3abfce10a4b63f4c"
+    },
+    {
+      "id": "nas1352-08-12",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-08-12.step",
+      "old_model_sha256": "5633ae94c7d78e7eef05762b57ae136146b78dbe782fa259942461804d3969e0"
+    },
+    {
+      "id": "nas1352-08-16",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-08-16.step",
+      "old_model_sha256": "0b7ec54c224c0f0c5f47c4713442943c5769e60d02acae0818d526c26268ba79"
+    },
+    {
+      "id": "nas1352-08-20",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-08-20.step",
+      "old_model_sha256": "cd9ba11a4115cccc2c940013bcfa8bfe60136596768b96072f2ce77c82a57b80"
+    },
+    {
+      "id": "nas1352-3-6",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-3-6.step",
+      "old_model_sha256": "fd8bc9b352f32bc8fe987aa58ee82d0632eb7e570fec3990bb95b4df58d44e42"
+    },
+    {
+      "id": "nas1352-3-8",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-3-8.step",
+      "old_model_sha256": "716d38c77330a933ae835f420706ea2eda6176a5e95fb2ceb8b21e1cd4690843"
+    },
+    {
+      "id": "nas1352-3-10",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-3-10.step",
+      "old_model_sha256": "4361f9e3128e76a054b9b94793c03042b29abe2971871c22240a3d0bc8975c46"
+    },
+    {
+      "id": "nas1352-3-12",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-3-12.step",
+      "old_model_sha256": "b657257bf89ed8cf5e3ef4eca7d89b8ccc081be29d4a227fdb6cdd5bf0414c76"
+    },
+    {
+      "id": "nas1352-3-16",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-3-16.step",
+      "old_model_sha256": "fca04fd845c162f6bc050348ffbea1a647f6c505bba5cde377a781fc40aab36a"
+    },
+    {
+      "id": "nas1352-3-20",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-3-20.step",
+      "old_model_sha256": "8e0439f653df5fab8dbcfb3b6c5532650c481e0788f7d422857fdc4e4d9e85f3"
+    },
+    {
+      "id": "nas1352-3-24",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-3-24.step",
+      "old_model_sha256": "025ba006c73fb721ed4c43e16ac4317b7c603757731e0c89e7cfef2139399296"
+    },
+    {
+      "id": "nas1352-4-6",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-4-6.step",
+      "old_model_sha256": "ed7c29758ac54bb7fa9d528d9390865ece6e8f62e5a164a4117cf9190ece21e0"
+    },
+    {
+      "id": "nas1352-4-8",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-4-8.step",
+      "old_model_sha256": "d2e1bcdb05b07f1ae424079994e5749f767901fd4db58fab099bd67695456eb9"
+    },
+    {
+      "id": "nas1352-4-10",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-4-10.step",
+      "old_model_sha256": "b10f3e5237654bdd002195e205ccd324696e77895995592a3b5a8ba530693be1"
+    },
+    {
+      "id": "nas1352-4-12",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-4-12.step",
+      "old_model_sha256": "791a60934b4adddbf40d6ef28829acf5283314021109e7791ce97ff6865d5b73"
+    },
+    {
+      "id": "nas1352-4-16",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-4-16.step",
+      "old_model_sha256": "c21742e2d8b11d1e9087a4cd666171c89eba6292229caaccbc5bd3926bedce01"
+    },
+    {
+      "id": "nas1352-4-20",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-4-20.step",
+      "old_model_sha256": "8d655c62b11f9562ab44ecc7b3405767a4a8986733c1081883e10730f8e44d85"
+    },
+    {
+      "id": "nas1352-4-24",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-4-24.step",
+      "old_model_sha256": "f23e6fbc94536eb6ceb7333794fba9ab155f56e56d2e825109380e3135f240a9"
+    },
+    {
+      "id": "nas1352-4-32",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-4-32.step",
+      "old_model_sha256": "38ecae955bd6394fcf0935e3628bbdab28996c8281ebf2cb14c25cf80c2647a3"
+    },
+    {
+      "id": "nas1352-5-6",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-5-6.step",
+      "old_model_sha256": "895e6853eefc51759cbe94cbaecc018854164bf54e959906a12d0518e5c89dc1"
+    },
+    {
+      "id": "nas1352-5-8",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-5-8.step",
+      "old_model_sha256": "edfeb585a232bf34c81f0db268b45188ffd1ff120f65b97d854e8f7351c710f9"
+    },
+    {
+      "id": "nas1352-5-10",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-5-10.step",
+      "old_model_sha256": "445572859a9795bd92323b4babcf4d8318512113dbd87cfa57a9c686fbdd9ccd"
+    },
+    {
+      "id": "nas1352-5-12",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-5-12.step",
+      "old_model_sha256": "0b90457cf461fd9f128a00eed268a70eb289e0dc0d2cb5f5bfe466271886b3a0"
+    },
+    {
+      "id": "nas1352-5-16",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-5-16.step",
+      "old_model_sha256": "ea545494593da5019fade002688942fed5dd968127a705ac382deaed42414f78"
+    },
+    {
+      "id": "nas1352-5-20",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-5-20.step",
+      "old_model_sha256": "432e034bd3d8ab133e2b09b7465b34c343eb7c9763c629d0b57200ecb0c8e50e"
+    },
+    {
+      "id": "nas1352-5-24",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-5-24.step",
+      "old_model_sha256": "43cacd0717f8072c60393888dd713dbb9dfc2649601a4dade2f7364e83a4ee99"
+    },
+    {
+      "id": "nas1352-5-32",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-5-32.step",
+      "old_model_sha256": "d923092004a5ea39a49e8b4c81e84b397a752db218f4d20a3ec66818ed8879d1"
+    },
+    {
+      "id": "nas1352-6-8",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-6-8.step",
+      "old_model_sha256": "a16e34a1648fd6b67719b44d7ab623e81cd26faaac4b3f0f408a3afd85ed7d1b"
+    },
+    {
+      "id": "nas1352-6-10",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-6-10.step",
+      "old_model_sha256": "8118e7992a0df66e4b3c899dba6e46607e4d7a92a663e62e53bd8221f2ea36fe"
+    },
+    {
+      "id": "nas1352-6-12",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-6-12.step",
+      "old_model_sha256": "4f33515ab80f025f93e379614ad78380e8c0520490aea34e0891bae64350018b"
+    },
+    {
+      "id": "nas1352-6-16",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-6-16.step",
+      "old_model_sha256": "0ce8eb9c0f6216f121a1f600a1ac48a03950615d179cfc51943922fe08d6da85"
+    },
+    {
+      "id": "nas1352-6-20",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-6-20.step",
+      "old_model_sha256": "342fae676abda526ca01e730c413e8ec0a60a57fb205d63fcc54a859201b1078"
+    },
+    {
+      "id": "nas1352-6-24",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-6-24.step",
+      "old_model_sha256": "585c80aeff8d0c12f60514130fe42efdab5b68c920bbe43f237bfadd9b5039ca"
+    },
+    {
+      "id": "nas1352-6-32",
+      "status": "legacy_unverified",
+      "diameter_unit": "in",
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/nas1352-6-32.step",
+      "old_model_sha256": "01d6d3f2758ccd9c2169b4ef2b754d5ee351f0f8d7d644368c0ed2cc2f3ac30f"
+    },
+    {
+      "id": "ms24693-s40",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24693-s40.step",
+      "old_model_sha256": "abca411fd85f63e3df5d1d56ed2128a4a4a53b625b66067d8eb8089d0385354b"
+    },
+    {
+      "id": "ms24693-s41",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24693-s41.step",
+      "old_model_sha256": "2d7b5160a91b8e945b0e4e35fbc68cf8cb3d660b215e90b384ec22f4c8ff2ed4"
+    },
+    {
+      "id": "ms24693-s42",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24693-s42.step",
+      "old_model_sha256": "0bd88e5bb46ec6837fe664d60092f6ff4af6186507c41eefb028c030dace7208"
+    },
+    {
+      "id": "ms24693-s92",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24693-s92.step",
+      "old_model_sha256": "257c7ca846d5f2daad72b1ed95e8f2009318d373b7e77627c063f6e9bd8952a9"
+    },
+    {
+      "id": "ms24693-s93",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24693-s93.step",
+      "old_model_sha256": "0b9adcf6e1f164c78df81ea477736e13bf49bf60d07f9798fe9226f7373526bf"
+    },
+    {
+      "id": "ms24693-s94",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24693-s94.step",
+      "old_model_sha256": "348123fa2d2aef91b8a58e1e1f2d059aa89adfa57dc585f91f719a12b6f034ec"
+    },
+    {
+      "id": "ms24693-s162",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24693-s162.step",
+      "old_model_sha256": "482728cc987e0df0949dc9854f7917c762b15e447aa90d834348c9c1d29e7f34"
+    },
+    {
+      "id": "ms24693-s163",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24693-s163.step",
+      "old_model_sha256": "b8fffabec738b85c709c5e62b693527063fd862d5cbd1eca078eb70533f1b9dc"
+    },
+    {
+      "id": "ms24693-s164",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24693-s164.step",
+      "old_model_sha256": "6762d695aa5fbee0192e4d3d3b18ea73f2efeb02de696283669b7d051011972f"
+    },
+    {
+      "id": "ms24693-s252",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24693-s252.step",
+      "old_model_sha256": "54bab5c25b95c68995f7da99bdd96bcbd702e5e57cc6cecd51c1dabf3bfbe68b"
+    },
+    {
+      "id": "ms24693-s253",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24693-s253.step",
+      "old_model_sha256": "23d3feec8b3f5d66418f333eedb0a1007fce1d60560e8f4bd3204dc090ca65f3"
+    },
+    {
+      "id": "ms24693-s254",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24693-s254.step",
+      "old_model_sha256": "18be48b9b698babc1790780b9993f48f6ae7804b314382be3c7b23938a7cdf66"
+    },
+    {
+      "id": "ms24694-c1",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24694-c1.step",
+      "old_model_sha256": "c549d3ca53d3f93f5a23ad4e2ac6ac12fed74fab8bf79b43d97cfaeeeee3fd8b"
+    },
+    {
+      "id": "ms24694-c2",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24694-c2.step",
+      "old_model_sha256": "3cf35692f2394e0b4085818780756775ad8ab478c1ec89aae9f10934b557e96e"
+    },
+    {
+      "id": "ms24694-c3",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24694-c3.step",
+      "old_model_sha256": "c3fc9f9d65b6df7affef1ed27498fd25899d23e30b127a431096eb813afb26d0"
+    },
+    {
+      "id": "ms24694-c26",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24694-c26.step",
+      "old_model_sha256": "c05be6734aecb8ffb45a55a324a5ac95098d457a3cc6c3e350717350904d7834"
+    },
+    {
+      "id": "ms24694-c27",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24694-c27.step",
+      "old_model_sha256": "58517819819733221e89045aa63dfe2bfe8a32b80c9fd7f934aa605268427074"
+    },
+    {
+      "id": "ms24694-c28",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24694-c28.step",
+      "old_model_sha256": "a0b70a328f88e5da5b301c940198518c2a18c944fd4117cdb733b40b6c245a1d"
+    },
+    {
+      "id": "ms24694-c29",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24694-c29.step",
+      "old_model_sha256": "cb215bf2b52c1abba6c8e758167f7c759132097aedce0adf0ac467dbd0825133"
+    },
+    {
+      "id": "ms24694-c50",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24694-c50.step",
+      "old_model_sha256": "300e2abeced5f8873db3d48ea1fb8a61a19edad2260f04bebc78d45687f4a11b"
+    },
+    {
+      "id": "ms24694-c51",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24694-c51.step",
+      "old_model_sha256": "3771b59deb5993ac48fce98c967c796f25ecabe5e45d0047638e23e7cf29f78b"
+    },
+    {
+      "id": "ms24694-c52",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms24694-c52.step",
+      "old_model_sha256": "d028ad0580b20420e982343019b95d1c5cd240df3c4555bf7beb4ef9bd5a2790"
+    },
+    {
+      "id": "ms51957-1",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms51957-1.step",
+      "old_model_sha256": "0acc89ffe52a9a7e8e762c04ab14d62738f4f7c44066ba7658595bfd8a402854"
+    },
+    {
+      "id": "ms51957-10",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms51957-10.step",
+      "old_model_sha256": "bb4a0e1e913ba957caaf2244e7d6a555475466ebefe09fd270f17b8290fba03d"
+    },
+    {
+      "id": "ms51957-20",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms51957-20.step",
+      "old_model_sha256": "0a969a1898bdf5c4cb5f693e769894d36aa7a3581c6102ac49249de8a23621a2"
+    },
+    {
+      "id": "ms51957-30",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms51957-30.step",
+      "old_model_sha256": "161e2bcd0dda53dca39dcd21d13718487e993d252b21675291f21ba2a2cd857a"
+    },
+    {
+      "id": "ms51957-40",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms51957-40.step",
+      "old_model_sha256": "f3de1423917dc92cff795ec9bdbbe94e5988d203894b5bcba40e9d998449d6c4"
+    },
+    {
+      "id": "ms51957-50",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms51957-50.step",
+      "old_model_sha256": "36154dab55bd57fab3b3d5110da97d80b20c4a66fd2fdbb0c4f97b36673fdab9"
+    },
+    {
+      "id": "ms51957-51",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms51957-51.step",
+      "old_model_sha256": "362e37ce623e1c48cec48e7c1457b1fa5b733c2b1f886ba2f8b64c5b06273f1d"
+    },
+    {
+      "id": "ms51957-52",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms51957-52.step",
+      "old_model_sha256": "a3fcbd81ced73ae833873da776de866e48f0d2e51d8afa5c182afd185bc42509"
+    },
+    {
+      "id": "ms51957-60",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms51957-60.step",
+      "old_model_sha256": "c5697ad4109988c51c0e8229bb87985487228de2d1657ec90dfac043f1e55281"
+    },
+    {
+      "id": "ms51957-61",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms51957-61.step",
+      "old_model_sha256": "7770f91970ed190fa8632e62f0dfefbe41b5e9e1d5b8b169f3e5f99c5a85e5c2"
+    },
+    {
+      "id": "an310-3",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "an310-4",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "an310-5",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "an310-6",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "an310-7",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "an310-8",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "an310-10",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "an380-2-1",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/an380-2-1.step",
+      "old_model_sha256": "7046f71bdcbcb1d882c411c70ed8943c24a42216e2e4c70b4f654f60e7b94474"
+    },
+    {
+      "id": "an380-2-2",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/an380-2-2.step",
+      "old_model_sha256": "134e52b4f1e08a6419925a0c68e60119fb624468aaa7cf3094ca02e7ac151fe8"
+    },
+    {
+      "id": "an380-3-1",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/an380-3-1.step",
+      "old_model_sha256": "62aa30a76a6d5e9e0d1bf500e15380f87aca8f268a41a616e1740ade4b9af712"
+    },
+    {
+      "id": "an380-3-2",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/an380-3-2.step",
+      "old_model_sha256": "f9ba25218e7874e1e2842b3dc9f6b6547a3122361d970648ba02e1bc109dd750"
+    },
+    {
+      "id": "an380-4-1",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/an380-4-1.step",
+      "old_model_sha256": "efd67655d302e68e42a38332d944fbab63fc53438b5f83baeb6e6b13a7b15a5e"
+    },
+    {
+      "id": "an380-4-2",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/an380-4-2.step",
+      "old_model_sha256": "72cb9e54147c1d1cc389cd38161218ebf65fe51a6be4ff9bcfbe38d813ec2a1b"
+    },
+    {
+      "id": "an380-5-1",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/an380-5-1.step",
+      "old_model_sha256": "8709e58dd31cf16e5dff64ed37cdaeec6702fc3868733d5539efe4a172254fda"
+    },
+    {
+      "id": "an380-5-2",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/an380-5-2.step",
+      "old_model_sha256": "aa42a89ab0e78d6042b20ca6f44eae2d66ef97057ba61d0a7f50c5567d97f0e5"
+    },
+    {
+      "id": "an380-6-2",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/an380-6-2.step",
+      "old_model_sha256": "86db0328b30db47b059588c8e74dab3ef8a1f53955571fb61b8b9ea57fe20c66"
+    },
+    {
+      "id": "an363-428",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "an363-524",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "an363-624",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "an363-720",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "an363-820",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "an363-1032",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "an364-428",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "an364-524",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "an364-624",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "an364-720",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "an364-820",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "an364-1032",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "ms20995-c20",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "ms20995-c25",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "ms20995-c32",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "ms20995-c41",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "ms20995-c51",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": null,
+      "old_model_sha256": null
+    },
+    {
+      "id": "ms35206-416",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms35206-416.step",
+      "old_model_sha256": "7cf20998022bd81bbbd0eb1381a3e8acc4370dd68de0a0cb56e771c5ae472182"
+    },
+    {
+      "id": "ms35206-420",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms35206-420.step",
+      "old_model_sha256": "34cea6ef3a6a46429c1efe066756c1ae067ec10c57b071ab986852ebfe110653"
+    },
+    {
+      "id": "ms35206-632",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms35206-632.step",
+      "old_model_sha256": "7000e34e2b92fb59ed1d1c340a9dfb7ebd57c6827113ae30bcaaf113a1522559"
+    },
+    {
+      "id": "ms35206-820",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms35206-820.step",
+      "old_model_sha256": "a62244e38e12e6e6fed6adf99a461f8754df3fa0ff482184113ed4fe4cac3039"
+    },
+    {
+      "id": "ms35206-824",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms35206-824.step",
+      "old_model_sha256": "d6e76889641a9d165a14cbf555c7d6025470b7cc4e8910a28ca83cc24bc284f1"
+    },
+    {
+      "id": "ms35206-1016",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms35206-1016.step",
+      "old_model_sha256": "da7fda71d436bd2dff72aa2fb147490386ffa69d553b156dbe74b03594f802a7"
+    },
+    {
+      "id": "ms35206-1020",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms35206-1020.step",
+      "old_model_sha256": "2a650c48c6f1ad10639aa7af3123fc188f9f6c8c98928a4d06c702720588e945"
+    },
+    {
+      "id": "ms35206-1024",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms35206-1024.step",
+      "old_model_sha256": "26f61adefe224ff8b9143e06cea87a022fe5ad5dfb61ff6c6454502c51d58ca4"
+    },
+    {
+      "id": "ms35207-416",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms35207-416.step",
+      "old_model_sha256": "703825814cbac98c62c89e23c81fcbc96046bed15f9ae88ecb802daa102fb945"
+    },
+    {
+      "id": "ms35207-420",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms35207-420.step",
+      "old_model_sha256": "d6c8bfb564b0bba4b540be01511a803deaabac8588e1c805e5124f33da3592a3"
+    },
+    {
+      "id": "ms35207-632",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms35207-632.step",
+      "old_model_sha256": "f3fb20c387fbadfe4e60ead34b8850be4722638bfed2f32b7f7ba371f1df33f3"
+    },
+    {
+      "id": "ms35207-820",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms35207-820.step",
+      "old_model_sha256": "47c43c1c018ce6bf9726fa79eb97cccb59ed6d1857323a2176d7cc7847f7ea8e"
+    },
+    {
+      "id": "ms35207-1016",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms35207-1016.step",
+      "old_model_sha256": "37b7400cf6ee68d9ce408aedc3c0c0d4edebd895ae0c3ea6dc81ca3c58d64523"
+    },
+    {
+      "id": "ms35207-1020",
+      "status": "legacy_unverified",
+      "diameter_unit": null,
+      "reason": "Source extraction, dimensions, and coordinate frame require revalidation.",
+      "old_model_path": "/models/ms35207-1020.step",
+      "old_model_sha256": "f7c0a7097e04507bbf41ba8b5451e8cd2b452ad075e423ce34d0905ca87eaa26"
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+> Historical document. This workflow is retired; see the current README and docs/MIGRATION.md for the portable CadQuery/MCP workflow.
+
 # Onshape STEP Generation Guide
 
 ## ⚠️ IMPORTANT: Real BREP Geometry Required

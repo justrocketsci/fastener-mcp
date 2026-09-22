@@ -46,3 +46,11 @@ next-env.d.ts
 
 # CadQuery virtual environment
 .venv-cadquery
+
+# Offline build staging and tool caches
+.cache/
+__pycache__/
+*.pyc
+!.env.example
+# Local CAD Explorer review sidecars, not public model deliverables
+public/models/**/.*.step.*
