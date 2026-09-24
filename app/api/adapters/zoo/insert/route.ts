@@ -129,7 +129,7 @@ authors = []
         'Authorization': `Bearer ${apiToken}`,
         'Content-Type': contentType,
       },
-      body: multipartBody,
+      body: new Uint8Array(multipartBody),
     });
 
     if (!createResponse.ok) {
