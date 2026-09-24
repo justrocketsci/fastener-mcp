@@ -120,7 +120,7 @@ export default function MCPDocsPage() {
             <Card>
               <CardHeader>
                 <CardTitle>Available Tools</CardTitle>
-                <CardDescription>Eight MCP tools for fastener catalog, installation, compatibility, and procurement</CardDescription>
+                <CardDescription>Nine MCP tools for fastener catalog, CAD insertion, installation, compatibility, and procurement</CardDescription>
               </CardHeader>
               <CardContent className="space-y-3 text-sm">
                 <div>
@@ -141,6 +141,10 @@ export default function MCPDocsPage() {
                 <div>
                   <code className="font-semibold">get_placement_packet</code>
                   <p className="text-muted-foreground mt-1">Get CAD-agnostic placement packet with coordinate frame and honesty level (L1: insert-at-frame)</p>
+                </div>
+                <div>
+                  <code className="font-semibold">insert_fastener_zoo</code>
+                  <p className="text-muted-foreground mt-1">Create a Zoo Design Studio project with the fastener STEP model. Returns project ID and shareable URL. Use beside zoo-mcp for KCL workflows.</p>
                 </div>
                 <div className="pt-2">
                   <Badge variant="outline" className="mb-2">Extended Catalog Tools</Badge>
@@ -399,6 +403,11 @@ export default function MCPDocsPage() {
     "onshape": {
       "insert": "POST /api/adapters/onshape/insert",
       "status": "experimental"
+    },
+    "zoo": {
+      "insert": "POST /api/adapters/zoo/insert",
+      "mcp_tool": "insert_fastener_zoo",
+      "status": "experimental"
     }
   }
 }`}
@@ -413,16 +422,100 @@ export default function MCPDocsPage() {
                 </Alert>
 
                 <div className="mt-4 pt-4 border-t border-border">
-                  <h4 className="font-semibold mb-2 text-sm">Experimental Adapter</h4>
+                  <h4 className="font-semibold mb-2 text-sm">Experimental Adapters</h4>
                   <p className="text-sm text-muted-foreground mb-2">
-                    An experimental Onshape adapter is available via <code className="bg-muted px-1 py-0.5 rounded text-xs">POST /api/adapters/onshape/insert</code>
+                    Experimental adapters for CAD platform insertion:
                   </p>
-                  <ul className="text-sm text-muted-foreground space-y-1 ml-4 list-disc">
-                    <li>Requires server environment variables: <code className="bg-muted px-1 py-0.5 rounded text-xs">ONSHAPE_ACCESS_KEY</code> and <code className="bg-muted px-1 py-0.5 rounded text-xs">ONSHAPE_SECRET_KEY</code></li>
-                    <li>Inserts STEP file at document origin/frame</li>
-                    <li>No automatic mates or hole detection</li>
-                    <li>Uses configured test document for all inserts</li>
+                  <div className="mb-3">
+                    <p className="text-sm font-medium">Onshape</p>
+                    <p className="text-sm text-muted-foreground mb-1">
+                      <code className="bg-muted px-1 py-0.5 rounded text-xs">POST /api/adapters/onshape/insert</code>
+                    </p>
+                    <ul className="text-sm text-muted-foreground space-y-1 ml-4 list-disc">
+                      <li>Requires server environment variables: <code className="bg-muted px-1 py-0.5 rounded text-xs">ONSHAPE_ACCESS_KEY</code> and <code className="bg-muted px-1 py-0.5 rounded text-xs">ONSHAPE_SECRET_KEY</code></li>
+                      <li>Inserts STEP file at document origin/frame</li>
+                      <li>No automatic mates or hole detection</li>
+                      <li>Uses configured test document for all inserts</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium">Zoo Design Studio</p>
+                    <p className="text-sm text-muted-foreground mb-1">
+                      <code className="bg-muted px-1 py-0.5 rounded text-xs">POST /api/adapters/zoo/insert</code> or MCP tool <code className="bg-muted px-1 py-0.5 rounded text-xs">insert_fastener_zoo</code>
+                    </p>
+                    <ul className="text-sm text-muted-foreground space-y-1 ml-4 list-disc">
+                      <li>Requires server environment variable: <code className="bg-muted px-1 py-0.5 rounded text-xs">ZOO_API_TOKEN</code></li>
+                      <li>Creates a Zoo Design Studio project with STEP model and KCL import</li>
+                      <li>Returns project ID and shareable URL</li>
+                      <li>Use beside zoo-mcp (<code className="bg-muted px-1 py-0.5 rounded text-xs">uvx zoo-mcp</code>) for KCL → STEP workflows</li>
+                      <li>Open via share link or download with: <code className="bg-muted px-1 py-0.5 rounded text-xs">zoo project download &lt;projectId&gt;</code></li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>insert_fastener_zoo</CardTitle>
+                <CardDescription>Create a Zoo Design Studio project with fastener STEP model</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h3 className="font-semibold mb-2">Endpoint</h3>
+                  <code className="block bg-muted p-3 rounded text-sm">
+                    POST /api/adapters/zoo/insert
+                  </code>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">Request Body</h3>
+                  <ul className="space-y-2 text-sm">
+                    <li><code className="bg-muted px-2 py-1 rounded">id</code> - Fastener ID (e.g., iso-1207-m5-20, nas1352-04-6)</li>
                   </ul>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">Example Request</h3>
+                  <pre className="bg-muted p-3 rounded text-sm overflow-x-auto">
+{`curl -X POST "https://fastener-mcp.vercel.app/api/adapters/zoo/insert" \\
+  -H "Content-Type: application/json" \\
+  -d '{"id":"iso-1207-m5-20"}'`}
+                  </pre>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-2">Example Response</h3>
+                  <pre className="bg-muted p-3 rounded text-sm overflow-x-auto">
+{`{
+  "ok": true,
+  "id": "iso-1207-m5-20",
+  "projectId": "01234567-89ab-cdef-0123-456789abcdef",
+  "zooUrl": "https://zoo.dev/share/...",
+  "shareUrl": "https://zoo.dev/share/..."
+}`}
+                  </pre>
+                </div>
+
+                <Alert className="bg-blue-50 dark:bg-blue-950 border-blue-200 dark:border-blue-800">
+                  <AlertDescription className="text-sm">
+                    <strong>Zoo + MCP workflow:</strong> Use this tool alongside zoo-mcp (<code className="bg-muted px-1 py-0.5 rounded text-xs">uvx zoo-mcp</code>) for fastener → STEP → KCL design workflows.
+                    Projects are created in your Zoo account and can be opened via share link or downloaded with <code className="bg-muted px-1 py-0.5 rounded text-xs">zoo project download &lt;projectId&gt;</code>.
+                  </AlertDescription>
+                </Alert>
+
+                <div className="mt-4 pt-4 border-t border-border">
+                  <h4 className="font-semibold mb-2 text-sm">Missing Token Behavior</h4>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    Without <code className="bg-muted px-1 py-0.5 rounded text-xs">ZOO_API_TOKEN</code> environment variable:
+                  </p>
+                  <pre className="bg-muted p-3 rounded text-sm overflow-x-auto">
+{`HTTP 503 Service Unavailable
+{
+  "ok": false,
+  "error": "ZOO_API_TOKEN missing"
+}`}
+                  </pre>
                 </div>
               </CardContent>
             </Card>

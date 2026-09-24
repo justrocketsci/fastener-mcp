@@ -242,7 +242,76 @@ const handler = createMcpHandler(
       }
     );
 
-    // Tools 5-8: Codex catalog extras (installation, compatibility, offers, BOM)
+    // Tool 5: Insert fastener into Zoo Design Studio
+    server.registerTool(
+      'insert_fastener_zoo',
+      {
+        title: 'Insert Fastener into Zoo Design Studio',
+        description: 'Create a Zoo Design Studio project with the fastener STEP model. Returns project ID and URL. Requires ZOO_API_TOKEN environment variable.',
+        inputSchema: z.object({
+          id: z.string().describe('Fastener ID (e.g., iso-4017-m6-30, nas1352-04-6)')
+        })
+      },
+      async ({ id }) => {
+        const baseUrl = process.env.VERCEL_URL 
+          ? `https://${process.env.VERCEL_URL}`
+          : 'https://fastener-mcp.vercel.app';
+
+        try {
+          const response = await fetch(`${baseUrl}/api/adapters/zoo/insert`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ id }),
+          });
+
+          const result = await response.json();
+
+          if (!response.ok || !result.ok) {
+            return {
+              content: [{
+                type: 'text' as const,
+                text: JSON.stringify({
+                  error: result.error || 'Zoo insert failed',
+                  id,
+                  status: response.status
+                }, null, 2)
+              }],
+              isError: true
+            };
+          }
+
+          return {
+            content: [{
+              type: 'text' as const,
+              text: JSON.stringify({
+                ok: true,
+                id: result.id,
+                projectId: result.projectId,
+                zooUrl: result.zooUrl,
+                shareUrl: result.shareUrl,
+                note: 'Project created in Zoo Design Studio. Open via share link or download with: zoo project download ' + result.projectId
+              }, null, 2)
+            }]
+          };
+        } catch (error) {
+          const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+          return {
+            content: [{
+              type: 'text' as const,
+              text: JSON.stringify({
+                error: errorMessage,
+                id
+              }, null, 2)
+            }],
+            isError: true
+          };
+        }
+      }
+    );
+
+    // Tools 6-9: Codex catalog extras (installation, compatibility, offers, BOM)
     const codexToolDescriptions: Record<string, string> = {
       get_installation_requirements: "Read sourced installation requirements and required missing host/process context.",
       get_compatible_parts: "Find checked nominal companion interfaces and unresolved assembly requirements.",
