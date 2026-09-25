@@ -1,4 +1,4 @@
-# Fastener MCP: KCL Fix & Placement Recipe - Final Report
+# Fastener MCP: KCL Fix, Placement Recipe & Write Auth - Final Report
 
 **PR:** https://github.com/justrocketsci/fastener-mcp/pull/7
 **Branch:** `cursor/fix-kcl-and-add-placement-recipe-ab02`
@@ -6,12 +6,13 @@
 
 ## Executive Summary
 
-Both tasks completed successfully in a single PR:
+Three changes completed successfully in a single PR:
 
 1. ✅ **Fixed KCL parse error** in Zoo adapter
 2. ✅ **Added placement recipe tool** with full transform calculation
+3. ✅ **Added write authentication** to protect Zoo insert
 
-All tests pass, build succeeds, and implementation follows Zoo KCL documentation.
+All tests pass, build succeeds, and implementation follows Zoo KCL documentation and security best practices.
 
 ---
 
@@ -131,13 +132,140 @@ The implementation calculates the rigid transform T that brings the fastener fro
 
 ---
 
+## Task 3: Add Write Authentication
+
+### Implementation
+
+**Protected Endpoints:**
+- `POST /api/adapters/zoo/insert` (HTTP)
+- `insert_fastener_zoo` (MCP tool)
+
+**Authentication Method:**
+- Shared secret from `FASTENER_WRITE_KEY` environment variable
+- Clients send via `x-api-key` or `Authorization: Bearer` header
+- Constant-time comparison using `crypto.timingSafeEqual()`
+- Fail closed: missing/empty env returns 503
+- Missing/wrong client key returns 401
+
+**Read-Only Operations (Open):**
+All catalog operations remain open without authentication:
+- `search_fasteners`
+- `get_fastener`
+- `get_fastener_model`
+- `get_placement_packet`
+- `get_placement_recipe` (new)
+- `get_installation_requirements`
+- `get_compatible_parts`
+- `compare_supplier_offers`
+- `build_parts_list`
+
+### Files Added/Modified
+
+1. **`lib/auth.ts`** (new, 86 lines)
+   - `validateWriteKey()` function
+   - Constant-time comparison
+   - Fail-closed logic
+   - Support for x-api-key and Authorization: Bearer headers
+   - Never logs or echoes keys
+
+2. **`app/api/adapters/zoo/insert/route.ts`** (modified)
+   - Added auth validation at start of POST handler
+   - Returns 503/401 before calling Zoo API
+
+3. **`app/api/mcp/route.ts`** (modified)
+   - Wrapped handler to capture request headers
+   - Added auth validation to `insert_fastener_zoo` tool
+   - Forwards auth headers to internal API
+
+### Security Features
+
+**Constant-Time Comparison:**
+```typescript
+// Prevents timing attacks by:
+// 1. Normalizing buffer lengths
+// 2. Using timingSafeEqual() 
+// 3. Never short-circuiting on mismatch
+const lengthMatch = configuredBuffer.length === providedBuffer.length;
+const comparisonBuffer = lengthMatch 
+  ? providedBuffer 
+  : Buffer.alloc(configuredBuffer.length);
+keysMatch = timingSafeEqual(configuredBuffer, comparisonBuffer);
+authenticated = lengthMatch && keysMatch;
+```
+
+**Fail Closed:**
+```typescript
+if (!configuredKey || configuredKey.trim().length === 0) {
+  return {
+    authenticated: false,
+    status: 503,
+    error: 'Write operations not available: FASTENER_WRITE_KEY not configured',
+  };
+}
+```
+
+**Key Protection:**
+- Keys never appear in logs
+- Keys never appear in error messages
+- Keys never sent to clients
+- Keys compared in constant time only
+
+### Setup Instructions
+
+**Generate Key:**
+```bash
+openssl rand -hex 32
+```
+
+**Add to Vercel:**
+1. Project Settings → Environment Variables
+2. Add `FASTENER_WRITE_KEY` = (generated key)
+3. Select Production environment
+4. Save and redeploy
+
+**MCP Client Configuration (Cursor):**
+```json
+{
+  "mcpServers": {
+    "fastener-mcp": {
+      "url": "https://fastener-mcp.vercel.app/api/mcp",
+      "headers": {
+        "x-api-key": "${env:FASTENER_WRITE_KEY}"
+      }
+    }
+  }
+}
+```
+
+**MCP Client Configuration (Claude Desktop):**
+```json
+{
+  "mcpServers": {
+    "fastener-mcp": {
+      "url": "https://fastener-mcp.vercel.app/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${env:FASTENER_WRITE_KEY}"
+      }
+    }
+  }
+}
+```
+
+**Direct HTTP API:**
+```bash
+curl -X POST https://fastener-mcp.vercel.app/api/adapters/zoo/insert \
+  -H "Content-Type: application/json" \
+  -H "x-api-key: <YOUR_FASTENER_WRITE_KEY>" \
+  -d '{"id": "iso-1207-m5-20"}'
+```
+
+---
+
 ## Testing & Verification
 
-### Unit Tests
+### Placement Recipe Tests
 
-**File:** `scripts/test-placement-recipe.ts`
-
-**Coverage:**
+**Unit Tests (scripts/test-placement-recipe.ts):**
 1. Identity transform (axis-aligned, origin at zero) ✓
 2. Translation only (axis-aligned, non-zero entry) ✓
 3. Rotation only (45° about X axis) ✓
@@ -147,13 +275,7 @@ The implementation calculates the rigid transform T that brings the fastener fro
 
 **Results:** All 6/6 tests passed
 
-**Verified:**
-- Translation correctness
-- Axis alignment
-- Origin placement
-- Rotation representation consistency
-
-### Verification Tests
+### Placement Recipe Verification Tests
 
 **File:** `scripts/verify-placement-recipe.ts`
 
@@ -171,7 +293,51 @@ The implementation calculates the rigid transform T that brings the fastener fro
 - Axis collinearity: < 0.01° (achieved: 0.000000°)
 - Head seating: < 0.01 mm (achieved: 0.000000 mm)
 
-### Generated Artifacts
+### Authentication Tests
+
+**File:** `scripts/test-write-auth.ts`
+
+**Coverage:**
+1. Environment key not set → 503 ✓
+2. Environment key empty string → 503 ✓
+3. Environment key whitespace only → 503 ✓
+4. No key provided (x-api-key) → 401 ✓
+5. Empty key provided → 401 ✓
+6. Whitespace-only key provided → 401 ✓
+7. Wrong key via x-api-key → 401 ✓
+8. Wrong key via Bearer → 401 ✓
+9. Key with different length → 401 ✓
+10. **Correct key via x-api-key → ✓ Authenticated**
+11. **Correct key via Bearer → ✓ Authenticated**
+12. Key with wrong case → 401 ✓
+13. Key with special characters → ✓ Authenticated
+
+**Results:** All 13/13 tests passed
+
+**Verified:**
+- Constant-time comparison
+- Fail-closed behavior
+- Both header formats (x-api-key and Bearer)
+- Case sensitivity
+- Special character handling
+- Length validation
+
+### Integration Tests
+
+**File:** `scripts/test-zoo-insert-auth.ts`
+
+**Purpose:** Test actual HTTP endpoint authentication
+
+**Note:** Requires running dev server and configured FASTENER_WRITE_KEY
+
+**Coverage:**
+- No API key → 401
+- Wrong API key (x-api-key) → 401
+- Wrong API key (Bearer) → 401
+- Correct API key (x-api-key) → Auth succeeds
+- Correct API key (Bearer) → Auth succeeds
+
+### Build Verification
 
 **KCL files created:**
 - `test-artifacts/test1_axis_aligned.kcl`
@@ -212,16 +378,12 @@ fastener
 **JSON summary:**
 - `test-artifacts/verification-summary.json` - Complete test results with transform matrices
 
-### Build Verification
-
 ✅ `npm run build` succeeds  
 ✅ TypeScript compilation passes  
 ✅ All routes compile and optimize correctly  
 ✅ No TypeScript errors
 
----
-
-## KCL Parser Verification
+### Generated Artifacts
 
 **Status:** Not run with actual parser
 
@@ -266,21 +428,24 @@ However, early Zoo documentation suggested foreign-file STEP imports might have 
 ## Changes Summary
 
 ### Modified Files
-- `app/api/adapters/zoo/insert/route.ts` - Fixed KCL import syntax
-- `app/api/mcp/route.ts` - Added placement recipe MCP tool
+- `app/api/adapters/zoo/insert/route.ts` - Fixed KCL import syntax + added auth
+- `app/api/mcp/route.ts` - Added placement recipe MCP tool + added auth to insert tool
 
 ### New Files
 - `lib/placement-recipe.ts` - Transform calculation library (457 lines)
+- `lib/auth.ts` - Authentication validation (86 lines)
 - `app/api/fasteners/[id]/placement-recipe/route.ts` - HTTP API endpoint
-- `scripts/test-placement-recipe.ts` - Unit tests
-- `scripts/verify-placement-recipe.ts` - Verification script
+- `scripts/test-placement-recipe.ts` - Unit tests (6/6 passed)
+- `scripts/verify-placement-recipe.ts` - Verification script (4/4 passed)
+- `scripts/test-write-auth.ts` - Authentication unit tests (13/13 passed)
+- `scripts/test-zoo-insert-auth.ts` - Authentication integration tests
 - `test-artifacts/*.kcl` - Generated KCL test cases (4 files)
 - `test-artifacts/verification-summary.json` - Test results
 
 ### No Breaking Changes
-- All existing tools maintain current behavior
-- Existing HTTP endpoints unchanged
-- MCP server backward compatible
+- All existing read-only tools maintain current behavior
+- Existing HTTP endpoints unchanged (except Zoo insert now requires auth)
+- MCP server backward compatible for read operations
 
 ---
 
@@ -306,6 +471,9 @@ fastener
 
 **After:** 6 tools (added `get_placement_recipe`)
 
+**Protected tools:**
+- `insert_fastener_zoo` - Now requires `FASTENER_WRITE_KEY`
+
 **New capability:** Calculate precise placement transforms with:
 - Multiple rotation formats (axis-angle, Euler XYZ, 4×4 matrix)
 - Ready-to-run KCL snippets
@@ -326,12 +494,25 @@ fastener
   - Recommendation: Add CadQuery/OCCT to CI for visual verification
 
 ### Not Broken
-- ✅ All existing tools work as before
+- ✅ All existing read-only tools work as before
 - ✅ Build passes
 - ✅ TypeScript compilation succeeds
-- ✅ All unit tests pass
-- ✅ All verification tests pass
+- ✅ All unit tests pass (placement: 6/6, auth: 13/13)
+- ✅ All verification tests pass (4/4)
 - ✅ Transforms mathematically correct
+- ✅ Authentication secure (constant-time, fail-closed)
+
+### Expected Behavior
+
+**⚠️ Deployment Note:**
+
+Deploying this PR **before** setting `FASTENER_WRITE_KEY` will cause the Zoo insert endpoint to **fail closed with 503**. This is **expected and secure behavior**.
+
+**Steps to enable after deployment:**
+1. Set `FASTENER_WRITE_KEY` in Vercel (see setup instructions in PR)
+2. Redeploy the application
+3. Test with the configured key
+4. Share key securely with authorized users
 
 ---
 
@@ -377,13 +558,16 @@ fastener
 
 ## Conclusion
 
-Both tasks completed successfully:
+All three tasks completed successfully:
 
 1. ✅ **KCL parse error fixed** - Zoo adapter now generates valid KCL with `import ... as fastener` syntax
 2. ✅ **Placement recipe tool added** - Full transform calculation with multiple output formats, numerically verified to within 0.01 mm/0.01°
+3. ✅ **Write authentication added** - Constant-time comparison, fail-closed design, protects Zoo credits from unauthorized use
 
 **PR Status:** Draft, ready for review
 **Build Status:** Passing
-**Test Status:** All tests passing (10/10)
+**Test Status:** All tests passing (23/23: 6 placement unit + 4 placement verification + 13 auth)
 
 **Not merged** - PR #7 awaits review as requested.
+
+**Deployment Note:** The insert endpoint will fail closed (503) until `FASTENER_WRITE_KEY` is configured. This is expected and secure.
