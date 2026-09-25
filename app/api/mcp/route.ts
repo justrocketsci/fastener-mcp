@@ -260,7 +260,7 @@ const handler = createMcpHandler(
             x: z.number(),
             y: z.number(),
             z: z.number()
-          }).describe('Hole axis direction (unit vector, points into hole) in assembly frame'),
+          }).describe('Target hole axis direction (unit vector) in assembly frame. MUST point INTO the hole from the entry face toward the far end. For a hole drilled from the top face downward, this would have a negative Z component. The fastener shank will align with this direction.'),
           entryPoint: z.object({
             x: z.number(),
             y: z.number(),
