@@ -96,7 +96,11 @@ authors = []
 [project.urls]
 `;
 
-    const mainKclContent = `import "${stepFilename}"
+    // KCL requires identifiers without hyphens, spaces, etc.
+    // Use 'as fastener' to create a safe identifier for the imported STEP
+    const mainKclContent = `import "${stepFilename}" as fastener
+
+fastener
 `;
 
     const { body: multipartBody, contentType } = createZooMultipartBody(

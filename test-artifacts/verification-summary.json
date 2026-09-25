@@ -1,0 +1,66 @@
+[
+  {
+    "passed": true,
+    "partId": "iso-1207-m5-20",
+    "testCase": "test1_axis_aligned",
+    "axisCollinearityError": {
+      "angleDegrees": 0,
+      "passed": true
+    },
+    "headSeatingError": {
+      "distanceMm": 0,
+      "passed": true
+    },
+    "kclGenerated": true,
+    "kclPath": "/workspace/test-artifacts/test1_axis_aligned.kcl",
+    "details": "Transform verification:\n  - Fastener axis angle error: 0.000000° (tolerance: 0.01°)\n  - Head seating distance error: 0.000000 mm (tolerance: 0.01 mm)\n  - Transform matrix:\n[\n  [\n    1,\n    0,\n    0,\n    15\n  ],\n  [\n    0,\n    1,\n    0,\n    15\n  ],\n  [\n    0,\n    0,\n    1,\n    15\n  ],\n  [\n    0,\n    0,\n    0,\n    1\n  ]\n]\n  - Rotation (axis-angle): 0.000° about [0.000, 0.000, 1.000]\n  - Translation: [15.000, 15.000, 15.000] mm"
+  },
+  {
+    "passed": true,
+    "partId": "iso-1207-m5-20",
+    "testCase": "test2_tilted_45deg",
+    "axisCollinearityError": {
+      "angleDegrees": 0,
+      "passed": true
+    },
+    "headSeatingError": {
+      "distanceMm": 0,
+      "passed": true
+    },
+    "kclGenerated": true,
+    "kclPath": "/workspace/test-artifacts/test2_tilted_45deg.kcl",
+    "details": "Transform verification:\n  - Fastener axis angle error: 0.000000° (tolerance: 0.01°)\n  - Head seating distance error: 0.000000 mm (tolerance: 0.01 mm)\n  - Transform matrix:\n[\n  [\n    1,\n    0,\n    0,\n    15\n  ],\n  [\n    0,\n    0.7071067811865476,\n    0.7071067811865475,\n    10\n  ],\n  [\n    0,\n    -0.7071067811865475,\n    0.7071067811865476,\n    10\n  ],\n  [\n    0,\n    0,\n    0,\n    1\n  ]\n]\n  - Rotation (axis-angle): 45.000° about [-1.000, 0.000, 0.000]\n  - Translation: [15.000, 10.000, 10.000] mm"
+  },
+  {
+    "passed": true,
+    "partId": "iso-1207-m5-20",
+    "testCase": "test3_antiparallel",
+    "axisCollinearityError": {
+      "angleDegrees": 0,
+      "passed": true
+    },
+    "headSeatingError": {
+      "distanceMm": 0,
+      "passed": true
+    },
+    "kclGenerated": true,
+    "kclPath": "/workspace/test-artifacts/test3_antiparallel.kcl",
+    "details": "Transform verification:\n  - Fastener axis angle error: 0.000000° (tolerance: 0.01°)\n  - Head seating distance error: 0.000000 mm (tolerance: 0.01 mm)\n  - Transform matrix:\n[\n  [\n    1,\n    0,\n    0,\n    15\n  ],\n  [\n    0,\n    -1,\n    0,\n    15\n  ],\n  [\n    0,\n    0,\n    -1,\n    15\n  ],\n  [\n    0,\n    0,\n    0,\n    1\n  ]\n]\n  - Rotation (axis-angle): 180.000° about [1.000, 0.000, 0.000]\n  - Translation: [15.000, 15.000, 15.000] mm"
+  },
+  {
+    "passed": true,
+    "partId": "iso-1207-m5-20",
+    "testCase": "test4_complex_with_rotation",
+    "axisCollinearityError": {
+      "angleDegrees": 0,
+      "passed": true
+    },
+    "headSeatingError": {
+      "distanceMm": 0,
+      "passed": true
+    },
+    "kclGenerated": true,
+    "kclPath": "/workspace/test-artifacts/test4_complex_with_rotation.kcl",
+    "details": "Transform verification:\n  - Fastener axis angle error: 0.000000° (tolerance: 0.01°)\n  - Head seating distance error: 0.000000 mm (tolerance: 0.01 mm)\n  - Transform matrix:\n[\n  [\n    0.5519083528811932,\n    -0.6673808283281506,\n    0.5,\n    20\n  ],\n  [\n    0.615167811854428,\n    0.730640287301386,\n    0.2961981327260237,\n    12\n  ],\n  [\n    -0.5629970988186382,\n    0.14410968236790916,\n    0.8137976813493738,\n    8\n  ],\n  [\n    0,\n    0,\n    0,\n    1\n  ]\n]\n  - Rotation (axis-angle): 56.758° about [-0.091, 0.635, 0.767]\n  - Translation: [20.000, 12.000, 8.000] mm"
+  }
+]

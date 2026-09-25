@@ -3,6 +3,7 @@ import { z } from 'zod';
 import fasteners from '@/data/fasteners.json';
 import type { Fastener } from '@/lib/types';
 import { buildPlacementPacket } from '@/lib/placement-packet';
+import { buildPlacementRecipe, type TargetHole } from '@/lib/placement-recipe';
 import fs from 'fs';
 import path from 'path';
 import { inputs, type ToolName } from '@/lib/catalog/schemas';
@@ -242,7 +243,80 @@ const handler = createMcpHandler(
       }
     );
 
-    // Tool 5: Insert fastener into Zoo Design Studio
+    // Tool 5: Get placement recipe
+    server.registerTool(
+      'get_placement_recipe',
+      {
+        title: 'Get Placement Recipe',
+        description: 'Calculate precise placement transform and KCL snippet to place a fastener into a target hole. Returns rigid transform (translation + rotation in multiple formats), ready-to-run KCL code, and plain-language mate instructions.',
+        inputSchema: z.object({
+          id: z.string().describe('Fastener ID (e.g., iso-4017-m6-30, nas1352-04-6)'),
+          axisDirection: z.object({
+            x: z.number(),
+            y: z.number(),
+            z: z.number()
+          }).describe('Hole axis direction (unit vector, points into hole) in assembly frame'),
+          entryPoint: z.object({
+            x: z.number(),
+            y: z.number(),
+            z: z.number()
+          }).describe('Point on hole axis at entry face (mm, assembly frame) where head seats'),
+          rotationDegrees: z.number().optional().describe('Optional rotation about hole axis in degrees (default 0)')
+        })
+      },
+      async ({ id, axisDirection, entryPoint, rotationDegrees }) => {
+        const baseUrl = process.env.VERCEL_URL 
+          ? `https://${process.env.VERCEL_URL}`
+          : 'https://fastener-mcp.vercel.app';
+
+        try {
+          const response = await fetch(`${baseUrl}/api/fasteners/${id}/placement-recipe`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ axisDirection, entryPoint, rotationDegrees }),
+          });
+
+          const result = await response.json();
+
+          if (!response.ok) {
+            return {
+              content: [{
+                type: 'text' as const,
+                text: JSON.stringify({
+                  error: result.error || 'Placement recipe failed',
+                  id,
+                  status: response.status
+                }, null, 2)
+              }],
+              isError: true
+            };
+          }
+
+          return {
+            content: [{
+              type: 'text' as const,
+              text: JSON.stringify(result, null, 2)
+            }]
+          };
+        } catch (error) {
+          const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+          return {
+            content: [{
+              type: 'text' as const,
+              text: JSON.stringify({
+                error: errorMessage,
+                id
+              }, null, 2)
+            }],
+            isError: true
+          };
+        }
+      }
+    );
+
+    // Tool 6: Insert fastener into Zoo Design Studio
     server.registerTool(
       'insert_fastener_zoo',
       {
@@ -311,7 +385,7 @@ const handler = createMcpHandler(
       }
     );
 
-    // Tools 6-9: Codex catalog extras (installation, compatibility, offers, BOM)
+    // Tools 7-10: Codex catalog extras (installation, compatibility, offers, BOM)
     const codexToolDescriptions: Record<string, string> = {
       get_installation_requirements: "Read sourced installation requirements and required missing host/process context.",
       get_compatible_parts: "Find checked nominal companion interfaces and unresolved assembly requirements.",

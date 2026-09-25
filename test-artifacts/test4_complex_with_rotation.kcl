@@ -1,0 +1,31 @@
+@settings(kclVersion = 2.0)
+
+// Test block: 30x30x15 mm
+testBlock = startSketchOn('XY')
+  |> startProfileAt([0, 0], %)
+  |> line([30, 0], %)
+  |> line([0, 30], %)
+  |> line([-30, 0], %)
+  |> close(%)
+  |> extrude(15, %)
+
+// Hole specification (in assembly frame):
+// Entry point: [20, 12, 8] mm
+// Axis direction: [0.49999999999999994, 0.29619813272602386, 0.8137976813493738]
+// Rotation: 45°
+
+// M5 clearance hole (5.3mm diameter) - would be created with appropriate transforms
+// Note: Full hole creation with arbitrary axis requires shell/sweep operations
+// For verification purposes, the fastener placement is the key output
+
+// Import fastener STEP model
+import "iso-1207-m5-20.step" as fastener
+
+// Apply placement transform
+fastener
+  |> translate(xyz = [20.000000, 12.000000, 8.000000])
+  |> rotate(axis = [-0.090922, 0.635486, 0.766740], angle = 56.758226deg)
+
+
+// Expected result: fastener axis collinear with hole axis,
+// head bearing face at entry point
