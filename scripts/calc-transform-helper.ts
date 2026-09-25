@@ -31,7 +31,7 @@ if (!fastener) {
   process.exit(1);
 }
 
-const placementPacket = buildPlacementPacket(fastener, 'https://test.com');
+const placementPacket = buildPlacementPacket(fastener as any, 'https://test.com');
 
 const targetHole = {
   axisDirection: holeAxis,
