@@ -1,0 +1,67 @@
+================================================================================
+REAL GEOMETRY PROOF - PLACEMENT RECIPE WITH ACTUAL STEP FILE
+================================================================================
+
+Test Configuration:
+  Part: iso-1207-m5-20
+  Block size: (30, 30, 15) mm
+  Hole axis: [0.         0.57357644 0.81915204]
+  Hole tilt: 35°
+  Entry point: [15. 15. 15.] mm
+  Hole diameter: 5.3 mm
+
+Step 1: Loading actual STEP file from catalog...
+Loading STEP file: /workspace/public/models/iso-1207-m5-20.step
+✓ STEP file loaded successfully
+
+Step 2: Loading placement transform...
+✓ Transform matrix loaded
+  Transform matrix:
+    [1, 0, 0, 15]
+    [0, 0.8191520442889919, 0.5735764363510459, 15]
+    [0, -0.5735764363510459, 0.8191520442889919, 15]
+    [0, 0, 0, 1]
+
+Step 3: Applying transform to actual STEP geometry...
+✓ Transform applied to STEP solid
+
+Step 4: Creating test block with tilted hole...
+✓ Test block created
+
+Step 5: Measuring transformed geometry...
+------------------------------------------------------------
+Axis alignment angle: 0.000000°
+Axis perpendicular offset: 0.000000 mm
+Head seating distance: 7.527769 mm (approx)
+Interference volume: 0.000000 mm³
+------------------------------------------------------------
+
+Results:
+  Axis alignment: ✓ PASS (0.000000° < 0.1°)
+  Axis offset: ✓ PASS (0.000000 mm < 0.1 mm)
+
+Step 6: Exporting STEP files...
+✓ Exported: /workspace/test-artifacts/iso-1207-m5-20-transformed.step
+✓ Exported: /workspace/test-artifacts/test-block-with-hole.step
+✓ Exported: /workspace/test-artifacts/assembly-proof.step
+
+Step 7: Rendering PNGs...
+Saved PNG: /workspace/test-artifacts/proof-isometric.png
+✓ Rendered: /workspace/test-artifacts/proof-isometric.png
+Saved PNG: /workspace/test-artifacts/proof-section.png
+✓ Rendered: /workspace/test-artifacts/proof-section.png
+
+Step 8: Saving measurement results...
+✓ Results saved: /workspace/test-artifacts/geometry-proof-results.json
+
+================================================================================
+SUMMARY
+================================================================================
+Part: iso-1207-m5-20
+Hole tilt: 35°
+
+Measured from transformed STEP geometry:
+  Axis alignment: 0.000000° (tolerance: 0.1°)
+  Axis offset: 0.000000 mm (tolerance: 0.1 mm)
+  Status: ✓ PASS
+
