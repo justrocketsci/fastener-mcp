@@ -1,14 +1,19 @@
 import { createMcpHandler } from 'mcp-handler';
 import { z } from 'zod';
+import { NextRequest, NextResponse } from 'next/server';
 import fasteners from '@/data/fasteners.json';
 import type { Fastener } from '@/lib/types';
 import { buildPlacementPacket } from '@/lib/placement-packet';
 import { buildPlacementRecipe, type TargetHole } from '@/lib/placement-recipe';
+import { validateWriteKey } from '@/lib/auth';
 import fs from 'fs';
 import path from 'path';
 import { inputs, type ToolName } from '@/lib/catalog/schemas';
 import { execute } from '@/lib/catalog/service';
 import { errorPayload } from '@/lib/catalog/errors';
+
+// Store request context for auth validation
+let currentRequestHeaders: Headers | null = null;
 
 const handler = createMcpHandler(
   (server) => {
@@ -316,27 +321,69 @@ const handler = createMcpHandler(
       }
     );
 
-    // Tool 6: Insert fastener into Zoo Design Studio
+    // Tool 6: Insert fastener into Zoo Design Studio (protected by write key)
     server.registerTool(
       'insert_fastener_zoo',
       {
         title: 'Insert Fastener into Zoo Design Studio',
-        description: 'Create a Zoo Design Studio project with the fastener STEP model. Returns project ID and URL. Requires ZOO_API_TOKEN environment variable.',
+        description: 'Create a Zoo Design Studio project with the fastener STEP model. Returns project ID and URL. Requires FASTENER_WRITE_KEY for authentication (send via x-api-key or Authorization: Bearer header to the MCP server).',
         inputSchema: z.object({
           id: z.string().describe('Fastener ID (e.g., iso-4017-m6-30, nas1352-04-6)')
         })
       },
       async ({ id }) => {
+        // Validate write key from the MCP request headers
+        if (!currentRequestHeaders) {
+          return {
+            content: [{
+              type: 'text' as const,
+              text: JSON.stringify({
+                error: 'Internal error: request context not available',
+                id
+              }, null, 2)
+            }],
+            isError: true
+          };
+        }
+
+        const authResult = validateWriteKey(currentRequestHeaders);
+        if (!authResult.authenticated) {
+          return {
+            content: [{
+              type: 'text' as const,
+              text: JSON.stringify({
+                error: authResult.error,
+                id,
+                status: authResult.status,
+                hint: 'Send your FASTENER_WRITE_KEY via x-api-key or Authorization: Bearer header'
+              }, null, 2)
+            }],
+            isError: true
+          };
+        }
+
         const baseUrl = process.env.VERCEL_URL 
           ? `https://${process.env.VERCEL_URL}`
           : 'https://fastener-mcp.vercel.app';
 
         try {
+          // Forward the auth header to the internal API
+          const headers: Record<string, string> = {
+            'Content-Type': 'application/json',
+          };
+          
+          const xApiKey = currentRequestHeaders.get('x-api-key');
+          const authHeader = currentRequestHeaders.get('authorization');
+          
+          if (xApiKey) {
+            headers['x-api-key'] = xApiKey;
+          } else if (authHeader) {
+            headers['authorization'] = authHeader;
+          }
+
           const response = await fetch(`${baseUrl}/api/adapters/zoo/insert`, {
             method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
+            headers,
             body: JSON.stringify({ id }),
           });
 
@@ -439,4 +486,23 @@ const handler = createMcpHandler(
   }
 );
 
-export { handler as GET, handler as POST };
+// Wrap the handler to capture request headers for auth validation
+async function GET(request: NextRequest) {
+  currentRequestHeaders = request.headers;
+  try {
+    return await handler(request);
+  } finally {
+    currentRequestHeaders = null;
+  }
+}
+
+async function POST(request: NextRequest) {
+  currentRequestHeaders = request.headers;
+  try {
+    return await handler(request);
+  } finally {
+    currentRequestHeaders = null;
+  }
+}
+
+export { GET, POST };

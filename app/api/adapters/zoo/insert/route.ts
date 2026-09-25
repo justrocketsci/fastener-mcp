@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { randomBytes } from 'crypto';
 import fs from 'fs';
 import path from 'path';
+import { validateWriteKey } from '@/lib/auth';
 
 const ZOO_API_BASE = 'https://api.zoo.dev';
 
@@ -53,6 +54,18 @@ function createZooMultipartBody(
 
 export async function POST(request: NextRequest): Promise<NextResponse<ZooInsertResponse>> {
   try {
+    // Validate write key (fail closed)
+    const authResult = validateWriteKey(request.headers);
+    if (!authResult.authenticated) {
+      return NextResponse.json(
+        {
+          ok: false,
+          error: authResult.error,
+        },
+        { status: authResult.status }
+      );
+    }
+
     const apiToken = process.env.ZOO_API_TOKEN;
 
     if (!apiToken) {
