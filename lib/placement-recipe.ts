@@ -287,36 +287,10 @@ export function calculatePlacementTransform(
     rotationMatrix = combined;
   }
 
-  // Translation: we want the head bearing face (frame origin) at the entry point
-  // The placement packet defines the frame origin as the head bearing face center
-  // For the catalog STEP files, this is NOT at (0,0,0) in STEP coordinates
-  // From inspection: iso-1207 has head underside at Z=-3.3 in native STEP coords
-  // So we need: R @ (0,0,-3.3) + t = entryPoint
-  // Therefore: t = entryPoint - R @ (0,0,-3.3)
-  
-  // TODO: This offset should come from the placement packet or catalog metadata
-  // For now, hardcode the known offset for this STEP
-  const frameOriginInStepCoords = { x: 0, y: 0, z: -3.3 };  // Head underside location
-  
-  // Calculate where the frame origin ends up after rotation
-  const rotatedOrigin = {
-    x: rotationMatrix[0][0] * frameOriginInStepCoords.x + 
-       rotationMatrix[0][1] * frameOriginInStepCoords.y + 
-       rotationMatrix[0][2] * frameOriginInStepCoords.z,
-    y: rotationMatrix[1][0] * frameOriginInStepCoords.x + 
-       rotationMatrix[1][1] * frameOriginInStepCoords.y + 
-       rotationMatrix[1][2] * frameOriginInStepCoords.z,
-    z: rotationMatrix[2][0] * frameOriginInStepCoords.x + 
-       rotationMatrix[2][1] * frameOriginInStepCoords.y + 
-       rotationMatrix[2][2] * frameOriginInStepCoords.z,
-  };
-  
-  // Translation should place the rotated frame origin at the entry point
-  const translation = {
-    x: targetHole.entryPoint.x - rotatedOrigin.x,
-    y: targetHole.entryPoint.y - rotatedOrigin.y,
-    z: targetHole.entryPoint.z - rotatedOrigin.z,
-  };
+  // Translation: fastener origin goes to hole entry point
+  // The placement packet defines the origin at the head bearing face center
+  // For our STEP files, this is already at (0,0,0) in STEP coordinates
+  const translation = targetHole.entryPoint;
 
   // Convert to various rotation representations
   const axisAngle = matrixToAxisAngle(rotationMatrix);
