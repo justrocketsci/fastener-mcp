@@ -326,16 +326,16 @@ export function generateKclSnippet(
   const { axis, angleDegrees } = rotation.axisAngle;
 
   let snippet = `// Import fastener STEP model\nimport "${stepFilename}" as fastener\n\n`;
-  snippet += `// Apply placement transform\n`;
+  snippet += `// Apply placement transform in global coordinates\n`;
   snippet += `fastener\n`;
   
-  // Apply translation using xyz parameter
-  snippet += `  |> translate(xyz = [${translation.x.toFixed(6)}, ${translation.y.toFixed(6)}, ${translation.z.toFixed(6)}])\n`;
-  
-  // Apply rotation if non-zero
+  // Apply rotation FIRST if non-zero (align axis)
   if (Math.abs(angleDegrees) > 1e-6) {
-    snippet += `  |> rotate(axis = [${axis.x.toFixed(6)}, ${axis.y.toFixed(6)}, ${axis.z.toFixed(6)}], angle = ${angleDegrees.toFixed(6)}deg)\n`;
+    snippet += `  |> rotate(axis = [${axis.x.toFixed(6)}, ${axis.y.toFixed(6)}, ${axis.z.toFixed(6)}], angle = ${angleDegrees.toFixed(6)}deg, global = true)\n`;
   }
+  
+  // Apply translation SECOND (move to entry point)
+  snippet += `  |> translate(xyz = [${translation.x.toFixed(6)}, ${translation.y.toFixed(6)}, ${translation.z.toFixed(6)}], global = true)\n`;
 
   return snippet;
 }
